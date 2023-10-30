@@ -12,6 +12,15 @@ namespace Student_Attendance_System.Startup
 {
     public partial class loginForm : Form
     {
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams handleParams = base.CreateParams;
+                handleParams.ExStyle |= 0x02000000;
+                return handleParams;
+            }
+        }
         public loginForm()
         {
             InitializeComponent();
@@ -36,7 +45,14 @@ namespace Student_Attendance_System.Startup
             };
             load.ShowDialog();
 
-            if(staffIdTB.Text == "admin" && passwordTB.Text == "admin")
+            loginHelper login = new loginHelper()
+            {
+                Password = passwordTB.Text,
+                staffID = staffIdTB.Text,
+                stayLogin = stayLoginCB.Checked
+            };
+
+            if(login.login())
             {
                 this.DialogResult = DialogResult.OK;
                 this.Close();

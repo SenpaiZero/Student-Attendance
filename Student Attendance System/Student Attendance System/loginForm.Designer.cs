@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.stayLoginCB = new Guna.UI2.WinForms.Guna2CheckBox();
             this.cancelBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -54,6 +55,7 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.guna2Panel1.Controls.Add(this.stayLoginCB);
             this.guna2Panel1.Controls.Add(this.cancelBtn);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel2);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel3);
@@ -66,6 +68,26 @@
             this.guna2Panel1.Size = new System.Drawing.Size(291, 375);
             this.guna2Panel1.TabIndex = 0;
             // 
+            // stayLoginCB
+            // 
+            this.stayLoginCB.AutoSize = true;
+            this.stayLoginCB.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
+            this.stayLoginCB.CheckedState.BorderRadius = 0;
+            this.stayLoginCB.CheckedState.BorderThickness = 0;
+            this.stayLoginCB.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
+            this.stayLoginCB.CheckMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.stayLoginCB.Font = new System.Drawing.Font("Segoe UI Variable Text", 10.2F);
+            this.stayLoginCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.stayLoginCB.Location = new System.Drawing.Point(63, 268);
+            this.stayLoginCB.Name = "stayLoginCB";
+            this.stayLoginCB.Size = new System.Drawing.Size(161, 26);
+            this.stayLoginCB.TabIndex = 8;
+            this.stayLoginCB.Text = "STAY LOGGED IN";
+            this.stayLoginCB.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
+            this.stayLoginCB.UncheckedState.BorderRadius = 0;
+            this.stayLoginCB.UncheckedState.BorderThickness = 0;
+            this.stayLoginCB.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
+            // 
             // cancelBtn
             // 
             this.cancelBtn.BorderRadius = 5;
@@ -77,7 +99,7 @@
             this.cancelBtn.FillColor = System.Drawing.Color.Transparent;
             this.cancelBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cancelBtn.ForeColor = System.Drawing.Color.IndianRed;
-            this.cancelBtn.Location = new System.Drawing.Point(98, 339);
+            this.cancelBtn.Location = new System.Drawing.Point(93, 344);
             this.cancelBtn.Name = "cancelBtn";
             this.cancelBtn.Size = new System.Drawing.Size(100, 28);
             this.cancelBtn.TabIndex = 7;
@@ -90,7 +112,7 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(32, 114);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(33, 94);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(229, 25);
             this.guna2HtmlLabel2.TabIndex = 6;
@@ -102,7 +124,7 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(32, 201);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(33, 181);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(229, 25);
             this.guna2HtmlLabel3.TabIndex = 5;
@@ -118,7 +140,7 @@
             this.loginBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
             this.loginBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.loginBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.loginBtn.Location = new System.Drawing.Point(54, 288);
+            this.loginBtn.Location = new System.Drawing.Point(54, 300);
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(180, 45);
             this.loginBtn.TabIndex = 3;
@@ -138,7 +160,7 @@
             this.passwordTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.passwordTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.passwordTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.passwordTB.Location = new System.Drawing.Point(32, 233);
+            this.passwordTB.Location = new System.Drawing.Point(33, 213);
             this.passwordTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.passwordTB.Name = "passwordTB";
             this.passwordTB.PasswordChar = '\0';
@@ -160,7 +182,7 @@
             this.staffIdTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.staffIdTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.staffIdTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.staffIdTB.Location = new System.Drawing.Point(32, 146);
+            this.staffIdTB.Location = new System.Drawing.Point(33, 126);
             this.staffIdTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.staffIdTB.Name = "staffIdTB";
             this.staffIdTB.PasswordChar = '\0';
@@ -195,6 +217,7 @@
             this.ClientSize = new System.Drawing.Size(316, 399);
             this.ControlBox = false;
             this.Controls.Add(this.guna2Panel1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "loginForm";
             this.ShowIcon = false;
@@ -203,6 +226,7 @@
             this.Text = "loginForm";
             this.Load += new System.EventHandler(this.loginForm_Load);
             this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -219,5 +243,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2Button cancelBtn;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2CheckBox stayLoginCB;
     }
 }

@@ -713,7 +713,10 @@
         9e4apYthyv+pinG/ff8ZaIKeeeb/AaoZkZn/9FuXAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="accountMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>237, 20</value>
+  </metadata>
   <metadata name="menuTransition.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>184, 14</value>
+    <value>418, 20</value>
   </metadata>
 </root>

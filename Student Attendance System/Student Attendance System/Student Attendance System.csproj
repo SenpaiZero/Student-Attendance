@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Xeb\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -53,24 +68,32 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config.cs" />
-    <Compile Include="databaseClass.cs" />
+    <Compile Include="Helper\databaseHelper.cs" />
     <Compile Include="loadingForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="loadingForm.Designer.cs">
       <DependentUpon>loadingForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="pageHelper.cs" />
+    <Compile Include="Helper\loginHelper.cs" />
+    <Compile Include="Helper\pageHelper.cs" />
+    <Compile Include="MessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageForm.Designer.cs">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="startupRunClass.cs" />
     <Compile Include="Startup\enrollForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Startup\enrollForm.Designer.cs">
       <DependentUpon>enrollForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Startup\loginForm.cs">
+    <Compile Include="loginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Startup\loginForm.Designer.cs">
+    <Compile Include="loginForm.Designer.cs">
       <DependentUpon>loginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Startup\settingForm.cs">
@@ -102,10 +125,13 @@
     <EmbeddedResource Include="loadingForm.resx">
       <DependentUpon>loadingForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MessageForm.resx">
+      <DependentUpon>MessageForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Startup\enrollForm.resx">
       <DependentUpon>enrollForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Startup\loginForm.resx">
+    <EmbeddedResource Include="loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Startup\settingForm.resx">
@@ -161,6 +187,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\left-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thinking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad-face.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smiley.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

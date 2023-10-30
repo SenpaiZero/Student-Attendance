@@ -17,3 +17,23 @@ C:\Users\Xeb\Desktop\Student Attendance System\Student Attendance System\obj\Deb
 C:\Users\Xeb\Desktop\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Startup.enrollForm.resources
 C:\Users\Xeb\Desktop\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.loadingForm.resources
 C:\Users\Xeb\Desktop\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Startup.loginForm.resources
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student Attendance System.csproj.AssemblyReference.cache
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student Attendance System.csproj.SuggestedBindingRedirects.cache
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.loadingForm.resources
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Startup.enrollForm.resources
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Startup.loginForm.resources
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Startup.settingForm.resources
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.startupForm.resources
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Properties.Resources.resources
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Startup.adminForm.resources
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Startup.studentForm.resources
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student Attendance System.csproj.GenerateResource.cache
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student Attendance System.csproj.CoreCompileInputs.cache
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student Attendance System.exe
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student Attendance System.pdb
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\Student Attendance System.exe.config
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\Student Attendance System.exe
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\Student Attendance System.pdb
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\Guna.UI2.dll
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student Attendance System.csproj.CopyComplete
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.MessageForm.resources

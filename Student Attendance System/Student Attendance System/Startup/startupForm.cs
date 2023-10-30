@@ -18,6 +18,15 @@ namespace Student_Attendance_System
         bool menuExpand = true;
         Size defaultMenuSize, defaultMainPanelSize;
         Point defaultSidePanelBtnLoc, defaultLblX;
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams handleParams = base.CreateParams;
+                handleParams.ExStyle |= 0x02000000;
+                return handleParams;
+            }
+        }
         public startupForm()
         {
             InitializeComponent();
@@ -33,9 +42,13 @@ namespace Student_Attendance_System
             defaultMainPanelSize = mainPanelContainer.Size;
 
             setLabels();
+            startupRunClass.runStartup();
 
-            pageHelper.loadForm(new adminForm(), mainPanel);
+            if(startupRunClass.persistentLogin())
+                loginBtn.Text = loginHelper.Name;
         }
+
+        int speed = 50;
         private void menuTransition_Tick(object sender, EventArgs e)
         {
             if (menuExpand)
@@ -60,9 +73,9 @@ namespace Student_Attendance_System
                 settingBtn.Text = "";
                 versionLbl.Text = "";
 
-                menuContainer.Width -= 25; 
-                sidepanelBtn.Location = new Point(defaultSidePanelBtnLoc.X -= 25, defaultSidePanelBtnLoc.Y);
-                mainPanelContainer.Width += 25;
+                menuContainer.Width -= speed; 
+                sidepanelBtn.Location = new Point(defaultSidePanelBtnLoc.X -= speed, defaultSidePanelBtnLoc.Y);
+                mainPanelContainer.Width += speed;
 
                 if (menuContainer.Width <= 85)
                 {
@@ -85,9 +98,9 @@ namespace Student_Attendance_System
                 appNameLbl.Image = null;
                 setTitlePosBack(appNameLbl);
 
-                menuContainer.Width += 25;
-                mainPanelContainer.Width -= 25;
-                sidepanelBtn.Location = new Point(defaultSidePanelBtnLoc.X += 25, defaultSidePanelBtnLoc.Y);
+                menuContainer.Width += speed;
+                mainPanelContainer.Width -= speed;
+                sidepanelBtn.Location = new Point(defaultSidePanelBtnLoc.X += speed, defaultSidePanelBtnLoc.Y);
 
                 if (menuContainer.Width >= defaultMenuSize.Width)
                 {
@@ -130,11 +143,6 @@ namespace Student_Attendance_System
             sidepanelBtn.ImageSize = new Size(23, 23);
         }
 
-        private void mainPanelContainer_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void attBtn_Click(object sender, EventArgs e)
         {
             pageHelper.loadForm(new studentForm(), mainPanel);
@@ -143,6 +151,20 @@ namespace Student_Attendance_System
 
         private void adminBtn_Click(object sender, EventArgs e)
         {
+            if(!loginHelper.isLogin)
+            {
+                MessageForm msg = new MessageForm()
+                {
+                    header = "Oooops!!",
+                    message = "Please login first.",
+                    messageType = "Failed",
+                    isYesNo = false,
+
+                };
+                msg.ShowDialog();
+                return;
+            }
+
             pageHelper.loadForm(new adminForm(), mainPanel);
             enebleBtn(adminBtn);
         }
@@ -155,10 +177,22 @@ namespace Student_Attendance_System
 
         private void enrollBtn_Click(object sender, EventArgs e)
         {
+            if(!loginHelper.isLogin)
+            {
+                MessageForm msg = new MessageForm()
+                {
+                    header = "Oooops!!",
+                    message = "Please login first.",
+                    messageType = "Failed",
+                    isYesNo = false,
+
+                };
+                msg.ShowDialog();
+                return;
+            }
             pageHelper.loadForm(new enrollForm(), mainPanel);
             enebleBtn(enrollBtn);
         }
-
         private void loginBtn_Click(object sender, EventArgs e)
         {
             if(loginBtn.Text == "LOGIN")
@@ -166,23 +200,41 @@ namespace Student_Attendance_System
                 loginForm login = new loginForm();
                 if (login.ShowDialog() == DialogResult.OK)
                 {
-                    loginBtn.Text = "admin";
+                    loginBtn.Text = loginHelper.Name;
                 }
             }
             else
             {
-                MessageBox.Show("logout?");
+                Point ptLowerLeft = new Point(0,loginBtn.Height);
+                ptLowerLeft = loginBtn.PointToScreen(ptLowerLeft);
+                accountMenuStrip.Show(ptLowerLeft);
             }
             
         }
 
-        private void guna2Shapes5_Click(object sender, EventArgs e)
+        private void lOGOUTToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            loginHelper login = new loginHelper();
+            login.logout();
 
+            loginBtn.Text = loginHelper.Name;
         }
 
         private void settingBtn_Click(object sender, EventArgs e)
         {
+            if(!loginHelper.isLogin)
+            {
+                MessageForm msg = new MessageForm()
+                {
+                    header = "Oooops!!",
+                    message = "Please login first.",
+                    messageType = "Failed",
+                    isYesNo = false,
+
+                };
+                msg.ShowDialog();
+                return;
+            }
             pageHelper.loadForm(new settingForm(), mainPanel);
             enebleBtn(settingBtn);
         }
@@ -196,5 +248,6 @@ namespace Student_Attendance_System
 
             disabledBtn.Enabled = false;
         }
+
     }
 }
