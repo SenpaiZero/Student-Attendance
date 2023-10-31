@@ -1,4 +1,9 @@
 Guna.UI2.WinForms (2.0.4.5)
+QRCoder
+ZXing
+AForge
+AForge.Video
+AForage.Video.Directshow
 
 Color Pallete:
 colorhunt.co/palette/352f445c5470b9b4c7faf0e6

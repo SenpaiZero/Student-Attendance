@@ -37,3 +37,16 @@ C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attend
 C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\Guna.UI2.dll
 C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student Attendance System.csproj.CopyComplete
 C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.MessageForm.resources
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Forms.Admin.logsForm.resources
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Forms.Admin.studentListForm.resources
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\AForge.dll
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\AForge.Video.dll
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\QRCoder.dll
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\zxing.dll
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\zxing.presentation.dll
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\AForge.xml
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\AForge.Video.xml
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\zxing.xml
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\zxing.presentation.xml
