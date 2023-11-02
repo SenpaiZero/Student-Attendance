@@ -88,9 +88,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\cameraHelper.cs" />
     <Compile Include="Classes\Config.cs" />
+    <Compile Include="Classes\ErnployeesGlobalVariable.cs" />
     <Compile Include="Classes\Helper\databaseHelper.cs" />
     <Compile Include="Classes\Helper\QrCodeHelper.cs" />
+    <Compile Include="Classes\Helper\UIHelper.cs" />
     <Compile Include="Forms\Admin\logsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,18 +106,48 @@
     <Compile Include="Forms\Admin\studentListForm.Designer.cs">
       <DependentUpon>studentListForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\loadingForm.cs">
+    <Compile Include="Forms\changePasswordForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\loadingForm.Designer.cs">
+    <Compile Include="Forms\changePasswordForm.Designer.cs">
+      <DependentUpon>changePasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Enroll\guardianDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Enroll\guardianDetails.Designer.cs">
+      <DependentUpon>guardianDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Enroll\moreDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Enroll\moreDetailsForm.Designer.cs">
+      <DependentUpon>moreDetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Enroll\personalDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Enroll\personalDetails.Designer.cs">
+      <DependentUpon>personalDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\studentPictureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\studentPictureForm.Designer.cs">
+      <DependentUpon>studentPictureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Utility\loadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Utility\loadingForm.Designer.cs">
       <DependentUpon>loadingForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Helper\loginHelper.cs" />
     <Compile Include="Classes\Helper\pageHelper.cs" />
-    <Compile Include="Forms\MessageForm.cs">
+    <Compile Include="Forms\Utility\MessageForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MessageForm.Designer.cs">
+    <Compile Include="Forms\Utility\MessageForm.Designer.cs">
       <DependentUpon>MessageForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\startupRunClass.cs" />
@@ -163,10 +196,25 @@
     <EmbeddedResource Include="Forms\Admin\studentListForm.resx">
       <DependentUpon>studentListForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\loadingForm.resx">
+    <EmbeddedResource Include="Forms\changePasswordForm.resx">
+      <DependentUpon>changePasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Enroll\guardianDetails.resx">
+      <DependentUpon>guardianDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Enroll\moreDetailsForm.resx">
+      <DependentUpon>moreDetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Enroll\personalDetails.resx">
+      <DependentUpon>personalDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\studentPictureForm.resx">
+      <DependentUpon>studentPictureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Utility\loadingForm.resx">
       <DependentUpon>loadingForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MessageForm.resx">
+    <EmbeddedResource Include="Forms\Utility\MessageForm.resx">
       <DependentUpon>MessageForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Startup\enrollForm.resx">
@@ -255,6 +303,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\visible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-folder1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-folder2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-folder-dark.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

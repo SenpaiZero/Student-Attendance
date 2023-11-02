@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Student_Attendance_System.Classes;
+using Student_Attendance_System.Forms.Enroll;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,7 +31,49 @@ namespace Student_Attendance_System.Startup
         }
         private void attendanceForm_Load(object sender, EventArgs e)
         {
+            pageHelper.loadEnrollForm(new personalDetails(), mainPanel);
+            bringFront();
+        }
+        
+        void bringFront()
+        {
+            nextBtn.BringToFront();
+            backBtn.BringToFront();
+        }
 
+        private void mainPanel_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            if(ErnployeesGlobalVariable.page > 0)
+                ErnployeesGlobalVariable.page--;
+
+            if (ErnployeesGlobalVariable.page == 0)
+                pageHelper.loadEnrollForm(new personalDetails(), mainPanel);
+            else if (ErnployeesGlobalVariable.page == 1)
+                pageHelper.loadEnrollForm(new guardianDetails(), mainPanel);
+            bringFront();
+        }
+
+        private void nextBtn_Click(object sender, EventArgs e)
+        {
+            if (ErnployeesGlobalVariable.page < 2)
+                ErnployeesGlobalVariable.page++;
+
+            if (ErnployeesGlobalVariable.page == 1)
+                pageHelper.loadEnrollForm(new guardianDetails(), mainPanel);
+            else if(ErnployeesGlobalVariable.page == 2)
+                pageHelper.loadEnrollForm(new moreDetailsForm(), mainPanel);
+
+            bringFront();
+        }
+
+        private void enrollForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            ErnployeesGlobalVariable.page = 0;
         }
     }
 }

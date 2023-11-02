@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Student_Attendance_System.Classes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,6 +19,9 @@ namespace Student_Attendance_System
 
             if (!Properties.Settings.Default.stayLogin)
                 isFirst = true;
+
+            ErnployeesGlobalVariable.page = 0;
+            Config.isMaximized = false;
         }
         void setDBConnection()
         {

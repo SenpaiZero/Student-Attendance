@@ -32,5 +32,15 @@ namespace Student_Attendance_System.Startup
                 return handleParams;
             }
         }
+
+        private void applyBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void headeLbl_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

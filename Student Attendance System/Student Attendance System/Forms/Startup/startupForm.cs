@@ -1,4 +1,5 @@
 ﻿using Guna.UI2.WinForms;
+using Student_Attendance_System.Forms;
 using Student_Attendance_System.Startup;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,6 @@ namespace Student_Attendance_System
         bool menuExpand = true;
         Size defaultMenuSize, defaultMainPanelSize;
         Point defaultSidePanelBtnLoc, defaultLblX;
-        int speed = 100; //above 100 is instant
         protected override CreateParams CreateParams
         {
             get
@@ -36,8 +36,6 @@ namespace Student_Attendance_System
 
         private void startupForm_Load(object sender, EventArgs e)
         {
-            menuTransition.Interval = Config.menuTransitionSpeed;
-
             defaultMenuSize = menuContainer.Size;
             defaultSidePanelBtnLoc = sidepanelBtn.Location;
             defaultLblX = adminLine.Location;
@@ -48,72 +46,6 @@ namespace Student_Attendance_System
 
             if(startupRunClass.persistentLogin())
                 loginBtn.Text = loginHelper.Name;
-        }
-
-        private void menuTransition_Tick(object sender, EventArgs e)
-        {
-            if (menuExpand)
-            {
-                adminLine.Visible = false;
-                studentLine.Visible = false;
-                miscLine.Visible = false;
-
-                setTitlePos(adminLbl);
-                setTitlePos(studentLbl);
-                setTitlePos(miscLbl);
-
-                appNameLbl.Text = "";
-                appNameLbl.Image = Properties.Resources.dummy_logo;
-                appNameLbl.ImageAlign = HorizontalAlignment.Left;
-                setTitlePos(appNameLbl);
-
-                dayLbl.Text = "";
-                dateLbl.Text = "";
-                adminBtn.Text = "";
-                attBtn.Text = "";
-                settingBtn.Text = "";
-                versionLbl.Text = "";
-
-                menuContainer.Width -= speed; 
-                sidepanelBtn.Location = new Point(defaultSidePanelBtnLoc.X -= speed, defaultSidePanelBtnLoc.Y);
-                mainPanelContainer.Width += speed;
-
-                if (menuContainer.Width <= 85)
-                {
-                    menuExpand = false;
-                    menuTransition.Stop();
-                    sidepanelBtn.Image = Properties.Resources.right_arrow;
-                }
-            }
-            else
-            {
-                adminLine.Visible = true;
-                studentLine.Visible = true;
-                miscLine.Visible = true;
-
-                setTitlePosBack(studentLbl);
-                setTitlePosBack(adminLbl);
-                setTitlePosBack(miscLbl);
-
-                appNameLbl.Text = "APP NAME";
-                appNameLbl.Image = null;
-                setTitlePosBack(appNameLbl);
-
-                menuContainer.Width += speed;
-                mainPanelContainer.Width -= speed;
-                sidepanelBtn.Location = new Point(defaultSidePanelBtnLoc.X += speed, defaultSidePanelBtnLoc.Y);
-
-                if (menuContainer.Width >= defaultMenuSize.Width)
-                {
-                    menuExpand = true;
-                    menuTransition.Stop();
-                    sidepanelBtn.Image = Properties.Resources.left_arrow;
-                    menuContainer.Size = defaultMenuSize;
-                    mainPanelContainer.Size = defaultMainPanelSize;
-
-                    setLabels();
-                }
-            }
         }
 
         void setTitlePos(Control ctrl)
@@ -136,7 +68,61 @@ namespace Student_Attendance_System
         }
         private void sidepanelBtn_Click(object sender, EventArgs e)
         {
-            menuTransition.Start();
+            foreach (Form form in Application.OpenForms)
+            {
+                form.SuspendLayout();
+            }
+
+            if (menuExpand)
+            {
+                adminLine.Visible = false;
+                studentLine.Visible = false;
+                miscLine.Visible = false;
+
+                setTitlePos(adminLbl);
+                setTitlePos(studentLbl);
+                setTitlePos(miscLbl);
+
+                appNameLbl.Text = "";
+                appNameLbl.Image = Properties.Resources.dummy_logo;
+                appNameLbl.ImageAlign = HorizontalAlignment.Left;
+                setTitlePos(appNameLbl);
+
+                dayLbl.Text = "";
+                dateLbl.Text = "";
+                adminBtn.Text = "";
+                attBtn.Text = "";
+                settingBtn.Text = "";
+                versionLbl.Text = "";
+                
+                menuExpand = false;
+                sidepanelBtn.Image = Properties.Resources.right_arrow;
+                menuContainer.Size = new Size(76, menuContainer.Size.Height);
+            }
+            else
+            {
+                adminLine.Visible = true;
+                studentLine.Visible = true;
+                miscLine.Visible = true;
+
+                setTitlePosBack(studentLbl);
+                setTitlePosBack(adminLbl);
+                setTitlePosBack(miscLbl);
+
+                appNameLbl.Text = "APP NAME";
+                appNameLbl.Image = null;
+                setTitlePosBack(appNameLbl);
+
+                menuExpand = true;
+                sidepanelBtn.Image = Properties.Resources.left_arrow;
+                menuContainer.Size = defaultMenuSize;
+
+                setLabels();
+            }
+            foreach (Form form in Application.OpenForms)
+            {
+                form.ResumeLayout();
+            }
         }
 
         private void sidepanelBtn_MouseHover(object sender, EventArgs e)
@@ -232,6 +218,24 @@ namespace Student_Attendance_System
 
         private void startupForm_Activated(object sender, EventArgs e)
         {
+        }
+
+        private void guna2ControlBox3_Click(object sender, EventArgs e)
+        {
+            if (Config.isMaximized)
+            {
+                Config.isMaximized = false;
+            }
+            else
+            {
+                Config.isMaximized = true;
+            }
+        }
+
+        private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            changePasswordForm changePass = new changePasswordForm();
+            changePass.ShowDialog();
         }
 
         private void settingBtn_Click(object sender, EventArgs e)

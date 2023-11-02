@@ -23,7 +23,6 @@ namespace Student_Attendance_System
             "TrustServerCertificate=False;" +
             "Connection Timeout=30;";
 
-        // User Interface Config
-        public static int menuTransitionSpeed = 10; // Lower = smoother
+        public static bool isMaximized {get; set;}
     }
 }

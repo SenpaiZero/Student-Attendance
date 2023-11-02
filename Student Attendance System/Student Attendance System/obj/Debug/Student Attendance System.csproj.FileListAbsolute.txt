@@ -50,3 +50,8 @@ C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attend
 C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\AForge.Video.DirectShow.xml
 C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\zxing.xml
 C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\zxing.presentation.xml
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Forms.Enroll.personalDetails.resources
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Forms.Enroll.guardianDetails.resources
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Forms.Enroll.moreDetailsForm.resources
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Forms.studentPictureForm.resources
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Forms.changePasswordForm.resources
