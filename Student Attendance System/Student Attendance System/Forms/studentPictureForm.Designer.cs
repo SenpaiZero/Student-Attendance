@@ -34,7 +34,9 @@
             this.captureBtn = new Guna.UI2.WinForms.Guna2Button();
             this.cancelBtn = new Guna.UI2.WinForms.Guna2Button();
             this.camListCB = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             ((System.ComponentModel.ISupportInitialize)(this.camPB)).BeginInit();
+            this.guna2GradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -49,7 +51,7 @@
             // 
             this.camPB.BorderRadius = 5;
             this.camPB.ImageRotate = 0F;
-            this.camPB.Location = new System.Drawing.Point(39, 34);
+            this.camPB.Location = new System.Drawing.Point(34, 25);
             this.camPB.Name = "camPB";
             this.camPB.Size = new System.Drawing.Size(400, 400);
             this.camPB.TabIndex = 0;
@@ -65,7 +67,7 @@
             this.captureBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
             this.captureBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.captureBtn.ForeColor = System.Drawing.Color.White;
-            this.captureBtn.Location = new System.Drawing.Point(244, 482);
+            this.captureBtn.Location = new System.Drawing.Point(239, 473);
             this.captureBtn.Name = "captureBtn";
             this.captureBtn.Size = new System.Drawing.Size(195, 45);
             this.captureBtn.TabIndex = 2;
@@ -82,7 +84,7 @@
             this.cancelBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
             this.cancelBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cancelBtn.ForeColor = System.Drawing.Color.White;
-            this.cancelBtn.Location = new System.Drawing.Point(39, 482);
+            this.cancelBtn.Location = new System.Drawing.Point(34, 473);
             this.cancelBtn.Name = "cancelBtn";
             this.cancelBtn.Size = new System.Drawing.Size(195, 45);
             this.cancelBtn.TabIndex = 4;
@@ -101,7 +103,7 @@
             this.camListCB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.camListCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.camListCB.ItemHeight = 30;
-            this.camListCB.Location = new System.Drawing.Point(39, 440);
+            this.camListCB.Location = new System.Drawing.Point(34, 431);
             this.camListCB.MaximumSize = new System.Drawing.Size(1000, 0);
             this.camListCB.MinimumSize = new System.Drawing.Size(10, 0);
             this.camListCB.Name = "camListCB";
@@ -109,22 +111,34 @@
             this.camListCB.TabIndex = 29;
             this.camListCB.SelectedIndexChanged += new System.EventHandler(this.camListCB_SelectedIndexChanged);
             // 
+            // guna2GradientPanel1
+            // 
+            this.guna2GradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.guna2GradientPanel1.Controls.Add(this.camPB);
+            this.guna2GradientPanel1.Controls.Add(this.camListCB);
+            this.guna2GradientPanel1.Controls.Add(this.captureBtn);
+            this.guna2GradientPanel1.Controls.Add(this.cancelBtn);
+            this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(10, 10);
+            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(462, 541);
+            this.guna2GradientPanel1.TabIndex = 30;
+            // 
             // studentPictureForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(482, 551);
-            this.Controls.Add(this.camListCB);
-            this.Controls.Add(this.cancelBtn);
-            this.Controls.Add(this.captureBtn);
-            this.Controls.Add(this.camPB);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(25)))), ((int)(((byte)(82)))));
+            this.ClientSize = new System.Drawing.Size(482, 561);
+            this.Controls.Add(this.guna2GradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "studentPictureForm";
+            this.Padding = new System.Windows.Forms.Padding(10);
             this.Text = "studentPictureForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.studentPictureForm_FormClosing);
             this.Load += new System.EventHandler(this.studentPictureForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.camPB)).EndInit();
+            this.guna2GradientPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -136,5 +150,6 @@
         private Guna.UI2.WinForms.Guna2Button cancelBtn;
         private Guna.UI2.WinForms.Guna2Button captureBtn;
         private Guna.UI2.WinForms.Guna2ComboBox camListCB;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
     }
 }

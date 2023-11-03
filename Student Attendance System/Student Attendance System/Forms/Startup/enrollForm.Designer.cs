@@ -50,13 +50,14 @@
             // headerLbl
             // 
             this.headerLbl.AutoSize = false;
+            this.headerLbl.AutoSizeHeightOnly = true;
             this.headerLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
             this.headerLbl.Dock = System.Windows.Forms.DockStyle.Top;
             this.headerLbl.Font = new System.Drawing.Font("Segoe UI Variable Display", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.headerLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.headerLbl.Location = new System.Drawing.Point(0, 0);
             this.headerLbl.Name = "headerLbl";
-            this.headerLbl.Size = new System.Drawing.Size(547, 50);
+            this.headerLbl.Size = new System.Drawing.Size(547, 51);
             this.headerLbl.TabIndex = 0;
             this.headerLbl.Text = "ENROLL";
             this.headerLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -66,9 +67,9 @@
             this.mainPanel.Controls.Add(this.backBtn);
             this.mainPanel.Controls.Add(this.nextBtn);
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainPanel.Location = new System.Drawing.Point(0, 50);
+            this.mainPanel.Location = new System.Drawing.Point(0, 51);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(547, 475);
+            this.mainPanel.Size = new System.Drawing.Size(547, 474);
             this.mainPanel.TabIndex = 3;
             this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint_1);
             // 
@@ -86,7 +87,7 @@
             this.backBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.backBtn.ForeColor = System.Drawing.Color.White;
             this.backBtn.Image = global::Student_Attendance_System.Properties.Resources.left_arrow;
-            this.backBtn.Location = new System.Drawing.Point(442, 421);
+            this.backBtn.Location = new System.Drawing.Point(442, 420);
             this.backBtn.Name = "backBtn";
             this.backBtn.Size = new System.Drawing.Size(42, 42);
             this.backBtn.TabIndex = 4;
@@ -106,7 +107,7 @@
             this.nextBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.nextBtn.ForeColor = System.Drawing.Color.White;
             this.nextBtn.Image = global::Student_Attendance_System.Properties.Resources.right_arrow;
-            this.nextBtn.Location = new System.Drawing.Point(490, 421);
+            this.nextBtn.Location = new System.Drawing.Point(490, 420);
             this.nextBtn.Name = "nextBtn";
             this.nextBtn.Size = new System.Drawing.Size(42, 42);
             this.nextBtn.TabIndex = 3;

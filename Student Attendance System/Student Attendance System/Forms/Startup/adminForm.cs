@@ -68,7 +68,7 @@ namespace Student_Attendance_System.Startup
                 {
                     messageType = "Information",
                     header = "Ooooops!",
-                    message = "Only admin can access\nand use this page",
+                    message = "You do not have permission to access and use this page",
                     isYesNo = false
                 };
                 msg.ShowDialog();

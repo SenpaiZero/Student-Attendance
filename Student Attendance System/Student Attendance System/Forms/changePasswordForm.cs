@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -37,7 +38,43 @@ namespace Student_Attendance_System.Forms
 
         private void changePasswordForm_Load(object sender, EventArgs e)
         {
-            cancelBtn.Cursor = Cursors.Hand;
+        }
+
+        private void cancelBtn_Click_1(object sender, EventArgs e)
+        {
+            this.DialogResult= DialogResult.Cancel;
+            this.Close();
+        }
+
+        private void currentPassTB_IconRightClick(object sender, EventArgs e)
+        {
+            hidePassword(currentPassTB);
+        }
+
+        private void newPassTB_IconRightClick(object sender, EventArgs e)
+        {
+            hidePassword(newPassTB);
+        }
+
+        private void reEnterPassTB_IconRightClick(object sender, EventArgs e)
+        {
+            hidePassword(reEnterPassTB);
+        }
+
+        void hidePassword(Guna2TextBox passwordTB)
+        {
+            if (passwordTB.UseSystemPasswordChar)
+            {
+                passwordTB.IconRight = Properties.Resources.visible;
+                passwordTB.PasswordChar = '\0';
+                passwordTB.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                passwordTB.IconRight = Properties.Resources.hidden;
+                passwordTB.PasswordChar = '●';
+                passwordTB.UseSystemPasswordChar = true;
+            }
         }
     }
 }

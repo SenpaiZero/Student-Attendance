@@ -32,7 +32,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(settingForm));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.outputContainer = new Guna.UI2.WinForms.Guna2Panel();
+            this.picOutputTB = new Guna.UI2.WinForms.Guna2TextBox();
             this.picLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.qrOutputTB = new Guna.UI2.WinForms.Guna2TextBox();
             this.qrLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.headeLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -46,13 +48,11 @@
             this.resetBtn = new Guna.UI2.WinForms.Guna2Button();
             this.cancelBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.themeCB = new Guna.UI2.WinForms.Guna2ComboBox();
             this.themeLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.displayContainer = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.picOutputTB = new Guna.UI2.WinForms.Guna2TextBox();
-            this.qrOutputTB = new Guna.UI2.WinForms.Guna2TextBox();
             this.outputContainer.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.buttonContainer.SuspendLayout();
@@ -76,11 +76,37 @@
             this.outputContainer.Controls.Add(this.qrLbl);
             this.outputContainer.Controls.Add(this.guna2HtmlLabel1);
             this.outputContainer.Dock = System.Windows.Forms.DockStyle.Top;
-            this.outputContainer.Location = new System.Drawing.Point(10, 54);
+            this.outputContainer.Location = new System.Drawing.Point(10, 55);
             this.outputContainer.Name = "outputContainer";
             this.outputContainer.Padding = new System.Windows.Forms.Padding(12, 10, 12, 10);
-            this.outputContainer.Size = new System.Drawing.Size(527, 184);
+            this.outputContainer.Size = new System.Drawing.Size(527, 192);
             this.outputContainer.TabIndex = 5;
+            // 
+            // picOutputTB
+            // 
+            this.picOutputTB.BorderRadius = 5;
+            this.picOutputTB.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.picOutputTB.DefaultText = "";
+            this.picOutputTB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.picOutputTB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.picOutputTB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.picOutputTB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.picOutputTB.Dock = System.Windows.Forms.DockStyle.Top;
+            this.picOutputTB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
+            this.picOutputTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.picOutputTB.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.picOutputTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.picOutputTB.IconRight = ((System.Drawing.Image)(resources.GetObject("picOutputTB.IconRight")));
+            this.picOutputTB.IconRightOffset = new System.Drawing.Point(5, 0);
+            this.picOutputTB.IconRightSize = new System.Drawing.Size(25, 25);
+            this.picOutputTB.Location = new System.Drawing.Point(12, 144);
+            this.picOutputTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.picOutputTB.Name = "picOutputTB";
+            this.picOutputTB.PasswordChar = '\0';
+            this.picOutputTB.PlaceholderText = "";
+            this.picOutputTB.SelectedText = "";
+            this.picOutputTB.Size = new System.Drawing.Size(503, 40);
+            this.picOutputTB.TabIndex = 9;
             // 
             // picLbl
             // 
@@ -89,11 +115,37 @@
             this.picLbl.Dock = System.Windows.Forms.DockStyle.Top;
             this.picLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.picLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.picLbl.Location = new System.Drawing.Point(12, 106);
+            this.picLbl.Location = new System.Drawing.Point(12, 109);
             this.picLbl.Name = "picLbl";
             this.picLbl.Size = new System.Drawing.Size(503, 35);
             this.picLbl.TabIndex = 7;
             this.picLbl.Text = "Picutre Output";
+            // 
+            // qrOutputTB
+            // 
+            this.qrOutputTB.BorderRadius = 5;
+            this.qrOutputTB.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.qrOutputTB.DefaultText = "";
+            this.qrOutputTB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.qrOutputTB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.qrOutputTB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.qrOutputTB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.qrOutputTB.Dock = System.Windows.Forms.DockStyle.Top;
+            this.qrOutputTB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
+            this.qrOutputTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.qrOutputTB.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.qrOutputTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.qrOutputTB.IconRight = ((System.Drawing.Image)(resources.GetObject("qrOutputTB.IconRight")));
+            this.qrOutputTB.IconRightOffset = new System.Drawing.Point(5, 0);
+            this.qrOutputTB.IconRightSize = new System.Drawing.Size(25, 25);
+            this.qrOutputTB.Location = new System.Drawing.Point(12, 71);
+            this.qrOutputTB.Margin = new System.Windows.Forms.Padding(0);
+            this.qrOutputTB.Name = "qrOutputTB";
+            this.qrOutputTB.PasswordChar = '\0';
+            this.qrOutputTB.PlaceholderText = "";
+            this.qrOutputTB.SelectedText = "";
+            this.qrOutputTB.Size = new System.Drawing.Size(503, 38);
+            this.qrOutputTB.TabIndex = 10;
             // 
             // qrLbl
             // 
@@ -131,7 +183,7 @@
             this.headeLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(133)))), ((int)(((byte)(46)))));
             this.headeLbl.Location = new System.Drawing.Point(10, 0);
             this.headeLbl.Name = "headeLbl";
-            this.headeLbl.Size = new System.Drawing.Size(527, 54);
+            this.headeLbl.Size = new System.Drawing.Size(527, 55);
             this.headeLbl.TabIndex = 0;
             this.headeLbl.Text = "SETTING";
             this.headeLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -143,10 +195,10 @@
             this.guna2Panel2.Controls.Add(this.dbStrinlbl);
             this.guna2Panel2.Controls.Add(this.advanceContainer);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel2.Location = new System.Drawing.Point(10, 238);
+            this.guna2Panel2.Location = new System.Drawing.Point(10, 247);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Padding = new System.Windows.Forms.Padding(12, 10, 12, 10);
-            this.guna2Panel2.Size = new System.Drawing.Size(527, 121);
+            this.guna2Panel2.Size = new System.Drawing.Size(527, 115);
             this.guna2Panel2.TabIndex = 6;
             // 
             // dbConStringTB
@@ -209,7 +261,7 @@
             this.buttonContainer.Dock = System.Windows.Forms.DockStyle.Right;
             this.buttonContainer.Location = new System.Drawing.Point(380, 10);
             this.buttonContainer.Name = "buttonContainer";
-            this.buttonContainer.Size = new System.Drawing.Size(135, 138);
+            this.buttonContainer.Size = new System.Drawing.Size(135, 139);
             this.buttonContainer.TabIndex = 7;
             // 
             // guna2Separator1
@@ -217,7 +269,7 @@
             this.guna2Separator1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Separator1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Separator1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2Separator1.Location = new System.Drawing.Point(40, 44);
+            this.guna2Separator1.Location = new System.Drawing.Point(41, 48);
             this.guna2Separator1.Name = "guna2Separator1";
             this.guna2Separator1.Size = new System.Drawing.Size(70, 10);
             this.guna2Separator1.TabIndex = 7;
@@ -234,7 +286,7 @@
             this.applyBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
             this.applyBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.applyBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.applyBtn.Location = new System.Drawing.Point(30, 60);
+            this.applyBtn.Location = new System.Drawing.Point(30, 61);
             this.applyBtn.Name = "applyBtn";
             this.applyBtn.Size = new System.Drawing.Size(94, 34);
             this.applyBtn.TabIndex = 4;
@@ -251,7 +303,7 @@
             this.resetBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
             this.resetBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.resetBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.resetBtn.Location = new System.Drawing.Point(30, 3);
+            this.resetBtn.Location = new System.Drawing.Point(30, 11);
             this.resetBtn.Name = "resetBtn";
             this.resetBtn.Size = new System.Drawing.Size(94, 34);
             this.resetBtn.TabIndex = 6;
@@ -268,7 +320,7 @@
             this.cancelBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
             this.cancelBtn.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cancelBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.cancelBtn.Location = new System.Drawing.Point(30, 100);
+            this.cancelBtn.Location = new System.Drawing.Point(30, 101);
             this.cancelBtn.Name = "cancelBtn";
             this.cancelBtn.Size = new System.Drawing.Size(94, 34);
             this.cancelBtn.TabIndex = 5;
@@ -283,11 +335,40 @@
             this.guna2Panel1.Controls.Add(this.displayContainer);
             this.guna2Panel1.Controls.Add(this.buttonContainer);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel1.Location = new System.Drawing.Point(10, 359);
+            this.guna2Panel1.Location = new System.Drawing.Point(10, 362);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Padding = new System.Windows.Forms.Padding(12, 10, 12, 10);
-            this.guna2Panel1.Size = new System.Drawing.Size(527, 158);
+            this.guna2Panel1.Size = new System.Drawing.Size(527, 159);
             this.guna2Panel1.TabIndex = 5;
+            // 
+            // guna2ComboBox1
+            // 
+            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ComboBox1.BorderRadius = 5;
+            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.guna2ComboBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
+            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.guna2ComboBox1.ItemHeight = 30;
+            this.guna2ComboBox1.Location = new System.Drawing.Point(147, 96);
+            this.guna2ComboBox1.Name = "guna2ComboBox1";
+            this.guna2ComboBox1.Size = new System.Drawing.Size(218, 36);
+            this.guna2ComboBox1.TabIndex = 11;
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.AutoSize = false;
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(12, 95);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(129, 37);
+            this.guna2HtmlLabel2.TabIndex = 10;
+            this.guna2HtmlLabel2.Text = "Language";
             // 
             // themeCB
             // 
@@ -301,7 +382,7 @@
             this.themeCB.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.themeCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.themeCB.ItemHeight = 30;
-            this.themeCB.Location = new System.Drawing.Point(132, 50);
+            this.themeCB.Location = new System.Drawing.Point(147, 50);
             this.themeCB.Name = "themeCB";
             this.themeCB.Size = new System.Drawing.Size(218, 36);
             this.themeCB.TabIndex = 9;
@@ -331,87 +412,6 @@
             this.displayContainer.TabIndex = 6;
             this.displayContainer.Text = "DISPLAY";
             // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.AutoSize = false;
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(12, 95);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(89, 37);
-            this.guna2HtmlLabel2.TabIndex = 10;
-            this.guna2HtmlLabel2.Text = "Language";
-            // 
-            // guna2ComboBox1
-            // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderRadius = 5;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(132, 96);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(218, 36);
-            this.guna2ComboBox1.TabIndex = 11;
-            // 
-            // picOutputTB
-            // 
-            this.picOutputTB.BorderRadius = 5;
-            this.picOutputTB.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.picOutputTB.DefaultText = "";
-            this.picOutputTB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.picOutputTB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.picOutputTB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.picOutputTB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.picOutputTB.Dock = System.Windows.Forms.DockStyle.Top;
-            this.picOutputTB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.picOutputTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.picOutputTB.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.picOutputTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.picOutputTB.IconRight = ((System.Drawing.Image)(resources.GetObject("picOutputTB.IconRight")));
-            this.picOutputTB.IconRightOffset = new System.Drawing.Point(5, 0);
-            this.picOutputTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.picOutputTB.Location = new System.Drawing.Point(12, 141);
-            this.picOutputTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.picOutputTB.Name = "picOutputTB";
-            this.picOutputTB.PasswordChar = '\0';
-            this.picOutputTB.PlaceholderText = "";
-            this.picOutputTB.SelectedText = "";
-            this.picOutputTB.Size = new System.Drawing.Size(503, 35);
-            this.picOutputTB.TabIndex = 9;
-            // 
-            // qrOutputTB
-            // 
-            this.qrOutputTB.BorderRadius = 5;
-            this.qrOutputTB.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.qrOutputTB.DefaultText = "";
-            this.qrOutputTB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.qrOutputTB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.qrOutputTB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.qrOutputTB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.qrOutputTB.Dock = System.Windows.Forms.DockStyle.Top;
-            this.qrOutputTB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.qrOutputTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.qrOutputTB.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.qrOutputTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.qrOutputTB.IconRight = ((System.Drawing.Image)(resources.GetObject("qrOutputTB.IconRight")));
-            this.qrOutputTB.IconRightOffset = new System.Drawing.Point(5, 0);
-            this.qrOutputTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.qrOutputTB.Location = new System.Drawing.Point(12, 71);
-            this.qrOutputTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.qrOutputTB.Name = "qrOutputTB";
-            this.qrOutputTB.PasswordChar = '\0';
-            this.qrOutputTB.PlaceholderText = "";
-            this.qrOutputTB.SelectedText = "";
-            this.qrOutputTB.Size = new System.Drawing.Size(503, 35);
-            this.qrOutputTB.TabIndex = 10;
-            // 
             // settingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -427,7 +427,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "settingForm";
-            this.Padding = new System.Windows.Forms.Padding(10, 0, 10, 40);
+            this.Padding = new System.Windows.Forms.Padding(10, 0, 10, 20);
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "SettingForm";
