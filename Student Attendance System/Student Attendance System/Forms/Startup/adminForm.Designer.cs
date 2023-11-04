@@ -38,6 +38,7 @@
             this.logsBtn = new Guna.UI2.WinForms.Guna2Button();
             this.header = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.mainPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.viewStaffBtn = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -64,9 +65,9 @@
             this.studentBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
             this.studentBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studentBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.studentBtn.Location = new System.Drawing.Point(181, 3);
+            this.studentBtn.Location = new System.Drawing.Point(176, 3);
             this.studentBtn.Name = "studentBtn";
-            this.studentBtn.Size = new System.Drawing.Size(167, 35);
+            this.studentBtn.Size = new System.Drawing.Size(161, 60);
             this.studentBtn.TabIndex = 0;
             this.studentBtn.Text = "VIEW STUDENTS";
             this.studentBtn.Click += new System.EventHandler(this.studentBtn_Click);
@@ -83,9 +84,9 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 27.80952F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 72.19048F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(547, 525);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(705, 700);
             this.tableLayoutPanel1.TabIndex = 5;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -94,29 +95,30 @@
             this.guna2Panel1.Controls.Add(this.tableLayoutPanel2);
             this.guna2Panel1.Controls.Add(this.header);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel1.Location = new System.Drawing.Point(8, 3);
+            this.guna2Panel1.Location = new System.Drawing.Point(10, 3);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(530, 139);
+            this.guna2Panel1.Size = new System.Drawing.Size(684, 134);
             this.guna2Panel1.TabIndex = 5;
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.ColumnCount = 5;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.020408F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.65306F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.65306F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.65306F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 1.020408F));
+            this.tableLayoutPanel2.ColumnCount = 6;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.9999998F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.5F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.5F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.5F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.5F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 0.9999998F));
             this.tableLayoutPanel2.Controls.Add(this.studentBtn, 2, 0);
-            this.tableLayoutPanel2.Controls.Add(this.staffBtn, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.viewStaffBtn, 3, 0);
+            this.tableLayoutPanel2.Controls.Add(this.staffBtn, 4, 0);
             this.tableLayoutPanel2.Controls.Add(this.logsBtn, 1, 0);
-            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 70);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 68);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(530, 69);
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(684, 66);
             this.tableLayoutPanel2.TabIndex = 5;
             // 
             // staffBtn
@@ -130,9 +132,9 @@
             this.staffBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
             this.staffBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.staffBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.staffBtn.Location = new System.Drawing.Point(354, 3);
+            this.staffBtn.Location = new System.Drawing.Point(510, 3);
             this.staffBtn.Name = "staffBtn";
-            this.staffBtn.Size = new System.Drawing.Size(167, 35);
+            this.staffBtn.Size = new System.Drawing.Size(161, 60);
             this.staffBtn.TabIndex = 1;
             this.staffBtn.Text = "ADD STAFF";
             this.staffBtn.Click += new System.EventHandler(this.staffBtn_Click);
@@ -148,9 +150,9 @@
             this.logsBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
             this.logsBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logsBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.logsBtn.Location = new System.Drawing.Point(8, 3);
+            this.logsBtn.Location = new System.Drawing.Point(9, 3);
             this.logsBtn.Name = "logsBtn";
-            this.logsBtn.Size = new System.Drawing.Size(167, 35);
+            this.logsBtn.Size = new System.Drawing.Size(161, 60);
             this.logsBtn.TabIndex = 2;
             this.logsBtn.Text = "VIEW LOGS";
             this.logsBtn.Click += new System.EventHandler(this.logsBtn_Click);
@@ -167,7 +169,7 @@
             this.header.Margin = new System.Windows.Forms.Padding(0);
             this.header.Name = "header";
             this.header.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
-            this.header.Size = new System.Drawing.Size(530, 68);
+            this.header.Size = new System.Drawing.Size(684, 68);
             this.header.TabIndex = 4;
             this.header.Text = "ADMIN";
             this.header.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
@@ -175,11 +177,29 @@
             // mainPanel
             // 
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainPanel.Location = new System.Drawing.Point(8, 148);
+            this.mainPanel.Location = new System.Drawing.Point(10, 143);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(530, 374);
+            this.mainPanel.Size = new System.Drawing.Size(684, 554);
             this.mainPanel.TabIndex = 6;
             this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
+            // 
+            // viewStaffBtn
+            // 
+            this.viewStaffBtn.BorderRadius = 5;
+            this.viewStaffBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.viewStaffBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.viewStaffBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.viewStaffBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.viewStaffBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.viewStaffBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
+            this.viewStaffBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewStaffBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
+            this.viewStaffBtn.Location = new System.Drawing.Point(343, 3);
+            this.viewStaffBtn.Name = "viewStaffBtn";
+            this.viewStaffBtn.Size = new System.Drawing.Size(161, 60);
+            this.viewStaffBtn.TabIndex = 1;
+            this.viewStaffBtn.Text = "VIEW STAFF";
+            this.viewStaffBtn.Click += new System.EventHandler(this.viewStaffBtn_Click);
             // 
             // adminForm
             // 
@@ -187,7 +207,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(547, 525);
+            this.ClientSize = new System.Drawing.Size(705, 700);
             this.ControlBox = false;
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -218,5 +238,6 @@
         private Guna.UI2.WinForms.Guna2Button logsBtn;
         private Guna.UI2.WinForms.Guna2HtmlLabel header;
         private Guna.UI2.WinForms.Guna2Panel mainPanel;
+        private Guna.UI2.WinForms.Guna2Button viewStaffBtn;
     }
 }

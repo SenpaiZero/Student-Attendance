@@ -17,6 +17,7 @@ namespace Student_Attendance_System
 
         // Only one staff can login so this is static
         public static string Name { get; set; }
+        public static string Admin { get; set; }
         public static bool isLogin { get; set; }
 
         public loginHelper()
@@ -34,6 +35,7 @@ namespace Student_Attendance_System
                 Properties.Settings.Default.stayLogin = true;
                 Properties.Settings.Default.loginStaffID = staffID;
                 Properties.Settings.Default.loginPassword = Password;
+                Properties.Settings.Default.loginAdmin = Admin;
                 Properties.Settings.Default.Save();
             }
             return true;
@@ -43,7 +45,8 @@ namespace Student_Attendance_System
         {
             try
             {
-                databaseHelper.con.Open();
+                if(databaseHelper.con.State != System.Data.ConnectionState.Open)
+                    databaseHelper.con.Open();
 
                 databaseHelper db = new databaseHelper();
                 db.cmd = new System.Data.SqlClient.SqlCommand
@@ -54,45 +57,17 @@ namespace Student_Attendance_System
 
                 if (db.dr.Read())
                 {
-                    if(startupRunClass.isFirst == true)
-                    {
-                        MessageForm msgf = new MessageForm()
-                        {
-                            header = "Woo hoo!!",
-                            message = "You successfully logged in.",
-                            messageType = "Success",
-                            isYesNo = false,
-
-                        };
-                        msgf.ShowDialog();
-                    }
-                    else
-                    {
-                        startupRunClass.isFirst = true;
-                    }
-
                     Name = db.dr.GetString(1);
-                    databaseHelper.con.Close();
+                    Admin = db.dr.GetString(10);
                     isLogin = true;
                     return true;
                 }
+                databaseHelper.con.Close();
             }
             catch (Exception e)
             {
-
                 MessageBox.Show(e.Message);
             }
-
-            databaseHelper.con.Close();
-            MessageForm msg = new MessageForm()
-            {
-                header = "Oooops!!",
-                message = "You entered a wrong login information.",
-                messageType = "Failed",
-                isYesNo = false,
-
-            };
-            msg.ShowDialog();
             return false;
         }
 
@@ -111,10 +86,12 @@ namespace Student_Attendance_System
                 Properties.Settings.Default.stayLogin = false;
                 Properties.Settings.Default.loginStaffID = "";
                 Properties.Settings.Default.loginPassword = "";
+                Properties.Settings.Default.loginAdmin = "";
                 Properties.Settings.Default.Save();
                 Name = "LOGIN";
                 staffID = "";
                 Password = "";
+                Admin = "";
                 isLogin = false;
             }
         }

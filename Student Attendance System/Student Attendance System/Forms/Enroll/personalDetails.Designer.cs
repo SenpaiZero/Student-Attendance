@@ -68,11 +68,11 @@
             this.tableLayoutPanel1.CausesValidation = false;
             this.tableLayoutPanel1.ColumnCount = 6;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
             this.tableLayoutPanel1.Controls.Add(this.guna2TextBox4, 0, 9);
             this.tableLayoutPanel1.Controls.Add(this.guna2TextBox3, 0, 7);
             this.tableLayoutPanel1.Controls.Add(this.guna2HtmlLabel3, 0, 4);
@@ -84,7 +84,7 @@
             this.tableLayoutPanel1.Controls.Add(this.surnameLbl, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.firstNameLbl, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.guna2DateTimePicker1, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.guna2HtmlLabel2, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.guna2HtmlLabel2, 4, 2);
             this.tableLayoutPanel1.Controls.Add(this.guna2TextBox2, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.guna2HtmlLabel4, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.guna2HtmlLabel6, 4, 4);
@@ -92,23 +92,23 @@
             this.tableLayoutPanel1.Controls.Add(this.guna2HtmlLabel5, 4, 6);
             this.tableLayoutPanel1.Controls.Add(this.genderCB, 4, 7);
             this.tableLayoutPanel1.Controls.Add(this.guna2HtmlLabel7, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.guna2TextBox1, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.guna2TextBox1, 4, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(10, 10);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 10;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(527, 455);
+            this.tableLayoutPanel1.RowCount = 11;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(685, 625);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.SizeChanged += new System.EventHandler(this.tableLayoutPanel1_SizeChanged);
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
@@ -132,7 +132,7 @@
             this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox4.IconRightOffset = new System.Drawing.Point(5, 0);
             this.guna2TextBox4.IconRightSize = new System.Drawing.Size(25, 25);
-            this.guna2TextBox4.Location = new System.Drawing.Point(3, 409);
+            this.guna2TextBox4.Location = new System.Drawing.Point(3, 413);
             this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox4.MaximumSize = new System.Drawing.Size(1000, 60);
             this.guna2TextBox4.MinimumSize = new System.Drawing.Size(10, 10);
@@ -140,7 +140,7 @@
             this.guna2TextBox4.PasswordChar = '\0';
             this.guna2TextBox4.PlaceholderText = "";
             this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.Size = new System.Drawing.Size(342, 42);
+            this.guna2TextBox4.Size = new System.Drawing.Size(450, 48);
             this.guna2TextBox4.TabIndex = 31;
             // 
             // guna2TextBox3
@@ -161,7 +161,7 @@
             this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox3.IconRightOffset = new System.Drawing.Point(5, 0);
             this.guna2TextBox3.IconRightSize = new System.Drawing.Size(25, 25);
-            this.guna2TextBox3.Location = new System.Drawing.Point(3, 319);
+            this.guna2TextBox3.Location = new System.Drawing.Point(3, 320);
             this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox3.MaximumSize = new System.Drawing.Size(1000, 60);
             this.guna2TextBox3.MinimumSize = new System.Drawing.Size(10, 10);
@@ -169,7 +169,7 @@
             this.guna2TextBox3.PasswordChar = '\0';
             this.guna2TextBox3.PlaceholderText = "";
             this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(342, 37);
+            this.guna2TextBox3.Size = new System.Drawing.Size(450, 48);
             this.guna2TextBox3.TabIndex = 24;
             // 
             // guna2HtmlLabel3
@@ -177,12 +177,12 @@
             this.guna2HtmlLabel3.AutoSize = false;
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
             this.tableLayoutPanel1.SetColumnSpan(this.guna2HtmlLabel3, 2);
-            this.guna2HtmlLabel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2HtmlLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(3, 194);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(3, 189);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(168, 28);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(222, 31);
             this.guna2HtmlLabel3.TabIndex = 21;
             this.guna2HtmlLabel3.Text = "EMAIL";
             this.guna2HtmlLabel3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -192,12 +192,12 @@
             this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
             this.tableLayoutPanel1.SetColumnSpan(this.guna2HtmlLabel1, 2);
-            this.guna2HtmlLabel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2HtmlLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(3, 104);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(3, 96);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(168, 28);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(222, 31);
             this.guna2HtmlLabel1.TabIndex = 18;
             this.guna2HtmlLabel1.Text = "BIRTHDAY";
             this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -220,7 +220,7 @@
             this.firstNameTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.firstNameTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.firstNameTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.firstNameTB.Location = new System.Drawing.Point(3, 49);
+            this.firstNameTB.Location = new System.Drawing.Point(3, 41);
             this.firstNameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.firstNameTB.MaximumSize = new System.Drawing.Size(1000, 60);
             this.firstNameTB.MinimumSize = new System.Drawing.Size(10, 10);
@@ -228,7 +228,7 @@
             this.firstNameTB.PasswordChar = '\0';
             this.firstNameTB.PlaceholderText = "";
             this.firstNameTB.SelectedText = "";
-            this.firstNameTB.Size = new System.Drawing.Size(168, 37);
+            this.firstNameTB.Size = new System.Drawing.Size(222, 48);
             this.firstNameTB.TabIndex = 14;
             // 
             // middleNameTB
@@ -249,7 +249,7 @@
             this.middleNameTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.middleNameTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.middleNameTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.middleNameTB.Location = new System.Drawing.Point(351, 49);
+            this.middleNameTB.Location = new System.Drawing.Point(459, 41);
             this.middleNameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.middleNameTB.MaximumSize = new System.Drawing.Size(1000, 60);
             this.middleNameTB.MinimumSize = new System.Drawing.Size(10, 10);
@@ -257,7 +257,7 @@
             this.middleNameTB.PasswordChar = '\0';
             this.middleNameTB.PlaceholderText = "";
             this.middleNameTB.SelectedText = "";
-            this.middleNameTB.Size = new System.Drawing.Size(173, 37);
+            this.middleNameTB.Size = new System.Drawing.Size(223, 48);
             this.middleNameTB.TabIndex = 16;
             // 
             // surnameTB
@@ -278,7 +278,7 @@
             this.surnameTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.surnameTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.surnameTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.surnameTB.Location = new System.Drawing.Point(177, 49);
+            this.surnameTB.Location = new System.Drawing.Point(231, 41);
             this.surnameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.surnameTB.MaximumSize = new System.Drawing.Size(1000, 60);
             this.surnameTB.MinimumSize = new System.Drawing.Size(10, 10);
@@ -286,7 +286,7 @@
             this.surnameTB.PasswordChar = '\0';
             this.surnameTB.PlaceholderText = "";
             this.surnameTB.SelectedText = "";
-            this.surnameTB.Size = new System.Drawing.Size(168, 37);
+            this.surnameTB.Size = new System.Drawing.Size(222, 48);
             this.surnameTB.TabIndex = 16;
             // 
             // middleNameLbl
@@ -294,12 +294,12 @@
             this.middleNameLbl.AutoSize = false;
             this.middleNameLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
             this.tableLayoutPanel1.SetColumnSpan(this.middleNameLbl, 2);
-            this.middleNameLbl.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.middleNameLbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.middleNameLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.middleNameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.middleNameLbl.Location = new System.Drawing.Point(351, 14);
+            this.middleNameLbl.Location = new System.Drawing.Point(459, 3);
             this.middleNameLbl.Name = "middleNameLbl";
-            this.middleNameLbl.Size = new System.Drawing.Size(173, 28);
+            this.middleNameLbl.Size = new System.Drawing.Size(223, 31);
             this.middleNameLbl.TabIndex = 15;
             this.middleNameLbl.Text = "MIDDLE NAME";
             this.middleNameLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -309,12 +309,12 @@
             this.surnameLbl.AutoSize = false;
             this.surnameLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
             this.tableLayoutPanel1.SetColumnSpan(this.surnameLbl, 2);
-            this.surnameLbl.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.surnameLbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.surnameLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.surnameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.surnameLbl.Location = new System.Drawing.Point(177, 14);
+            this.surnameLbl.Location = new System.Drawing.Point(231, 3);
             this.surnameLbl.Name = "surnameLbl";
-            this.surnameLbl.Size = new System.Drawing.Size(168, 28);
+            this.surnameLbl.Size = new System.Drawing.Size(222, 31);
             this.surnameLbl.TabIndex = 15;
             this.surnameLbl.Text = "LAST NAME";
             this.surnameLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -324,12 +324,12 @@
             this.firstNameLbl.AutoSize = false;
             this.firstNameLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
             this.tableLayoutPanel1.SetColumnSpan(this.firstNameLbl, 2);
-            this.firstNameLbl.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.firstNameLbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.firstNameLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstNameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.firstNameLbl.Location = new System.Drawing.Point(3, 14);
+            this.firstNameLbl.Location = new System.Drawing.Point(3, 3);
             this.firstNameLbl.Name = "firstNameLbl";
-            this.firstNameLbl.Size = new System.Drawing.Size(168, 28);
+            this.firstNameLbl.Size = new System.Drawing.Size(222, 31);
             this.firstNameLbl.TabIndex = 13;
             this.firstNameLbl.Text = "FIRST NAME";
             this.firstNameLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -344,12 +344,12 @@
             this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
             this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(3, 138);
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(3, 133);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MaximumSize = new System.Drawing.Size(1000, 50);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1963, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(255, 39);
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(336, 50);
             this.guna2DateTimePicker1.TabIndex = 17;
             this.guna2DateTimePicker1.Value = new System.DateTime(2023, 11, 2, 9, 13, 24, 172);
             // 
@@ -358,12 +358,12 @@
             this.guna2HtmlLabel2.AutoSize = false;
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
             this.tableLayoutPanel1.SetColumnSpan(this.guna2HtmlLabel2, 2);
-            this.guna2HtmlLabel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2HtmlLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(264, 104);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(459, 96);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(168, 28);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(223, 31);
             this.guna2HtmlLabel2.TabIndex = 19;
             this.guna2HtmlLabel2.Text = "AGE";
             this.guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -386,7 +386,7 @@
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.IconRightOffset = new System.Drawing.Point(5, 0);
             this.guna2TextBox2.IconRightSize = new System.Drawing.Size(25, 25);
-            this.guna2TextBox2.Location = new System.Drawing.Point(3, 229);
+            this.guna2TextBox2.Location = new System.Drawing.Point(3, 227);
             this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox2.MaximumSize = new System.Drawing.Size(1000, 60);
             this.guna2TextBox2.MinimumSize = new System.Drawing.Size(10, 10);
@@ -394,7 +394,7 @@
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderText = "";
             this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(342, 37);
+            this.guna2TextBox2.Size = new System.Drawing.Size(450, 48);
             this.guna2TextBox2.TabIndex = 22;
             // 
             // guna2HtmlLabel4
@@ -402,12 +402,12 @@
             this.guna2HtmlLabel4.AutoSize = false;
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
             this.tableLayoutPanel1.SetColumnSpan(this.guna2HtmlLabel4, 2);
-            this.guna2HtmlLabel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2HtmlLabel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(3, 284);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(3, 282);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(168, 28);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(222, 31);
             this.guna2HtmlLabel4.TabIndex = 23;
             this.guna2HtmlLabel4.Text = "ADDRESS";
             this.guna2HtmlLabel4.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -417,12 +417,12 @@
             this.guna2HtmlLabel6.AutoSize = false;
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
             this.tableLayoutPanel1.SetColumnSpan(this.guna2HtmlLabel6, 2);
-            this.guna2HtmlLabel6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2HtmlLabel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(351, 194);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(459, 189);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(173, 28);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(223, 31);
             this.guna2HtmlLabel6.TabIndex = 27;
             this.guna2HtmlLabel6.Text = "RELIGION";
             this.guna2HtmlLabel6.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -438,14 +438,14 @@
             this.religionCB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
             this.religionCB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.religionCB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.religionCB.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.religionCB.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.religionCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.religionCB.ItemHeight = 30;
-            this.religionCB.Location = new System.Drawing.Point(351, 228);
+            this.religionCB.Location = new System.Drawing.Point(459, 226);
             this.religionCB.MaximumSize = new System.Drawing.Size(1000, 0);
             this.religionCB.MinimumSize = new System.Drawing.Size(10, 0);
             this.religionCB.Name = "religionCB";
-            this.religionCB.Size = new System.Drawing.Size(173, 36);
+            this.religionCB.Size = new System.Drawing.Size(223, 36);
             this.religionCB.TabIndex = 28;
             // 
             // guna2HtmlLabel5
@@ -453,12 +453,12 @@
             this.guna2HtmlLabel5.AutoSize = false;
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
             this.tableLayoutPanel1.SetColumnSpan(this.guna2HtmlLabel5, 2);
-            this.guna2HtmlLabel5.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2HtmlLabel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(351, 284);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(459, 282);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(173, 28);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(223, 31);
             this.guna2HtmlLabel5.TabIndex = 25;
             this.guna2HtmlLabel5.Text = "GENDER";
             this.guna2HtmlLabel5.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -477,11 +477,11 @@
             this.genderCB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.genderCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.genderCB.ItemHeight = 30;
-            this.genderCB.Location = new System.Drawing.Point(351, 318);
+            this.genderCB.Location = new System.Drawing.Point(459, 319);
             this.genderCB.MaximumSize = new System.Drawing.Size(1000, 0);
             this.genderCB.MinimumSize = new System.Drawing.Size(10, 0);
             this.genderCB.Name = "genderCB";
-            this.genderCB.Size = new System.Drawing.Size(173, 36);
+            this.genderCB.Size = new System.Drawing.Size(223, 36);
             this.genderCB.TabIndex = 29;
             // 
             // guna2HtmlLabel7
@@ -489,12 +489,12 @@
             this.guna2HtmlLabel7.AutoSize = false;
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
             this.tableLayoutPanel1.SetColumnSpan(this.guna2HtmlLabel7, 2);
-            this.guna2HtmlLabel7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2HtmlLabel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(3, 374);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(3, 375);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(168, 28);
+            this.guna2HtmlLabel7.Size = new System.Drawing.Size(222, 31);
             this.guna2HtmlLabel7.TabIndex = 30;
             this.guna2HtmlLabel7.Text = "PHONE";
             this.guna2HtmlLabel7.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -518,7 +518,7 @@
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.IconRightOffset = new System.Drawing.Point(5, 0);
             this.guna2TextBox1.IconRightSize = new System.Drawing.Size(25, 25);
-            this.guna2TextBox1.Location = new System.Drawing.Point(264, 139);
+            this.guna2TextBox1.Location = new System.Drawing.Point(459, 134);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox1.MaximumSize = new System.Drawing.Size(1000, 60);
             this.guna2TextBox1.MinimumSize = new System.Drawing.Size(10, 10);
@@ -526,7 +526,7 @@
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(168, 37);
+            this.guna2TextBox1.Size = new System.Drawing.Size(223, 48);
             this.guna2TextBox1.TabIndex = 20;
             // 
             // personalDetails
@@ -534,7 +534,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(547, 475);
+            this.ClientSize = new System.Drawing.Size(705, 645);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;

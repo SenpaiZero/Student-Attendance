@@ -97,7 +97,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(547, 475);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(705, 645);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pic
@@ -112,7 +112,7 @@
             this.pic.Location = new System.Drawing.Point(13, 13);
             this.pic.Name = "pic";
             this.tableLayoutPanel1.SetRowSpan(this.pic, 4);
-            this.pic.Size = new System.Drawing.Size(202, 174);
+            this.pic.Size = new System.Drawing.Size(266, 242);
             this.pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic.TabIndex = 0;
             this.pic.TabStop = false;
@@ -130,9 +130,9 @@
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.guna2HtmlLabel4.IsContextMenuEnabled = false;
             this.guna2HtmlLabel4.IsSelectionEnabled = false;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(13, 204);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(13, 289);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(98, 28);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(130, 28);
             this.guna2HtmlLabel4.TabIndex = 38;
             this.guna2HtmlLabel4.Text = "ID NUM";
             this.guna2HtmlLabel4.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -154,13 +154,13 @@
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.IconRightOffset = new System.Drawing.Point(5, 0);
             this.guna2TextBox2.IconRightSize = new System.Drawing.Size(25, 25);
-            this.guna2TextBox2.Location = new System.Drawing.Point(13, 239);
+            this.guna2TextBox2.Location = new System.Drawing.Point(13, 324);
             this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderText = "";
             this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(202, 37);
+            this.guna2TextBox2.Size = new System.Drawing.Size(266, 54);
             this.guna2TextBox2.TabIndex = 39;
             // 
             // guna2TextBox1
@@ -180,13 +180,13 @@
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.IconRightOffset = new System.Drawing.Point(5, 0);
             this.guna2TextBox1.IconRightSize = new System.Drawing.Size(25, 25);
-            this.guna2TextBox1.Location = new System.Drawing.Point(273, 59);
+            this.guna2TextBox1.Location = new System.Drawing.Point(353, 76);
             this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "";
             this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(202, 37);
+            this.guna2TextBox1.Size = new System.Drawing.Size(266, 54);
             this.guna2TextBox1.TabIndex = 19;
             // 
             // yearLbl
@@ -200,9 +200,9 @@
             this.yearLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.yearLbl.IsContextMenuEnabled = false;
             this.yearLbl.IsSelectionEnabled = false;
-            this.yearLbl.Location = new System.Drawing.Point(273, 24);
+            this.yearLbl.Location = new System.Drawing.Point(353, 41);
             this.yearLbl.Name = "yearLbl";
-            this.yearLbl.Size = new System.Drawing.Size(98, 28);
+            this.yearLbl.Size = new System.Drawing.Size(130, 28);
             this.yearLbl.TabIndex = 17;
             this.yearLbl.Text = "YEAR";
             this.yearLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -218,9 +218,9 @@
             this.sectionlbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.sectionlbl.IsContextMenuEnabled = false;
             this.sectionlbl.IsSelectionEnabled = false;
-            this.sectionlbl.Location = new System.Drawing.Point(273, 114);
+            this.sectionlbl.Location = new System.Drawing.Point(353, 165);
             this.sectionlbl.Name = "sectionlbl";
-            this.sectionlbl.Size = new System.Drawing.Size(98, 28);
+            this.sectionlbl.Size = new System.Drawing.Size(130, 28);
             this.sectionlbl.TabIndex = 16;
             this.sectionlbl.Text = "SECTION";
             this.sectionlbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -242,13 +242,13 @@
             this.firstNameTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.firstNameTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.firstNameTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.firstNameTB.Location = new System.Drawing.Point(273, 149);
+            this.firstNameTB.Location = new System.Drawing.Point(353, 200);
             this.firstNameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.firstNameTB.Name = "firstNameTB";
             this.firstNameTB.PasswordChar = '\0';
             this.firstNameTB.PlaceholderText = "";
             this.firstNameTB.SelectedText = "";
-            this.firstNameTB.Size = new System.Drawing.Size(202, 37);
+            this.firstNameTB.Size = new System.Drawing.Size(266, 54);
             this.firstNameTB.TabIndex = 18;
             // 
             // guna2HtmlLabel1
@@ -262,9 +262,9 @@
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.guna2HtmlLabel1.IsContextMenuEnabled = false;
             this.guna2HtmlLabel1.IsSelectionEnabled = false;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(13, 294);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(13, 413);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(150, 28);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(198, 28);
             this.guna2HtmlLabel1.TabIndex = 36;
             this.guna2HtmlLabel1.Text = "STUDENT TYPE";
             this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
@@ -283,11 +283,11 @@
             this.religionCB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.religionCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.religionCB.ItemHeight = 30;
-            this.religionCB.Location = new System.Drawing.Point(13, 328);
+            this.religionCB.Location = new System.Drawing.Point(13, 447);
             this.religionCB.MaximumSize = new System.Drawing.Size(1000, 0);
             this.religionCB.MinimumSize = new System.Drawing.Size(10, 0);
             this.religionCB.Name = "religionCB";
-            this.religionCB.Size = new System.Drawing.Size(202, 36);
+            this.religionCB.Size = new System.Drawing.Size(266, 36);
             this.religionCB.TabIndex = 37;
             // 
             // guna2HtmlLabel2
@@ -301,9 +301,9 @@
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.guna2HtmlLabel2.IsContextMenuEnabled = false;
             this.guna2HtmlLabel2.IsSelectionEnabled = false;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(221, 204);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(285, 289);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(313, 28);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(407, 28);
             this.guna2HtmlLabel2.TabIndex = 40;
             this.guna2HtmlLabel2.Text = "ILLNESS OR ALLERGIES";
             this.guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -323,7 +323,7 @@
             this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.Location = new System.Drawing.Point(273, 239);
+            this.guna2TextBox3.Location = new System.Drawing.Point(353, 324);
             this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2TextBox3.Multiline = true;
             this.guna2TextBox3.Name = "guna2TextBox3";
@@ -331,7 +331,7 @@
             this.guna2TextBox3.PlaceholderText = "";
             this.tableLayoutPanel1.SetRowSpan(this.guna2TextBox3, 3);
             this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.Size = new System.Drawing.Size(202, 127);
+            this.guna2TextBox3.Size = new System.Drawing.Size(266, 178);
             this.guna2TextBox3.TabIndex = 41;
             // 
             // moreDetailsForm
@@ -339,7 +339,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(547, 475);
+            this.ClientSize = new System.Drawing.Size(705, 645);
             this.ControlBox = false;
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -62,7 +63,7 @@ namespace Student_Attendance_System.Startup
 
         private void staffBtn_Click(object sender, EventArgs e)
         {
-            if (loginHelper.Name.ToUpper() != "ADMIN")
+            if (loginHelper.Admin.ToUpper() != "ADMIN")
             {
                 MessageForm msg = new MessageForm()
                 {
@@ -75,7 +76,24 @@ namespace Student_Attendance_System.Startup
                 return;
             }
 
-            // show 
+            addStaff staff = new addStaff();
+            pageHelper.loadAdminForm(staff, mainPanel); 
+        }
+
+        private void viewStaffBtn_Click(object sender, EventArgs e)
+        {
+            if (loginHelper.Admin.ToUpper() != "ADMIN")
+            {
+                MessageForm msg = new MessageForm()
+                {
+                    messageType = "Information",
+                    header = "Ooooops!",
+                    message = "You do not have permission to access and use this page",
+                    isYesNo = false
+                };
+                msg.ShowDialog();
+                return;
+            }
         }
     }
 }

@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.mainPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.stayLoginCB = new Guna.UI2.WinForms.Guna2CheckBox();
             this.cancelBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -40,7 +40,9 @@
             this.staffIdTB = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Panel1.SuspendLayout();
+            this.loginLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.mainPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -52,24 +54,26 @@
             this.guna2BorderlessForm1.ResizeForm = false;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
-            // guna2Panel1
+            // mainPanel
             // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.guna2Panel1.Controls.Add(this.stayLoginCB);
-            this.guna2Panel1.Controls.Add(this.cancelBtn);
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel2);
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel3);
-            this.guna2Panel1.Controls.Add(this.loginBtn);
-            this.guna2Panel1.Controls.Add(this.passwordTB);
-            this.guna2Panel1.Controls.Add(this.staffIdTB);
-            this.guna2Panel1.Controls.Add(this.guna2HtmlLabel1);
-            this.guna2Panel1.Location = new System.Drawing.Point(12, 12);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(291, 375);
-            this.guna2Panel1.TabIndex = 0;
+            this.mainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.mainPanel.Controls.Add(this.stayLoginCB);
+            this.mainPanel.Controls.Add(this.cancelBtn);
+            this.mainPanel.Controls.Add(this.guna2HtmlLabel2);
+            this.mainPanel.Controls.Add(this.guna2HtmlLabel3);
+            this.mainPanel.Controls.Add(this.loginBtn);
+            this.mainPanel.Controls.Add(this.passwordTB);
+            this.mainPanel.Controls.Add(this.staffIdTB);
+            this.mainPanel.Controls.Add(this.guna2HtmlLabel1);
+            this.mainPanel.Controls.Add(this.loginLbl);
+            this.mainPanel.Location = new System.Drawing.Point(12, 12);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Size = new System.Drawing.Size(291, 375);
+            this.mainPanel.TabIndex = 0;
             // 
             // stayLoginCB
             // 
+            this.stayLoginCB.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.stayLoginCB.AutoSize = true;
             this.stayLoginCB.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
             this.stayLoginCB.CheckedState.BorderRadius = 0;
@@ -90,6 +94,7 @@
             // 
             // cancelBtn
             // 
+            this.cancelBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.cancelBtn.BorderRadius = 5;
             this.cancelBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cancelBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -132,6 +137,7 @@
             // 
             // loginBtn
             // 
+            this.loginBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.loginBtn.BorderRadius = 10;
             this.loginBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.loginBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -214,7 +220,29 @@
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 25;
-            this.guna2Elipse1.TargetControl = this.guna2Panel1;
+            this.guna2Elipse1.TargetControl = this.mainPanel;
+            // 
+            // loginLbl
+            // 
+            this.loginLbl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.loginLbl.AutoSize = false;
+            this.loginLbl.AutoSizeHeightOnly = true;
+            this.loginLbl.BackColor = System.Drawing.Color.Transparent;
+            this.loginLbl.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.loginLbl.Location = new System.Drawing.Point(33, 268);
+            this.loginLbl.Name = "loginLbl";
+            this.loginLbl.Size = new System.Drawing.Size(229, 24);
+            this.loginLbl.TabIndex = 9;
+            this.loginLbl.Text = "test";
+            this.loginLbl.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
+            this.loginLbl.Visible = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 200;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // loginForm
             // 
@@ -223,7 +251,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(25)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(316, 399);
             this.ControlBox = false;
-            this.Controls.Add(this.guna2Panel1);
+            this.Controls.Add(this.mainPanel);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "loginForm";
@@ -232,8 +260,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "loginForm";
             this.Load += new System.EventHandler(this.loginForm_Load);
-            this.guna2Panel1.ResumeLayout(false);
-            this.guna2Panel1.PerformLayout();
+            this.mainPanel.ResumeLayout(false);
+            this.mainPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -241,7 +269,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel mainPanel;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2Button loginBtn;
         private Guna.UI2.WinForms.Guna2TextBox passwordTB;
@@ -251,5 +279,7 @@
         private Guna.UI2.WinForms.Guna2Button cancelBtn;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2CheckBox stayLoginCB;
+        private Guna.UI2.WinForms.Guna2HtmlLabel loginLbl;
+        private System.Windows.Forms.Timer timer1;
     }
 }

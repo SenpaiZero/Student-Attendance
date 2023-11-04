@@ -94,6 +94,12 @@
     <Compile Include="Classes\Helper\databaseHelper.cs" />
     <Compile Include="Classes\Helper\QrCodeHelper.cs" />
     <Compile Include="Classes\Helper\UIHelper.cs" />
+    <Compile Include="Forms\Admin\addStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin\addStaff.Designer.cs">
+      <DependentUpon>addStaff.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Admin\logsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,6 +135,12 @@
     </Compile>
     <Compile Include="Forms\Enroll\personalDetails.Designer.cs">
       <DependentUpon>personalDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Startup\blank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Startup\blank.Designer.cs">
+      <DependentUpon>blank.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\studentPictureForm.cs">
       <SubType>Form</SubType>
@@ -190,6 +202,9 @@
       <DependentUpon>studentForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Helper\validationHelper.cs" />
+    <EmbeddedResource Include="Forms\Admin\addStaff.resx">
+      <DependentUpon>addStaff.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Admin\logsForm.resx">
       <DependentUpon>logsForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -207,6 +222,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Enroll\personalDetails.resx">
       <DependentUpon>personalDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Startup\blank.resx">
+      <DependentUpon>blank.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\studentPictureForm.resx">
       <DependentUpon>studentPictureForm.cs</DependentUpon>
@@ -321,6 +339,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\open-folder-dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error ico.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

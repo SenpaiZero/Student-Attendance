@@ -1,5 +1,6 @@
 ﻿using Guna.UI2.WinForms;
 using Student_Attendance_System.Forms;
+using Student_Attendance_System.Forms.Startup;
 using Student_Attendance_System.Startup;
 using System;
 using System.Collections.Generic;
@@ -205,7 +206,12 @@ namespace Student_Attendance_System
             loginHelper login = new loginHelper();
             login.logout();
 
-            loginBtn.Text = loginHelper.Name;
+            if(loginHelper.Name == "LOGIN")
+            {
+                loginBtn.Text = "LOGIN";
+                pageHelper.loadForm(new blank(), mainPanel);
+                enebleBtn(null);
+            }
         }
 
         private void startupForm_Shown(object sender, EventArgs e)
@@ -264,7 +270,8 @@ namespace Student_Attendance_System
             attBtn.Enabled = true;
             settingBtn.Enabled = true;
 
-            disabledBtn.Enabled = false;
+            if(disabledBtn != null)
+                disabledBtn.Enabled = false;
         }
 
     }
