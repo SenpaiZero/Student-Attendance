@@ -134,6 +134,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "studentPictureForm";
             this.Padding = new System.Windows.Forms.Padding(10);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "studentPictureForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.studentPictureForm_FormClosing);
             this.Load += new System.EventHandler(this.studentPictureForm_Load);

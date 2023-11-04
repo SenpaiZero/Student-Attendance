@@ -34,11 +34,11 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.viewStaffBtn = new Guna.UI2.WinForms.Guna2Button();
             this.staffBtn = new Guna.UI2.WinForms.Guna2Button();
             this.logsBtn = new Guna.UI2.WinForms.Guna2Button();
             this.header = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.mainPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.viewStaffBtn = new Guna.UI2.WinForms.Guna2Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -121,6 +121,24 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(684, 66);
             this.tableLayoutPanel2.TabIndex = 5;
             // 
+            // viewStaffBtn
+            // 
+            this.viewStaffBtn.BorderRadius = 5;
+            this.viewStaffBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.viewStaffBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.viewStaffBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.viewStaffBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.viewStaffBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.viewStaffBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
+            this.viewStaffBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewStaffBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
+            this.viewStaffBtn.Location = new System.Drawing.Point(343, 3);
+            this.viewStaffBtn.Name = "viewStaffBtn";
+            this.viewStaffBtn.Size = new System.Drawing.Size(161, 60);
+            this.viewStaffBtn.TabIndex = 1;
+            this.viewStaffBtn.Text = "VIEW STAFF";
+            this.viewStaffBtn.Click += new System.EventHandler(this.viewStaffBtn_Click);
+            // 
             // staffBtn
             // 
             this.staffBtn.BorderRadius = 5;
@@ -165,12 +183,15 @@
             this.header.Dock = System.Windows.Forms.DockStyle.Top;
             this.header.Font = new System.Drawing.Font("Segoe UI Variable Display", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.header.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.header.IsContextMenuEnabled = false;
+            this.header.IsSelectionEnabled = false;
             this.header.Location = new System.Drawing.Point(0, 0);
             this.header.Margin = new System.Windows.Forms.Padding(0);
             this.header.Name = "header";
             this.header.Padding = new System.Windows.Forms.Padding(0, 10, 0, 0);
             this.header.Size = new System.Drawing.Size(684, 68);
             this.header.TabIndex = 4;
+            this.header.TabStop = false;
             this.header.Text = "ADMIN";
             this.header.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -182,24 +203,6 @@
             this.mainPanel.Size = new System.Drawing.Size(684, 554);
             this.mainPanel.TabIndex = 6;
             this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
-            // 
-            // viewStaffBtn
-            // 
-            this.viewStaffBtn.BorderRadius = 5;
-            this.viewStaffBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.viewStaffBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.viewStaffBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.viewStaffBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.viewStaffBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.viewStaffBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
-            this.viewStaffBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewStaffBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.viewStaffBtn.Location = new System.Drawing.Point(343, 3);
-            this.viewStaffBtn.Name = "viewStaffBtn";
-            this.viewStaffBtn.Size = new System.Drawing.Size(161, 60);
-            this.viewStaffBtn.TabIndex = 1;
-            this.viewStaffBtn.Text = "VIEW STAFF";
-            this.viewStaffBtn.Click += new System.EventHandler(this.viewStaffBtn_Click);
             // 
             // adminForm
             // 

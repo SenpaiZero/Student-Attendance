@@ -220,10 +220,13 @@
             this.guna2HtmlLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.guna2HtmlLabel3.IsContextMenuEnabled = false;
+            this.guna2HtmlLabel3.IsSelectionEnabled = false;
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(13, 209);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(210, 35);
             this.guna2HtmlLabel3.TabIndex = 21;
+            this.guna2HtmlLabel3.TabStop = false;
             this.guna2HtmlLabel3.Text = "EMAIL";
             this.guna2HtmlLabel3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -235,10 +238,13 @@
             this.guna2HtmlLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.guna2HtmlLabel1.IsContextMenuEnabled = false;
+            this.guna2HtmlLabel1.IsSelectionEnabled = false;
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(13, 111);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(210, 35);
             this.guna2HtmlLabel1.TabIndex = 18;
+            this.guna2HtmlLabel1.TabStop = false;
             this.guna2HtmlLabel1.Text = "ID NUMBER";
             this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -343,10 +349,13 @@
             this.middleNameLbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.middleNameLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.middleNameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.middleNameLbl.IsContextMenuEnabled = false;
+            this.middleNameLbl.IsSelectionEnabled = false;
             this.middleNameLbl.Location = new System.Drawing.Point(445, 13);
             this.middleNameLbl.Name = "middleNameLbl";
             this.middleNameLbl.Size = new System.Drawing.Size(212, 35);
             this.middleNameLbl.TabIndex = 15;
+            this.middleNameLbl.TabStop = false;
             this.middleNameLbl.Text = "MIDDLE NAME";
             this.middleNameLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -358,10 +367,13 @@
             this.surnameLbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.surnameLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.surnameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.surnameLbl.IsContextMenuEnabled = false;
+            this.surnameLbl.IsSelectionEnabled = false;
             this.surnameLbl.Location = new System.Drawing.Point(229, 13);
             this.surnameLbl.Name = "surnameLbl";
             this.surnameLbl.Size = new System.Drawing.Size(210, 35);
             this.surnameLbl.TabIndex = 15;
+            this.surnameLbl.TabStop = false;
             this.surnameLbl.Text = "LAST NAME";
             this.surnameLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -373,10 +385,13 @@
             this.firstNameLbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.firstNameLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstNameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.firstNameLbl.IsContextMenuEnabled = false;
+            this.firstNameLbl.IsSelectionEnabled = false;
             this.firstNameLbl.Location = new System.Drawing.Point(13, 13);
             this.firstNameLbl.Name = "firstNameLbl";
             this.firstNameLbl.Size = new System.Drawing.Size(210, 35);
             this.firstNameLbl.TabIndex = 13;
+            this.firstNameLbl.TabStop = false;
             this.firstNameLbl.Text = "FIRST NAME";
             this.firstNameLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -419,10 +434,13 @@
             this.guna2HtmlLabel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.guna2HtmlLabel4.IsContextMenuEnabled = false;
+            this.guna2HtmlLabel4.IsSelectionEnabled = false;
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(13, 307);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(210, 35);
             this.guna2HtmlLabel4.TabIndex = 23;
+            this.guna2HtmlLabel4.TabStop = false;
             this.guna2HtmlLabel4.Text = "ADDRESS";
             this.guna2HtmlLabel4.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -434,10 +452,13 @@
             this.statusCBs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.statusCBs.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.statusCBs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.statusCBs.IsContextMenuEnabled = false;
+            this.statusCBs.IsSelectionEnabled = false;
             this.statusCBs.Location = new System.Drawing.Point(445, 209);
             this.statusCBs.Name = "statusCBs";
             this.statusCBs.Size = new System.Drawing.Size(212, 35);
             this.statusCBs.TabIndex = 27;
+            this.statusCBs.TabStop = false;
             this.statusCBs.Text = "STATUS";
             this.statusCBs.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -475,10 +496,13 @@
             this.guna2HtmlLabel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.guna2HtmlLabel5.IsContextMenuEnabled = false;
+            this.guna2HtmlLabel5.IsSelectionEnabled = false;
             this.guna2HtmlLabel5.Location = new System.Drawing.Point(445, 307);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(212, 35);
             this.guna2HtmlLabel5.TabIndex = 25;
+            this.guna2HtmlLabel5.TabStop = false;
             this.guna2HtmlLabel5.Text = "GENDER";
             this.guna2HtmlLabel5.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -514,10 +538,13 @@
             this.guna2HtmlLabel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.guna2HtmlLabel7.IsContextMenuEnabled = false;
+            this.guna2HtmlLabel7.IsSelectionEnabled = false;
             this.guna2HtmlLabel7.Location = new System.Drawing.Point(13, 405);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(210, 35);
             this.guna2HtmlLabel7.TabIndex = 30;
+            this.guna2HtmlLabel7.TabStop = false;
             this.guna2HtmlLabel7.Text = "PHONE";
             this.guna2HtmlLabel7.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -560,10 +587,13 @@
             this.guna2HtmlLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.guna2HtmlLabel2.IsContextMenuEnabled = false;
+            this.guna2HtmlLabel2.IsSelectionEnabled = false;
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(445, 111);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(156, 35);
             this.guna2HtmlLabel2.TabIndex = 19;
+            this.guna2HtmlLabel2.TabStop = false;
             this.guna2HtmlLabel2.Text = "AGE";
             this.guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -663,10 +693,13 @@
             this.guna2HtmlLabel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI Variable Display", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.guna2HtmlLabel6.IsContextMenuEnabled = false;
+            this.guna2HtmlLabel6.IsSelectionEnabled = false;
             this.guna2HtmlLabel6.Location = new System.Drawing.Point(66, 8);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(82, 76);
             this.guna2HtmlLabel6.TabIndex = 39;
+            this.guna2HtmlLabel6.TabStop = false;
             this.guna2HtmlLabel6.Text = "ADMIN";
             this.guna2HtmlLabel6.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -679,8 +712,8 @@
             // 
             // addStaff
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(684, 554);
             this.Controls.Add(this.tableLayoutPanel1);

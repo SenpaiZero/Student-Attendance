@@ -56,12 +56,12 @@ namespace Student_Attendance_System.Startup
 
             loginHelper login = new loginHelper()
             {
-                Password = passwordTB.Text,
                 staffID = staffIdTB.Text,
                 stayLogin = stayLoginCB.Checked
             };
+            loginHelper.Password = passwordTB.Text;
 
-            if(login.login())
+            if (login.login())
             {
                 checkLogin($"LOGIN SUCCESSFUL\nWINDOW WILL CLOSE IN {countdownInt}", true);
                 timer1.Start();

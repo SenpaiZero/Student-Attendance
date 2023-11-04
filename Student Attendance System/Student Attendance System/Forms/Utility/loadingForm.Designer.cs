@@ -72,10 +72,13 @@
             this.titleLbl.BackColor = System.Drawing.Color.Transparent;
             this.titleLbl.Font = new System.Drawing.Font("Segoe UI Variable Text", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.titleLbl.IsContextMenuEnabled = false;
+            this.titleLbl.IsSelectionEnabled = false;
             this.titleLbl.Location = new System.Drawing.Point(12, 212);
             this.titleLbl.Name = "titleLbl";
             this.titleLbl.Size = new System.Drawing.Size(328, 45);
             this.titleLbl.TabIndex = 2;
+            this.titleLbl.TabStop = false;
             this.titleLbl.Text = "LOADING";
             this.titleLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -89,10 +92,13 @@
             this.descLbl.BackColor = System.Drawing.Color.Transparent;
             this.descLbl.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.descLbl.IsContextMenuEnabled = false;
+            this.descLbl.IsSelectionEnabled = false;
             this.descLbl.Location = new System.Drawing.Point(12, 263);
             this.descLbl.Name = "descLbl";
             this.descLbl.Size = new System.Drawing.Size(328, 175);
             this.descLbl.TabIndex = 3;
+            this.descLbl.TabStop = false;
             this.descLbl.Text = "TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING T" +
     "ESTING TESTING TESTING TESTING TESTING TESTING TESTING ";
             this.descLbl.TextAlignment = System.Drawing.ContentAlignment.TopCenter;

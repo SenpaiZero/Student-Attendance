@@ -94,6 +94,8 @@ namespace Student_Attendance_System.Startup
                 msg.ShowDialog();
                 return;
             }
+
+            pageHelper.loadAdminForm(new staffListForm(), mainPanel);
         }
     }
 }

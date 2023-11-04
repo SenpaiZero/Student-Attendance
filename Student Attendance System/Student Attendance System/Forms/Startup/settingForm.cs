@@ -80,5 +80,10 @@ namespace Student_Attendance_System.Startup
                 dbConStringTB.UseSystemPasswordChar = true;
             }
         }
+
+        private void resetBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

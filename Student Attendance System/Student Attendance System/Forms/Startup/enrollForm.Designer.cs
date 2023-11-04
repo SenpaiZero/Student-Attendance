@@ -55,10 +55,13 @@
             this.headerLbl.Dock = System.Windows.Forms.DockStyle.Top;
             this.headerLbl.Font = new System.Drawing.Font("Segoe UI Variable Display", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.headerLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.headerLbl.IsContextMenuEnabled = false;
+            this.headerLbl.IsSelectionEnabled = false;
             this.headerLbl.Location = new System.Drawing.Point(0, 0);
             this.headerLbl.Name = "headerLbl";
             this.headerLbl.Size = new System.Drawing.Size(705, 55);
             this.headerLbl.TabIndex = 0;
+            this.headerLbl.TabStop = false;
             this.headerLbl.Text = "ENROLL";
             this.headerLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 

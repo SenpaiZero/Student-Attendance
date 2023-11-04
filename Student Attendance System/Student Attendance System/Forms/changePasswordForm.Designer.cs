@@ -91,10 +91,13 @@
             this.currentLbl.BackColor = System.Drawing.Color.Transparent;
             this.currentLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.currentLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.currentLbl.IsContextMenuEnabled = false;
+            this.currentLbl.IsSelectionEnabled = false;
             this.currentLbl.Location = new System.Drawing.Point(30, 20);
             this.currentLbl.Name = "currentLbl";
             this.currentLbl.Size = new System.Drawing.Size(443, 36);
             this.currentLbl.TabIndex = 11;
+            this.currentLbl.TabStop = false;
             this.currentLbl.Text = "CURRENT PASSWORD";
             // 
             // newpassLbl
@@ -103,10 +106,13 @@
             this.newpassLbl.BackColor = System.Drawing.Color.Transparent;
             this.newpassLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newpassLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.newpassLbl.IsContextMenuEnabled = false;
+            this.newpassLbl.IsSelectionEnabled = false;
             this.newpassLbl.Location = new System.Drawing.Point(30, 91);
             this.newpassLbl.Name = "newpassLbl";
             this.newpassLbl.Size = new System.Drawing.Size(423, 33);
             this.newpassLbl.TabIndex = 13;
+            this.newpassLbl.TabStop = false;
             this.newpassLbl.Text = "NEW PASSWORD";
             // 
             // reEnterPassTB
@@ -171,10 +177,13 @@
             this.reenterPassLbl.BackColor = System.Drawing.Color.Transparent;
             this.reenterPassLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reenterPassLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.reenterPassLbl.IsContextMenuEnabled = false;
+            this.reenterPassLbl.IsSelectionEnabled = false;
             this.reenterPassLbl.Location = new System.Drawing.Point(30, 159);
             this.reenterPassLbl.Name = "reenterPassLbl";
             this.reenterPassLbl.Size = new System.Drawing.Size(423, 36);
             this.reenterPassLbl.TabIndex = 15;
+            this.reenterPassLbl.TabStop = false;
             this.reenterPassLbl.Text = "RE-ENTER PASSWORD";
             // 
             // guna2HtmlLabel3

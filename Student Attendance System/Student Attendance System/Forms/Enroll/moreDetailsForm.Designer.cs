@@ -134,6 +134,7 @@
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(130, 28);
             this.guna2HtmlLabel4.TabIndex = 38;
+            this.guna2HtmlLabel4.TabStop = false;
             this.guna2HtmlLabel4.Text = "ID NUM";
             this.guna2HtmlLabel4.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -204,6 +205,7 @@
             this.yearLbl.Name = "yearLbl";
             this.yearLbl.Size = new System.Drawing.Size(130, 28);
             this.yearLbl.TabIndex = 17;
+            this.yearLbl.TabStop = false;
             this.yearLbl.Text = "YEAR";
             this.yearLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -222,6 +224,7 @@
             this.sectionlbl.Name = "sectionlbl";
             this.sectionlbl.Size = new System.Drawing.Size(130, 28);
             this.sectionlbl.TabIndex = 16;
+            this.sectionlbl.TabStop = false;
             this.sectionlbl.Text = "SECTION";
             this.sectionlbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -266,6 +269,7 @@
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(198, 28);
             this.guna2HtmlLabel1.TabIndex = 36;
+            this.guna2HtmlLabel1.TabStop = false;
             this.guna2HtmlLabel1.Text = "STUDENT TYPE";
             this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -305,6 +309,7 @@
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(407, 28);
             this.guna2HtmlLabel2.TabIndex = 40;
+            this.guna2HtmlLabel2.TabStop = false;
             this.guna2HtmlLabel2.Text = "ILLNESS OR ALLERGIES";
             this.guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 

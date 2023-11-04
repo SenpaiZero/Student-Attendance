@@ -39,8 +39,8 @@
             this.passwordTB = new Guna.UI2.WinForms.Guna2TextBox();
             this.staffIdTB = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.loginLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.mainPanel.SuspendLayout();
             this.SuspendLayout();
@@ -117,10 +117,13 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.guna2HtmlLabel2.IsContextMenuEnabled = false;
+            this.guna2HtmlLabel2.IsSelectionEnabled = false;
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(33, 94);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(229, 25);
             this.guna2HtmlLabel2.TabIndex = 6;
+            this.guna2HtmlLabel2.TabStop = false;
             this.guna2HtmlLabel2.Text = "STAFF ID";
             // 
             // guna2HtmlLabel3
@@ -129,10 +132,13 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.guna2HtmlLabel3.IsContextMenuEnabled = false;
+            this.guna2HtmlLabel3.IsSelectionEnabled = false;
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(33, 181);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(229, 25);
             this.guna2HtmlLabel3.TabIndex = 5;
+            this.guna2HtmlLabel3.TabStop = false;
             this.guna2HtmlLabel3.Text = "PASSOWORD";
             // 
             // loginBtn
@@ -210,17 +216,15 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Variable Display", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.guna2HtmlLabel1.IsContextMenuEnabled = false;
+            this.guna2HtmlLabel1.IsSelectionEnabled = false;
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(3, 17);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(271, 76);
             this.guna2HtmlLabel1.TabIndex = 0;
+            this.guna2HtmlLabel1.TabStop = false;
             this.guna2HtmlLabel1.Text = "LOGIN";
             this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 25;
-            this.guna2Elipse1.TargetControl = this.mainPanel;
             // 
             // loginLbl
             // 
@@ -231,13 +235,21 @@
             this.loginLbl.BackColor = System.Drawing.Color.Transparent;
             this.loginLbl.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.loginLbl.IsContextMenuEnabled = false;
+            this.loginLbl.IsSelectionEnabled = false;
             this.loginLbl.Location = new System.Drawing.Point(33, 268);
             this.loginLbl.Name = "loginLbl";
             this.loginLbl.Size = new System.Drawing.Size(229, 24);
             this.loginLbl.TabIndex = 9;
+            this.loginLbl.TabStop = false;
             this.loginLbl.Text = "test";
             this.loginLbl.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
             this.loginLbl.Visible = false;
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 25;
+            this.guna2Elipse1.TargetControl = this.mainPanel;
             // 
             // timer1
             // 

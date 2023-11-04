@@ -183,7 +183,9 @@ namespace Student_Attendance_System
         }
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            if(loginBtn.Text == "LOGIN")
+            if (!validationHelper.internetAvailability())
+                return;
+            if (loginBtn.Text == "LOGIN")
             {
                 loginForm login = new loginForm();
                 if (login.ShowDialog() == DialogResult.OK)

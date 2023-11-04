@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Student_Attendance_System.Forms
 {
@@ -33,7 +34,55 @@ namespace Student_Attendance_System.Forms
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
+            if (!validationHelper.internetAvailability())
+                return;
 
+            MessageForm msg = new MessageForm()
+            {
+                messageType = "Failed",
+                header = "Ooooops.",
+                isYesNo = false
+            };
+            if (currentPassTB.Text != loginHelper.Password)
+            {
+                msg.message = "Current password is incorrect.";
+                msg.ShowDialog();
+                return;
+            }
+            if(newPassTB.Text != reEnterPassTB.Text)
+            {
+                msg.message = "New password are not the same.";
+                msg.ShowDialog();
+                return;
+            }
+
+            try
+            {
+                databaseHelper.open();
+                databaseHelper db = new databaseHelper();
+                String query = "UPDATE Accounts SET Password = @password WHERE Name = @name";
+                using (db.cmd = new SqlCommand(query, databaseHelper.con))
+                {
+                    db.cmd.Parameters.AddWithValue("@password", newPassTB.Text);
+                    db.cmd.Parameters.AddWithValue("@name", loginHelper.Name);
+
+                    db.cmd.ExecuteNonQuery();
+                    if (Properties.Settings.Default.stayLogin)
+                        Properties.Settings.Default.loginPassword = newPassTB.Text;
+                    MessageForm msgf = new MessageForm()
+                    {
+                        messageType = "Success",
+                        header = "Woo hoo!",
+                        message = "You've successfully updated password",
+                        isYesNo = false
+                    };
+                    msgf.ShowDialog();
+                    this.Close();
+                }
+            } catch(Exception ex)
+            {
+
+            }
         }
 
         private void changePasswordForm_Load(object sender, EventArgs e)

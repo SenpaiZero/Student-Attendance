@@ -59,6 +59,31 @@ namespace Student_Attendance_System
             return true;
         }
 
+        public static bool textBoxValidation_Alpha_comma(Guna2TextBox tb, String name, ErrorProvider errorProvider)
+        {
+            String nullField = "is required. Please complete this field to continue";
+            String symNumNotAllowed = "is invalid (Symbols and numbers are not allowed)";
+            tb.BorderColor = Color.IndianRed;
+            tb.BorderThickness = 2;
+
+            //Checks if its empty
+            if (validationHelper.checkFieldBlank(tb.Text))
+            {
+                errorProvider.SetError(tb, $"{name} {nullField}");
+                return false;
+            }
+            // Checks if its alpha only
+            else if (!validationHelper.checkFieldAlphaComma(tb.Text))
+            {
+                errorProvider.SetError(tb, $"{name} {symNumNotAllowed}");
+                return false;
+            }
+            // Clears the error
+            tb.BorderThickness = 1;
+            tb.BorderColor = Color.FromArgb(217, 221, 226);
+            errorProvider.SetError(tb, null);
+            return true;
+        }
         public static bool textBoxValidation_Alpha_optional(Guna2TextBox tb, String name, ErrorProvider errorProvider)
         {
             String symNumNotAllowed = "is invalid (Symbols and numbers are not allowed)";
@@ -186,7 +211,12 @@ namespace Student_Attendance_System
                 return true;
             return false;
         }
-
+        public static bool checkFieldAlphaComma(String tb)
+        {
+            if (Regex.IsMatch(tb, "^[a-zA-Z,]+(\\s[a-zA-Z,]+)*$") && !tb.Contains("  "))
+                return true;
+            return false;
+        }
         // Checks if user entered correct address
         public static bool IsValidAddress(string address)
         {

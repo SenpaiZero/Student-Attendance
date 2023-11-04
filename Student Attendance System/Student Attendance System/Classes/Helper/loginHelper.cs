@@ -12,7 +12,7 @@ namespace Student_Attendance_System
     internal class loginHelper
     {
         public string staffID { get; set; }
-        public string Password { get; set; }
+        public static string Password { get; set; }
         public bool stayLogin { get; set; }
 
         // Only one staff can login so this is static

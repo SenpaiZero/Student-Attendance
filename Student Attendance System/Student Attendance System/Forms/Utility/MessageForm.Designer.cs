@@ -152,6 +152,7 @@
             this.HeaderLbl.Name = "HeaderLbl";
             this.HeaderLbl.Size = new System.Drawing.Size(324, 94);
             this.HeaderLbl.TabIndex = 1;
+            this.HeaderLbl.TabStop = false;
             this.HeaderLbl.Text = "HEADER";
             this.HeaderLbl.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -167,6 +168,7 @@
             this.descLbl.Name = "descLbl";
             this.descLbl.Size = new System.Drawing.Size(324, 94);
             this.descLbl.TabIndex = 2;
+            this.descLbl.TabStop = false;
             this.descLbl.Text = "Details";
             this.descLbl.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
             // 

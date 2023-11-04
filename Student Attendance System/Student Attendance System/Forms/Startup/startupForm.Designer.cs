@@ -81,10 +81,13 @@
             this.versionLbl.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.versionLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.versionLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.versionLbl.IsContextMenuEnabled = false;
+            this.versionLbl.IsSelectionEnabled = false;
             this.versionLbl.Location = new System.Drawing.Point(0, 667);
             this.versionLbl.Name = "versionLbl";
             this.versionLbl.Size = new System.Drawing.Size(220, 63);
             this.versionLbl.TabIndex = 0;
+            this.versionLbl.TabStop = false;
             this.versionLbl.Text = "1.0.0";
             this.versionLbl.TextAlignment = System.Drawing.ContentAlignment.BottomCenter;
             // 
@@ -139,10 +142,13 @@
             this.dateLbl.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dateLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.dateLbl.IsContextMenuEnabled = false;
+            this.dateLbl.IsSelectionEnabled = false;
             this.dateLbl.Location = new System.Drawing.Point(0, 625);
             this.dateLbl.Name = "dateLbl";
             this.dateLbl.Size = new System.Drawing.Size(220, 21);
             this.dateLbl.TabIndex = 12;
+            this.dateLbl.TabStop = false;
             this.dateLbl.Text = "October 29, 2023";
             this.dateLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -153,10 +159,13 @@
             this.dayLbl.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dayLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dayLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.dayLbl.IsContextMenuEnabled = false;
+            this.dayLbl.IsSelectionEnabled = false;
             this.dayLbl.Location = new System.Drawing.Point(0, 646);
             this.dayLbl.Name = "dayLbl";
             this.dayLbl.Size = new System.Drawing.Size(220, 21);
             this.dayLbl.TabIndex = 13;
+            this.dayLbl.TabStop = false;
             this.dayLbl.Text = "Monday";
             this.dayLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -187,10 +196,13 @@
             this.miscLbl.AutoSizeHeightOnly = true;
             this.miscLbl.BackColor = System.Drawing.Color.Transparent;
             this.miscLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.miscLbl.IsContextMenuEnabled = false;
+            this.miscLbl.IsSelectionEnabled = false;
             this.miscLbl.Location = new System.Drawing.Point(25, 378);
             this.miscLbl.Name = "miscLbl";
             this.miscLbl.Size = new System.Drawing.Size(159, 17);
             this.miscLbl.TabIndex = 10;
+            this.miscLbl.TabStop = false;
             this.miscLbl.Text = "MISC";
             this.miscLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -200,10 +212,13 @@
             this.studentLbl.AutoSizeHeightOnly = true;
             this.studentLbl.BackColor = System.Drawing.Color.Transparent;
             this.studentLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.studentLbl.IsContextMenuEnabled = false;
+            this.studentLbl.IsSelectionEnabled = false;
             this.studentLbl.Location = new System.Drawing.Point(25, 251);
             this.studentLbl.Name = "studentLbl";
             this.studentLbl.Size = new System.Drawing.Size(174, 17);
             this.studentLbl.TabIndex = 9;
+            this.studentLbl.TabStop = false;
             this.studentLbl.Text = "STUDENT";
             this.studentLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -213,10 +228,13 @@
             this.adminLbl.AutoSizeHeightOnly = true;
             this.adminLbl.BackColor = System.Drawing.Color.Transparent;
             this.adminLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.adminLbl.IsContextMenuEnabled = false;
+            this.adminLbl.IsSelectionEnabled = false;
             this.adminLbl.Location = new System.Drawing.Point(26, 62);
             this.adminLbl.Name = "adminLbl";
             this.adminLbl.Size = new System.Drawing.Size(174, 17);
             this.adminLbl.TabIndex = 0;
+            this.adminLbl.TabStop = false;
             this.adminLbl.Text = "ADMIN";
             this.adminLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 

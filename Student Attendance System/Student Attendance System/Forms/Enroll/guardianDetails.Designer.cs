@@ -75,6 +75,7 @@
             this.middleNameLbl.Name = "middleNameLbl";
             this.middleNameLbl.Size = new System.Drawing.Size(223, 31);
             this.middleNameLbl.TabIndex = 15;
+            this.middleNameLbl.TabStop = false;
             this.middleNameLbl.Text = "MIDDLE NAME";
             this.middleNameLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -93,6 +94,7 @@
             this.surnameLbl.Name = "surnameLbl";
             this.surnameLbl.Size = new System.Drawing.Size(222, 31);
             this.surnameLbl.TabIndex = 15;
+            this.surnameLbl.TabStop = false;
             this.surnameLbl.Text = "LAST NAME";
             this.surnameLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -111,6 +113,7 @@
             this.firstNameLbl.Name = "firstNameLbl";
             this.firstNameLbl.Size = new System.Drawing.Size(222, 31);
             this.firstNameLbl.TabIndex = 13;
+            this.firstNameLbl.TabStop = false;
             this.firstNameLbl.Text = "FIRST NAME";
             this.firstNameLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -129,6 +132,7 @@
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(450, 42);
             this.guna2HtmlLabel1.TabIndex = 32;
+            this.guna2HtmlLabel1.TabStop = false;
             this.guna2HtmlLabel1.Text = "FATHER\'S DETAILS";
             this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.BottomLeft;
             // 
@@ -147,6 +151,7 @@
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(450, 42);
             this.guna2HtmlLabel2.TabIndex = 33;
+            this.guna2HtmlLabel2.TabStop = false;
             this.guna2HtmlLabel2.Text = "MOTHER\'S DETAILS";
             this.guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -165,6 +170,7 @@
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(222, 31);
             this.guna2HtmlLabel3.TabIndex = 34;
+            this.guna2HtmlLabel3.TabStop = false;
             this.guna2HtmlLabel3.Text = "EMAIL ADDRESS";
             this.guna2HtmlLabel3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -183,6 +189,7 @@
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(222, 31);
             this.guna2HtmlLabel4.TabIndex = 36;
+            this.guna2HtmlLabel4.TabStop = false;
             this.guna2HtmlLabel4.Text = "PHONE NUMBER";
             this.guna2HtmlLabel4.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -201,6 +208,7 @@
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(222, 31);
             this.guna2HtmlLabel5.TabIndex = 38;
+            this.guna2HtmlLabel5.TabStop = false;
             this.guna2HtmlLabel5.Text = "OCCUPATION";
             this.guna2HtmlLabel5.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -219,6 +227,7 @@
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(222, 31);
             this.guna2HtmlLabel6.TabIndex = 40;
+            this.guna2HtmlLabel6.TabStop = false;
             this.guna2HtmlLabel6.Text = "FIRST NAME";
             this.guna2HtmlLabel6.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -237,6 +246,7 @@
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(222, 31);
             this.guna2HtmlLabel7.TabIndex = 41;
+            this.guna2HtmlLabel7.TabStop = false;
             this.guna2HtmlLabel7.Text = "LAST NAME";
             this.guna2HtmlLabel7.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -255,6 +265,7 @@
             this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
             this.guna2HtmlLabel8.Size = new System.Drawing.Size(223, 31);
             this.guna2HtmlLabel8.TabIndex = 42;
+            this.guna2HtmlLabel8.TabStop = false;
             this.guna2HtmlLabel8.Text = "MIDDLE NAME";
             this.guna2HtmlLabel8.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -273,6 +284,7 @@
             this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
             this.guna2HtmlLabel9.Size = new System.Drawing.Size(222, 31);
             this.guna2HtmlLabel9.TabIndex = 46;
+            this.guna2HtmlLabel9.TabStop = false;
             this.guna2HtmlLabel9.Text = "EMAIL ADDRESS";
             this.guna2HtmlLabel9.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -291,6 +303,7 @@
             this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
             this.guna2HtmlLabel10.Size = new System.Drawing.Size(222, 31);
             this.guna2HtmlLabel10.TabIndex = 48;
+            this.guna2HtmlLabel10.TabStop = false;
             this.guna2HtmlLabel10.Text = "PHONE NUMBER";
             this.guna2HtmlLabel10.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
@@ -309,6 +322,7 @@
             this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
             this.guna2HtmlLabel11.Size = new System.Drawing.Size(222, 31);
             this.guna2HtmlLabel11.TabIndex = 49;
+            this.guna2HtmlLabel11.TabStop = false;
             this.guna2HtmlLabel11.Text = "OCCUPATION";
             this.guna2HtmlLabel11.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 

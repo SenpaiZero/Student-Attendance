@@ -38,10 +38,10 @@ namespace Student_Attendance_System
 
             loginHelper login = new loginHelper()
             {
-                Password = Properties.Settings.Default.loginPassword,
                 staffID = Properties.Settings.Default.loginStaffID,
                 stayLogin = true
             };
+            loginHelper.Password = Properties.Settings.Default.loginPassword;
 
             login.login();
             return true;

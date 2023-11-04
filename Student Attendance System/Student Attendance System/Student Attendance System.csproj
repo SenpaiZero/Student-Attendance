@@ -88,7 +88,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\cameraHelper.cs" />
+    <Compile Include="Classes\Helper\cameraHelper.cs" />
     <Compile Include="Classes\Config.cs" />
     <Compile Include="Classes\ErnployeesGlobalVariable.cs" />
     <Compile Include="Classes\Helper\databaseHelper.cs" />
@@ -106,11 +106,23 @@
     <Compile Include="Forms\Admin\logsForm.Designer.cs">
       <DependentUpon>logsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Admin\staffListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin\staffListForm.Designer.cs">
+      <DependentUpon>staffListForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Admin\studentListForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Admin\studentListForm.Designer.cs">
       <DependentUpon>studentListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Admin\updateStaffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin\updateStaffForm.Designer.cs">
+      <DependentUpon>updateStaffForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\changePasswordForm.cs">
       <SubType>Form</SubType>
@@ -208,8 +220,14 @@
     <EmbeddedResource Include="Forms\Admin\logsForm.resx">
       <DependentUpon>logsForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin\staffListForm.resx">
+      <DependentUpon>staffListForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Admin\studentListForm.resx">
       <DependentUpon>studentListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin\updateStaffForm.resx">
+      <DependentUpon>updateStaffForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\changePasswordForm.resx">
       <DependentUpon>changePasswordForm.cs</DependentUpon>

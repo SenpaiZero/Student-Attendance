@@ -98,10 +98,13 @@
             this.picLbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.picLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.picLbl.IsContextMenuEnabled = false;
+            this.picLbl.IsSelectionEnabled = false;
             this.picLbl.Location = new System.Drawing.Point(8, 158);
             this.picLbl.Name = "picLbl";
             this.picLbl.Size = new System.Drawing.Size(390, 24);
             this.picLbl.TabIndex = 7;
+            this.picLbl.TabStop = false;
             this.picLbl.Text = "Picutre Output";
             // 
             // qrOutputTB
@@ -140,10 +143,13 @@
             this.qrLbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.qrLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.qrLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.qrLbl.IsContextMenuEnabled = false;
+            this.qrLbl.IsSelectionEnabled = false;
             this.qrLbl.Location = new System.Drawing.Point(8, 68);
             this.qrLbl.Name = "qrLbl";
             this.qrLbl.Size = new System.Drawing.Size(390, 24);
             this.qrLbl.TabIndex = 8;
+            this.qrLbl.TabStop = false;
             this.qrLbl.Text = "QR Code Output";
             // 
             // guna2HtmlLabel1
@@ -154,11 +160,14 @@
             this.guna2HtmlLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Variable Display", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(133)))), ((int)(((byte)(46)))));
+            this.guna2HtmlLabel1.IsContextMenuEnabled = false;
+            this.guna2HtmlLabel1.IsSelectionEnabled = false;
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(8, 8);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.tableLayoutPanel1.SetRowSpan(this.guna2HtmlLabel1, 2);
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(324, 54);
             this.guna2HtmlLabel1.TabIndex = 6;
+            this.guna2HtmlLabel1.TabStop = false;
             this.guna2HtmlLabel1.Text = "OUTPUT";
             // 
             // headeLbl
@@ -169,10 +178,13 @@
             this.headeLbl.Dock = System.Windows.Forms.DockStyle.Top;
             this.headeLbl.Font = new System.Drawing.Font("Segoe UI Variable Display", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.headeLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(133)))), ((int)(((byte)(46)))));
+            this.headeLbl.IsContextMenuEnabled = false;
+            this.headeLbl.IsSelectionEnabled = false;
             this.headeLbl.Location = new System.Drawing.Point(15, 15);
             this.headeLbl.Name = "headeLbl";
             this.headeLbl.Size = new System.Drawing.Size(675, 55);
             this.headeLbl.TabIndex = 0;
+            this.headeLbl.TabStop = false;
             this.headeLbl.Text = "SETTING";
             this.headeLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.headeLbl.Click += new System.EventHandler(this.headeLbl_Click);
@@ -215,10 +227,13 @@
             this.dbStrinlbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dbStrinlbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dbStrinlbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.dbStrinlbl.IsContextMenuEnabled = false;
+            this.dbStrinlbl.IsSelectionEnabled = false;
             this.dbStrinlbl.Location = new System.Drawing.Point(8, 308);
             this.dbStrinlbl.Name = "dbStrinlbl";
             this.dbStrinlbl.Size = new System.Drawing.Size(390, 24);
             this.dbStrinlbl.TabIndex = 8;
+            this.dbStrinlbl.TabStop = false;
             this.dbStrinlbl.Text = "DB Connection String";
             // 
             // advanceContainer
@@ -229,11 +244,14 @@
             this.advanceContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.advanceContainer.Font = new System.Drawing.Font("Segoe UI Variable Display", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.advanceContainer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(133)))), ((int)(((byte)(46)))));
+            this.advanceContainer.IsContextMenuEnabled = false;
+            this.advanceContainer.IsSelectionEnabled = false;
             this.advanceContainer.Location = new System.Drawing.Point(8, 248);
             this.advanceContainer.Name = "advanceContainer";
             this.tableLayoutPanel1.SetRowSpan(this.advanceContainer, 2);
             this.advanceContainer.Size = new System.Drawing.Size(390, 54);
             this.advanceContainer.TabIndex = 6;
+            this.advanceContainer.TabStop = false;
             this.advanceContainer.Text = "ADVANCE";
             // 
             // guna2Separator1
@@ -286,6 +304,7 @@
             this.resetBtn.Size = new System.Drawing.Size(131, 54);
             this.resetBtn.TabIndex = 6;
             this.resetBtn.Text = "RESET";
+            this.resetBtn.Click += new System.EventHandler(this.resetBtn_Click);
             // 
             // cancelBtn
             // 
@@ -334,10 +353,13 @@
             this.guna2HtmlLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.guna2HtmlLabel2.IsContextMenuEnabled = false;
+            this.guna2HtmlLabel2.IsSelectionEnabled = false;
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(8, 548);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(126, 24);
             this.guna2HtmlLabel2.TabIndex = 10;
+            this.guna2HtmlLabel2.TabStop = false;
             this.guna2HtmlLabel2.Text = "Language";
             // 
             // themeCB
@@ -368,10 +390,13 @@
             this.themeLbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.themeLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.themeLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.themeLbl.IsContextMenuEnabled = false;
+            this.themeLbl.IsSelectionEnabled = false;
             this.themeLbl.Location = new System.Drawing.Point(8, 488);
             this.themeLbl.Name = "themeLbl";
             this.themeLbl.Size = new System.Drawing.Size(126, 24);
             this.themeLbl.TabIndex = 8;
+            this.themeLbl.TabStop = false;
             this.themeLbl.Text = "Theme";
             // 
             // displayContainer
@@ -382,11 +407,14 @@
             this.displayContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.displayContainer.Font = new System.Drawing.Font("Segoe UI Variable Display", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.displayContainer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(133)))), ((int)(((byte)(46)))));
+            this.displayContainer.IsContextMenuEnabled = false;
+            this.displayContainer.IsSelectionEnabled = false;
             this.displayContainer.Location = new System.Drawing.Point(8, 428);
             this.displayContainer.Name = "displayContainer";
             this.tableLayoutPanel1.SetRowSpan(this.displayContainer, 2);
             this.displayContainer.Size = new System.Drawing.Size(390, 54);
             this.displayContainer.TabIndex = 6;
+            this.displayContainer.TabStop = false;
             this.displayContainer.Text = "DISPLAY";
             // 
             // tableLayoutPanel1
