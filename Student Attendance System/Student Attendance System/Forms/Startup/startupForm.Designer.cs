@@ -36,12 +36,17 @@
             this.menuContainer = new Guna.UI2.WinForms.Guna2Panel();
             this.dateLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dayLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.sidepanelBtn = new Guna.UI2.WinForms.Guna2CircleButton();
             this.appNameLbl = new Guna.UI2.WinForms.Guna2Button();
             this.miscLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.studentLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.adminLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.studentLine = new Guna.UI2.WinForms.Guna2Shapes();
+            this.enrollBtn = new Guna.UI2.WinForms.Guna2Button();
             this.adminLine = new Guna.UI2.WinForms.Guna2Shapes();
+            this.attBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.settingBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.adminBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Shapes1 = new Guna.UI2.WinForms.Guna2Shapes();
@@ -57,11 +62,6 @@
             this.lOGOUTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
-            this.sidepanelBtn = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.enrollBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.attBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.settingBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.adminBtn = new Guna.UI2.WinForms.Guna2Button();
             this.menuContainer.SuspendLayout();
             this.mainPanelContainer.SuspendLayout();
             this.accountMenuStrip.SuspendLayout();
@@ -169,6 +169,32 @@
             this.dayLbl.Text = "Monday";
             this.dayLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // sidepanelBtn
+            // 
+            this.sidepanelBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.sidepanelBtn.BackColor = System.Drawing.Color.Transparent;
+            this.sidepanelBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sidepanelBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.sidepanelBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.sidepanelBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.sidepanelBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.sidepanelBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.sidepanelBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sidepanelBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.sidepanelBtn.Image = global::Student_Attendance_System.Properties.Resources.left_arrow;
+            this.sidepanelBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.sidepanelBtn.ImageOffset = new System.Drawing.Point(-5, 0);
+            this.sidepanelBtn.Location = new System.Drawing.Point(190, 342);
+            this.sidepanelBtn.Name = "sidepanelBtn";
+            this.sidepanelBtn.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.sidepanelBtn.Size = new System.Drawing.Size(50, 50);
+            this.sidepanelBtn.TabIndex = 2;
+            this.sidepanelBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.sidepanelBtn.UseTransparentBackground = true;
+            this.sidepanelBtn.Click += new System.EventHandler(this.sidepanelBtn_Click);
+            this.sidepanelBtn.MouseLeave += new System.EventHandler(this.sidepanelBtn_MouseLeave);
+            this.sidepanelBtn.MouseHover += new System.EventHandler(this.sidepanelBtn_MouseHover);
+            // 
             // appNameLbl
             // 
             this.appNameLbl.BackColor = System.Drawing.Color.Transparent;
@@ -257,6 +283,31 @@
             this.studentLine.Text = "guna2Shapes3";
             this.studentLine.Zoom = 100;
             // 
+            // enrollBtn
+            // 
+            this.enrollBtn.BackColor = System.Drawing.Color.Transparent;
+            this.enrollBtn.BorderRadius = 10;
+            this.enrollBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.enrollBtn.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
+            this.enrollBtn.DisabledState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
+            this.enrollBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
+            this.enrollBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(171)))), ((int)(((byte)(121)))));
+            this.enrollBtn.DisabledState.Image = global::Student_Attendance_System.Properties.Resources.Admin;
+            this.enrollBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.enrollBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.enrollBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.enrollBtn.Image = global::Student_Attendance_System.Properties.Resources.sign;
+            this.enrollBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.enrollBtn.ImageSize = new System.Drawing.Size(40, 40);
+            this.enrollBtn.Location = new System.Drawing.Point(12, 161);
+            this.enrollBtn.Name = "enrollBtn";
+            this.enrollBtn.Size = new System.Drawing.Size(200, 60);
+            this.enrollBtn.TabIndex = 7;
+            this.enrollBtn.Text = "ENROLL";
+            this.enrollBtn.TextOffset = new System.Drawing.Point(10, 0);
+            this.enrollBtn.UseTransparentBackground = true;
+            this.enrollBtn.Click += new System.EventHandler(this.enrollBtn_Click);
+            // 
             // adminLine
             // 
             this.adminLine.BackColor = System.Drawing.Color.Transparent;
@@ -275,6 +326,81 @@
             this.adminLine.TabIndex = 6;
             this.adminLine.Text = "guna2Shapes2";
             this.adminLine.Zoom = 100;
+            // 
+            // attBtn
+            // 
+            this.attBtn.BackColor = System.Drawing.Color.Transparent;
+            this.attBtn.BorderRadius = 10;
+            this.attBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.attBtn.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
+            this.attBtn.DisabledState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
+            this.attBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
+            this.attBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(171)))), ((int)(((byte)(121)))));
+            this.attBtn.DisabledState.Image = global::Student_Attendance_System.Properties.Resources.attendance;
+            this.attBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.attBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.attBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.attBtn.Image = ((System.Drawing.Image)(resources.GetObject("attBtn.Image")));
+            this.attBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.attBtn.ImageSize = new System.Drawing.Size(40, 40);
+            this.attBtn.Location = new System.Drawing.Point(10, 280);
+            this.attBtn.Name = "attBtn";
+            this.attBtn.Size = new System.Drawing.Size(200, 60);
+            this.attBtn.TabIndex = 5;
+            this.attBtn.Text = "ATTENDANCE";
+            this.attBtn.TextOffset = new System.Drawing.Point(30, 0);
+            this.attBtn.UseTransparentBackground = true;
+            this.attBtn.Click += new System.EventHandler(this.attBtn_Click);
+            // 
+            // settingBtn
+            // 
+            this.settingBtn.BackColor = System.Drawing.Color.Transparent;
+            this.settingBtn.BorderRadius = 10;
+            this.settingBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.settingBtn.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
+            this.settingBtn.DisabledState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
+            this.settingBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
+            this.settingBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(171)))), ((int)(((byte)(121)))));
+            this.settingBtn.DisabledState.Image = global::Student_Attendance_System.Properties.Resources.setting;
+            this.settingBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.settingBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.settingBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.settingBtn.Image = ((System.Drawing.Image)(resources.GetObject("settingBtn.Image")));
+            this.settingBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.settingBtn.ImageSize = new System.Drawing.Size(40, 40);
+            this.settingBtn.Location = new System.Drawing.Point(10, 406);
+            this.settingBtn.Name = "settingBtn";
+            this.settingBtn.Size = new System.Drawing.Size(200, 60);
+            this.settingBtn.TabIndex = 4;
+            this.settingBtn.Text = "SETTING";
+            this.settingBtn.TextOffset = new System.Drawing.Point(20, 0);
+            this.settingBtn.UseTransparentBackground = true;
+            this.settingBtn.Click += new System.EventHandler(this.settingBtn_Click);
+            // 
+            // adminBtn
+            // 
+            this.adminBtn.BackColor = System.Drawing.Color.Transparent;
+            this.adminBtn.BorderRadius = 10;
+            this.adminBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.adminBtn.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
+            this.adminBtn.DisabledState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
+            this.adminBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
+            this.adminBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(171)))), ((int)(((byte)(121)))));
+            this.adminBtn.DisabledState.Image = global::Student_Attendance_System.Properties.Resources.Admin;
+            this.adminBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.adminBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.adminBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.adminBtn.Image = ((System.Drawing.Image)(resources.GetObject("adminBtn.Image")));
+            this.adminBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.adminBtn.ImageSize = new System.Drawing.Size(40, 40);
+            this.adminBtn.Location = new System.Drawing.Point(10, 95);
+            this.adminBtn.Name = "adminBtn";
+            this.adminBtn.Size = new System.Drawing.Size(200, 60);
+            this.adminBtn.TabIndex = 3;
+            this.adminBtn.Text = "ADMIN";
+            this.adminBtn.TextOffset = new System.Drawing.Point(10, 0);
+            this.adminBtn.UseTransparentBackground = true;
+            this.adminBtn.Click += new System.EventHandler(this.adminBtn_Click);
             // 
             // guna2ControlBox1
             // 
@@ -482,132 +608,6 @@
             this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2DragControl1.TargetControl = this.mainPanelContainer;
             this.guna2DragControl1.UseTransparentDrag = true;
-            // 
-            // sidepanelBtn
-            // 
-            this.sidepanelBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.sidepanelBtn.BackColor = System.Drawing.Color.Transparent;
-            this.sidepanelBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.sidepanelBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.sidepanelBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.sidepanelBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.sidepanelBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.sidepanelBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.sidepanelBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sidepanelBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.sidepanelBtn.Image = global::Student_Attendance_System.Properties.Resources.left_arrow;
-            this.sidepanelBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.sidepanelBtn.ImageOffset = new System.Drawing.Point(-5, 0);
-            this.sidepanelBtn.Location = new System.Drawing.Point(190, 342);
-            this.sidepanelBtn.Name = "sidepanelBtn";
-            this.sidepanelBtn.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.sidepanelBtn.Size = new System.Drawing.Size(50, 50);
-            this.sidepanelBtn.TabIndex = 2;
-            this.sidepanelBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.sidepanelBtn.UseTransparentBackground = true;
-            this.sidepanelBtn.Click += new System.EventHandler(this.sidepanelBtn_Click);
-            this.sidepanelBtn.MouseLeave += new System.EventHandler(this.sidepanelBtn_MouseLeave);
-            this.sidepanelBtn.MouseHover += new System.EventHandler(this.sidepanelBtn_MouseHover);
-            // 
-            // enrollBtn
-            // 
-            this.enrollBtn.BackColor = System.Drawing.Color.Transparent;
-            this.enrollBtn.BorderRadius = 10;
-            this.enrollBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.enrollBtn.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
-            this.enrollBtn.DisabledState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
-            this.enrollBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
-            this.enrollBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(171)))), ((int)(((byte)(121)))));
-            this.enrollBtn.DisabledState.Image = global::Student_Attendance_System.Properties.Resources.Admin;
-            this.enrollBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.enrollBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.enrollBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.enrollBtn.Image = global::Student_Attendance_System.Properties.Resources.sign;
-            this.enrollBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.enrollBtn.ImageSize = new System.Drawing.Size(40, 40);
-            this.enrollBtn.Location = new System.Drawing.Point(12, 161);
-            this.enrollBtn.Name = "enrollBtn";
-            this.enrollBtn.Size = new System.Drawing.Size(200, 60);
-            this.enrollBtn.TabIndex = 7;
-            this.enrollBtn.Text = "ENROLL";
-            this.enrollBtn.TextOffset = new System.Drawing.Point(10, 0);
-            this.enrollBtn.UseTransparentBackground = true;
-            this.enrollBtn.Click += new System.EventHandler(this.enrollBtn_Click);
-            // 
-            // attBtn
-            // 
-            this.attBtn.BackColor = System.Drawing.Color.Transparent;
-            this.attBtn.BorderRadius = 10;
-            this.attBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.attBtn.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
-            this.attBtn.DisabledState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
-            this.attBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
-            this.attBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(171)))), ((int)(((byte)(121)))));
-            this.attBtn.DisabledState.Image = global::Student_Attendance_System.Properties.Resources.attendance;
-            this.attBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.attBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.attBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.attBtn.Image = ((System.Drawing.Image)(resources.GetObject("attBtn.Image")));
-            this.attBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.attBtn.ImageSize = new System.Drawing.Size(40, 40);
-            this.attBtn.Location = new System.Drawing.Point(10, 280);
-            this.attBtn.Name = "attBtn";
-            this.attBtn.Size = new System.Drawing.Size(200, 60);
-            this.attBtn.TabIndex = 5;
-            this.attBtn.Text = "ATTENDANCE";
-            this.attBtn.TextOffset = new System.Drawing.Point(30, 0);
-            this.attBtn.UseTransparentBackground = true;
-            this.attBtn.Click += new System.EventHandler(this.attBtn_Click);
-            // 
-            // settingBtn
-            // 
-            this.settingBtn.BackColor = System.Drawing.Color.Transparent;
-            this.settingBtn.BorderRadius = 10;
-            this.settingBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.settingBtn.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
-            this.settingBtn.DisabledState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
-            this.settingBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
-            this.settingBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(171)))), ((int)(((byte)(121)))));
-            this.settingBtn.DisabledState.Image = global::Student_Attendance_System.Properties.Resources.setting;
-            this.settingBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.settingBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.settingBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.settingBtn.Image = ((System.Drawing.Image)(resources.GetObject("settingBtn.Image")));
-            this.settingBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.settingBtn.ImageSize = new System.Drawing.Size(40, 40);
-            this.settingBtn.Location = new System.Drawing.Point(10, 406);
-            this.settingBtn.Name = "settingBtn";
-            this.settingBtn.Size = new System.Drawing.Size(200, 60);
-            this.settingBtn.TabIndex = 4;
-            this.settingBtn.Text = "SETTING";
-            this.settingBtn.TextOffset = new System.Drawing.Point(20, 0);
-            this.settingBtn.UseTransparentBackground = true;
-            this.settingBtn.Click += new System.EventHandler(this.settingBtn_Click);
-            // 
-            // adminBtn
-            // 
-            this.adminBtn.BackColor = System.Drawing.Color.Transparent;
-            this.adminBtn.BorderRadius = 10;
-            this.adminBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.adminBtn.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
-            this.adminBtn.DisabledState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
-            this.adminBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
-            this.adminBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(171)))), ((int)(((byte)(121)))));
-            this.adminBtn.DisabledState.Image = global::Student_Attendance_System.Properties.Resources.Admin;
-            this.adminBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.adminBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.adminBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.adminBtn.Image = ((System.Drawing.Image)(resources.GetObject("adminBtn.Image")));
-            this.adminBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.adminBtn.ImageSize = new System.Drawing.Size(40, 40);
-            this.adminBtn.Location = new System.Drawing.Point(10, 95);
-            this.adminBtn.Name = "adminBtn";
-            this.adminBtn.Size = new System.Drawing.Size(200, 60);
-            this.adminBtn.TabIndex = 3;
-            this.adminBtn.Text = "ADMIN";
-            this.adminBtn.TextOffset = new System.Drawing.Point(10, 0);
-            this.adminBtn.UseTransparentBackground = true;
-            this.adminBtn.Click += new System.EventHandler(this.adminBtn_Click);
             // 
             // startupForm
             // 

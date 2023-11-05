@@ -20,7 +20,7 @@ namespace Student_Attendance_System
             if (!Properties.Settings.Default.stayLogin)
                 isFirst = true;
 
-            ErnployeesGlobalVariable.page = 0;
+            EnrollmentGlobalVariable.page = 0;
             Config.isMaximized = false;
         }
         void setDBConnection()

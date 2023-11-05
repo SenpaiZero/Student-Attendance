@@ -31,7 +31,7 @@ namespace Student_Attendance_System.Forms
         {
             Task.Run(() =>
             {
-                cameraHelper.qrcode = true;
+                cameraHelper.qrcode = false;
                 cameraHelper.camListCB = camListCB;
                 cameraHelper.selfPic = camPB;
                 cameraHelper.onLoad();

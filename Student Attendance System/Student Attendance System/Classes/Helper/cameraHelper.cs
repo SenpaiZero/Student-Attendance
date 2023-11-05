@@ -81,13 +81,17 @@ namespace Student_Attendance_System.Classes
                 Result result = barcodeReader.decode(binaryBitmap);
                 if (result != null)
                 {
-                    // stop the camera if its running
-                    if (videoSource != null && videoSource.IsRunning)
+                    if (validationHelper.checkFieldNumeric(result.Text))
                     {
-                        videoSource.SignalToStop();
-                        videoSource.WaitForStop();
+                        String qrcodeVal = result.Text;
+                        MessageBox.Show(qrcodeVal);
+                        // stop the camera if its running
+                        if (videoSource != null && videoSource.IsRunning)
+                        {
+                            videoSource.SignalToStop();
+                            videoSource.WaitForStop();
+                        }
                     }
-                    
                 }
 
             }
@@ -123,7 +127,7 @@ namespace Student_Attendance_System.Classes
         }
         public static void captureBtn()
         {
-            ErnployeesGlobalVariable.frame = CropToSquare(frame);
+            EnrollmentGlobalVariable.frame = CropToSquare(frame);
         }
         // Converting bitmap into byte array
         private static byte[] BitmapToByteArray(Bitmap bitmap)

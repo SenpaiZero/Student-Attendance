@@ -36,20 +36,20 @@ namespace Student_Attendance_System.Forms.Enroll
 
         private void guardianDetails_Load(object sender, EventArgs e)
         {
-            ErnployeesGlobalVariable.isNext = false;
-            fatherfnameTB.Text = ErnployeesGlobalVariable.fatherfName;
-            fathermnameTB.Text = ErnployeesGlobalVariable.fathermName;
-            fatherlnameTB.Text = ErnployeesGlobalVariable.fatherlName;
-            fatherEmailTB.Text = ErnployeesGlobalVariable.fatherEmail;
-            fatherPhoneNumberTB.Text = ErnployeesGlobalVariable.fatherPhone;
-            fatherOccupationTB.Text = ErnployeesGlobalVariable.fatherOccupation;
+            EnrollmentGlobalVariable.isNext = false;
+            fatherfnameTB.Text = EnrollmentGlobalVariable.fatherfName;
+            fathermnameTB.Text = EnrollmentGlobalVariable.fathermName;
+            fatherlnameTB.Text = EnrollmentGlobalVariable.fatherlName;
+            fatherEmailTB.Text = EnrollmentGlobalVariable.fatherEmail;
+            fatherPhoneNumberTB.Text = EnrollmentGlobalVariable.fatherPhone;
+            fatherOccupationTB.Text = EnrollmentGlobalVariable.fatherOccupation;
 
-            motherfnameTB.Text = ErnployeesGlobalVariable.motherfName;
-            mothermnameTB.Text = ErnployeesGlobalVariable.mothermName;
-            motherlnameTB.Text = ErnployeesGlobalVariable.motherlName;
-            motherEmailTB.Text = ErnployeesGlobalVariable.motherEmail;
-            motherPhoneTB.Text = ErnployeesGlobalVariable.motherPhone;
-            motherOccupationTB.Text = ErnployeesGlobalVariable.motherOccupation;
+            motherfnameTB.Text = EnrollmentGlobalVariable.motherfName;
+            mothermnameTB.Text = EnrollmentGlobalVariable.mothermName;
+            motherlnameTB.Text = EnrollmentGlobalVariable.motherlName;
+            motherEmailTB.Text = EnrollmentGlobalVariable.motherEmail;
+            motherPhoneTB.Text = EnrollmentGlobalVariable.motherPhone;
+            motherOccupationTB.Text = EnrollmentGlobalVariable.motherOccupation;
         }
 
         private void firstNameTB_SizeChanged(object sender, EventArgs e)
@@ -63,115 +63,151 @@ namespace Student_Attendance_System.Forms.Enroll
 
         private void guardianDetails_FormClosed(object sender, FormClosedEventArgs e)
         {
-            ErnployeesGlobalVariable.fatherfName = fatherfnameTB.Text;
-            ErnployeesGlobalVariable.fathermName = fathermnameTB.Text;
-            ErnployeesGlobalVariable.fatherlName = fatherlnameTB.Text;
-            ErnployeesGlobalVariable.fatherEmail = fatherEmailTB.Text;
-            ErnployeesGlobalVariable.fatherPhone = fatherPhoneNumberTB.Text;
-            ErnployeesGlobalVariable.fatherOccupation = fatherOccupationTB.Text;
+            EnrollmentGlobalVariable.fatherfName = fatherfnameTB.Text;
+            EnrollmentGlobalVariable.fathermName = fathermnameTB.Text;
+            EnrollmentGlobalVariable.fatherlName = fatherlnameTB.Text;
+            EnrollmentGlobalVariable.fatherEmail = fatherEmailTB.Text;
+            EnrollmentGlobalVariable.fatherPhone = fatherPhoneNumberTB.Text;
+            EnrollmentGlobalVariable.fatherOccupation = fatherOccupationTB.Text;
 
-            ErnployeesGlobalVariable.motherfName = motherfnameTB.Text;
-            ErnployeesGlobalVariable.mothermName = mothermnameTB.Text;
-            ErnployeesGlobalVariable.motherlName = motherlnameTB.Text;
-            ErnployeesGlobalVariable.motherEmail = motherEmailTB.Text;
-            ErnployeesGlobalVariable.motherPhone = motherPhoneTB.Text;
-            ErnployeesGlobalVariable.motherOccupation = motherOccupationTB.Text;
+            EnrollmentGlobalVariable.motherfName = motherfnameTB.Text;
+            EnrollmentGlobalVariable.mothermName = mothermnameTB.Text;
+            EnrollmentGlobalVariable.motherlName = motherlnameTB.Text;
+            EnrollmentGlobalVariable.motherEmail = motherEmailTB.Text;
+            EnrollmentGlobalVariable.motherPhone = motherPhoneTB.Text;
+            EnrollmentGlobalVariable.motherOccupation = motherOccupationTB.Text;
         }
 
         private void fatherfnameTB_Leave(object sender, EventArgs e)
         {
             if (!validationHelper.textBoxValidation_Alpha(fatherfnameTB, "First Name", errorProvider1))
+            {
+                checkAttemp[10] = false;
                 return;
+            }
             checkAttemp[10] = true;
-            ErnployeesGlobalVariable.isNext = true;
+            EnrollmentGlobalVariable.isNext = true;
         }
 
         private void fathermnameTB_Leave(object sender, EventArgs e)
         {
             if (!validationHelper.textBoxValidation_Alpha(fathermnameTB, "Middle Name", errorProvider1))
+            {
+                checkAttemp[11] = false;
                 return;
+            }
             checkAttemp[11] = true;
-            ErnployeesGlobalVariable.isNext = true;
+            EnrollmentGlobalVariable.isNext = true;
         }
 
         private void fatherlnameTB_Leave(object sender, EventArgs e)
         {
             if (!validationHelper.textBoxValidation_Alpha(fatherlnameTB, "Last Name", errorProvider1))
+            {
+                checkAttemp[0] = false;
                 return;
+            }
             checkAttemp[0] = true;
-            ErnployeesGlobalVariable.isNext = true;
+            EnrollmentGlobalVariable.isNext = true;
         }
 
         private void fatherEmailTB_Leave(object sender, EventArgs e)
         {
             if (!validationHelper.textBoxValidation_Email(fatherEmailTB, "Email", errorProvider1))
+            {
+                checkAttemp[1] = false;
                 return;
+            }
             checkAttemp[1] = true;
-            ErnployeesGlobalVariable.isNext = true;
+            EnrollmentGlobalVariable.isNext = true;
         }
 
         private void fatherPhoneNumberTB_Leave(object sender, EventArgs e)
         {
             if (!validationHelper.textBoxValidation_PhoneNumber(fatherPhoneNumberTB, "Phone Number", errorProvider1))
+            {
+                checkAttemp[2] = false;
                 return;
+            }
             checkAttemp[2] = true;
-            ErnployeesGlobalVariable.isNext = true;
+            EnrollmentGlobalVariable.isNext = true;
         }
 
         private void fatherOccupationTB_Leave(object sender, EventArgs e)
         {
             if (!validationHelper.textBoxValidation_Alpha(fatherOccupationTB, "Occupation", errorProvider1))
+            {
+                checkAttemp[3] = false;
                 return;
+            }
             checkAttemp[3] = true;
-            ErnployeesGlobalVariable.isNext = true;
+            EnrollmentGlobalVariable.isNext = true;
         }
 
         private void motherfnameTB_Leave(object sender, EventArgs e)
         {
             if (!validationHelper.textBoxValidation_Alpha(motherfnameTB, "First Name", errorProvider1))
+            {
+                checkAttemp[4] = false;
                 return;
+            }
             checkAttemp[4] = true;
-            ErnployeesGlobalVariable.isNext = true;
+            EnrollmentGlobalVariable.isNext = true;
         }
 
         private void motherlnameTB_Leave(object sender, EventArgs e)
         {
             if (!validationHelper.textBoxValidation_Alpha(motherlnameTB, "Last Name", errorProvider1))
+            {
+                checkAttemp[5] = false;
                 return;
+            }
             checkAttemp[5] = true;
-            ErnployeesGlobalVariable.isNext = true;
+            EnrollmentGlobalVariable.isNext = true;
         }
 
         private void mothermnameTB_Leave(object sender, EventArgs e)
         {
             if (!validationHelper.textBoxValidation_Alpha(mothermnameTB, "Middle Name", errorProvider1))
+            {
+                checkAttemp[6] = false;
                 return;
+            }
             checkAttemp[6] = true;
-            ErnployeesGlobalVariable.isNext = true;
+            EnrollmentGlobalVariable.isNext = true;
         }
 
         private void motherEmailTB_Leave(object sender, EventArgs e)
         {
             if (!validationHelper.textBoxValidation_Email(motherEmailTB, "Email", errorProvider1))
+            {
+                checkAttemp[7] = false;
                 return;
+            }
             checkAttemp[7] = true;
-            ErnployeesGlobalVariable.isNext = true;
+            EnrollmentGlobalVariable.isNext = true;
         }
 
         private void motherPhoneTB_Leave(object sender, EventArgs e)
         {
             if (!validationHelper.textBoxValidation_PhoneNumber(motherPhoneTB, "Phone Number", errorProvider1))
+            {
+                checkAttemp[8] = false;
                 return;
+            }
             checkAttemp[8] = true;
-            ErnployeesGlobalVariable.isNext = true;
+            EnrollmentGlobalVariable.isNext = true;
         }
 
         private void motherOccupationTB_Leave(object sender, EventArgs e)
         {
             if (!validationHelper.textBoxValidation_Alpha(motherOccupationTB, "Occupation", errorProvider1))
+            {
+                checkAttemp[9] = false;
                 return;
+            }
             checkAttemp[9] = true;
-            ErnployeesGlobalVariable.isNext = true;
+            EnrollmentGlobalVariable.isNext = true;
         }
     
         public static void done()
@@ -180,11 +216,12 @@ namespace Student_Attendance_System.Forms.Enroll
             {
                 if (checkAttemp[i] == false)
                 {
-                    ErnployeesGlobalVariable.isNext = false;
+                    EnrollmentGlobalVariable.isNext = false;
+                    return;
                 }
             }
 
-            ErnployeesGlobalVariable.isNext = true;
+            EnrollmentGlobalVariable.isNext = true;
         }
     }
 }

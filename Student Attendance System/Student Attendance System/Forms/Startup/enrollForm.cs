@@ -1,5 +1,6 @@
 ﻿using Student_Attendance_System.Classes;
 using Student_Attendance_System.Forms.Enroll;
+using Student_Attendance_System.Forms.Modals;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -42,44 +43,44 @@ namespace Student_Attendance_System.Startup
         void defaultData()
         {
             //page 1
-            ErnployeesGlobalVariable.firstName = "";
-            ErnployeesGlobalVariable.middleName = "";
-            ErnployeesGlobalVariable.lastName = "";
+            EnrollmentGlobalVariable.firstName = "";
+            EnrollmentGlobalVariable.middleName = "";
+            EnrollmentGlobalVariable.lastName = "";
 
-            ErnployeesGlobalVariable.birthday = "";
-            ErnployeesGlobalVariable.age = "";
-            ErnployeesGlobalVariable.religion = "";
-            ErnployeesGlobalVariable.gender = "";
-            ErnployeesGlobalVariable.address = "";
-            ErnployeesGlobalVariable.phone = "";
-            ErnployeesGlobalVariable.email = "";
+            EnrollmentGlobalVariable.birthday = "";
+            EnrollmentGlobalVariable.age = "";
+            EnrollmentGlobalVariable.religion = "";
+            EnrollmentGlobalVariable.gender = "";
+            EnrollmentGlobalVariable.address = "";
+            EnrollmentGlobalVariable.phone = "";
+            EnrollmentGlobalVariable.email = "";
             personalDetails.checkAttemp = new bool[] { false, false, false, false, false, false };
 
             //Page 2
-            ErnployeesGlobalVariable.fatherfName = "";
-            ErnployeesGlobalVariable.fathermName = "";
-            ErnployeesGlobalVariable.fatherlName = "";
-            ErnployeesGlobalVariable.fatherEmail = "";
-            ErnployeesGlobalVariable.fatherPhone = "";
-            ErnployeesGlobalVariable.fatherOccupation = "";
+            EnrollmentGlobalVariable.fatherfName = "";
+            EnrollmentGlobalVariable.fathermName = "";
+            EnrollmentGlobalVariable.fatherlName = "";
+            EnrollmentGlobalVariable.fatherEmail = "";
+            EnrollmentGlobalVariable.fatherPhone = "";
+            EnrollmentGlobalVariable.fatherOccupation = "";
 
 
-            ErnployeesGlobalVariable.motherfName = "";
-            ErnployeesGlobalVariable.mothermName = "";
-            ErnployeesGlobalVariable.motherlName = "";
-            ErnployeesGlobalVariable.motherEmail = "";
-            ErnployeesGlobalVariable.motherPhone = "";
-            ErnployeesGlobalVariable.motherOccupation = "";
+            EnrollmentGlobalVariable.motherfName = "";
+            EnrollmentGlobalVariable.mothermName = "";
+            EnrollmentGlobalVariable.motherlName = "";
+            EnrollmentGlobalVariable.motherEmail = "";
+            EnrollmentGlobalVariable.motherPhone = "";
+            EnrollmentGlobalVariable.motherOccupation = "";
             guardianDetails.checkAttemp = new bool[] { false, false, false, false, false, false, false, false, false, false, false, false };
 
 
             //Page 3
-            ErnployeesGlobalVariable.section = "";
-            ErnployeesGlobalVariable.year = "";
-            ErnployeesGlobalVariable.id = "";
-            ErnployeesGlobalVariable.moreDetails = "";
-            ErnployeesGlobalVariable.frame = null;
-            ErnployeesGlobalVariable.QRCode = null;
+            EnrollmentGlobalVariable.section = "";
+            EnrollmentGlobalVariable.year = "";
+            EnrollmentGlobalVariable.id = "";
+            EnrollmentGlobalVariable.moreDetails = "";
+            EnrollmentGlobalVariable.frame = null;
+            EnrollmentGlobalVariable.QRCode = null;
             moreDetailsForm.checkAttemp = new bool[] { false, false };
         }
         void bringFront()
@@ -95,33 +96,41 @@ namespace Student_Attendance_System.Startup
 
         private void backBtn_Click(object sender, EventArgs e)
         {
-            if(ErnployeesGlobalVariable.page > 0)
-                ErnployeesGlobalVariable.page--;
+            if(EnrollmentGlobalVariable.page > 0)
+                EnrollmentGlobalVariable.page--;
 
-            if (ErnployeesGlobalVariable.page == 0)
+            if (EnrollmentGlobalVariable.page == 0)
                 pageHelper.loadEnrollForm(new personalDetails(), mainPanel);
-            else if (ErnployeesGlobalVariable.page == 1)
+            else if (EnrollmentGlobalVariable.page == 1)
                 pageHelper.loadEnrollForm(new guardianDetails(), mainPanel);
             bringFront();
         }
 
         private void nextBtn_Click(object sender, EventArgs e)
         {
-            if (ErnployeesGlobalVariable.page == 0)
+            if (EnrollmentGlobalVariable.page == 0)
                 personalDetails.done();
-            if(ErnployeesGlobalVariable.page == 1)
+            if(EnrollmentGlobalVariable.page == 1)
                 guardianDetails.done();
-            if (ErnployeesGlobalVariable.page == 2)
+            if (EnrollmentGlobalVariable.page == 2)
                 moreDetailsForm.done();
-            if (ErnployeesGlobalVariable.isNext == false)
+            if (EnrollmentGlobalVariable.isNext == false)
                 return;
 
-            if (ErnployeesGlobalVariable.page < 2)
-                ErnployeesGlobalVariable.page++;
-
-            if (ErnployeesGlobalVariable.page == 1)
+            if (EnrollmentGlobalVariable.page < 2)
+                EnrollmentGlobalVariable.page++;
+            else
+            {
+                previewEnrollmentData prev = new previewEnrollmentData();
+                if(prev.ShowDialog() == DialogResult.OK)
+                {
+                    MessageBox.Show("added");
+                    return;
+                }
+            }
+            if (EnrollmentGlobalVariable.page == 1)
                 pageHelper.loadEnrollForm(new guardianDetails(), mainPanel);
-            else if(ErnployeesGlobalVariable.page == 2)
+            else if(EnrollmentGlobalVariable.page == 2)
                 pageHelper.loadEnrollForm(new moreDetailsForm(), mainPanel);
 
             bringFront();
@@ -129,7 +138,7 @@ namespace Student_Attendance_System.Startup
 
         private void enrollForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            ErnployeesGlobalVariable.page = 0;
+            EnrollmentGlobalVariable.page = 0;
             defaultData();
         }
 

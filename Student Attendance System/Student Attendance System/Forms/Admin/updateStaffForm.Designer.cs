@@ -120,8 +120,9 @@
             this.nameLbl.IsContextMenuEnabled = false;
             this.nameLbl.IsSelectionEnabled = false;
             this.nameLbl.Location = new System.Drawing.Point(20, 16);
+            this.nameLbl.MinimumSize = new System.Drawing.Size(250, 0);
             this.nameLbl.Name = "nameLbl";
-            this.nameLbl.Size = new System.Drawing.Size(108, 32);
+            this.nameLbl.Size = new System.Drawing.Size(250, 29);
             this.nameLbl.TabIndex = 40;
             this.nameLbl.TabStop = false;
             this.nameLbl.Text = "FULL NAME";
@@ -155,12 +156,13 @@
             this.adminLbl.IsContextMenuEnabled = false;
             this.adminLbl.IsSelectionEnabled = false;
             this.adminLbl.Location = new System.Drawing.Point(445, 375);
+            this.adminLbl.MinimumSize = new System.Drawing.Size(250, 0);
             this.adminLbl.Name = "adminLbl";
-            this.adminLbl.Size = new System.Drawing.Size(58, 30);
+            this.adminLbl.Size = new System.Drawing.Size(250, 24);
             this.adminLbl.TabIndex = 45;
             this.adminLbl.TabStop = false;
             this.adminLbl.Text = "ADMIN";
-            this.adminLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.adminLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // statusCB
             // 
@@ -225,8 +227,9 @@
             this.addressLbl.IsContextMenuEnabled = false;
             this.addressLbl.IsSelectionEnabled = false;
             this.addressLbl.Location = new System.Drawing.Point(20, 117);
+            this.addressLbl.MinimumSize = new System.Drawing.Size(250, 0);
             this.addressLbl.Name = "addressLbl";
-            this.addressLbl.Size = new System.Drawing.Size(90, 32);
+            this.addressLbl.Size = new System.Drawing.Size(250, 29);
             this.addressLbl.TabIndex = 46;
             this.addressLbl.TabStop = false;
             this.addressLbl.Text = "ADDRESS";
@@ -270,8 +273,9 @@
             this.ageLbl.IsContextMenuEnabled = false;
             this.ageLbl.IsSelectionEnabled = false;
             this.ageLbl.Location = new System.Drawing.Point(406, 227);
+            this.ageLbl.MinimumSize = new System.Drawing.Size(250, 0);
             this.ageLbl.Name = "ageLbl";
-            this.ageLbl.Size = new System.Drawing.Size(40, 32);
+            this.ageLbl.Size = new System.Drawing.Size(250, 29);
             this.ageLbl.TabIndex = 48;
             this.ageLbl.TabStop = false;
             this.ageLbl.Text = "AGE";
@@ -315,8 +319,9 @@
             this.emailLbl.IsContextMenuEnabled = false;
             this.emailLbl.IsSelectionEnabled = false;
             this.emailLbl.Location = new System.Drawing.Point(20, 227);
+            this.emailLbl.MinimumSize = new System.Drawing.Size(250, 0);
             this.emailLbl.Name = "emailLbl";
-            this.emailLbl.Size = new System.Drawing.Size(152, 32);
+            this.emailLbl.Size = new System.Drawing.Size(250, 29);
             this.emailLbl.TabIndex = 50;
             this.emailLbl.TabStop = false;
             this.emailLbl.Text = "EMAIL ADDRESS";
@@ -360,8 +365,9 @@
             this.phoneLbl.IsContextMenuEnabled = false;
             this.phoneLbl.IsSelectionEnabled = false;
             this.phoneLbl.Location = new System.Drawing.Point(20, 327);
+            this.phoneLbl.MinimumSize = new System.Drawing.Size(250, 0);
             this.phoneLbl.Name = "phoneLbl";
-            this.phoneLbl.Size = new System.Drawing.Size(155, 32);
+            this.phoneLbl.Size = new System.Drawing.Size(250, 29);
             this.phoneLbl.TabIndex = 52;
             this.phoneLbl.TabStop = false;
             this.phoneLbl.Text = "PHONE NUMBER";
@@ -398,8 +404,9 @@
             this.statusLbl.IsContextMenuEnabled = false;
             this.statusLbl.IsSelectionEnabled = false;
             this.statusLbl.Location = new System.Drawing.Point(20, 432);
+            this.statusLbl.MinimumSize = new System.Drawing.Size(250, 0);
             this.statusLbl.Name = "statusLbl";
-            this.statusLbl.Size = new System.Drawing.Size(76, 32);
+            this.statusLbl.Size = new System.Drawing.Size(250, 29);
             this.statusLbl.TabIndex = 55;
             this.statusLbl.TabStop = false;
             this.statusLbl.Text = "STATUS";
@@ -413,8 +420,9 @@
             this.genderLbl.IsContextMenuEnabled = false;
             this.genderLbl.IsSelectionEnabled = false;
             this.genderLbl.Location = new System.Drawing.Point(202, 432);
+            this.genderLbl.MinimumSize = new System.Drawing.Size(250, 0);
             this.genderLbl.Name = "genderLbl";
-            this.genderLbl.Size = new System.Drawing.Size(78, 32);
+            this.genderLbl.Size = new System.Drawing.Size(250, 29);
             this.genderLbl.TabIndex = 56;
             this.genderLbl.TabStop = false;
             this.genderLbl.Text = "GENDER";

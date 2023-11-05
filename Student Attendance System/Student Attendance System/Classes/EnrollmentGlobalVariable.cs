@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Student_Attendance_System.Classes
 {
-    internal class ErnployeesGlobalVariable
+    internal class EnrollmentGlobalVariable
     {
         //Config
         public static int page { get; set; }

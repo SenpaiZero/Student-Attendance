@@ -202,6 +202,7 @@
             // sectionTB
             // 
             this.sectionTB.BorderRadius = 5;
+            this.sectionTB.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tableLayoutPanel1.SetColumnSpan(this.sectionTB, 2);
             this.sectionTB.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.sectionTB.DefaultText = "";
@@ -213,6 +214,7 @@
             this.sectionTB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
             this.sectionTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.sectionTB.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.sectionTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.sectionTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.sectionTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.sectionTB.IconRightSize = new System.Drawing.Size(25, 25);
@@ -286,6 +288,7 @@
             // idTB
             // 
             this.idTB.BorderRadius = 5;
+            this.idTB.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tableLayoutPanel1.SetColumnSpan(this.idTB, 2);
             this.idTB.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.idTB.DefaultText = "";
@@ -297,6 +300,7 @@
             this.idTB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
             this.idTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.idTB.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.idTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.idTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.idTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.idTB.IconRightSize = new System.Drawing.Size(25, 25);
@@ -332,6 +336,7 @@
             // moreDetailTB
             // 
             this.moreDetailTB.BorderRadius = 5;
+            this.moreDetailTB.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.tableLayoutPanel1.SetColumnSpan(this.moreDetailTB, 4);
             this.moreDetailTB.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.moreDetailTB.DefaultText = "";
@@ -343,6 +348,7 @@
             this.moreDetailTB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
             this.moreDetailTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.moreDetailTB.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.moreDetailTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.moreDetailTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.moreDetailTB.Location = new System.Drawing.Point(349, 405);
             this.moreDetailTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -368,7 +374,7 @@
             this.studentTypeCB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.studentTypeCB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.studentTypeCB.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.studentTypeCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.studentTypeCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.studentTypeCB.ItemHeight = 30;
             this.studentTypeCB.Items.AddRange(new object[] {
             "Enrollee",
@@ -412,7 +418,7 @@
             this.yearCB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.yearCB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.yearCB.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.yearCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.yearCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.yearCB.ItemHeight = 30;
             this.yearCB.Items.AddRange(new object[] {
             "1",

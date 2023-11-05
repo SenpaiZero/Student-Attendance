@@ -90,7 +90,7 @@
   <ItemGroup>
     <Compile Include="Classes\Helper\cameraHelper.cs" />
     <Compile Include="Classes\Config.cs" />
-    <Compile Include="Classes\ErnployeesGlobalVariable.cs" />
+    <Compile Include="Classes\EnrollmentGlobalVariable.cs" />
     <Compile Include="Classes\Helper\databaseHelper.cs" />
     <Compile Include="Classes\Helper\QrCodeHelper.cs" />
     <Compile Include="Classes\Helper\UIHelper.cs" />
@@ -124,10 +124,10 @@
     <Compile Include="Forms\Admin\updateStaffForm.Designer.cs">
       <DependentUpon>updateStaffForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\changePasswordForm.cs">
+    <Compile Include="Forms\Modals\changePasswordForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\changePasswordForm.Designer.cs">
+    <Compile Include="Forms\Modals\changePasswordForm.Designer.cs">
       <DependentUpon>changePasswordForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Enroll\guardianDetails.cs">
@@ -148,16 +148,22 @@
     <Compile Include="Forms\Enroll\personalDetails.Designer.cs">
       <DependentUpon>personalDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Modals\previewEnrollmentData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Modals\previewEnrollmentData.Designer.cs">
+      <DependentUpon>previewEnrollmentData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Startup\blank.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Startup\blank.Designer.cs">
       <DependentUpon>blank.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\studentPictureForm.cs">
+    <Compile Include="Forms\Modals\studentPictureForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\studentPictureForm.Designer.cs">
+    <Compile Include="Forms\Modals\studentPictureForm.Designer.cs">
       <DependentUpon>studentPictureForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Utility\loadingForm.cs">
@@ -181,10 +187,10 @@
     <Compile Include="Forms\Startup\enrollForm.Designer.cs">
       <DependentUpon>enrollForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\loginForm.cs">
+    <Compile Include="Forms\Modals\loginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\loginForm.Designer.cs">
+    <Compile Include="Forms\Modals\loginForm.Designer.cs">
       <DependentUpon>loginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Startup\settingForm.cs">
@@ -229,7 +235,7 @@
     <EmbeddedResource Include="Forms\Admin\updateStaffForm.resx">
       <DependentUpon>updateStaffForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\changePasswordForm.resx">
+    <EmbeddedResource Include="Forms\Modals\changePasswordForm.resx">
       <DependentUpon>changePasswordForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Enroll\guardianDetails.resx">
@@ -241,10 +247,13 @@
     <EmbeddedResource Include="Forms\Enroll\personalDetails.resx">
       <DependentUpon>personalDetails.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Modals\previewEnrollmentData.resx">
+      <DependentUpon>previewEnrollmentData.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Startup\blank.resx">
       <DependentUpon>blank.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\studentPictureForm.resx">
+    <EmbeddedResource Include="Forms\Modals\studentPictureForm.resx">
       <DependentUpon>studentPictureForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Utility\loadingForm.resx">
@@ -256,7 +265,7 @@
     <EmbeddedResource Include="Forms\Startup\enrollForm.resx">
       <DependentUpon>enrollForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\loginForm.resx">
+    <EmbeddedResource Include="Forms\Modals\loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Startup\settingForm.resx">

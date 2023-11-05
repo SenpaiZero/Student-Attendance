@@ -26,7 +26,7 @@ namespace Student_Attendance_System.Forms.Enroll
         {
             studentPictureForm std = new studentPictureForm();
             if (std.ShowDialog() == DialogResult.OK)
-                pic.Image = ErnployeesGlobalVariable.frame;
+                pic.Image = EnrollmentGlobalVariable.frame;
         }
         protected override CreateParams CreateParams
         {
@@ -40,17 +40,17 @@ namespace Student_Attendance_System.Forms.Enroll
 
         private void moreDetailsForm_Load(object sender, EventArgs e)
         {
-            ErnployeesGlobalVariable.isNext = false;
-            yearCB.Text = ErnployeesGlobalVariable.year;
-            sectionTB.Text = ErnployeesGlobalVariable.section;
-            idTB.Text = ErnployeesGlobalVariable.id;
-            moreDetailTB.Text = ErnployeesGlobalVariable.moreDetails;
+            EnrollmentGlobalVariable.isNext = false;
+            yearCB.Text = EnrollmentGlobalVariable.year;
+            sectionTB.Text = EnrollmentGlobalVariable.section;
+            idTB.Text = EnrollmentGlobalVariable.id;
+            moreDetailTB.Text = EnrollmentGlobalVariable.moreDetails;
 
-            if (ErnployeesGlobalVariable.frame != null)
-                pic.Image = ErnployeesGlobalVariable.frame;
-            if (ErnployeesGlobalVariable.QRCode != null)
-                qrCodePic.Image = ErnployeesGlobalVariable.QRCode;
-            if (String.IsNullOrEmpty(ErnployeesGlobalVariable.year))
+            if (EnrollmentGlobalVariable.frame != null)
+                pic.Image = EnrollmentGlobalVariable.frame;
+            if (EnrollmentGlobalVariable.QRCode != null)
+                qrCodePic.Image = EnrollmentGlobalVariable.QRCode;
+            if (String.IsNullOrEmpty(EnrollmentGlobalVariable.year))
                 yearCB.SelectedIndex = 0;
         }
 
@@ -61,16 +61,16 @@ namespace Student_Attendance_System.Forms.Enroll
             String randomizedId = "100" + randomDigits.ToString();
 
             idTB.Text = randomizedId;
-            ErnployeesGlobalVariable.QRCode = QrCodeHelper.generateQrCode(randomizedId);
-            qrCodePic.Image = ErnployeesGlobalVariable.QRCode;
+            EnrollmentGlobalVariable.QRCode = QrCodeHelper.generateQrCode(randomizedId);
+            qrCodePic.Image = EnrollmentGlobalVariable.QRCode;
         }
 
         private void moreDetailsForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            ErnployeesGlobalVariable.section = sectionTB.Text;
-            ErnployeesGlobalVariable.year = yearCB.Text;
-            ErnployeesGlobalVariable.id = idTB.Text;
-            ErnployeesGlobalVariable.moreDetails = moreDetailTB.Text;
+            EnrollmentGlobalVariable.section = sectionTB.Text;
+            EnrollmentGlobalVariable.year = yearCB.Text;
+            EnrollmentGlobalVariable.id = idTB.Text;
+            EnrollmentGlobalVariable.moreDetails = moreDetailTB.Text;
 
             //wala pa student type
         }
@@ -78,37 +78,42 @@ namespace Student_Attendance_System.Forms.Enroll
         private void sectionTB_Leave(object sender, EventArgs e)
         {
             if (!validationHelper.textBoxValidation_Alpha(sectionTB, "Section", errorProvider1))
+            {
+                checkAttemp[0] = false;
                 return;
-
+            }
             checkAttemp[0] = true;
-            ErnployeesGlobalVariable.isNext = true;
+            EnrollmentGlobalVariable.isNext = true;
         }
 
         private void moreDetailTB_Leave(object sender, EventArgs e)
         {
             if (!validationHelper.textBoxValidation_Alpha(moreDetailTB, "Data", errorProvider1))
+            {
+                checkAttemp[1] = false;
                 return;
+            }
 
             checkAttemp[1] = true;
-            ErnployeesGlobalVariable.isNext = true;
+            EnrollmentGlobalVariable.isNext = true;
         }
 
         public static void done()
         {
-            ErnployeesGlobalVariable.isNext = false;
+            EnrollmentGlobalVariable.isNext = false;
             MessageForm msg = new MessageForm()
             {
                 messageType = "Failed",
                 header = "Ooooops.",
                 isYesNo = false
             };
-            if(ErnployeesGlobalVariable.frame == null)
+            if(EnrollmentGlobalVariable.frame == null)
             {
                 msg.message = "Please add student's picture.";
                 msg.ShowDialog();
                 return;
             }
-            if(ErnployeesGlobalVariable.QRCode == null)
+            if(EnrollmentGlobalVariable.QRCode == null)
             {
                 msg.message = "Please generate student ID and QRCode";
                 msg.ShowDialog();
@@ -119,12 +124,12 @@ namespace Student_Attendance_System.Forms.Enroll
             {
                 if (checkAttemp[i] == false)
                 {
-                    ErnployeesGlobalVariable.isNext = false;
+                    EnrollmentGlobalVariable.isNext = false;
                     return;
                 }
             }
 
-            ErnployeesGlobalVariable.isNext = true;
+            EnrollmentGlobalVariable.isNext = true;
         }
     }
 }
