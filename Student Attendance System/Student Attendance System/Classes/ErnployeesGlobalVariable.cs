@@ -11,6 +11,7 @@ namespace Student_Attendance_System.Classes
     {
         //Config
         public static int page { get; set; }
+        public static bool isNext {get; set; }
         // Personal Details
         public static string firstName { get; set; }
         public static string lastName { get; set; }

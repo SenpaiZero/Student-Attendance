@@ -57,7 +57,9 @@
             this.motherEmailTB = new Guna.UI2.WinForms.Guna2TextBox();
             this.fatherPhoneNumberTB = new Guna.UI2.WinForms.Guna2TextBox();
             this.fatherOccupationTB = new Guna.UI2.WinForms.Guna2TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // middleNameLbl
@@ -419,6 +421,7 @@
             this.motherOccupationTB.SelectedText = "";
             this.motherOccupationTB.Size = new System.Drawing.Size(336, 49);
             this.motherOccupationTB.TabIndex = 50;
+            this.motherOccupationTB.Leave += new System.EventHandler(this.motherOccupationTB_Leave);
             // 
             // fatherlnameTB
             // 
@@ -445,6 +448,7 @@
             this.fatherlnameTB.SelectedText = "";
             this.fatherlnameTB.Size = new System.Drawing.Size(223, 42);
             this.fatherlnameTB.TabIndex = 16;
+            this.fatherlnameTB.Leave += new System.EventHandler(this.fatherlnameTB_Leave);
             // 
             // fatherfnameTB
             // 
@@ -472,6 +476,7 @@
             this.fatherfnameTB.Size = new System.Drawing.Size(222, 42);
             this.fatherfnameTB.TabIndex = 14;
             this.fatherfnameTB.SizeChanged += new System.EventHandler(this.firstNameTB_SizeChanged);
+            this.fatherfnameTB.Leave += new System.EventHandler(this.fatherfnameTB_Leave);
             // 
             // fathermnameTB
             // 
@@ -498,6 +503,7 @@
             this.fathermnameTB.SelectedText = "";
             this.fathermnameTB.Size = new System.Drawing.Size(222, 42);
             this.fathermnameTB.TabIndex = 16;
+            this.fathermnameTB.Leave += new System.EventHandler(this.fathermnameTB_Leave);
             // 
             // fatherEmailTB
             // 
@@ -524,6 +530,7 @@
             this.fatherEmailTB.SelectedText = "";
             this.fatherEmailTB.Size = new System.Drawing.Size(336, 42);
             this.fatherEmailTB.TabIndex = 31;
+            this.fatherEmailTB.Leave += new System.EventHandler(this.fatherEmailTB_Leave);
             // 
             // motherfnameTB
             // 
@@ -550,6 +557,7 @@
             this.motherfnameTB.SelectedText = "";
             this.motherfnameTB.Size = new System.Drawing.Size(222, 42);
             this.motherfnameTB.TabIndex = 45;
+            this.motherfnameTB.Leave += new System.EventHandler(this.motherfnameTB_Leave);
             // 
             // motherlnameTB
             // 
@@ -576,6 +584,7 @@
             this.motherlnameTB.SelectedText = "";
             this.motherlnameTB.Size = new System.Drawing.Size(222, 42);
             this.motherlnameTB.TabIndex = 44;
+            this.motherlnameTB.Leave += new System.EventHandler(this.motherlnameTB_Leave);
             // 
             // mothermnameTB
             // 
@@ -602,6 +611,7 @@
             this.mothermnameTB.SelectedText = "";
             this.mothermnameTB.Size = new System.Drawing.Size(223, 42);
             this.mothermnameTB.TabIndex = 43;
+            this.mothermnameTB.Leave += new System.EventHandler(this.mothermnameTB_Leave);
             // 
             // motherPhoneTB
             // 
@@ -628,6 +638,7 @@
             this.motherPhoneTB.SelectedText = "";
             this.motherPhoneTB.Size = new System.Drawing.Size(337, 42);
             this.motherPhoneTB.TabIndex = 51;
+            this.motherPhoneTB.Leave += new System.EventHandler(this.motherPhoneTB_Leave);
             // 
             // motherEmailTB
             // 
@@ -654,6 +665,7 @@
             this.motherEmailTB.SelectedText = "";
             this.motherEmailTB.Size = new System.Drawing.Size(336, 42);
             this.motherEmailTB.TabIndex = 47;
+            this.motherEmailTB.Leave += new System.EventHandler(this.motherEmailTB_Leave);
             // 
             // fatherPhoneNumberTB
             // 
@@ -680,6 +692,7 @@
             this.fatherPhoneNumberTB.SelectedText = "";
             this.fatherPhoneNumberTB.Size = new System.Drawing.Size(337, 42);
             this.fatherPhoneNumberTB.TabIndex = 37;
+            this.fatherPhoneNumberTB.Leave += new System.EventHandler(this.fatherPhoneNumberTB_Leave);
             // 
             // fatherOccupationTB
             // 
@@ -706,6 +719,11 @@
             this.fatherOccupationTB.SelectedText = "";
             this.fatherOccupationTB.Size = new System.Drawing.Size(336, 42);
             this.fatherOccupationTB.TabIndex = 39;
+            this.fatherOccupationTB.Leave += new System.EventHandler(this.fatherOccupationTB_Leave);
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // guardianDetails
             // 
@@ -725,6 +743,7 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.guardianDetails_FormClosed);
             this.Load += new System.EventHandler(this.guardianDetails_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -759,5 +778,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

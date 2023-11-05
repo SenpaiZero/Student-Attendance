@@ -15,6 +15,7 @@ namespace Student_Attendance_System.Startup
 {
     public partial class enrollForm : Form
     {
+        bool[] filledUp;
         public enrollForm()
         {
             InitializeComponent();
@@ -32,6 +33,7 @@ namespace Student_Attendance_System.Startup
         }
         private void attendanceForm_Load(object sender, EventArgs e)
         {
+            filledUp= new bool[] { false, false, false};
             pageHelper.loadEnrollForm(new personalDetails(), mainPanel);
             bringFront();
             defaultData();
@@ -39,6 +41,7 @@ namespace Student_Attendance_System.Startup
         
         void defaultData()
         {
+            //page 1
             ErnployeesGlobalVariable.firstName = "";
             ErnployeesGlobalVariable.middleName = "";
             ErnployeesGlobalVariable.lastName = "";
@@ -50,6 +53,7 @@ namespace Student_Attendance_System.Startup
             ErnployeesGlobalVariable.address = "";
             ErnployeesGlobalVariable.phone = "";
             ErnployeesGlobalVariable.email = "";
+            personalDetails.checkAttemp = new bool[] { false, false, false, false, false, false };
 
             //Page 2
             ErnployeesGlobalVariable.fatherfName = "";
@@ -59,12 +63,14 @@ namespace Student_Attendance_System.Startup
             ErnployeesGlobalVariable.fatherPhone = "";
             ErnployeesGlobalVariable.fatherOccupation = "";
 
+
             ErnployeesGlobalVariable.motherfName = "";
             ErnployeesGlobalVariable.mothermName = "";
             ErnployeesGlobalVariable.motherlName = "";
             ErnployeesGlobalVariable.motherEmail = "";
             ErnployeesGlobalVariable.motherPhone = "";
             ErnployeesGlobalVariable.motherOccupation = "";
+            guardianDetails.checkAttemp = new bool[] { false, false, false, false, false, false, false, false, false, false, false, false };
 
 
             //Page 3
@@ -74,6 +80,7 @@ namespace Student_Attendance_System.Startup
             ErnployeesGlobalVariable.moreDetails = "";
             ErnployeesGlobalVariable.frame = null;
             ErnployeesGlobalVariable.QRCode = null;
+            moreDetailsForm.checkAttemp = new bool[] { false, false };
         }
         void bringFront()
         {
@@ -100,6 +107,15 @@ namespace Student_Attendance_System.Startup
 
         private void nextBtn_Click(object sender, EventArgs e)
         {
+            if (ErnployeesGlobalVariable.page == 0)
+                personalDetails.done();
+            if(ErnployeesGlobalVariable.page == 1)
+                guardianDetails.done();
+            if (ErnployeesGlobalVariable.page == 2)
+                moreDetailsForm.done();
+            if (ErnployeesGlobalVariable.isNext == false)
+                return;
+
             if (ErnployeesGlobalVariable.page < 2)
                 ErnployeesGlobalVariable.page++;
 
@@ -116,5 +132,6 @@ namespace Student_Attendance_System.Startup
             ErnployeesGlobalVariable.page = 0;
             defaultData();
         }
+
     }
 }

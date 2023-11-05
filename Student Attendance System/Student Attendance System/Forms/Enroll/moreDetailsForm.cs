@@ -2,6 +2,7 @@
 using Student_Attendance_System.Classes;
 using Student_Attendance_System.Classes.Helper;
 using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace Student_Attendance_System.Forms.Enroll
 {
     public partial class moreDetailsForm : Form
     {
+        public static bool[] checkAttemp = new bool[] { false, false };
         public moreDetailsForm()
         {
             InitializeComponent();
@@ -38,6 +40,7 @@ namespace Student_Attendance_System.Forms.Enroll
 
         private void moreDetailsForm_Load(object sender, EventArgs e)
         {
+            ErnployeesGlobalVariable.isNext = false;
             yearCB.Text = ErnployeesGlobalVariable.year;
             sectionTB.Text = ErnployeesGlobalVariable.section;
             idTB.Text = ErnployeesGlobalVariable.id;
@@ -70,6 +73,58 @@ namespace Student_Attendance_System.Forms.Enroll
             ErnployeesGlobalVariable.moreDetails = moreDetailTB.Text;
 
             //wala pa student type
+        }
+
+        private void sectionTB_Leave(object sender, EventArgs e)
+        {
+            if (!validationHelper.textBoxValidation_Alpha(sectionTB, "Section", errorProvider1))
+                return;
+
+            checkAttemp[0] = true;
+            ErnployeesGlobalVariable.isNext = true;
+        }
+
+        private void moreDetailTB_Leave(object sender, EventArgs e)
+        {
+            if (!validationHelper.textBoxValidation_Alpha(moreDetailTB, "Data", errorProvider1))
+                return;
+
+            checkAttemp[1] = true;
+            ErnployeesGlobalVariable.isNext = true;
+        }
+
+        public static void done()
+        {
+            ErnployeesGlobalVariable.isNext = false;
+            MessageForm msg = new MessageForm()
+            {
+                messageType = "Failed",
+                header = "Ooooops.",
+                isYesNo = false
+            };
+            if(ErnployeesGlobalVariable.frame == null)
+            {
+                msg.message = "Please add student's picture.";
+                msg.ShowDialog();
+                return;
+            }
+            if(ErnployeesGlobalVariable.QRCode == null)
+            {
+                msg.message = "Please generate student ID and QRCode";
+                msg.ShowDialog();
+                return;
+            }
+
+            for (int i = 0; i < checkAttemp.Length; i++)
+            {
+                if (checkAttemp[i] == false)
+                {
+                    ErnployeesGlobalVariable.isNext = false;
+                    return;
+                }
+            }
+
+            ErnployeesGlobalVariable.isNext = true;
         }
     }
 }

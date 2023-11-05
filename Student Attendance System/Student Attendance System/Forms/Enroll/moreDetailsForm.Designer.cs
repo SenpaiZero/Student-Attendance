@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(moreDetailsForm));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pic = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -45,9 +46,11 @@
             this.studentTypeCB = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.yearCB = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qrCodePic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -221,6 +224,7 @@
             this.sectionTB.SelectedText = "";
             this.sectionTB.Size = new System.Drawing.Size(128, 22);
             this.sectionTB.TabIndex = 39;
+            this.sectionTB.Leave += new System.EventHandler(this.sectionTB_Leave);
             // 
             // yearLbl
             // 
@@ -350,6 +354,7 @@
             this.moreDetailTB.SelectedText = "";
             this.moreDetailTB.Size = new System.Drawing.Size(262, 82);
             this.moreDetailTB.TabIndex = 41;
+            this.moreDetailTB.Leave += new System.EventHandler(this.moreDetailTB_Leave);
             // 
             // studentTypeCB
             // 
@@ -421,6 +426,13 @@
             this.yearCB.Size = new System.Drawing.Size(128, 36);
             this.yearCB.TabIndex = 46;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
+            this.errorProvider1.ContainerControl = this;
+            this.errorProvider1.Icon = ((System.Drawing.Icon)(resources.GetObject("errorProvider1.Icon")));
+            this.errorProvider1.RightToLeft = true;
+            // 
             // moreDetailsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -442,6 +454,7 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qrCodePic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -464,5 +477,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2Button generateBtn;
         private Guna.UI2.WinForms.Guna2ComboBox yearCB;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

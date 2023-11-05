@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(personalDetails));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.phoneNumberTB = new Guna.UI2.WinForms.Guna2TextBox();
@@ -51,7 +52,9 @@
             this.genderCB = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ageTB = new Guna.UI2.WinForms.Guna2TextBox();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -142,6 +145,7 @@
             this.phoneNumberTB.SelectedText = "";
             this.phoneNumberTB.Size = new System.Drawing.Size(450, 48);
             this.phoneNumberTB.TabIndex = 31;
+            this.phoneNumberTB.Leave += new System.EventHandler(this.phoneNumberTB_Leave);
             // 
             // addressTB
             // 
@@ -171,6 +175,7 @@
             this.addressTB.SelectedText = "";
             this.addressTB.Size = new System.Drawing.Size(450, 48);
             this.addressTB.TabIndex = 24;
+            this.addressTB.Leave += new System.EventHandler(this.addressTB_Leave);
             // 
             // guna2HtmlLabel3
             // 
@@ -236,6 +241,7 @@
             this.firstNameTB.SelectedText = "";
             this.firstNameTB.Size = new System.Drawing.Size(222, 48);
             this.firstNameTB.TabIndex = 14;
+            this.firstNameTB.Leave += new System.EventHandler(this.firstNameTB_Leave);
             // 
             // middleNameTB
             // 
@@ -265,6 +271,7 @@
             this.middleNameTB.SelectedText = "";
             this.middleNameTB.Size = new System.Drawing.Size(223, 48);
             this.middleNameTB.TabIndex = 16;
+            this.middleNameTB.Leave += new System.EventHandler(this.middleNameTB_Leave);
             // 
             // surnameTB
             // 
@@ -294,6 +301,7 @@
             this.surnameTB.SelectedText = "";
             this.surnameTB.Size = new System.Drawing.Size(222, 48);
             this.surnameTB.TabIndex = 16;
+            this.surnameTB.Leave += new System.EventHandler(this.surnameTB_Leave);
             // 
             // middleNameLbl
             // 
@@ -414,6 +422,7 @@
             this.emailTB.SelectedText = "";
             this.emailTB.Size = new System.Drawing.Size(450, 48);
             this.emailTB.TabIndex = 22;
+            this.emailTB.Leave += new System.EventHandler(this.emailTB_Leave);
             // 
             // guna2HtmlLabel4
             // 
@@ -568,6 +577,13 @@
             this.ageTB.Size = new System.Drawing.Size(223, 48);
             this.ageTB.TabIndex = 20;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.BlinkStyle = System.Windows.Forms.ErrorBlinkStyle.NeverBlink;
+            this.errorProvider1.ContainerControl = this;
+            this.errorProvider1.Icon = ((System.Drawing.Icon)(resources.GetObject("errorProvider1.Icon")));
+            this.errorProvider1.RightToLeft = true;
+            // 
             // personalDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -590,6 +606,7 @@
             this.Resize += new System.EventHandler(this.personalDetails_Resize);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -618,5 +635,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox religionCB;
         private Guna.UI2.WinForms.Guna2TextBox phoneNumberTB;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
