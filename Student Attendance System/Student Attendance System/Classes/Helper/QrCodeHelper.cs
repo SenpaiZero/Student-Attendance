@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Student_Attendance_System.Classes.Helper
 {
-    internal class QrCodeHelper
+    public class QrCodeHelper
     {
         // Generating qr code based on qrcode library
         public static Bitmap generateQrCode(string studentID)
@@ -24,5 +24,6 @@ namespace Student_Attendance_System.Classes.Helper
                 new Bitmap(Properties.Resources.dummy_logo) //Picutre in the middle
                 );
         }
+
     }
 }

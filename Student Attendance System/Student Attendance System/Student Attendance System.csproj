@@ -364,5 +364,8 @@
   <ItemGroup>
     <None Include="Resources\error ico.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BG.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

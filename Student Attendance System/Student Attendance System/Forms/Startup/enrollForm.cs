@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static QRCoder.PayloadGenerator;
 
 namespace Student_Attendance_System.Startup
 {
@@ -33,8 +34,47 @@ namespace Student_Attendance_System.Startup
         {
             pageHelper.loadEnrollForm(new personalDetails(), mainPanel);
             bringFront();
+            defaultData();
         }
         
+        void defaultData()
+        {
+            ErnployeesGlobalVariable.firstName = "";
+            ErnployeesGlobalVariable.middleName = "";
+            ErnployeesGlobalVariable.lastName = "";
+
+            ErnployeesGlobalVariable.birthday = "";
+            ErnployeesGlobalVariable.age = "";
+            ErnployeesGlobalVariable.religion = "";
+            ErnployeesGlobalVariable.gender = "";
+            ErnployeesGlobalVariable.address = "";
+            ErnployeesGlobalVariable.phone = "";
+            ErnployeesGlobalVariable.email = "";
+
+            //Page 2
+            ErnployeesGlobalVariable.fatherfName = "";
+            ErnployeesGlobalVariable.fathermName = "";
+            ErnployeesGlobalVariable.fatherlName = "";
+            ErnployeesGlobalVariable.fatherEmail = "";
+            ErnployeesGlobalVariable.fatherPhone = "";
+            ErnployeesGlobalVariable.fatherOccupation = "";
+
+            ErnployeesGlobalVariable.motherfName = "";
+            ErnployeesGlobalVariable.mothermName = "";
+            ErnployeesGlobalVariable.motherlName = "";
+            ErnployeesGlobalVariable.motherEmail = "";
+            ErnployeesGlobalVariable.motherPhone = "";
+            ErnployeesGlobalVariable.motherOccupation = "";
+
+
+            //Page 3
+            ErnployeesGlobalVariable.section = "";
+            ErnployeesGlobalVariable.year = "";
+            ErnployeesGlobalVariable.id = "";
+            ErnployeesGlobalVariable.moreDetails = "";
+            ErnployeesGlobalVariable.frame = null;
+            ErnployeesGlobalVariable.QRCode = null;
+        }
         void bringFront()
         {
             nextBtn.BringToFront();
@@ -74,6 +114,7 @@ namespace Student_Attendance_System.Startup
         private void enrollForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             ErnployeesGlobalVariable.page = 0;
+            defaultData();
         }
     }
 }

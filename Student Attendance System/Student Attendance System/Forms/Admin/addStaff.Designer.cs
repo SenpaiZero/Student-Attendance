@@ -644,7 +644,7 @@
             this.randomizeBtn.Name = "randomizeBtn";
             this.randomizeBtn.Size = new System.Drawing.Size(163, 51);
             this.randomizeBtn.TabIndex = 34;
-            this.randomizeBtn.Text = "RANDOMIZE";
+            this.randomizeBtn.Text = "GENERATE";
             this.randomizeBtn.Click += new System.EventHandler(this.randomizeBtn_Click);
             // 
             // tableLayoutPanel2
