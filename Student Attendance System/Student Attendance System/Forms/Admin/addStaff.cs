@@ -46,10 +46,7 @@ namespace Student_Attendance_System.Forms.Admin
                && validationHelper.textBoxValidation_Address(addressTB, "ADDRESS", errorProvider1)
                && validationHelper.textBoxValidation_PhoneNumber(phoneTB, "PHONE NUMBER", errorProvider1)
                && validationHelper.textBoxValidation_Numeric(ageTB, "AGE", errorProvider1, 2))
-            {
-                return true;
-            }
-
+                   return true;
             return false;
         }
 
@@ -114,6 +111,7 @@ namespace Student_Attendance_System.Forms.Admin
             ageTB.Text = "";
             emailTB.Text = "";
             addressTB.Text = "";
+            phoneTB.Text = "";
             statusCB.SelectedIndex = 0;
             genderCB.SelectedIndex = 0;
             isAdminCB.Checked = false;
@@ -157,6 +155,41 @@ namespace Student_Attendance_System.Forms.Admin
 
         private void isAdminCB_Click(object sender, EventArgs e)
         {
+        }
+
+        private void firstNameTB_Leave(object sender, EventArgs e)
+        {
+            validationHelper.textBoxValidation_Alpha(firstNameTB, "FIRST NAME", errorProvider1);
+        }
+
+        private void surnameTB_Leave(object sender, EventArgs e)
+        {
+            validationHelper.textBoxValidation_Alpha(surnameTB, "LAST NAME", errorProvider1);
+        }
+
+        private void middleNameTB_Leave(object sender, EventArgs e)
+        {
+            validationHelper.textBoxValidation_Alpha(middleNameTB, "MIDDLE NAME", errorProvider1);
+        }
+
+        private void ageTB_Leave(object sender, EventArgs e)
+        {
+            validationHelper.textBoxValidation_Numeric(ageTB, "AGE", errorProvider1, 2);
+        }
+
+        private void emailTB_Leave(object sender, EventArgs e)
+        {
+            validationHelper.textBoxValidation_Email(emailTB, "EMAIL", errorProvider1);
+        }
+
+        private void addressTB_Leave(object sender, EventArgs e)
+        {
+            validationHelper.textBoxValidation_Address(addressTB, "ADDRESS", errorProvider1);
+        }
+
+        private void phoneTB_Leave(object sender, EventArgs e)
+        {
+            validationHelper.textBoxValidation_PhoneNumber(phoneTB, "PHONE NUMBER", errorProvider1);
         }
     }
 }

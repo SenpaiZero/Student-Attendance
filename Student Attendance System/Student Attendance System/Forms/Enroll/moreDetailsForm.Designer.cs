@@ -384,8 +384,10 @@
             this.studentTypeCB.MaximumSize = new System.Drawing.Size(1000, 0);
             this.studentTypeCB.MinimumSize = new System.Drawing.Size(10, 0);
             this.studentTypeCB.Name = "studentTypeCB";
-            this.studentTypeCB.Size = new System.Drawing.Size(262, 36);
+            this.studentTypeCB.Size = new System.Drawing.Size(328, 36);
             this.studentTypeCB.TabIndex = 37;
+            this.studentTypeCB.DragLeave += new System.EventHandler(this.studentTypeCB_DragLeave);
+            this.studentTypeCB.Leave += new System.EventHandler(this.studentTypeCB_Leave);
             // 
             // guna2HtmlLabel1
             // 
@@ -429,8 +431,9 @@
             this.yearCB.MaximumSize = new System.Drawing.Size(1000, 0);
             this.yearCB.MinimumSize = new System.Drawing.Size(10, 0);
             this.yearCB.Name = "yearCB";
-            this.yearCB.Size = new System.Drawing.Size(128, 36);
+            this.yearCB.Size = new System.Drawing.Size(160, 36);
             this.yearCB.TabIndex = 46;
+            this.yearCB.Leave += new System.EventHandler(this.yearCB_Leave);
             // 
             // errorProvider1
             // 
@@ -455,6 +458,7 @@
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "moreDetailsForm";
+            this.Deactivate += new System.EventHandler(this.moreDetailsForm_Deactivate);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.moreDetailsForm_FormClosed);
             this.Load += new System.EventHandler(this.moreDetailsForm_Load);
             this.tableLayoutPanel1.ResumeLayout(false);

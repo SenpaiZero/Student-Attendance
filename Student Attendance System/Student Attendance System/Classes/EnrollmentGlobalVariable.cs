@@ -49,6 +49,7 @@ namespace Student_Attendance_System.Classes
         public static string year { get; set; }
         public static string moreDetails { get; set; }
         public static string id { get; set; }
+        public static string studentType { get; set; }
 
 
     }

@@ -180,6 +180,7 @@
             this.phoneTB.SelectedText = "";
             this.phoneTB.Size = new System.Drawing.Size(318, 49);
             this.phoneTB.TabIndex = 31;
+            this.phoneTB.Leave += new System.EventHandler(this.phoneTB_Leave);
             // 
             // addressTB
             // 
@@ -211,6 +212,7 @@
             this.addressTB.SelectedText = "";
             this.addressTB.Size = new System.Drawing.Size(372, 49);
             this.addressTB.TabIndex = 24;
+            this.addressTB.Leave += new System.EventHandler(this.addressTB_Leave);
             // 
             // guna2HtmlLabel3
             // 
@@ -278,6 +280,7 @@
             this.firstNameTB.SelectedText = "";
             this.firstNameTB.Size = new System.Drawing.Size(210, 49);
             this.firstNameTB.TabIndex = 14;
+            this.firstNameTB.Leave += new System.EventHandler(this.firstNameTB_Leave);
             // 
             // middleNameTB
             // 
@@ -309,6 +312,7 @@
             this.middleNameTB.SelectedText = "";
             this.middleNameTB.Size = new System.Drawing.Size(212, 49);
             this.middleNameTB.TabIndex = 16;
+            this.middleNameTB.Leave += new System.EventHandler(this.middleNameTB_Leave);
             // 
             // surnameTB
             // 
@@ -340,6 +344,7 @@
             this.surnameTB.SelectedText = "";
             this.surnameTB.Size = new System.Drawing.Size(210, 49);
             this.surnameTB.TabIndex = 16;
+            this.surnameTB.Leave += new System.EventHandler(this.surnameTB_Leave);
             // 
             // middleNameLbl
             // 
@@ -425,6 +430,7 @@
             this.emailTB.SelectedText = "";
             this.emailTB.Size = new System.Drawing.Size(372, 49);
             this.emailTB.TabIndex = 22;
+            this.emailTB.Leave += new System.EventHandler(this.emailTB_Leave);
             // 
             // guna2HtmlLabel4
             // 
@@ -578,6 +584,7 @@
             this.ageTB.SelectedText = "";
             this.ageTB.Size = new System.Drawing.Size(156, 49);
             this.ageTB.TabIndex = 20;
+            this.ageTB.Leave += new System.EventHandler(this.ageTB_Leave);
             // 
             // guna2HtmlLabel2
             // 

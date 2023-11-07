@@ -14,7 +14,7 @@ namespace Student_Attendance_System.Forms.Enroll
 {
     public partial class personalDetails : Form
     {
-        public static bool[] checkAttemp = new bool[] { false, false, false, false, false, false};
+        public static bool[] checkAttemp = new bool[] { false, false, false, false, false, false, false};
     public personalDetails()
         {
             InitializeComponent();
@@ -174,6 +174,7 @@ namespace Student_Attendance_System.Forms.Enroll
                 age = 0;
 
             ageTB.Text = age.ToString();
+            checkAttemp[6] = true;
         }
     }
 }

@@ -52,6 +52,10 @@ namespace Student_Attendance_System.Forms.Enroll
                 qrCodePic.Image = EnrollmentGlobalVariable.QRCode;
             if (String.IsNullOrEmpty(EnrollmentGlobalVariable.year))
                 yearCB.SelectedIndex = 0;
+            if(String.IsNullOrEmpty(EnrollmentGlobalVariable.studentType))
+                studentTypeCB.SelectedIndex = 0;
+
+            cbUpdate();
         }
 
         private void generateBtn_Click(object sender, EventArgs e)
@@ -63,17 +67,13 @@ namespace Student_Attendance_System.Forms.Enroll
             idTB.Text = randomizedId;
             EnrollmentGlobalVariable.QRCode = QrCodeHelper.generateQrCode(randomizedId);
             qrCodePic.Image = EnrollmentGlobalVariable.QRCode;
+            EnrollmentGlobalVariable.id = idTB.Text;
         }
 
         private void moreDetailsForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            EnrollmentGlobalVariable.section = sectionTB.Text;
-            EnrollmentGlobalVariable.year = yearCB.Text;
-            EnrollmentGlobalVariable.id = idTB.Text;
-            EnrollmentGlobalVariable.moreDetails = moreDetailTB.Text;
-
-            //wala pa student type
         }
+
 
         private void sectionTB_Leave(object sender, EventArgs e)
         {
@@ -82,6 +82,7 @@ namespace Student_Attendance_System.Forms.Enroll
                 checkAttemp[0] = false;
                 return;
             }
+            EnrollmentGlobalVariable.section = sectionTB.Text;
             checkAttemp[0] = true;
             EnrollmentGlobalVariable.isNext = true;
         }
@@ -93,7 +94,7 @@ namespace Student_Attendance_System.Forms.Enroll
                 checkAttemp[1] = false;
                 return;
             }
-
+            EnrollmentGlobalVariable.moreDetails = moreDetailTB.Text;
             checkAttemp[1] = true;
             EnrollmentGlobalVariable.isNext = true;
         }
@@ -128,8 +129,29 @@ namespace Student_Attendance_System.Forms.Enroll
                     return;
                 }
             }
-
             EnrollmentGlobalVariable.isNext = true;
+        }
+
+        private void moreDetailsForm_Deactivate(object sender, EventArgs e)
+        {
+        }
+        void cbUpdate()
+        {
+            EnrollmentGlobalVariable.year = yearCB.Text;
+            EnrollmentGlobalVariable.studentType = studentTypeCB.Text;
+        }
+        private void yearCB_Leave(object sender, EventArgs e)
+        {
+            EnrollmentGlobalVariable.year = yearCB.Text;
+        }
+
+        private void studentTypeCB_DragLeave(object sender, EventArgs e)
+        {
+        }
+
+        private void studentTypeCB_Leave(object sender, EventArgs e)
+        {
+            EnrollmentGlobalVariable.studentType = studentTypeCB.Text;
         }
     }
 }

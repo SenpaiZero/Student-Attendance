@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -55,7 +56,7 @@ namespace Student_Attendance_System.Forms.Modals
             motherPhoneTB.Text = EnrollmentGlobalVariable.motherPhone;
 
             studentIDTB.Text = EnrollmentGlobalVariable.id;
-            studentTypeTB.Text = "wala pa";
+            studentTypeTB.Text = EnrollmentGlobalVariable.studentType;
             sectionTB.Text = EnrollmentGlobalVariable.section;
             yearTB.Text = EnrollmentGlobalVariable.year;
             moreTB.Text = EnrollmentGlobalVariable.moreDetails;
@@ -66,6 +67,51 @@ namespace Student_Attendance_System.Forms.Modals
 
         private void addBtn_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (databaseHelper.con.State != System.Data.ConnectionState.Open)
+                    databaseHelper.con.Open();
+                databaseHelper db = new databaseHelper();
+                String query = "INSERT INTO studentContacts (StudentID, Email, PhoneNumber, Address) VALUES (@studentID, @Email, @PhoneNumber, @Address); " +
+               "INSERT INTO studentData (StudentID, Name, Section, Year, StudentType) VALUES (@StudentID, @Name, @Section, @Year, @StudentType); " +
+               "INSERT INTO studentFather (StudentID, Name, Email, PhoneNumber, Occupation) VALUES (@StudentID, @fatherName, @fatherEmail, @fatherPhoneNumber, @fatherOccupation); " +
+               "INSERT INTO studentMother (StudentID, Name, Email, PhoneNumber, Occupation) VALUES (@StudentID, @motherName, @motherEmail, @motherPhoneNumber, @motherOccupation); " +
+               "INSERT INTO studentIdentity (StudentID, QRCode, Picture) VALUES (@StudentID, @qrcode, @picture); " +
+               "INSERT INTO studentInformation (StudentID, Age, Religion, Gender, MoreDetails) VALUES (@StudentID, @age, @religion, @gender, @moreDetails)";
+
+                using (db.cmd = new SqlCommand(query, databaseHelper.con))
+                {
+                    db.cmd.Parameters.AddWithValue("StudentID", EnrollmentGlobalVariable.id);
+                    db.cmd.Parameters.AddWithValue("Email", EnrollmentGlobalVariable.email);
+                    db.cmd.Parameters.AddWithValue("PhoneNumber", EnrollmentGlobalVariable.phone);
+                    db.cmd.Parameters.AddWithValue("Address", EnrollmentGlobalVariable.address);
+                    db.cmd.Parameters.AddWithValue("Name", $"{EnrollmentGlobalVariable.lastName}, " +
+                        $"{EnrollmentGlobalVariable.firstName} {EnrollmentGlobalVariable.middleName}");
+                    db.cmd.Parameters.AddWithValue("Section", EnrollmentGlobalVariable.section);
+                    db.cmd.Parameters.AddWithValue("Year", EnrollmentGlobalVariable.year);
+                    db.cmd.Parameters.AddWithValue("StudentType", EnrollmentGlobalVariable.studentType);
+                    db.cmd.Parameters.AddWithValue("fatherName", $"{EnrollmentGlobalVariable.fatherlName}, " +
+                        $"{EnrollmentGlobalVariable.fatherlName} {EnrollmentGlobalVariable.fathermName}");
+                    db.cmd.Parameters.AddWithValue("fatherEmail", EnrollmentGlobalVariable.fatherEmail);
+                    db.cmd.Parameters.AddWithValue("fatherPhoneNumber", EnrollmentGlobalVariable.fatherPhone);
+                    db.cmd.Parameters.AddWithValue("fatherOccupation", EnrollmentGlobalVariable.fatherOccupation);
+                    db.cmd.Parameters.AddWithValue("motherName", $"{EnrollmentGlobalVariable.motherlName}, " +
+                        $"{EnrollmentGlobalVariable.motherfName} {EnrollmentGlobalVariable.mothermName}");
+                    db.cmd.Parameters.AddWithValue("motherEmail", EnrollmentGlobalVariable.motherEmail);
+                    db.cmd.Parameters.AddWithValue("motherPhoneNumber", EnrollmentGlobalVariable.motherPhone);
+                    db.cmd.Parameters.AddWithValue("motherOccupation", EnrollmentGlobalVariable.motherOccupation);
+                    db.cmd.Parameters.AddWithValue("qrcode", databaseHelper.bitmapToVarBinary(EnrollmentGlobalVariable.QRCode));
+                    db.cmd.Parameters.AddWithValue("picture", databaseHelper.bitmapToVarBinary(EnrollmentGlobalVariable.frame));
+                    db.cmd.Parameters.AddWithValue("age", EnrollmentGlobalVariable.age);
+                    db.cmd.Parameters.AddWithValue("religion", EnrollmentGlobalVariable.religion);
+                    db.cmd.Parameters.AddWithValue("gender", EnrollmentGlobalVariable.gender);
+                    db.cmd.Parameters.AddWithValue("moreDetails", EnrollmentGlobalVariable.moreDetails);
+                    db.cmd.ExecuteNonQuery();
+                }
+            }catch(Exception ex)
+            {
+                throw;
+            }
             this.DialogResult = DialogResult.OK;
             this.Close();
         }

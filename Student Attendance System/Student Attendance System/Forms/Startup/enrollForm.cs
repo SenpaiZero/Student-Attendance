@@ -54,7 +54,7 @@ namespace Student_Attendance_System.Startup
             EnrollmentGlobalVariable.address = "";
             EnrollmentGlobalVariable.phone = "";
             EnrollmentGlobalVariable.email = "";
-            personalDetails.checkAttemp = new bool[] { false, false, false, false, false, false };
+            personalDetails.checkAttemp = new bool[] { false, false, false, false, false, false, false };
 
             //Page 2
             EnrollmentGlobalVariable.fatherfName = "";
