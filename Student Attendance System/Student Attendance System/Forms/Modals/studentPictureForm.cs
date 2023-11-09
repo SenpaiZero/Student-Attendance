@@ -8,12 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Media.Media3D;
 
 namespace Student_Attendance_System.Forms
 {
     public partial class studentPictureForm : Form
     {
+        cameraHelper capture;
         public studentPictureForm()
         {
             InitializeComponent();
@@ -29,29 +29,27 @@ namespace Student_Attendance_System.Forms
         }
         private void studentPictureForm_Load(object sender, EventArgs e)
         {
-            Task.Run(() =>
-            {
-                cameraHelper.qrcode = false;
-                cameraHelper.camListCB = camListCB;
-                cameraHelper.selfPic = camPB;
-                cameraHelper.onLoad();
-            });
+            capture = new cameraHelper();
+            capture.qrcode = false;
+            capture.camListCB = camListCB;
+            capture.selfPic = camPB;
+            capture.onLoad();
         }
 
         private void studentPictureForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            cameraHelper.closeForm();
+            capture.closeForm();
         }
 
         private void camListCB_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cameraHelper.changeCam(camListCB.SelectedIndex);
+            capture.changeCam(camListCB.SelectedIndex);
         }
 
         private void captureBtn_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.OK;
-            cameraHelper.captureBtn();
+            capture.captureBtn();
         }
 
         private void applyBtn_Click(object sender, EventArgs e)
@@ -68,7 +66,7 @@ namespace Student_Attendance_System.Forms
 
         private void retryBtn_Click(object sender, EventArgs e)
         {
-            cameraHelper.start(camListCB.SelectedIndex);
+            capture.start(camListCB.SelectedIndex);
         }
     }
 }

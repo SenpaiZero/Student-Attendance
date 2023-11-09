@@ -11,18 +11,19 @@ using System.Windows.Forms;
 using AForge.Video;
 using AForge.Video.DirectShow;
 using System.Reflection;
+using Guna.UI2.WinForms;
+using Student_Attendance_System.Forms;
 
 namespace Student_Attendance_System.Startup
 {
     public partial class studentForm : Form
     {
-        private FilterInfoCollection videoDevicesMain;
-        private VideoCaptureDevice videoSourceMain;
+        cameraHelper mainCamera;
+        cameraHelper scanningCamera;
+        splitPopup split;
         public studentForm()
         {
             InitializeComponent();
-            SetStyle(ControlStyles.SupportsTransparentBackColor, true);
-            this.BackColor = Color.Transparent;
         }
         protected override CreateParams CreateParams
         {
@@ -35,32 +36,21 @@ namespace Student_Attendance_System.Startup
         }
         private void studentForm_Load(object sender, EventArgs e)
         {
-            cameraHelper.qrcode = true;
-            cameraHelper.camListCB = scannerList;
-            cameraHelper.selfPic = qrScanning;
-            cameraHelper.onLoad();
+            split = new splitPopup();
 
-            //main cam
-            videoDevicesMain = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            //Scanner cam
+            scanningCamera = new cameraHelper();
+            scanningCamera.qrcode = true;
+            scanningCamera.camListCB = scannerList;
+            scanningCamera.selfPic = qrScanning;
+            scanningCamera.onLoad();
 
-            foreach (FilterInfo device in videoDevicesMain)
-            {
-                camList.Items.Add(device.Name); // Add the device name to the ComboBox
-            }
-            camList.SelectedIndex = 1;
-            if (videoDevicesMain.Count > 0)
-            {
-                // Initialize the videoSource with the first available camera.
-                videoSourceMain = new VideoCaptureDevice(videoDevicesMain[camList.SelectedIndex].MonikerString);
-                videoSourceMain.NewFrame += new NewFrameEventHandler(videoSource_NewFrame);
-
-                // Start capturing from the camera.
-                videoSourceMain.Start();
-            }
-            else
-            {
-                MessageBox.Show("No video devices found.");
-            }
+            //Picture cam
+            mainCamera = new cameraHelper();
+            mainCamera.qrcode = false;
+            mainCamera.camListCB = camList;
+            mainCamera.selfPic = secondPic;
+            mainCamera.onLoad();
         }
         private void videoSource_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
@@ -69,42 +59,37 @@ namespace Student_Attendance_System.Startup
         }
         private void guna2ImageButton1_Click(object sender, EventArgs e)
         {
-            if(settingContainer.Visible == false)
-                settingContainer.Visible = true;
-            else
-                settingContainer.Visible = false;
+            settingContainer.Visible = !settingContainer.Visible;
         }
 
         private void studentForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            // Stop capturing and release resources when the form is closing.
-            cameraHelper.closeForm();
-            if (videoSourceMain != null && videoSourceMain.IsRunning)
-            {
-                videoSourceMain.SignalToStop();
-                videoSourceMain.WaitForStop();
-                videoSourceMain = null;
-            }
+            scanningCamera.closeForm();
+            mainCamera.closeForm();
         }
 
         private void scannerList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cameraHelper.changeCam(scannerList.SelectedIndex);
+            scanningCamera.changeCam(scannerList.SelectedIndex);
         }
 
         private void camList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            changeCam();
+            mainCamera.changeCam(camList.SelectedIndex);
         }
 
-        void changeCam()
+        private void popupCB_CheckedChanged(object sender, EventArgs e)
         {
-            videoSourceMain = new VideoCaptureDevice(videoDevicesMain[camList.SelectedIndex].MonikerString);
-
-            // Event handler for new frames
-            videoSourceMain.NewFrame += new NewFrameEventHandler(videoSource_NewFrame);
-
-            videoSourceMain.Start(); // Start capturing
+            if (popupCB.Checked)
+            {
+                split.mainPicCB = camList;
+                split.Show();
+            }
+            else
+            {
+                split.Hide();
+            }
         }
+
     }
 }

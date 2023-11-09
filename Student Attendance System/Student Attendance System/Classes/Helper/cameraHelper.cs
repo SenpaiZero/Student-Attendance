@@ -13,20 +13,44 @@ using System.Drawing.Imaging;
 using System.Drawing;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using Student_Attendance_System.Classes.Helper;
+using System.Diagnostics;
 
 namespace Student_Attendance_System.Classes
 {
     internal class cameraHelper
     {
-        private static FilterInfoCollection videoDevices; // Stores available video devices
-        private static VideoCaptureDevice videoSource; // Represents the video capture device
-        private static bool capturing = false; // Indicates if we are currently capturing
-        private static QRCodeReader barcodeReader;
-        private static Bitmap frame;
+        private FilterInfoCollection videoDevices; // Stores available video devices
+        private VideoCaptureDevice videoSource; // Represents the video capture device
+        private bool capturing = false; // Indicates if we are currently capturing
+        private QRCodeReader barcodeReader;
+        private Bitmap frame;
 
-        public static bool isValid = false;
-        public static string fullName, idNum, dateString, timeString;
-        public static void closeForm()
+        public bool isValid = false;
+        public string fullName, idNum, dateString, timeString; 
+        private bool isProcessingScan = false;
+        private System.Windows.Forms.Timer frameProcessingTimer;
+        private Stopwatch stopwatch;
+
+        public cameraHelper()
+        {
+            stopwatch = new Stopwatch();
+            frameProcessingTimer = new System.Windows.Forms.Timer();
+            frameProcessingTimer.Interval = 100; // Set the interval to 500 milliseconds
+            frameProcessingTimer.Tick += new EventHandler(frameProcessingTimer_Tick);
+            frameProcessingTimer.Start(); // Start the timer
+
+        }
+        private void frameProcessingTimer_Tick(object sender, EventArgs e)
+        {
+            if(stopwatch.ElapsedMilliseconds >= 2000)
+            {
+                isProcessingScan = false;
+                stopwatch.Stop();
+                stopwatch.Reset();
+            }
+        }
+        public void closeForm()
         {
             if (videoSource != null && videoSource.IsRunning)
             {
@@ -37,7 +61,7 @@ namespace Student_Attendance_System.Classes
         }
 
         // Changing cam based on index of combobox
-        public static void changeCam(int index)
+        public void changeCam(int index)
         {
             // Close the form if the camera is running
             if (capturing)
@@ -53,9 +77,8 @@ namespace Student_Attendance_System.Classes
             videoSource.Start(); // Start capturing
             capturing = true;
         }
-
         // Event for the picturebox to run live without dela
-        private static void videoSource_NewFrame(object sender, NewFrameEventArgs eventArgs)
+        private void videoSource_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
             if (!capturing) return;
 
@@ -83,25 +106,25 @@ namespace Student_Attendance_System.Classes
                 {
                     if (validationHelper.checkFieldNumeric(result.Text))
                     {
+                        if (isProcessingScan) return;
+                        isProcessingScan = true;
+                        stopwatch.Start();
+
                         String qrcodeVal = result.Text;
+                        attendanceHelper.attendance(qrcodeVal);
                         MessageBox.Show(qrcodeVal);
-                        // stop the camera if its running
-                        if (videoSource != null && videoSource.IsRunning)
-                        {
-                            videoSource.SignalToStop();
-                            videoSource.WaitForStop();
-                        }
+
                     }
                 }
-
             }
-            frame = CropToSquare(frame);
-            selfPic.Image = frame; // Display the frame on the PictureBox
+            selfPic.Invoke((MethodInvoker)delegate
+            {
+                frame = CropToSquare(frame);
+                selfPic.Image = frame; // Display the frame on the PictureBox
+            });
         }
-
-
         // Method for starting a form with a cam
-        public static void onLoad()
+        public void onLoad()
         {
             videoDevices = new FilterInfoCollection(FilterCategory.VideoInputDevice); // Get available video devices
 
@@ -120,12 +143,12 @@ namespace Student_Attendance_System.Classes
             changeCam(0);
         }
 
-        public static void start(int i)
+        public void start(int i)
         {
             videoSource = null;
             changeCam(i);
         }
-        public static void captureBtn()
+        public void captureBtn()
         {
             EnrollmentGlobalVariable.frame = CropToSquare(frame);
         }
@@ -156,9 +179,8 @@ namespace Student_Attendance_System.Classes
 
         // method for checking if the name is in database or not
 
-        public static Guna2ComboBox camListCB { get; set; }
-        public static Guna2PictureBox selfPic { get; set; }
-        public static bool qrcode { get; set; }
-        public static string id { get; set; }
+        public Guna2ComboBox camListCB { get; set; }
+        public Guna2PictureBox selfPic { get; set; }
+        public bool qrcode { get; set; }
     }
 }

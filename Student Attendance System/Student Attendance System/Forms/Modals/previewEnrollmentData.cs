@@ -1,4 +1,5 @@
 ﻿using Student_Attendance_System.Classes;
+using Student_Attendance_System.Classes.Helper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -112,6 +113,8 @@ namespace Student_Attendance_System.Forms.Modals
             {
                 throw;
             }
+
+            LocalSaveHelper.saveQRCode(EnrollmentGlobalVariable.QRCode, EnrollmentGlobalVariable.id);
             this.DialogResult = DialogResult.OK;
             this.Close();
         }

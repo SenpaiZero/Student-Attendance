@@ -88,10 +88,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Helper\attendanceHelper.cs" />
     <Compile Include="Classes\Helper\cameraHelper.cs" />
     <Compile Include="Classes\Config.cs" />
     <Compile Include="Classes\EnrollmentGlobalVariable.cs" />
     <Compile Include="Classes\Helper\databaseHelper.cs" />
+    <Compile Include="Classes\Helper\LocalSaveHelper.cs" />
     <Compile Include="Classes\Helper\QrCodeHelper.cs" />
     <Compile Include="Classes\Helper\UIHelper.cs" />
     <Compile Include="Forms\Admin\addStaff.cs">
@@ -153,6 +155,12 @@
     </Compile>
     <Compile Include="Forms\Modals\previewEnrollmentData.Designer.cs">
       <DependentUpon>previewEnrollmentData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\splitPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\splitPopup.Designer.cs">
+      <DependentUpon>splitPopup.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Startup\blank.cs">
       <SubType>Form</SubType>
@@ -249,6 +257,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Modals\previewEnrollmentData.resx">
       <DependentUpon>previewEnrollmentData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\splitPopup.resx">
+      <DependentUpon>splitPopup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Startup\blank.resx">
       <DependentUpon>blank.cs</DependentUpon>
