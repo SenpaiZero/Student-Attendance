@@ -20,10 +20,12 @@ namespace Student_Attendance_System.Startup
     {
         cameraHelper mainCamera;
         cameraHelper scanningCamera;
-        splitPopup split;
+        public static splitPopup split;
+        public static studentForm std;
         public studentForm()
         {
             InitializeComponent();
+            CheckForIllegalCrossThreadCalls = false;
         }
         protected override CreateParams CreateParams
         {
@@ -37,13 +39,7 @@ namespace Student_Attendance_System.Startup
         private void studentForm_Load(object sender, EventArgs e)
         {
             split = new splitPopup();
-
-            //Scanner cam
-            scanningCamera = new cameraHelper();
-            scanningCamera.qrcode = true;
-            scanningCamera.camListCB = scannerList;
-            scanningCamera.selfPic = qrScanning;
-            scanningCamera.onLoad();
+            std = this;
 
             //Picture cam
             mainCamera = new cameraHelper();
@@ -51,6 +47,13 @@ namespace Student_Attendance_System.Startup
             mainCamera.camListCB = camList;
             mainCamera.selfPic = secondPic;
             mainCamera.onLoad();
+            //Scanner cam
+            scanningCamera = new cameraHelper();
+            scanningCamera.qrcode = true;
+            scanningCamera.camListCB = scannerList;
+            scanningCamera.selfPic = qrScanning;
+            scanningCamera.onLoad();
+
         }
         private void videoSource_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
@@ -82,14 +85,24 @@ namespace Student_Attendance_System.Startup
         {
             if (popupCB.Checked)
             {
-                split.mainPicCB = camList;
+                splitPopup.isVisible = true;
                 split.Show();
             }
             else
             {
+                splitPopup.isVisible = false;
                 split.Hide();
             }
         }
 
+        private void secondPic_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void getFrame()
+        {
+            splitPopup.lastCapture = mainCamera.frame;
+        }
     }
 }

@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,10 +17,12 @@ namespace Student_Attendance_System.Forms
     public partial class splitPopup : Form
     {
         cameraHelper mainCam;
-        public Guna2ComboBox mainPicCB { get; set; }
+        public static bool isVisible { get; set; }
+        public static Bitmap lastCapture { get; set; }
         public splitPopup()
         {
             InitializeComponent();
+            CheckForIllegalCrossThreadCalls = false;
         }
         protected override CreateParams CreateParams
         {
@@ -33,10 +36,7 @@ namespace Student_Attendance_System.Forms
         private void splitPopup_Load(object sender, EventArgs e)
         {
             mainCam = new cameraHelper();
-            mainCam.qrcode = false;
-            mainCam.camListCB = mainPicCB;
-            mainCam.selfPic = camera;
-            mainCam.onLoad();
+
         }
 
         private void splitPopup_FormClosing(object sender, FormClosingEventArgs e)
@@ -48,5 +48,31 @@ namespace Student_Attendance_System.Forms
         {
             Application.DoEvents();
         }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void updateData(string id)
+        {
+            if (databaseHelper.con.State != ConnectionState.Open)
+                databaseHelper.open();
+            String query = $"SELECT StudentID, Name, Section, Year FROM studentData WHERE StudentId = '{id}'";
+            using(SqlCommand cmd = new SqlCommand(query, databaseHelper.con))
+            {
+                SqlDataReader dr = cmd.ExecuteReader();
+                if(dr.Read())
+                {
+                    idNumLbl.Text = dr.GetString(0);
+                    nameLbl.Text = dr.GetString(1);
+                    sectionYearLbl.Text = $"{dr.GetString(2)}&{dr.GetString(3)}";
+                    dr.Close();
+                }
+            }
+
+            lastCap.Image = lastCapture;
+        }
+
     }
 }

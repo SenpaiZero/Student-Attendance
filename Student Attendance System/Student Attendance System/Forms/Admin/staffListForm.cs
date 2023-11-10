@@ -32,7 +32,7 @@ namespace Student_Attendance_System.Forms.Admin
             int i;
             databaseHelper.open();
             databaseHelper db = new databaseHelper();
-            String query = "SELECT Name, StaffID, Email, Phone, Gender, Age, Status, Admin, Address FROM Accounts";
+            String query = "SELECT Name, StaffID, Admin, Email, Phone, Gender, Age, Status FROM Accounts";
             if(isSearch)
             {
                 if (int.TryParse(searchTB.Text, out i))
@@ -60,7 +60,6 @@ namespace Student_Attendance_System.Forms.Admin
             listTable.Columns["Gender"].HeaderText = "GENDER";
             listTable.Columns["Age"].HeaderText = "AGE";
             listTable.Columns["Status"].HeaderText = "STATUS";
-            listTable.Columns["Address"].HeaderText = "ADDRESS";
         }
 
         private void updateBtn_Click(object sender, EventArgs e)

@@ -41,7 +41,7 @@ namespace Student_Attendance_System.Classes.Helper
                         string query2 = $"" +
                             $"UPDATE attendance " +
                             $"SET TimeOut = @out " +
-                            $"WHERE StudentID = @id ";
+                            $"WHERE StudentID = @id AND TimeOut IS NULL";
 
                         using (SqlCommand cmd2 = new SqlCommand(query2, databaseHelper.con))
                         {

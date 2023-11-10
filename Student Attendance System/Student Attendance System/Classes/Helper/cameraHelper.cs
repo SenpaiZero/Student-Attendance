@@ -15,6 +15,8 @@ using System.Data.SqlClient;
 using System.Windows.Forms;
 using Student_Attendance_System.Classes.Helper;
 using System.Diagnostics;
+using Student_Attendance_System.Forms;
+using Student_Attendance_System.Startup;
 
 namespace Student_Attendance_System.Classes
 {
@@ -24,7 +26,7 @@ namespace Student_Attendance_System.Classes
         private VideoCaptureDevice videoSource; // Represents the video capture device
         private bool capturing = false; // Indicates if we are currently capturing
         private QRCodeReader barcodeReader;
-        private Bitmap frame;
+        public Bitmap frame;
 
         public bool isValid = false;
         public string fullName, idNum, dateString, timeString; 
@@ -114,14 +116,17 @@ namespace Student_Attendance_System.Classes
                         attendanceHelper.attendance(qrcodeVal);
                         MessageBox.Show(qrcodeVal);
 
+                        if (splitPopup.isVisible)
+                        {
+                            studentForm.split.updateData(qrcodeVal);
+                            studentForm.std.getFrame();
+                        }
                     }
                 }
             }
-            selfPic.Invoke((MethodInvoker)delegate
-            {
-                frame = CropToSquare(frame);
-                selfPic.Image = frame; // Display the frame on the PictureBox
-            });
+            
+            frame = CropToSquare(frame);
+            selfPic.Image = frame; // Display the frame on the PictureBox
         }
         // Method for starting a form with a cam
         public void onLoad()
@@ -152,6 +157,7 @@ namespace Student_Attendance_System.Classes
         {
             EnrollmentGlobalVariable.frame = CropToSquare(frame);
         }
+
         // Converting bitmap into byte array
         private static byte[] BitmapToByteArray(Bitmap bitmap)
         {

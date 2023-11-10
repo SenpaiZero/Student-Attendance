@@ -80,6 +80,7 @@
             this.secondPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.secondPic.TabIndex = 2;
             this.secondPic.TabStop = false;
+            this.secondPic.Click += new System.EventHandler(this.secondPic_Click);
             // 
             // guna2ImageButton1
             // 
