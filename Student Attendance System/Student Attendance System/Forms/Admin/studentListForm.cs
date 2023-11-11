@@ -126,6 +126,7 @@ namespace Student_Attendance_System.Forms.Admin
                 selectedID = selectedRow.Cells[0].Value.ToString();
 
                 updateStudentForm updateStd = new updateStudentForm();
+                updateStd.studentID = selectedID;
                 updateStd.ShowDialog();
             }
         }

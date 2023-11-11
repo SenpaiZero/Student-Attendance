@@ -36,71 +36,74 @@
             this.guardianBtn = new Guna.UI2.WinForms.Guna2Button();
             this.personalBtn = new Guna.UI2.WinForms.Guna2Button();
             this.mainPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.personalContainer = new Guna.UI2.WinForms.Guna2Panel();
-            this.nameLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.nameTB = new Guna.UI2.WinForms.Guna2TextBox();
-            this.phoneNumberTB = new Guna.UI2.WinForms.Guna2TextBox();
-            this.addressTB = new Guna.UI2.WinForms.Guna2TextBox();
-            this.emailLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.birthdayLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.birthdayDP = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.ageLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.emailTB = new Guna.UI2.WinForms.Guna2TextBox();
-            this.addressLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.religionLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.religionCB = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.genderLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.genderCB = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.phoneNumberLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.ageTB = new Guna.UI2.WinForms.Guna2TextBox();
-            this.moreDetailsContainer = new Guna.UI2.WinForms.Guna2Panel();
-            this.pic = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.sectionlbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.sectionTB = new Guna.UI2.WinForms.Guna2TextBox();
-            this.yearLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.qrCodePic = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.idTB = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.moreDetailTB = new Guna.UI2.WinForms.Guna2TextBox();
-            this.studentTypeCB = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.yearCB = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guardianContainer = new Guna.UI2.WinForms.Guna2Panel();
-            this.motherOccupationTB = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.fatherfnameTB = new Guna.UI2.WinForms.Guna2TextBox();
-            this.fatherNameLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.fatherEmailTB = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.motherNameLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.motherfnameTB = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.motherPhoneTB = new Guna.UI2.WinForms.Guna2TextBox();
-            this.motherEmailTB = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.fatherPhoneNumberTB = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.fatherOccupationTB = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.cancelBtn = new Guna.UI2.WinForms.Guna2Button();
             this.updateBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.personalContainer = new Guna.UI2.WinForms.Guna2Panel();
+            this.nameTB = new Guna.UI2.WinForms.Guna2TextBox();
+            this.phoneNumberTB = new Guna.UI2.WinForms.Guna2TextBox();
+            this.addressTB = new Guna.UI2.WinForms.Guna2TextBox();
+            this.birthdayDP = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.emailTB = new Guna.UI2.WinForms.Guna2TextBox();
+            this.religionCB = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.genderCB = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.ageTB = new Guna.UI2.WinForms.Guna2TextBox();
+            this.nameLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.emailLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.birthdayLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.ageLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.addressLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.religionLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.genderLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.phoneNumberLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.moreDetailsContainer = new Guna.UI2.WinForms.Guna2Panel();
+            this.generateBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.pic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.sectionTB = new Guna.UI2.WinForms.Guna2TextBox();
+            this.qrCodePic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.idTB = new Guna.UI2.WinForms.Guna2TextBox();
+            this.moreDetailTB = new Guna.UI2.WinForms.Guna2TextBox();
+            this.studentTypeCB = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.yearCB = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.sectionlbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.yearLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.qrcodeLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.moreDetailsLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.studentTypeLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.studentPicLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guardianContainer = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.motherEmailLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.fatherNameLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.fatherEmailLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.motherNameLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.motherPhoneLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.fatherPhoneLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.fatherOccupationLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.motherOccupationLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.motherOccupationTB = new Guna.UI2.WinForms.Guna2TextBox();
+            this.fathernameTB = new Guna.UI2.WinForms.Guna2TextBox();
+            this.fatherEmailTB = new Guna.UI2.WinForms.Guna2TextBox();
+            this.mothernameTB = new Guna.UI2.WinForms.Guna2TextBox();
+            this.motherPhoneTB = new Guna.UI2.WinForms.Guna2TextBox();
+            this.motherEmailTB = new Guna.UI2.WinForms.Guna2TextBox();
+            this.fatherPhoneNumberTB = new Guna.UI2.WinForms.Guna2TextBox();
+            this.fatherOccupationTB = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.mainPanel.SuspendLayout();
+            this.guna2Panel1.SuspendLayout();
             this.personalContainer.SuspendLayout();
             this.moreDetailsContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qrCodePic)).BeginInit();
             this.guardianContainer.SuspendLayout();
-            this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -214,6 +217,53 @@
             this.mainPanel.Size = new System.Drawing.Size(821, 589);
             this.mainPanel.TabIndex = 1;
             // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.cancelBtn);
+            this.guna2Panel1.Controls.Add(this.updateBtn);
+            this.guna2Panel1.Location = new System.Drawing.Point(650, 475);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(163, 130);
+            this.guna2Panel1.TabIndex = 3;
+            // 
+            // cancelBtn
+            // 
+            this.cancelBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.cancelBtn.BorderRadius = 5;
+            this.cancelBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.cancelBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.cancelBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.cancelBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.cancelBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.cancelBtn.FillColor = System.Drawing.Color.Transparent;
+            this.cancelBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.cancelBtn.ForeColor = System.Drawing.Color.IndianRed;
+            this.cancelBtn.Location = new System.Drawing.Point(6, 65);
+            this.cancelBtn.Name = "cancelBtn";
+            this.cancelBtn.Size = new System.Drawing.Size(113, 28);
+            this.cancelBtn.TabIndex = 59;
+            this.cancelBtn.Text = "CANCEL";
+            this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
+            // 
+            // updateBtn
+            // 
+            this.updateBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.updateBtn.BorderRadius = 5;
+            this.updateBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.updateBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.updateBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.updateBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.updateBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
+            this.updateBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
+            this.updateBtn.Location = new System.Drawing.Point(6, 0);
+            this.updateBtn.Margin = new System.Windows.Forms.Padding(20);
+            this.updateBtn.Name = "updateBtn";
+            this.updateBtn.Size = new System.Drawing.Size(113, 58);
+            this.updateBtn.TabIndex = 58;
+            this.updateBtn.Text = "UPDATE";
+            this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
+            // 
             // personalContainer
             // 
             this.personalContainer.Controls.Add(this.nameTB);
@@ -237,22 +287,6 @@
             this.personalContainer.Name = "personalContainer";
             this.personalContainer.Size = new System.Drawing.Size(821, 589);
             this.personalContainer.TabIndex = 2;
-            // 
-            // nameLbl
-            // 
-            this.nameLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.nameLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.nameLbl.IsContextMenuEnabled = false;
-            this.nameLbl.IsSelectionEnabled = false;
-            this.nameLbl.Location = new System.Drawing.Point(90, 12);
-            this.nameLbl.MinimumSize = new System.Drawing.Size(350, 0);
-            this.nameLbl.Name = "nameLbl";
-            this.nameLbl.Size = new System.Drawing.Size(350, 30);
-            this.nameLbl.TabIndex = 62;
-            this.nameLbl.TabStop = false;
-            this.nameLbl.Text = "NAME";
-            this.nameLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // nameTB
             // 
@@ -282,6 +316,7 @@
             this.nameTB.SelectedText = "";
             this.nameTB.Size = new System.Drawing.Size(679, 48);
             this.nameTB.TabIndex = 63;
+            this.nameTB.Leave += new System.EventHandler(this.nameTB_Leave);
             // 
             // phoneNumberTB
             // 
@@ -311,6 +346,7 @@
             this.phoneNumberTB.SelectedText = "";
             this.phoneNumberTB.Size = new System.Drawing.Size(450, 48);
             this.phoneNumberTB.TabIndex = 61;
+            this.phoneNumberTB.Leave += new System.EventHandler(this.phoneNumberTB_Leave);
             // 
             // addressTB
             // 
@@ -340,38 +376,7 @@
             this.addressTB.SelectedText = "";
             this.addressTB.Size = new System.Drawing.Size(450, 48);
             this.addressTB.TabIndex = 55;
-            // 
-            // emailLbl
-            // 
-            this.emailLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.emailLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.emailLbl.IsContextMenuEnabled = false;
-            this.emailLbl.IsSelectionEnabled = false;
-            this.emailLbl.Location = new System.Drawing.Point(90, 203);
-            this.emailLbl.MinimumSize = new System.Drawing.Size(350, 0);
-            this.emailLbl.Name = "emailLbl";
-            this.emailLbl.Size = new System.Drawing.Size(350, 30);
-            this.emailLbl.TabIndex = 52;
-            this.emailLbl.TabStop = false;
-            this.emailLbl.Text = "EMAIL";
-            this.emailLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // birthdayLbl
-            // 
-            this.birthdayLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.birthdayLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.birthdayLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.birthdayLbl.IsContextMenuEnabled = false;
-            this.birthdayLbl.IsSelectionEnabled = false;
-            this.birthdayLbl.Location = new System.Drawing.Point(90, 110);
-            this.birthdayLbl.MinimumSize = new System.Drawing.Size(350, 0);
-            this.birthdayLbl.Name = "birthdayLbl";
-            this.birthdayLbl.Size = new System.Drawing.Size(350, 30);
-            this.birthdayLbl.TabIndex = 49;
-            this.birthdayLbl.TabStop = false;
-            this.birthdayLbl.Text = "BIRTHDAY";
-            this.birthdayLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addressTB.Leave += new System.EventHandler(this.addressTB_Leave);
             // 
             // birthdayDP
             // 
@@ -389,22 +394,8 @@
             this.birthdayDP.Size = new System.Drawing.Size(336, 50);
             this.birthdayDP.TabIndex = 48;
             this.birthdayDP.Value = new System.DateTime(2023, 11, 2, 9, 13, 24, 172);
-            // 
-            // ageLbl
-            // 
-            this.ageLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.ageLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ageLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.ageLbl.IsContextMenuEnabled = false;
-            this.ageLbl.IsSelectionEnabled = false;
-            this.ageLbl.Location = new System.Drawing.Point(546, 110);
-            this.ageLbl.MinimumSize = new System.Drawing.Size(350, 0);
-            this.ageLbl.Name = "ageLbl";
-            this.ageLbl.Size = new System.Drawing.Size(350, 30);
-            this.ageLbl.TabIndex = 50;
-            this.ageLbl.TabStop = false;
-            this.ageLbl.Text = "AGE";
-            this.ageLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.birthdayDP.ValueChanged += new System.EventHandler(this.birthdayDP_ValueChanged);
+            this.birthdayDP.Leave += new System.EventHandler(this.birthdayDP_Leave);
             // 
             // emailTB
             // 
@@ -434,38 +425,7 @@
             this.emailTB.SelectedText = "";
             this.emailTB.Size = new System.Drawing.Size(450, 48);
             this.emailTB.TabIndex = 53;
-            // 
-            // addressLbl
-            // 
-            this.addressLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.addressLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addressLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.addressLbl.IsContextMenuEnabled = false;
-            this.addressLbl.IsSelectionEnabled = false;
-            this.addressLbl.Location = new System.Drawing.Point(90, 296);
-            this.addressLbl.MinimumSize = new System.Drawing.Size(350, 0);
-            this.addressLbl.Name = "addressLbl";
-            this.addressLbl.Size = new System.Drawing.Size(350, 30);
-            this.addressLbl.TabIndex = 54;
-            this.addressLbl.TabStop = false;
-            this.addressLbl.Text = "ADDRESS";
-            this.addressLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // religionLbl
-            // 
-            this.religionLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.religionLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.religionLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.religionLbl.IsContextMenuEnabled = false;
-            this.religionLbl.IsSelectionEnabled = false;
-            this.religionLbl.Location = new System.Drawing.Point(546, 203);
-            this.religionLbl.MinimumSize = new System.Drawing.Size(350, 0);
-            this.religionLbl.Name = "religionLbl";
-            this.religionLbl.Size = new System.Drawing.Size(350, 30);
-            this.religionLbl.TabIndex = 57;
-            this.religionLbl.TabStop = false;
-            this.religionLbl.Text = "RELIGION";
-            this.religionLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.emailTB.Leave += new System.EventHandler(this.emailTB_Leave);
             // 
             // religionCB
             // 
@@ -490,22 +450,7 @@
             this.religionCB.Name = "religionCB";
             this.religionCB.Size = new System.Drawing.Size(223, 36);
             this.religionCB.TabIndex = 58;
-            // 
-            // genderLbl
-            // 
-            this.genderLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.genderLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genderLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.genderLbl.IsContextMenuEnabled = false;
-            this.genderLbl.IsSelectionEnabled = false;
-            this.genderLbl.Location = new System.Drawing.Point(546, 296);
-            this.genderLbl.MinimumSize = new System.Drawing.Size(350, 0);
-            this.genderLbl.Name = "genderLbl";
-            this.genderLbl.Size = new System.Drawing.Size(350, 30);
-            this.genderLbl.TabIndex = 56;
-            this.genderLbl.TabStop = false;
-            this.genderLbl.Text = "GENDER";
-            this.genderLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.religionCB.Leave += new System.EventHandler(this.religionCB_Leave);
             // 
             // genderCB
             // 
@@ -528,22 +473,7 @@
             this.genderCB.Name = "genderCB";
             this.genderCB.Size = new System.Drawing.Size(223, 36);
             this.genderCB.TabIndex = 59;
-            // 
-            // phoneNumberLbl
-            // 
-            this.phoneNumberLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.phoneNumberLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phoneNumberLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.phoneNumberLbl.IsContextMenuEnabled = false;
-            this.phoneNumberLbl.IsSelectionEnabled = false;
-            this.phoneNumberLbl.Location = new System.Drawing.Point(90, 389);
-            this.phoneNumberLbl.MinimumSize = new System.Drawing.Size(450, 0);
-            this.phoneNumberLbl.Name = "phoneNumberLbl";
-            this.phoneNumberLbl.Size = new System.Drawing.Size(450, 30);
-            this.phoneNumberLbl.TabIndex = 60;
-            this.phoneNumberLbl.TabStop = false;
-            this.phoneNumberLbl.Text = "PHONE NUMBER";
-            this.phoneNumberLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.genderCB.Leave += new System.EventHandler(this.genderCB_Leave);
             // 
             // ageTB
             // 
@@ -576,8 +506,137 @@
             this.ageTB.Size = new System.Drawing.Size(223, 48);
             this.ageTB.TabIndex = 51;
             // 
+            // nameLbl
+            // 
+            this.nameLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.nameLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.nameLbl.IsContextMenuEnabled = false;
+            this.nameLbl.IsSelectionEnabled = false;
+            this.nameLbl.Location = new System.Drawing.Point(90, 12);
+            this.nameLbl.MinimumSize = new System.Drawing.Size(350, 0);
+            this.nameLbl.Name = "nameLbl";
+            this.nameLbl.Size = new System.Drawing.Size(350, 29);
+            this.nameLbl.TabIndex = 62;
+            this.nameLbl.TabStop = false;
+            this.nameLbl.Text = "NAME";
+            this.nameLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // emailLbl
+            // 
+            this.emailLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.emailLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.emailLbl.IsContextMenuEnabled = false;
+            this.emailLbl.IsSelectionEnabled = false;
+            this.emailLbl.Location = new System.Drawing.Point(90, 203);
+            this.emailLbl.MinimumSize = new System.Drawing.Size(350, 0);
+            this.emailLbl.Name = "emailLbl";
+            this.emailLbl.Size = new System.Drawing.Size(350, 29);
+            this.emailLbl.TabIndex = 52;
+            this.emailLbl.TabStop = false;
+            this.emailLbl.Text = "EMAIL";
+            this.emailLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // birthdayLbl
+            // 
+            this.birthdayLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.birthdayLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.birthdayLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.birthdayLbl.IsContextMenuEnabled = false;
+            this.birthdayLbl.IsSelectionEnabled = false;
+            this.birthdayLbl.Location = new System.Drawing.Point(90, 110);
+            this.birthdayLbl.MinimumSize = new System.Drawing.Size(350, 0);
+            this.birthdayLbl.Name = "birthdayLbl";
+            this.birthdayLbl.Size = new System.Drawing.Size(350, 29);
+            this.birthdayLbl.TabIndex = 49;
+            this.birthdayLbl.TabStop = false;
+            this.birthdayLbl.Text = "BIRTHDAY";
+            this.birthdayLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // ageLbl
+            // 
+            this.ageLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.ageLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ageLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.ageLbl.IsContextMenuEnabled = false;
+            this.ageLbl.IsSelectionEnabled = false;
+            this.ageLbl.Location = new System.Drawing.Point(546, 110);
+            this.ageLbl.MinimumSize = new System.Drawing.Size(350, 0);
+            this.ageLbl.Name = "ageLbl";
+            this.ageLbl.Size = new System.Drawing.Size(350, 29);
+            this.ageLbl.TabIndex = 50;
+            this.ageLbl.TabStop = false;
+            this.ageLbl.Text = "AGE";
+            this.ageLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // addressLbl
+            // 
+            this.addressLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.addressLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addressLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.addressLbl.IsContextMenuEnabled = false;
+            this.addressLbl.IsSelectionEnabled = false;
+            this.addressLbl.Location = new System.Drawing.Point(90, 296);
+            this.addressLbl.MinimumSize = new System.Drawing.Size(350, 0);
+            this.addressLbl.Name = "addressLbl";
+            this.addressLbl.Size = new System.Drawing.Size(350, 29);
+            this.addressLbl.TabIndex = 54;
+            this.addressLbl.TabStop = false;
+            this.addressLbl.Text = "ADDRESS";
+            this.addressLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // religionLbl
+            // 
+            this.religionLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.religionLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.religionLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.religionLbl.IsContextMenuEnabled = false;
+            this.religionLbl.IsSelectionEnabled = false;
+            this.religionLbl.Location = new System.Drawing.Point(546, 203);
+            this.religionLbl.MinimumSize = new System.Drawing.Size(350, 0);
+            this.religionLbl.Name = "religionLbl";
+            this.religionLbl.Size = new System.Drawing.Size(350, 29);
+            this.religionLbl.TabIndex = 57;
+            this.religionLbl.TabStop = false;
+            this.religionLbl.Text = "RELIGION";
+            this.religionLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // genderLbl
+            // 
+            this.genderLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.genderLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genderLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.genderLbl.IsContextMenuEnabled = false;
+            this.genderLbl.IsSelectionEnabled = false;
+            this.genderLbl.Location = new System.Drawing.Point(546, 296);
+            this.genderLbl.MinimumSize = new System.Drawing.Size(350, 0);
+            this.genderLbl.Name = "genderLbl";
+            this.genderLbl.Size = new System.Drawing.Size(350, 29);
+            this.genderLbl.TabIndex = 56;
+            this.genderLbl.TabStop = false;
+            this.genderLbl.Text = "GENDER";
+            this.genderLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // phoneNumberLbl
+            // 
+            this.phoneNumberLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.phoneNumberLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phoneNumberLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.phoneNumberLbl.IsContextMenuEnabled = false;
+            this.phoneNumberLbl.IsSelectionEnabled = false;
+            this.phoneNumberLbl.Location = new System.Drawing.Point(90, 389);
+            this.phoneNumberLbl.MinimumSize = new System.Drawing.Size(450, 0);
+            this.phoneNumberLbl.Name = "phoneNumberLbl";
+            this.phoneNumberLbl.Size = new System.Drawing.Size(450, 29);
+            this.phoneNumberLbl.TabIndex = 60;
+            this.phoneNumberLbl.TabStop = false;
+            this.phoneNumberLbl.Text = "PHONE NUMBER";
+            this.phoneNumberLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // moreDetailsContainer
             // 
+            this.moreDetailsContainer.Controls.Add(this.generateBtn);
             this.moreDetailsContainer.Controls.Add(this.pic);
             this.moreDetailsContainer.Controls.Add(this.sectionTB);
             this.moreDetailsContainer.Controls.Add(this.qrCodePic);
@@ -587,15 +646,34 @@
             this.moreDetailsContainer.Controls.Add(this.yearCB);
             this.moreDetailsContainer.Controls.Add(this.sectionlbl);
             this.moreDetailsContainer.Controls.Add(this.yearLbl);
-            this.moreDetailsContainer.Controls.Add(this.guna2HtmlLabel5);
-            this.moreDetailsContainer.Controls.Add(this.guna2HtmlLabel2);
-            this.moreDetailsContainer.Controls.Add(this.guna2HtmlLabel1);
-            this.moreDetailsContainer.Controls.Add(this.guna2HtmlLabel3);
+            this.moreDetailsContainer.Controls.Add(this.qrcodeLbl);
+            this.moreDetailsContainer.Controls.Add(this.moreDetailsLbl);
+            this.moreDetailsContainer.Controls.Add(this.studentTypeLbl);
+            this.moreDetailsContainer.Controls.Add(this.studentPicLbl);
             this.moreDetailsContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.moreDetailsContainer.Location = new System.Drawing.Point(0, 0);
             this.moreDetailsContainer.Name = "moreDetailsContainer";
             this.moreDetailsContainer.Size = new System.Drawing.Size(821, 589);
             this.moreDetailsContainer.TabIndex = 1;
+            // 
+            // generateBtn
+            // 
+            this.generateBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.generateBtn.BorderRadius = 5;
+            this.generateBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.generateBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.generateBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.generateBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.generateBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
+            this.generateBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
+            this.generateBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
+            this.generateBtn.Location = new System.Drawing.Point(601, 299);
+            this.generateBtn.Margin = new System.Windows.Forms.Padding(20);
+            this.generateBtn.Name = "generateBtn";
+            this.generateBtn.Size = new System.Drawing.Size(113, 26);
+            this.generateBtn.TabIndex = 61;
+            this.generateBtn.Text = "GENERATE";
+            this.generateBtn.Click += new System.EventHandler(this.generateBtn_Click);
             // 
             // pic
             // 
@@ -613,40 +691,7 @@
             this.pic.TabIndex = 47;
             this.pic.TabStop = false;
             this.pic.UseTransparentBackground = true;
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.CausesValidation = false;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel3.IsContextMenuEnabled = false;
-            this.guna2HtmlLabel3.IsSelectionEnabled = false;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(117, 26);
-            this.guna2HtmlLabel3.MinimumSize = new System.Drawing.Size(500, 0);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(500, 26);
-            this.guna2HtmlLabel3.TabIndex = 57;
-            this.guna2HtmlLabel3.TabStop = false;
-            this.guna2HtmlLabel3.Text = "STUDENT PICTURE";
-            this.guna2HtmlLabel3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // sectionlbl
-            // 
-            this.sectionlbl.BackColor = System.Drawing.Color.Transparent;
-            this.sectionlbl.CausesValidation = false;
-            this.sectionlbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sectionlbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.sectionlbl.IsContextMenuEnabled = false;
-            this.sectionlbl.IsSelectionEnabled = false;
-            this.sectionlbl.Location = new System.Drawing.Point(117, 296);
-            this.sectionlbl.MinimumSize = new System.Drawing.Size(500, 0);
-            this.sectionlbl.Name = "sectionlbl";
-            this.sectionlbl.Size = new System.Drawing.Size(500, 26);
-            this.sectionlbl.TabIndex = 48;
-            this.sectionlbl.TabStop = false;
-            this.sectionlbl.Text = "SECTION";
-            this.sectionlbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.pic.Click += new System.EventHandler(this.pic_Click);
             // 
             // sectionTB
             // 
@@ -673,40 +718,7 @@
             this.sectionTB.SelectedText = "";
             this.sectionTB.Size = new System.Drawing.Size(128, 22);
             this.sectionTB.TabIndex = 53;
-            // 
-            // yearLbl
-            // 
-            this.yearLbl.BackColor = System.Drawing.Color.Transparent;
-            this.yearLbl.CausesValidation = false;
-            this.yearLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.yearLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.yearLbl.IsContextMenuEnabled = false;
-            this.yearLbl.IsSelectionEnabled = false;
-            this.yearLbl.Location = new System.Drawing.Point(117, 326);
-            this.yearLbl.MinimumSize = new System.Drawing.Size(500, 0);
-            this.yearLbl.Name = "yearLbl";
-            this.yearLbl.Size = new System.Drawing.Size(500, 26);
-            this.yearLbl.TabIndex = 49;
-            this.yearLbl.TabStop = false;
-            this.yearLbl.Text = "YEAR";
-            this.yearLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // guna2HtmlLabel5
-            // 
-            this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel5.CausesValidation = false;
-            this.guna2HtmlLabel5.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel5.IsContextMenuEnabled = false;
-            this.guna2HtmlLabel5.IsSelectionEnabled = false;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(452, 26);
-            this.guna2HtmlLabel5.MinimumSize = new System.Drawing.Size(500, 0);
-            this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(500, 26);
-            this.guna2HtmlLabel5.TabIndex = 58;
-            this.guna2HtmlLabel5.TabStop = false;
-            this.guna2HtmlLabel5.Text = "QR CODE";
-            this.guna2HtmlLabel5.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.sectionTB.Leave += new System.EventHandler(this.sectionTB_Leave);
             // 
             // qrCodePic
             // 
@@ -741,32 +753,15 @@
             this.idTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.idTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.idTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.idTB.Location = new System.Drawing.Point(452, 297);
+            this.idTB.Location = new System.Drawing.Point(452, 299);
             this.idTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.idTB.Name = "idTB";
             this.idTB.PasswordChar = '\0';
             this.idTB.PlaceholderText = "";
             this.idTB.ReadOnly = true;
             this.idTB.SelectedText = "";
-            this.idTB.Size = new System.Drawing.Size(262, 22);
+            this.idTB.Size = new System.Drawing.Size(140, 26);
             this.idTB.TabIndex = 50;
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.CausesValidation = false;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel2.IsContextMenuEnabled = false;
-            this.guna2HtmlLabel2.IsSelectionEnabled = false;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(452, 356);
-            this.guna2HtmlLabel2.MinimumSize = new System.Drawing.Size(500, 0);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(500, 26);
-            this.guna2HtmlLabel2.TabIndex = 54;
-            this.guna2HtmlLabel2.TabStop = false;
-            this.guna2HtmlLabel2.Text = "MORE DETAILS ";
-            this.guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // moreDetailTB
             // 
@@ -792,6 +787,7 @@
             this.moreDetailTB.SelectedText = "";
             this.moreDetailTB.Size = new System.Drawing.Size(262, 82);
             this.moreDetailTB.TabIndex = 55;
+            this.moreDetailTB.Leave += new System.EventHandler(this.moreDetailTB_Leave);
             // 
             // studentTypeCB
             // 
@@ -815,23 +811,7 @@
             this.studentTypeCB.Name = "studentTypeCB";
             this.studentTypeCB.Size = new System.Drawing.Size(262, 36);
             this.studentTypeCB.TabIndex = 52;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.CausesValidation = false;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel1.IsContextMenuEnabled = false;
-            this.guna2HtmlLabel1.IsSelectionEnabled = false;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(117, 399);
-            this.guna2HtmlLabel1.MinimumSize = new System.Drawing.Size(500, 0);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(500, 26);
-            this.guna2HtmlLabel1.TabIndex = 51;
-            this.guna2HtmlLabel1.TabStop = false;
-            this.guna2HtmlLabel1.Text = "STUDENT TYPE";
-            this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.studentTypeCB.Leave += new System.EventHandler(this.studentTypeCB_Leave);
             // 
             // yearCB
             // 
@@ -856,23 +836,126 @@
             this.yearCB.Name = "yearCB";
             this.yearCB.Size = new System.Drawing.Size(128, 36);
             this.yearCB.TabIndex = 60;
+            this.yearCB.Leave += new System.EventHandler(this.yearCB_Leave);
+            // 
+            // sectionlbl
+            // 
+            this.sectionlbl.BackColor = System.Drawing.Color.Transparent;
+            this.sectionlbl.CausesValidation = false;
+            this.sectionlbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sectionlbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.sectionlbl.IsContextMenuEnabled = false;
+            this.sectionlbl.IsSelectionEnabled = false;
+            this.sectionlbl.Location = new System.Drawing.Point(117, 296);
+            this.sectionlbl.MinimumSize = new System.Drawing.Size(500, 0);
+            this.sectionlbl.Name = "sectionlbl";
+            this.sectionlbl.Size = new System.Drawing.Size(500, 29);
+            this.sectionlbl.TabIndex = 48;
+            this.sectionlbl.TabStop = false;
+            this.sectionlbl.Text = "SECTION";
+            this.sectionlbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // yearLbl
+            // 
+            this.yearLbl.BackColor = System.Drawing.Color.Transparent;
+            this.yearLbl.CausesValidation = false;
+            this.yearLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.yearLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.yearLbl.IsContextMenuEnabled = false;
+            this.yearLbl.IsSelectionEnabled = false;
+            this.yearLbl.Location = new System.Drawing.Point(117, 326);
+            this.yearLbl.MinimumSize = new System.Drawing.Size(500, 0);
+            this.yearLbl.Name = "yearLbl";
+            this.yearLbl.Size = new System.Drawing.Size(500, 29);
+            this.yearLbl.TabIndex = 49;
+            this.yearLbl.TabStop = false;
+            this.yearLbl.Text = "YEAR";
+            this.yearLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // qrcodeLbl
+            // 
+            this.qrcodeLbl.BackColor = System.Drawing.Color.Transparent;
+            this.qrcodeLbl.CausesValidation = false;
+            this.qrcodeLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qrcodeLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.qrcodeLbl.IsContextMenuEnabled = false;
+            this.qrcodeLbl.IsSelectionEnabled = false;
+            this.qrcodeLbl.Location = new System.Drawing.Point(452, 26);
+            this.qrcodeLbl.MinimumSize = new System.Drawing.Size(500, 0);
+            this.qrcodeLbl.Name = "qrcodeLbl";
+            this.qrcodeLbl.Size = new System.Drawing.Size(500, 29);
+            this.qrcodeLbl.TabIndex = 58;
+            this.qrcodeLbl.TabStop = false;
+            this.qrcodeLbl.Text = "QR CODE";
+            this.qrcodeLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // moreDetailsLbl
+            // 
+            this.moreDetailsLbl.BackColor = System.Drawing.Color.Transparent;
+            this.moreDetailsLbl.CausesValidation = false;
+            this.moreDetailsLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.moreDetailsLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.moreDetailsLbl.IsContextMenuEnabled = false;
+            this.moreDetailsLbl.IsSelectionEnabled = false;
+            this.moreDetailsLbl.Location = new System.Drawing.Point(452, 356);
+            this.moreDetailsLbl.MinimumSize = new System.Drawing.Size(500, 0);
+            this.moreDetailsLbl.Name = "moreDetailsLbl";
+            this.moreDetailsLbl.Size = new System.Drawing.Size(500, 29);
+            this.moreDetailsLbl.TabIndex = 54;
+            this.moreDetailsLbl.TabStop = false;
+            this.moreDetailsLbl.Text = "MORE DETAILS ";
+            this.moreDetailsLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // studentTypeLbl
+            // 
+            this.studentTypeLbl.BackColor = System.Drawing.Color.Transparent;
+            this.studentTypeLbl.CausesValidation = false;
+            this.studentTypeLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentTypeLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.studentTypeLbl.IsContextMenuEnabled = false;
+            this.studentTypeLbl.IsSelectionEnabled = false;
+            this.studentTypeLbl.Location = new System.Drawing.Point(117, 399);
+            this.studentTypeLbl.MinimumSize = new System.Drawing.Size(500, 0);
+            this.studentTypeLbl.Name = "studentTypeLbl";
+            this.studentTypeLbl.Size = new System.Drawing.Size(500, 29);
+            this.studentTypeLbl.TabIndex = 51;
+            this.studentTypeLbl.TabStop = false;
+            this.studentTypeLbl.Text = "STUDENT TYPE";
+            this.studentTypeLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // studentPicLbl
+            // 
+            this.studentPicLbl.BackColor = System.Drawing.Color.Transparent;
+            this.studentPicLbl.CausesValidation = false;
+            this.studentPicLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentPicLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.studentPicLbl.IsContextMenuEnabled = false;
+            this.studentPicLbl.IsSelectionEnabled = false;
+            this.studentPicLbl.Location = new System.Drawing.Point(117, 26);
+            this.studentPicLbl.MinimumSize = new System.Drawing.Size(500, 0);
+            this.studentPicLbl.Name = "studentPicLbl";
+            this.studentPicLbl.Size = new System.Drawing.Size(500, 29);
+            this.studentPicLbl.TabIndex = 57;
+            this.studentPicLbl.TabStop = false;
+            this.studentPicLbl.Text = "STUDENT PICTURE";
+            this.studentPicLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guardianContainer
             // 
             this.guardianContainer.Controls.Add(this.guna2HtmlLabel6);
-            this.guardianContainer.Controls.Add(this.guna2HtmlLabel9);
+            this.guardianContainer.Controls.Add(this.motherEmailLbl);
             this.guardianContainer.Controls.Add(this.guna2HtmlLabel4);
             this.guardianContainer.Controls.Add(this.fatherNameLbl);
-            this.guardianContainer.Controls.Add(this.guna2HtmlLabel7);
+            this.guardianContainer.Controls.Add(this.fatherEmailLbl);
             this.guardianContainer.Controls.Add(this.motherNameLbl);
-            this.guardianContainer.Controls.Add(this.guna2HtmlLabel10);
-            this.guardianContainer.Controls.Add(this.guna2HtmlLabel11);
-            this.guardianContainer.Controls.Add(this.guna2HtmlLabel12);
-            this.guardianContainer.Controls.Add(this.guna2HtmlLabel13);
+            this.guardianContainer.Controls.Add(this.motherPhoneLbl);
+            this.guardianContainer.Controls.Add(this.fatherPhoneLbl);
+            this.guardianContainer.Controls.Add(this.fatherOccupationLbl);
+            this.guardianContainer.Controls.Add(this.motherOccupationLbl);
             this.guardianContainer.Controls.Add(this.motherOccupationTB);
-            this.guardianContainer.Controls.Add(this.fatherfnameTB);
+            this.guardianContainer.Controls.Add(this.fathernameTB);
             this.guardianContainer.Controls.Add(this.fatherEmailTB);
-            this.guardianContainer.Controls.Add(this.motherfnameTB);
+            this.guardianContainer.Controls.Add(this.mothernameTB);
             this.guardianContainer.Controls.Add(this.motherPhoneTB);
             this.guardianContainer.Controls.Add(this.motherEmailTB);
             this.guardianContainer.Controls.Add(this.fatherPhoneNumberTB);
@@ -882,6 +965,176 @@
             this.guardianContainer.Name = "guardianContainer";
             this.guardianContainer.Size = new System.Drawing.Size(821, 589);
             this.guardianContainer.TabIndex = 0;
+            // 
+            // guna2HtmlLabel6
+            // 
+            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel6.CausesValidation = false;
+            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI Variable Display", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(133)))), ((int)(((byte)(46)))));
+            this.guna2HtmlLabel6.IsContextMenuEnabled = false;
+            this.guna2HtmlLabel6.IsSelectionEnabled = false;
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(429, 17);
+            this.guna2HtmlLabel6.MinimumSize = new System.Drawing.Size(700, 0);
+            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(700, 38);
+            this.guna2HtmlLabel6.TabIndex = 56;
+            this.guna2HtmlLabel6.TabStop = false;
+            this.guna2HtmlLabel6.Text = "MOTHER\'S DETAILS";
+            this.guna2HtmlLabel6.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // motherEmailLbl
+            // 
+            this.motherEmailLbl.BackColor = System.Drawing.Color.Transparent;
+            this.motherEmailLbl.CausesValidation = false;
+            this.motherEmailLbl.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.motherEmailLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.motherEmailLbl.IsContextMenuEnabled = false;
+            this.motherEmailLbl.IsSelectionEnabled = false;
+            this.motherEmailLbl.Location = new System.Drawing.Point(429, 152);
+            this.motherEmailLbl.MinimumSize = new System.Drawing.Size(360, 0);
+            this.motherEmailLbl.Name = "motherEmailLbl";
+            this.motherEmailLbl.Size = new System.Drawing.Size(360, 26);
+            this.motherEmailLbl.TabIndex = 64;
+            this.motherEmailLbl.TabStop = false;
+            this.motherEmailLbl.Text = "EMAIL ADDRESS";
+            this.motherEmailLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // guna2HtmlLabel4
+            // 
+            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel4.CausesValidation = false;
+            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI Variable Display", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(133)))), ((int)(((byte)(46)))));
+            this.guna2HtmlLabel4.IsContextMenuEnabled = false;
+            this.guna2HtmlLabel4.IsSelectionEnabled = false;
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(33, 18);
+            this.guna2HtmlLabel4.MinimumSize = new System.Drawing.Size(700, 0);
+            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(700, 38);
+            this.guna2HtmlLabel4.TabIndex = 55;
+            this.guna2HtmlLabel4.TabStop = false;
+            this.guna2HtmlLabel4.Text = "FATHER\'S DETAILS";
+            this.guna2HtmlLabel4.TextAlignment = System.Drawing.ContentAlignment.BottomLeft;
+            // 
+            // fatherNameLbl
+            // 
+            this.fatherNameLbl.BackColor = System.Drawing.Color.Transparent;
+            this.fatherNameLbl.CausesValidation = false;
+            this.fatherNameLbl.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fatherNameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.fatherNameLbl.IsContextMenuEnabled = false;
+            this.fatherNameLbl.IsSelectionEnabled = false;
+            this.fatherNameLbl.Location = new System.Drawing.Point(33, 66);
+            this.fatherNameLbl.MinimumSize = new System.Drawing.Size(360, 0);
+            this.fatherNameLbl.Name = "fatherNameLbl";
+            this.fatherNameLbl.Size = new System.Drawing.Size(360, 26);
+            this.fatherNameLbl.TabIndex = 52;
+            this.fatherNameLbl.TabStop = false;
+            this.fatherNameLbl.Text = "NAME";
+            this.fatherNameLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // fatherEmailLbl
+            // 
+            this.fatherEmailLbl.BackColor = System.Drawing.Color.Transparent;
+            this.fatherEmailLbl.CausesValidation = false;
+            this.fatherEmailLbl.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fatherEmailLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.fatherEmailLbl.IsContextMenuEnabled = false;
+            this.fatherEmailLbl.IsSelectionEnabled = false;
+            this.fatherEmailLbl.Location = new System.Drawing.Point(33, 153);
+            this.fatherEmailLbl.MinimumSize = new System.Drawing.Size(360, 0);
+            this.fatherEmailLbl.Name = "fatherEmailLbl";
+            this.fatherEmailLbl.Size = new System.Drawing.Size(360, 26);
+            this.fatherEmailLbl.TabIndex = 57;
+            this.fatherEmailLbl.TabStop = false;
+            this.fatherEmailLbl.Text = "EMAIL ADDRESS";
+            this.fatherEmailLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // motherNameLbl
+            // 
+            this.motherNameLbl.BackColor = System.Drawing.Color.Transparent;
+            this.motherNameLbl.CausesValidation = false;
+            this.motherNameLbl.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.motherNameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.motherNameLbl.IsContextMenuEnabled = false;
+            this.motherNameLbl.IsSelectionEnabled = false;
+            this.motherNameLbl.Location = new System.Drawing.Point(429, 65);
+            this.motherNameLbl.MinimumSize = new System.Drawing.Size(360, 0);
+            this.motherNameLbl.Name = "motherNameLbl";
+            this.motherNameLbl.Size = new System.Drawing.Size(360, 26);
+            this.motherNameLbl.TabIndex = 62;
+            this.motherNameLbl.TabStop = false;
+            this.motherNameLbl.Text = "NAME";
+            this.motherNameLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // motherPhoneLbl
+            // 
+            this.motherPhoneLbl.BackColor = System.Drawing.Color.Transparent;
+            this.motherPhoneLbl.CausesValidation = false;
+            this.motherPhoneLbl.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.motherPhoneLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.motherPhoneLbl.IsContextMenuEnabled = false;
+            this.motherPhoneLbl.IsSelectionEnabled = false;
+            this.motherPhoneLbl.Location = new System.Drawing.Point(429, 239);
+            this.motherPhoneLbl.MinimumSize = new System.Drawing.Size(360, 0);
+            this.motherPhoneLbl.Name = "motherPhoneLbl";
+            this.motherPhoneLbl.Size = new System.Drawing.Size(360, 26);
+            this.motherPhoneLbl.TabIndex = 66;
+            this.motherPhoneLbl.TabStop = false;
+            this.motherPhoneLbl.Text = "PHONE NUMBER";
+            this.motherPhoneLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // fatherPhoneLbl
+            // 
+            this.fatherPhoneLbl.BackColor = System.Drawing.Color.Transparent;
+            this.fatherPhoneLbl.CausesValidation = false;
+            this.fatherPhoneLbl.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fatherPhoneLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.fatherPhoneLbl.IsContextMenuEnabled = false;
+            this.fatherPhoneLbl.IsSelectionEnabled = false;
+            this.fatherPhoneLbl.Location = new System.Drawing.Point(33, 240);
+            this.fatherPhoneLbl.MinimumSize = new System.Drawing.Size(360, 0);
+            this.fatherPhoneLbl.Name = "fatherPhoneLbl";
+            this.fatherPhoneLbl.Size = new System.Drawing.Size(360, 26);
+            this.fatherPhoneLbl.TabIndex = 58;
+            this.fatherPhoneLbl.TabStop = false;
+            this.fatherPhoneLbl.Text = "PHONE NUMBER";
+            this.fatherPhoneLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // fatherOccupationLbl
+            // 
+            this.fatherOccupationLbl.BackColor = System.Drawing.Color.Transparent;
+            this.fatherOccupationLbl.CausesValidation = false;
+            this.fatherOccupationLbl.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fatherOccupationLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.fatherOccupationLbl.IsContextMenuEnabled = false;
+            this.fatherOccupationLbl.IsSelectionEnabled = false;
+            this.fatherOccupationLbl.Location = new System.Drawing.Point(33, 328);
+            this.fatherOccupationLbl.MinimumSize = new System.Drawing.Size(360, 0);
+            this.fatherOccupationLbl.Name = "fatherOccupationLbl";
+            this.fatherOccupationLbl.Size = new System.Drawing.Size(360, 26);
+            this.fatherOccupationLbl.TabIndex = 60;
+            this.fatherOccupationLbl.TabStop = false;
+            this.fatherOccupationLbl.Text = "OCCUPATION";
+            this.fatherOccupationLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // motherOccupationLbl
+            // 
+            this.motherOccupationLbl.BackColor = System.Drawing.Color.Transparent;
+            this.motherOccupationLbl.CausesValidation = false;
+            this.motherOccupationLbl.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.motherOccupationLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.motherOccupationLbl.IsContextMenuEnabled = false;
+            this.motherOccupationLbl.IsSelectionEnabled = false;
+            this.motherOccupationLbl.Location = new System.Drawing.Point(429, 327);
+            this.motherOccupationLbl.MinimumSize = new System.Drawing.Size(360, 0);
+            this.motherOccupationLbl.Name = "motherOccupationLbl";
+            this.motherOccupationLbl.Size = new System.Drawing.Size(360, 26);
+            this.motherOccupationLbl.TabIndex = 67;
+            this.motherOccupationLbl.TabStop = false;
+            this.motherOccupationLbl.Text = "OCCUPATION";
+            this.motherOccupationLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // motherOccupationTB
             // 
@@ -908,100 +1161,34 @@
             this.motherOccupationTB.SelectedText = "";
             this.motherOccupationTB.Size = new System.Drawing.Size(374, 45);
             this.motherOccupationTB.TabIndex = 68;
+            this.motherOccupationTB.Leave += new System.EventHandler(this.motherOccupationTB_Leave);
             // 
-            // guna2HtmlLabel9
+            // fathernameTB
             // 
-            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel9.CausesValidation = false;
-            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel9.IsContextMenuEnabled = false;
-            this.guna2HtmlLabel9.IsSelectionEnabled = false;
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(429, 152);
-            this.guna2HtmlLabel9.MinimumSize = new System.Drawing.Size(360, 0);
-            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(360, 28);
-            this.guna2HtmlLabel9.TabIndex = 64;
-            this.guna2HtmlLabel9.TabStop = false;
-            this.guna2HtmlLabel9.Text = "EMAIL ADDRESS";
-            this.guna2HtmlLabel9.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // guna2HtmlLabel4
-            // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.CausesValidation = false;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI Variable Display", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(133)))), ((int)(((byte)(46)))));
-            this.guna2HtmlLabel4.IsContextMenuEnabled = false;
-            this.guna2HtmlLabel4.IsSelectionEnabled = false;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(33, 18);
-            this.guna2HtmlLabel4.MinimumSize = new System.Drawing.Size(700, 0);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(700, 40);
-            this.guna2HtmlLabel4.TabIndex = 55;
-            this.guna2HtmlLabel4.TabStop = false;
-            this.guna2HtmlLabel4.Text = "FATHER\'S DETAILS";
-            this.guna2HtmlLabel4.TextAlignment = System.Drawing.ContentAlignment.BottomLeft;
-            // 
-            // fatherfnameTB
-            // 
-            this.fatherfnameTB.BorderRadius = 5;
-            this.fatherfnameTB.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.fatherfnameTB.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.fatherfnameTB.DefaultText = "";
-            this.fatherfnameTB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.fatherfnameTB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.fatherfnameTB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.fatherfnameTB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.fatherfnameTB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.fatherfnameTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.fatherfnameTB.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.fatherfnameTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.fatherfnameTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.fatherfnameTB.IconRightOffset = new System.Drawing.Point(5, 0);
-            this.fatherfnameTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.fatherfnameTB.Location = new System.Drawing.Point(33, 104);
-            this.fatherfnameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.fatherfnameTB.Name = "fatherfnameTB";
-            this.fatherfnameTB.PasswordChar = '\0';
-            this.fatherfnameTB.PlaceholderText = "";
-            this.fatherfnameTB.SelectedText = "";
-            this.fatherfnameTB.Size = new System.Drawing.Size(374, 42);
-            this.fatherfnameTB.TabIndex = 53;
-            // 
-            // fatherNameLbl
-            // 
-            this.fatherNameLbl.BackColor = System.Drawing.Color.Transparent;
-            this.fatherNameLbl.CausesValidation = false;
-            this.fatherNameLbl.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fatherNameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.fatherNameLbl.IsContextMenuEnabled = false;
-            this.fatherNameLbl.IsSelectionEnabled = false;
-            this.fatherNameLbl.Location = new System.Drawing.Point(33, 66);
-            this.fatherNameLbl.MinimumSize = new System.Drawing.Size(360, 0);
-            this.fatherNameLbl.Name = "fatherNameLbl";
-            this.fatherNameLbl.Size = new System.Drawing.Size(360, 28);
-            this.fatherNameLbl.TabIndex = 52;
-            this.fatherNameLbl.TabStop = false;
-            this.fatherNameLbl.Text = "NAME";
-            this.fatherNameLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // guna2HtmlLabel6
-            // 
-            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.CausesValidation = false;
-            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI Variable Display", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(133)))), ((int)(((byte)(46)))));
-            this.guna2HtmlLabel6.IsContextMenuEnabled = false;
-            this.guna2HtmlLabel6.IsSelectionEnabled = false;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(429, 17);
-            this.guna2HtmlLabel6.MinimumSize = new System.Drawing.Size(700, 0);
-            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(700, 38);
-            this.guna2HtmlLabel6.TabIndex = 56;
-            this.guna2HtmlLabel6.TabStop = false;
-            this.guna2HtmlLabel6.Text = "MOTHER\'S DETAILS";
-            this.guna2HtmlLabel6.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.fathernameTB.BorderRadius = 5;
+            this.fathernameTB.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.fathernameTB.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.fathernameTB.DefaultText = "";
+            this.fathernameTB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.fathernameTB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.fathernameTB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.fathernameTB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.fathernameTB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
+            this.fathernameTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.fathernameTB.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.fathernameTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.fathernameTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.fathernameTB.IconRightOffset = new System.Drawing.Point(5, 0);
+            this.fathernameTB.IconRightSize = new System.Drawing.Size(25, 25);
+            this.fathernameTB.Location = new System.Drawing.Point(33, 104);
+            this.fathernameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.fathernameTB.Name = "fathernameTB";
+            this.fathernameTB.PasswordChar = '\0';
+            this.fathernameTB.PlaceholderText = "";
+            this.fathernameTB.SelectedText = "";
+            this.fathernameTB.Size = new System.Drawing.Size(374, 42);
+            this.fathernameTB.TabIndex = 53;
+            this.fathernameTB.Leave += new System.EventHandler(this.fathernameTB_Leave);
             // 
             // fatherEmailTB
             // 
@@ -1028,83 +1215,34 @@
             this.fatherEmailTB.SelectedText = "";
             this.fatherEmailTB.Size = new System.Drawing.Size(374, 42);
             this.fatherEmailTB.TabIndex = 54;
+            this.fatherEmailTB.Leave += new System.EventHandler(this.fatherEmailTB_Leave);
             // 
-            // guna2HtmlLabel7
+            // mothernameTB
             // 
-            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel7.CausesValidation = false;
-            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel7.IsContextMenuEnabled = false;
-            this.guna2HtmlLabel7.IsSelectionEnabled = false;
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(33, 153);
-            this.guna2HtmlLabel7.MinimumSize = new System.Drawing.Size(360, 0);
-            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(360, 28);
-            this.guna2HtmlLabel7.TabIndex = 57;
-            this.guna2HtmlLabel7.TabStop = false;
-            this.guna2HtmlLabel7.Text = "EMAIL ADDRESS";
-            this.guna2HtmlLabel7.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // motherNameLbl
-            // 
-            this.motherNameLbl.BackColor = System.Drawing.Color.Transparent;
-            this.motherNameLbl.CausesValidation = false;
-            this.motherNameLbl.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.motherNameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.motherNameLbl.IsContextMenuEnabled = false;
-            this.motherNameLbl.IsSelectionEnabled = false;
-            this.motherNameLbl.Location = new System.Drawing.Point(429, 65);
-            this.motherNameLbl.MinimumSize = new System.Drawing.Size(360, 0);
-            this.motherNameLbl.Name = "motherNameLbl";
-            this.motherNameLbl.Size = new System.Drawing.Size(360, 28);
-            this.motherNameLbl.TabIndex = 62;
-            this.motherNameLbl.TabStop = false;
-            this.motherNameLbl.Text = "NAME";
-            this.motherNameLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // motherfnameTB
-            // 
-            this.motherfnameTB.BorderRadius = 5;
-            this.motherfnameTB.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.motherfnameTB.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.motherfnameTB.DefaultText = "";
-            this.motherfnameTB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.motherfnameTB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.motherfnameTB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.motherfnameTB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.motherfnameTB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.motherfnameTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.motherfnameTB.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.motherfnameTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.motherfnameTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.motherfnameTB.IconRightOffset = new System.Drawing.Point(5, 0);
-            this.motherfnameTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.motherfnameTB.Location = new System.Drawing.Point(429, 103);
-            this.motherfnameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.motherfnameTB.Name = "motherfnameTB";
-            this.motherfnameTB.PasswordChar = '\0';
-            this.motherfnameTB.PlaceholderText = "";
-            this.motherfnameTB.SelectedText = "";
-            this.motherfnameTB.Size = new System.Drawing.Size(374, 42);
-            this.motherfnameTB.TabIndex = 63;
-            // 
-            // guna2HtmlLabel10
-            // 
-            this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel10.CausesValidation = false;
-            this.guna2HtmlLabel10.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel10.IsContextMenuEnabled = false;
-            this.guna2HtmlLabel10.IsSelectionEnabled = false;
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(429, 239);
-            this.guna2HtmlLabel10.MinimumSize = new System.Drawing.Size(360, 0);
-            this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            this.guna2HtmlLabel10.Size = new System.Drawing.Size(360, 28);
-            this.guna2HtmlLabel10.TabIndex = 66;
-            this.guna2HtmlLabel10.TabStop = false;
-            this.guna2HtmlLabel10.Text = "PHONE NUMBER";
-            this.guna2HtmlLabel10.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.mothernameTB.BorderRadius = 5;
+            this.mothernameTB.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            this.mothernameTB.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.mothernameTB.DefaultText = "";
+            this.mothernameTB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.mothernameTB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.mothernameTB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.mothernameTB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.mothernameTB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
+            this.mothernameTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.mothernameTB.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.mothernameTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.mothernameTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.mothernameTB.IconRightOffset = new System.Drawing.Point(5, 0);
+            this.mothernameTB.IconRightSize = new System.Drawing.Size(25, 25);
+            this.mothernameTB.Location = new System.Drawing.Point(429, 103);
+            this.mothernameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.mothernameTB.Name = "mothernameTB";
+            this.mothernameTB.PasswordChar = '\0';
+            this.mothernameTB.PlaceholderText = "";
+            this.mothernameTB.SelectedText = "";
+            this.mothernameTB.Size = new System.Drawing.Size(374, 42);
+            this.mothernameTB.TabIndex = 63;
+            this.mothernameTB.Leave += new System.EventHandler(this.mothernameTB_Leave);
             // 
             // motherPhoneTB
             // 
@@ -1131,6 +1269,7 @@
             this.motherPhoneTB.SelectedText = "";
             this.motherPhoneTB.Size = new System.Drawing.Size(374, 42);
             this.motherPhoneTB.TabIndex = 69;
+            this.motherPhoneTB.Leave += new System.EventHandler(this.motherPhoneTB_Leave);
             // 
             // motherEmailTB
             // 
@@ -1157,23 +1296,7 @@
             this.motherEmailTB.SelectedText = "";
             this.motherEmailTB.Size = new System.Drawing.Size(374, 42);
             this.motherEmailTB.TabIndex = 65;
-            // 
-            // guna2HtmlLabel11
-            // 
-            this.guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel11.CausesValidation = false;
-            this.guna2HtmlLabel11.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel11.IsContextMenuEnabled = false;
-            this.guna2HtmlLabel11.IsSelectionEnabled = false;
-            this.guna2HtmlLabel11.Location = new System.Drawing.Point(33, 240);
-            this.guna2HtmlLabel11.MinimumSize = new System.Drawing.Size(360, 0);
-            this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
-            this.guna2HtmlLabel11.Size = new System.Drawing.Size(360, 28);
-            this.guna2HtmlLabel11.TabIndex = 58;
-            this.guna2HtmlLabel11.TabStop = false;
-            this.guna2HtmlLabel11.Text = "PHONE NUMBER";
-            this.guna2HtmlLabel11.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.motherEmailTB.Leave += new System.EventHandler(this.motherEmailTB_Leave);
             // 
             // fatherPhoneNumberTB
             // 
@@ -1200,23 +1323,7 @@
             this.fatherPhoneNumberTB.SelectedText = "";
             this.fatherPhoneNumberTB.Size = new System.Drawing.Size(374, 42);
             this.fatherPhoneNumberTB.TabIndex = 59;
-            // 
-            // guna2HtmlLabel12
-            // 
-            this.guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel12.CausesValidation = false;
-            this.guna2HtmlLabel12.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel12.IsContextMenuEnabled = false;
-            this.guna2HtmlLabel12.IsSelectionEnabled = false;
-            this.guna2HtmlLabel12.Location = new System.Drawing.Point(33, 328);
-            this.guna2HtmlLabel12.MinimumSize = new System.Drawing.Size(360, 0);
-            this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
-            this.guna2HtmlLabel12.Size = new System.Drawing.Size(360, 28);
-            this.guna2HtmlLabel12.TabIndex = 60;
-            this.guna2HtmlLabel12.TabStop = false;
-            this.guna2HtmlLabel12.Text = "OCCUPATION";
-            this.guna2HtmlLabel12.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.fatherPhoneNumberTB.Leave += new System.EventHandler(this.fatherPhoneNumberTB_Leave);
             // 
             // fatherOccupationTB
             // 
@@ -1243,68 +1350,7 @@
             this.fatherOccupationTB.SelectedText = "";
             this.fatherOccupationTB.Size = new System.Drawing.Size(374, 42);
             this.fatherOccupationTB.TabIndex = 61;
-            // 
-            // guna2HtmlLabel13
-            // 
-            this.guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel13.CausesValidation = false;
-            this.guna2HtmlLabel13.Font = new System.Drawing.Font("Segoe UI Variable Text Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel13.IsContextMenuEnabled = false;
-            this.guna2HtmlLabel13.IsSelectionEnabled = false;
-            this.guna2HtmlLabel13.Location = new System.Drawing.Point(429, 327);
-            this.guna2HtmlLabel13.MinimumSize = new System.Drawing.Size(360, 0);
-            this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
-            this.guna2HtmlLabel13.Size = new System.Drawing.Size(360, 28);
-            this.guna2HtmlLabel13.TabIndex = 67;
-            this.guna2HtmlLabel13.TabStop = false;
-            this.guna2HtmlLabel13.Text = "OCCUPATION";
-            this.guna2HtmlLabel13.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.Controls.Add(this.cancelBtn);
-            this.guna2Panel1.Controls.Add(this.updateBtn);
-            this.guna2Panel1.Location = new System.Drawing.Point(650, 475);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(163, 130);
-            this.guna2Panel1.TabIndex = 3;
-            // 
-            // cancelBtn
-            // 
-            this.cancelBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.cancelBtn.BorderRadius = 5;
-            this.cancelBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.cancelBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.cancelBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.cancelBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.cancelBtn.FillColor = System.Drawing.Color.Transparent;
-            this.cancelBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.cancelBtn.ForeColor = System.Drawing.Color.IndianRed;
-            this.cancelBtn.Location = new System.Drawing.Point(6, 65);
-            this.cancelBtn.Name = "cancelBtn";
-            this.cancelBtn.Size = new System.Drawing.Size(113, 28);
-            this.cancelBtn.TabIndex = 59;
-            this.cancelBtn.Text = "CANCEL";
-            // 
-            // updateBtn
-            // 
-            this.updateBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.updateBtn.BorderRadius = 5;
-            this.updateBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.updateBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.updateBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.updateBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.updateBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
-            this.updateBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.updateBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.updateBtn.Location = new System.Drawing.Point(6, 0);
-            this.updateBtn.Margin = new System.Windows.Forms.Padding(20);
-            this.updateBtn.Name = "updateBtn";
-            this.updateBtn.Size = new System.Drawing.Size(113, 58);
-            this.updateBtn.TabIndex = 58;
-            this.updateBtn.Text = "UPDATE";
+            this.fatherOccupationTB.Leave += new System.EventHandler(this.fatherOccupationTB_Leave);
             // 
             // guna2Panel2
             // 
@@ -1321,6 +1367,10 @@
             // 
             this.guna2Elipse1.BorderRadius = 15;
             this.guna2Elipse1.TargetControl = this.guna2Panel2;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // updateStudentForm
             // 
@@ -1340,6 +1390,7 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.mainPanel.ResumeLayout(false);
+            this.guna2Panel1.ResumeLayout(false);
             this.personalContainer.ResumeLayout(false);
             this.personalContainer.PerformLayout();
             this.moreDetailsContainer.ResumeLayout(false);
@@ -1348,8 +1399,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.qrCodePic)).EndInit();
             this.guardianContainer.ResumeLayout(false);
             this.guardianContainer.PerformLayout();
-            this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1383,40 +1434,42 @@
         private Guna.UI2.WinForms.Guna2Panel moreDetailsContainer;
         private Guna.UI2.WinForms.Guna2Panel guardianContainer;
         private Guna.UI2.WinForms.Guna2PictureBox pic;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel studentPicLbl;
         private Guna.UI2.WinForms.Guna2HtmlLabel sectionlbl;
         private Guna.UI2.WinForms.Guna2TextBox sectionTB;
         private Guna.UI2.WinForms.Guna2HtmlLabel yearLbl;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
+        private Guna.UI2.WinForms.Guna2HtmlLabel qrcodeLbl;
         private Guna.UI2.WinForms.Guna2PictureBox qrCodePic;
         private Guna.UI2.WinForms.Guna2TextBox idTB;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel moreDetailsLbl;
         private Guna.UI2.WinForms.Guna2TextBox moreDetailTB;
         private Guna.UI2.WinForms.Guna2ComboBox studentTypeCB;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel studentTypeLbl;
         private Guna.UI2.WinForms.Guna2ComboBox yearCB;
         private Guna.UI2.WinForms.Guna2TextBox motherOccupationTB;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
+        private Guna.UI2.WinForms.Guna2HtmlLabel motherEmailLbl;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2TextBox fatherfnameTB;
+        private Guna.UI2.WinForms.Guna2TextBox fathernameTB;
         private Guna.UI2.WinForms.Guna2HtmlLabel fatherNameLbl;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2TextBox fatherEmailTB;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
+        private Guna.UI2.WinForms.Guna2HtmlLabel fatherEmailLbl;
         private Guna.UI2.WinForms.Guna2HtmlLabel motherNameLbl;
-        private Guna.UI2.WinForms.Guna2TextBox motherfnameTB;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
+        private Guna.UI2.WinForms.Guna2TextBox mothernameTB;
+        private Guna.UI2.WinForms.Guna2HtmlLabel motherPhoneLbl;
         private Guna.UI2.WinForms.Guna2TextBox motherPhoneTB;
         private Guna.UI2.WinForms.Guna2TextBox motherEmailTB;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
+        private Guna.UI2.WinForms.Guna2HtmlLabel fatherPhoneLbl;
         private Guna.UI2.WinForms.Guna2TextBox fatherPhoneNumberTB;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
+        private Guna.UI2.WinForms.Guna2HtmlLabel fatherOccupationLbl;
         private Guna.UI2.WinForms.Guna2TextBox fatherOccupationTB;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
+        private Guna.UI2.WinForms.Guna2HtmlLabel motherOccupationLbl;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Button cancelBtn;
         private Guna.UI2.WinForms.Guna2Button updateBtn;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2Button generateBtn;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

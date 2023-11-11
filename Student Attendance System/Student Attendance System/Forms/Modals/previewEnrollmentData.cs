@@ -78,7 +78,7 @@ namespace Student_Attendance_System.Forms.Modals
                "INSERT INTO studentFather (StudentID, Name, Email, PhoneNumber, Occupation) VALUES (@StudentID, @fatherName, @fatherEmail, @fatherPhoneNumber, @fatherOccupation); " +
                "INSERT INTO studentMother (StudentID, Name, Email, PhoneNumber, Occupation) VALUES (@StudentID, @motherName, @motherEmail, @motherPhoneNumber, @motherOccupation); " +
                "INSERT INTO studentIdentity (StudentID, QRCode, Picture) VALUES (@StudentID, @qrcode, @picture); " +
-               "INSERT INTO studentInformation (StudentID, Age, Religion, Gender, MoreDetails) VALUES (@StudentID, @age, @religion, @gender, @moreDetails)";
+               "INSERT INTO studentInformation (StudentID, Age, Religion, Gender, MoreDetails, Birthday) VALUES (@StudentID, @age, @religion, @gender, @moreDetails, @birthday)";
 
                 using (db.cmd = new SqlCommand(query, databaseHelper.con))
                 {
@@ -107,6 +107,7 @@ namespace Student_Attendance_System.Forms.Modals
                     db.cmd.Parameters.AddWithValue("religion", EnrollmentGlobalVariable.religion);
                     db.cmd.Parameters.AddWithValue("gender", EnrollmentGlobalVariable.gender);
                     db.cmd.Parameters.AddWithValue("moreDetails", EnrollmentGlobalVariable.moreDetails);
+                    db.cmd.Parameters.AddWithValue("birthday", SqlDbType.Date).Value = EnrollmentGlobalVariable.birthday;
                     db.cmd.ExecuteNonQuery();
                 }
             }catch(Exception ex)

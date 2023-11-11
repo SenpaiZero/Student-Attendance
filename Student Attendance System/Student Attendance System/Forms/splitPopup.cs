@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -58,7 +59,9 @@ namespace Student_Attendance_System.Forms
         {
             if (databaseHelper.con.State != ConnectionState.Open)
                 databaseHelper.open();
-            String query = $"SELECT StudentID, Name, Section, Year FROM studentData WHERE StudentId = '{id}'";
+            String query = $"SELECT d.StudentID, d.Name, d.Section, d.Year, i.Picture " +
+                $"FROM studentData d JOIN studentIdentity i ON i.StudentID = d.StudentID" +
+                $" WHERE d.StudentID = '{id}'";
             using(SqlCommand cmd = new SqlCommand(query, databaseHelper.con))
             {
                 SqlDataReader dr = cmd.ExecuteReader();
@@ -67,11 +70,27 @@ namespace Student_Attendance_System.Forms
                     idNumLbl.Text = dr.GetString(0);
                     nameLbl.Text = dr.GetString(1);
                     sectionYearLbl.Text = $"{dr.GetString(2)}&{dr.GetString(3)}";
+                    idPic.Image = ConvertToImage((byte[])dr.GetValue(4));
                     dr.Close();
                 }
             }
 
             lastCap.Image = lastCapture;
+        }
+
+        public Bitmap ConvertToImage(byte[] binary)
+        {
+            if (binary == null || binary.Length == 0)
+            {
+                // Return a default image or handle the null case as needed
+                return new Bitmap(1, 1);
+            }
+
+            using (MemoryStream stream = new MemoryStream(binary))
+            {
+                Bitmap image = new Bitmap(stream);
+                return image;
+            }
         }
 
     }
