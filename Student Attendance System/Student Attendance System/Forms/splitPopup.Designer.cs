@@ -151,7 +151,9 @@
             // 
             // lastCap
             // 
+            this.lastCap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(30)))), ((int)(((byte)(73)))));
             this.lastCap.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lastCap.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(30)))), ((int)(((byte)(73)))));
             this.lastCap.ImageRotate = 0F;
             this.lastCap.Location = new System.Drawing.Point(3, 80);
             this.lastCap.Name = "lastCap";
@@ -207,6 +209,7 @@
             // idPic
             // 
             this.idPic.Dock = System.Windows.Forms.DockStyle.Top;
+            this.idPic.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(30)))), ((int)(((byte)(73)))));
             this.idPic.ImageRotate = 0F;
             this.idPic.Location = new System.Drawing.Point(3, 82);
             this.idPic.Name = "idPic";

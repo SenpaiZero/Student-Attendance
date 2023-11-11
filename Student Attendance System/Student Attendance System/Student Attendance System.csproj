@@ -126,6 +126,12 @@
     <Compile Include="Forms\Admin\updateStaffForm.Designer.cs">
       <DependentUpon>updateStaffForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Admin\updateStudentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin\updateStudentForm.Designer.cs">
+      <DependentUpon>updateStudentForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Modals\changePasswordForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Admin\updateStaffForm.resx">
       <DependentUpon>updateStaffForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin\updateStudentForm.resx">
+      <DependentUpon>updateStudentForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Modals\changePasswordForm.resx">
       <DependentUpon>changePasswordForm.cs</DependentUpon>

@@ -250,6 +250,7 @@
             this.viewBtn.Size = new System.Drawing.Size(110, 42);
             this.viewBtn.TabIndex = 38;
             this.viewBtn.Text = "VIEW";
+            this.viewBtn.Click += new System.EventHandler(this.viewBtn_Click);
             // 
             // unerollBtn
             // 

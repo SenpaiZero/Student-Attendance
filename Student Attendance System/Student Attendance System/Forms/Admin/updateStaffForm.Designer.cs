@@ -451,9 +451,7 @@
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
             this.guna2Panel1.Controls.Add(this.nameLbl);
-            this.guna2Panel1.Controls.Add(this.genderLbl);
             this.guna2Panel1.Controls.Add(this.adminLbl);
-            this.guna2Panel1.Controls.Add(this.statusLbl);
             this.guna2Panel1.Controls.Add(this.phoneLbl);
             this.guna2Panel1.Controls.Add(this.addressLbl);
             this.guna2Panel1.Controls.Add(this.emailLbl);
@@ -468,6 +466,8 @@
             this.guna2Panel1.Controls.Add(this.emailTB);
             this.guna2Panel1.Controls.Add(this.addressTB);
             this.guna2Panel1.Controls.Add(this.ageTB);
+            this.guna2Panel1.Controls.Add(this.genderLbl);
+            this.guna2Panel1.Controls.Add(this.statusLbl);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel1.Location = new System.Drawing.Point(20, 20);
             this.guna2Panel1.Name = "guna2Panel1";

@@ -116,5 +116,18 @@ namespace Student_Attendance_System.Forms.Admin
                 }
             }
         }
+
+        private void viewBtn_Click(object sender, EventArgs e)
+        {
+            String selectedID;
+            if (listTable.Rows.Count > 0)
+            {
+                DataGridViewRow selectedRow = listTable.SelectedRows[0];
+                selectedID = selectedRow.Cells[0].Value.ToString();
+
+                updateStudentForm updateStd = new updateStudentForm();
+                updateStd.ShowDialog();
+            }
+        }
     }
 }

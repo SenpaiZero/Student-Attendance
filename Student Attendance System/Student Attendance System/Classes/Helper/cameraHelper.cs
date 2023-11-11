@@ -90,7 +90,6 @@ namespace Student_Attendance_System.Classes
             // Continue if the qrcode bool property is true
             if (qrcode)
             {
-
                 barcodeReader = new QRCodeReader();
                 // Convert the Bitmap to a byte array
                 byte[] byteArray = BitmapToByteArray(frame);
@@ -125,8 +124,22 @@ namespace Student_Attendance_System.Classes
                 }
             }
             
-            frame = CropToSquare(frame);
-            selfPic.Image = frame; // Display the frame on the PictureBox
+            try
+            {
+                frame = CropToSquare(frame);
+                selfPic.Image = frame; // Display the frame on the PictureBox
+            }
+            catch(Exception ex)
+            {
+                MessageForm msg = new MessageForm()
+                {
+                    messageType = "Information",
+                    isYesNo = false,
+                    header = "Wooooops!",
+                    message = ex.Message
+                };
+                msg.ShowDialog();
+            }
         }
         // Method for starting a form with a cam
         public void onLoad()
