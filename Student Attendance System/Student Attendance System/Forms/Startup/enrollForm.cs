@@ -17,7 +17,6 @@ namespace Student_Attendance_System.Startup
 {
     public partial class enrollForm : Form
     {
-        bool[] filledUp;
         public enrollForm()
         {
             InitializeComponent();
@@ -33,16 +32,20 @@ namespace Student_Attendance_System.Startup
                 return handleParams;
             }
         }
-        private void attendanceForm_Load(object sender, EventArgs e)
+        public void restart()
         {
-            filledUp= new bool[] { false, false, false};
             pageHelper.loadEnrollForm(new personalDetails(), mainPanel);
             bringFront();
             defaultData();
         }
+        private void attendanceForm_Load(object sender, EventArgs e)
+        {
+            restart();
+        }
         
         void defaultData()
         {
+            EnrollmentGlobalVariable.page = 0;
             //page 1
             EnrollmentGlobalVariable.firstName = "";
             EnrollmentGlobalVariable.middleName = "";
@@ -125,7 +128,15 @@ namespace Student_Attendance_System.Startup
                 previewEnrollmentData prev = new previewEnrollmentData();
                 if(prev.ShowDialog() == DialogResult.OK)
                 {
-                    MessageBox.Show("added");
+                    MessageForm msg = new MessageForm()
+                    {
+                        messageType = "Success",
+                        header = "Woo hoo!!",
+                        message = "You've successfully enrolled a student",
+                        isYesNo = false
+                    };
+                    msg.ShowDialog();
+                    restart();
                     return;
                 }
             }

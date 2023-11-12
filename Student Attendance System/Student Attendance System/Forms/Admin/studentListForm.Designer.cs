@@ -286,6 +286,7 @@
             this.changeViewBtn.Size = new System.Drawing.Size(130, 42);
             this.changeViewBtn.TabIndex = 36;
             this.changeViewBtn.Text = "ENROLLED";
+            this.changeViewBtn.Click += new System.EventHandler(this.changeViewBtn_Click);
             // 
             // printBtn
             // 

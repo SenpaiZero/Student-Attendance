@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Student_Attendance_System.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,7 @@ namespace Student_Attendance_System.Forms.Admin
 {
     public partial class studentListForm : Form
     {
+        bool isViewEnroll = true;
         public studentListForm()
         {
             InitializeComponent();
@@ -34,14 +36,18 @@ namespace Student_Attendance_System.Forms.Admin
 
         private void searchTB_TextChanged(object sender, EventArgs e)
         {
-            showData(true);
+            showData(true, isViewEnroll);
         }
-        void showData(bool isSearch)
+        void showData(bool isSearch, bool isEnrolled)
         {
             int i;
             databaseHelper.open();
             databaseHelper db = new databaseHelper();
-            String query = "SELECT data.StudentID, data.Name, data.Section, data.Year, data.StudentType FROM studentData data";
+            String query;
+            if (isEnrolled)
+                 query = "SELECT data.StudentID, data.Name, data.Section, data.Year, data.StudentType FROM studentData data";
+            else
+                query = "SELECT data.StudentID, data.Name, data.Section, data.Year, data.StudentType FROM studentData_unenroll data";
             if (isSearch)
             {
                 if (int.TryParse(searchTB.Text, out i))
@@ -70,7 +76,7 @@ namespace Student_Attendance_System.Forms.Admin
 
         private void studentListForm_Load(object sender, EventArgs e)
         {
-            showData(false);
+            showData(false, isViewEnroll);
         }
 
         private void unerollBtn_Click(object sender, EventArgs e)
@@ -81,11 +87,12 @@ namespace Student_Attendance_System.Forms.Admin
                 DataGridViewRow selectedRow = listTable.SelectedRows[0];
                 selectedID = selectedRow.Cells[0].Value.ToString();
 
+                string prefix = isViewEnroll ? "unenroll" : "enroll";
                 MessageForm msg = new MessageForm()
                 {
                     messageType = "Information",
                     header = "Hmmmmm.",
-                    message = "Are you sure you want to delete a student?",
+                    message = $"Are you sure you want to {prefix} a student?",
                     isYesNo = true
                 };
 
@@ -94,15 +101,31 @@ namespace Student_Attendance_System.Forms.Admin
                     if (databaseHelper.con.State != ConnectionState.Open)
                         databaseHelper.open();
                     databaseHelper db = new databaseHelper();
-                    String[] query = 
-                        {
-                        $"DELETE FROM studentData WHERE StudentID = '{selectedID}'",
-                        $"DELETE FROM studentIdentity WHERE StudentID = '{selectedID}'",
-                        $"DELETE FROM studentFather WHERE StudentID = '{selectedID}'",
-                        $"DELETE FROM studentMother WHERE StudentID = '{selectedID}'",
-                        $"DELETE FROM studentInformation WHERE StudentID = '{selectedID}'",
-                        $"DELETE FROM studentContacts WHERE StudentID = '{selectedID}'"
-                        };
+                    string tablePrefix = isViewEnroll ? "" : "_unenroll";
+                    string tablePrefixInsert = !isViewEnroll ? "" : "_unenroll";
+
+                    string[] query = {
+                        $"DELETE FROM studentData{tablePrefix} WHERE StudentID = '{selectedID}'",
+                        $"DELETE FROM studentIdentity{tablePrefix} WHERE StudentID = '{selectedID}'",
+                        $"DELETE FROM studentFather{tablePrefix} WHERE StudentID = '{selectedID}'",
+                        $"DELETE FROM studentMother{tablePrefix} WHERE StudentID = '{selectedID}'",
+                        $"DELETE FROM studentInformation{tablePrefix} WHERE StudentID = '{selectedID}'",
+                        $"DELETE FROM studentContacts{tablePrefix} WHERE StudentID = '{selectedID}'"
+                    };
+
+                    string query_insert =
+                        $"INSERT INTO studentContacts{tablePrefixInsert} (StudentID, Email, PhoneNumber, Address) SELECT StudentID, Email, PhoneNumber, Address FROM studentContacts{tablePrefix} WHERE StudentID = @id; " +
+                        $"INSERT INTO studentData{tablePrefixInsert} (StudentID, Name, Section, Year, StudentType) SELECT StudentID, Name, Section, Year, StudentType FROM studentData{tablePrefix} WHERE StudentID = @id; " +
+                        $"INSERT INTO studentFather{tablePrefixInsert} (StudentID, Name, Email, PhoneNumber, Occupation) SELECT StudentID, Name, Email, PhoneNumber, Occupation FROM studentFather{tablePrefix} WHERE StudentID = @id; " +
+                        $"INSERT INTO studentMother{tablePrefixInsert} (StudentID, Name, Email, PhoneNumber, Occupation) SELECT StudentID, Name, Email, PhoneNumber, Occupation FROM studentMother{tablePrefix} WHERE StudentID = @id; " +
+                        $"INSERT INTO studentIdentity{tablePrefixInsert} (StudentID, QRCode, Picture) SELECT StudentID, QRCode, Picture FROM studentIdentity{tablePrefix} WHERE StudentID = @id; " +
+                        $"INSERT INTO studentInformation{tablePrefixInsert} (StudentID, Age, Religion, Gender, MoreDetails, Birthday) SELECT StudentID, Age, Religion, Gender, MoreDetails, Birthday FROM studentInformation{tablePrefix} WHERE StudentID = @id;";
+
+                    using (SqlCommand insert_cmd = new SqlCommand(query_insert, databaseHelper.con))
+                    {
+                        insert_cmd.Parameters.AddWithValue("id", selectedID);
+                        insert_cmd.ExecuteNonQuery();
+                    }
 
                     foreach (var item in query)
                     {
@@ -112,11 +135,10 @@ namespace Student_Attendance_System.Forms.Admin
                         }
                     }
 
-                    showData(false);
+                    showData(false, isViewEnroll);
                 }
             }
         }
-
         private void viewBtn_Click(object sender, EventArgs e)
         {
             String selectedID;
@@ -129,6 +151,25 @@ namespace Student_Attendance_System.Forms.Admin
                 updateStd.studentID = selectedID;
                 updateStd.ShowDialog();
             }
+        }
+
+        private void changeViewBtn_Click(object sender, EventArgs e)
+        {
+            if(isViewEnroll)
+            {
+                changeViewBtn.Text = "UNENROLLED";
+                unerollBtn.Text = "ENROLLED";
+            }
+            else
+            {
+                changeViewBtn.Text = "ENROLLED";
+                unerollBtn.Text = "UNENROLLED";
+            }
+            isViewEnroll = !isViewEnroll;
+            viewBtn.Enabled = isViewEnroll;
+            printBtn.Enabled = isViewEnroll;
+
+            showData(false, isViewEnroll);
         }
     }
 }
