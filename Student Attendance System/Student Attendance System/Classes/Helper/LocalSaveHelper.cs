@@ -17,6 +17,13 @@ namespace Student_Attendance_System.Classes.Helper
                 image.Save($"{Config.qrcodePath}\\{studentID}.png", ImageFormat.Png);
             }
         }
+        public static void savePicture(Bitmap image, string studentID)
+        {
+            if (image != null)
+            {
+                image.Save($"{Config.picturePath}\\{studentID}.png", ImageFormat.Png);
+            }
+        }
 
     }
 }

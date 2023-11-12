@@ -116,6 +116,7 @@ namespace Student_Attendance_System.Forms.Modals
             }
 
             LocalSaveHelper.saveQRCode(EnrollmentGlobalVariable.QRCode, EnrollmentGlobalVariable.id);
+            LocalSaveHelper.savePicture(EnrollmentGlobalVariable.frame, EnrollmentGlobalVariable.id);
             this.DialogResult = DialogResult.OK;
             this.Close();
         }

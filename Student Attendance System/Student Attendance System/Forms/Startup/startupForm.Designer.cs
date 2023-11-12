@@ -34,6 +34,7 @@
             this.versionLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.miscLine = new Guna.UI2.WinForms.Guna2Shapes();
             this.menuContainer = new Guna.UI2.WinForms.Guna2Panel();
+            this.recordBtn = new Guna.UI2.WinForms.Guna2Button();
             this.dateLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dayLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.sidepanelBtn = new Guna.UI2.WinForms.Guna2CircleButton();
@@ -99,7 +100,7 @@
             this.miscLine.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(66)))), ((int)(((byte)(129)))));
             this.miscLine.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(84)))), ((int)(((byte)(112)))));
             this.miscLine.LineThickness = 2;
-            this.miscLine.Location = new System.Drawing.Point(25, 363);
+            this.miscLine.Location = new System.Drawing.Point(26, 419);
             this.miscLine.Name = "miscLine";
             this.miscLine.PolygonSides = 2;
             this.miscLine.PolygonSkip = 1;
@@ -113,6 +114,7 @@
             // menuContainer
             // 
             this.menuContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(25)))), ((int)(((byte)(82)))));
+            this.menuContainer.Controls.Add(this.recordBtn);
             this.menuContainer.Controls.Add(this.dateLbl);
             this.menuContainer.Controls.Add(this.dayLbl);
             this.menuContainer.Controls.Add(this.versionLbl);
@@ -134,6 +136,31 @@
             this.menuContainer.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
             this.menuContainer.Size = new System.Drawing.Size(220, 750);
             this.menuContainer.TabIndex = 1;
+            // 
+            // recordBtn
+            // 
+            this.recordBtn.BackColor = System.Drawing.Color.Transparent;
+            this.recordBtn.BorderRadius = 10;
+            this.recordBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.recordBtn.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
+            this.recordBtn.DisabledState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
+            this.recordBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
+            this.recordBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(171)))), ((int)(((byte)(121)))));
+            this.recordBtn.DisabledState.Image = global::Student_Attendance_System.Properties.Resources.Admin;
+            this.recordBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.recordBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.recordBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.recordBtn.Image = global::Student_Attendance_System.Properties.Resources.record;
+            this.recordBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.recordBtn.ImageSize = new System.Drawing.Size(40, 40);
+            this.recordBtn.Location = new System.Drawing.Point(10, 227);
+            this.recordBtn.Name = "recordBtn";
+            this.recordBtn.Size = new System.Drawing.Size(200, 60);
+            this.recordBtn.TabIndex = 14;
+            this.recordBtn.Text = "RECORDS";
+            this.recordBtn.TextOffset = new System.Drawing.Point(10, 0);
+            this.recordBtn.UseTransparentBackground = true;
+            this.recordBtn.Click += new System.EventHandler(this.recordBtn_Click);
             // 
             // dateLbl
             // 
@@ -184,7 +211,7 @@
             this.sidepanelBtn.Image = global::Student_Attendance_System.Properties.Resources.left_arrow;
             this.sidepanelBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.sidepanelBtn.ImageOffset = new System.Drawing.Point(-5, 0);
-            this.sidepanelBtn.Location = new System.Drawing.Point(190, 342);
+            this.sidepanelBtn.Location = new System.Drawing.Point(191, 392);
             this.sidepanelBtn.Name = "sidepanelBtn";
             this.sidepanelBtn.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.sidepanelBtn.Size = new System.Drawing.Size(50, 50);
@@ -224,7 +251,7 @@
             this.miscLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.miscLbl.IsContextMenuEnabled = false;
             this.miscLbl.IsSelectionEnabled = false;
-            this.miscLbl.Location = new System.Drawing.Point(25, 378);
+            this.miscLbl.Location = new System.Drawing.Point(26, 434);
             this.miscLbl.Name = "miscLbl";
             this.miscLbl.Size = new System.Drawing.Size(159, 17);
             this.miscLbl.TabIndex = 10;
@@ -240,7 +267,7 @@
             this.studentLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.studentLbl.IsContextMenuEnabled = false;
             this.studentLbl.IsSelectionEnabled = false;
-            this.studentLbl.Location = new System.Drawing.Point(25, 251);
+            this.studentLbl.Location = new System.Drawing.Point(26, 307);
             this.studentLbl.Name = "studentLbl";
             this.studentLbl.Size = new System.Drawing.Size(174, 17);
             this.studentLbl.TabIndex = 9;
@@ -272,7 +299,7 @@
             this.studentLine.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(181)))), ((int)(((byte)(66)))), ((int)(((byte)(129)))));
             this.studentLine.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(84)))), ((int)(((byte)(112)))));
             this.studentLine.LineThickness = 2;
-            this.studentLine.Location = new System.Drawing.Point(25, 237);
+            this.studentLine.Location = new System.Drawing.Point(26, 293);
             this.studentLine.Name = "studentLine";
             this.studentLine.PolygonSides = 2;
             this.studentLine.PolygonSkip = 1;
@@ -343,7 +370,7 @@
             this.attBtn.Image = ((System.Drawing.Image)(resources.GetObject("attBtn.Image")));
             this.attBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.attBtn.ImageSize = new System.Drawing.Size(40, 40);
-            this.attBtn.Location = new System.Drawing.Point(10, 280);
+            this.attBtn.Location = new System.Drawing.Point(11, 336);
             this.attBtn.Name = "attBtn";
             this.attBtn.Size = new System.Drawing.Size(200, 60);
             this.attBtn.TabIndex = 5;
@@ -368,7 +395,7 @@
             this.settingBtn.Image = ((System.Drawing.Image)(resources.GetObject("settingBtn.Image")));
             this.settingBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.settingBtn.ImageSize = new System.Drawing.Size(40, 40);
-            this.settingBtn.Location = new System.Drawing.Point(10, 406);
+            this.settingBtn.Location = new System.Drawing.Point(11, 462);
             this.settingBtn.Name = "settingBtn";
             this.settingBtn.Size = new System.Drawing.Size(200, 60);
             this.settingBtn.TabIndex = 4;
@@ -673,6 +700,7 @@
         private Guna.UI2.WinForms.Guna2Button loginBtn;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         public Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
+        private Guna.UI2.WinForms.Guna2Button recordBtn;
     }
 }
 

@@ -171,5 +171,10 @@ namespace Student_Attendance_System.Forms.Admin
 
             showData(false, isViewEnroll);
         }
+
+        private void listTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -41,12 +41,16 @@ namespace Student_Attendance_System.Startup
             split = new splitPopup();
             std = this;
 
-            //Picture cam
             mainCamera = new cameraHelper();
-            mainCamera.qrcode = false;
-            mainCamera.camListCB = camList;
-            mainCamera.selfPic = secondPic;
-            mainCamera.onLoad();
+            if (camList.Items.Count > 0)
+            {
+                //Picture cam
+                mainCamera.qrcode = false;
+                mainCamera.camListCB = camList;
+                mainCamera.selfPic = secondPic;
+                mainCamera.onLoad();
+                mainCamera.changeCam(1);
+            }
             //Scanner cam
             scanningCamera = new cameraHelper();
             scanningCamera.qrcode = true;

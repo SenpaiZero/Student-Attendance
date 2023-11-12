@@ -62,3 +62,4 @@ C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attend
 C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Forms.Modals.previewEnrollmentData.resources
 C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Forms.splitPopup.resources
 C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Forms.Admin.updateStudentForm.resources
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Forms.Startup.recordForm.resources

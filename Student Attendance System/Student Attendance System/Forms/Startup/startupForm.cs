@@ -246,6 +246,12 @@ namespace Student_Attendance_System
             changePass.ShowDialog();
         }
 
+        private void recordBtn_Click(object sender, EventArgs e)
+        {
+            pageHelper.loadForm(new recordForm(), mainPanel);
+            enebleBtn(recordBtn);
+        }
+
         private void settingBtn_Click(object sender, EventArgs e)
         {
             if(!loginHelper.isLogin)
@@ -271,6 +277,7 @@ namespace Student_Attendance_System
             adminBtn.Enabled = true;
             attBtn.Enabled = true;
             settingBtn.Enabled = true;
+            recordBtn.Enabled = true;
 
             if(disabledBtn != null)
                 disabledBtn.Enabled = false;

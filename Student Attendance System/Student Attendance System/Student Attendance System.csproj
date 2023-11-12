@@ -181,6 +181,12 @@
     <Compile Include="Forms\Modals\studentPictureForm.Designer.cs">
       <DependentUpon>studentPictureForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Startup\recordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Startup\recordForm.Designer.cs">
+      <DependentUpon>recordForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Utility\loadingForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -276,6 +282,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Modals\studentPictureForm.resx">
       <DependentUpon>studentPictureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Startup\recordForm.resx">
+      <DependentUpon>recordForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Utility\loadingForm.resx">
       <DependentUpon>loadingForm.cs</DependentUpon>
@@ -396,6 +405,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\BG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\record.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
