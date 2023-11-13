@@ -139,19 +139,8 @@ namespace Student_Attendance_System
 
         private void adminBtn_Click(object sender, EventArgs e)
         {
-            if(!loginHelper.isLogin)
-            {
-                MessageForm msg = new MessageForm()
-                {
-                    header = "Oooops!!",
-                    message = "Please login first.",
-                    messageType = "Failed",
-                    isYesNo = false,
 
-                };
-                msg.ShowDialog();
-                return;
-            }
+            if (!checkAdmin()) return;
 
             pageHelper.loadForm(new adminForm(), mainPanel);
             enebleBtn(adminBtn);
@@ -165,19 +154,9 @@ namespace Student_Attendance_System
 
         private void enrollBtn_Click(object sender, EventArgs e)
         {
-            if(!loginHelper.isLogin)
-            {
-                MessageForm msg = new MessageForm()
-                {
-                    header = "Oooops!!",
-                    message = "Please login first.",
-                    messageType = "Failed",
-                    isYesNo = false,
 
-                };
-                msg.ShowDialog();
-                return;
-            }
+            if (!checkAdmin()) return;
+
             pageHelper.loadForm(new enrollForm(), mainPanel);
             enebleBtn(enrollBtn);
         }
@@ -248,13 +227,21 @@ namespace Student_Attendance_System
 
         private void recordBtn_Click(object sender, EventArgs e)
         {
+            if (!checkAdmin()) return;
+
             pageHelper.loadForm(new recordForm(), mainPanel);
             enebleBtn(recordBtn);
         }
 
         private void settingBtn_Click(object sender, EventArgs e)
         {
-            if(!loginHelper.isLogin)
+            pageHelper.loadForm(new settingForm(), mainPanel);
+            enebleBtn(settingBtn);
+        }
+
+        bool checkAdmin()
+        {
+            if (!loginHelper.isLogin)
             {
                 MessageForm msg = new MessageForm()
                 {
@@ -265,12 +252,10 @@ namespace Student_Attendance_System
 
                 };
                 msg.ShowDialog();
-                return;
+                return false;
             }
-            pageHelper.loadForm(new settingForm(), mainPanel);
-            enebleBtn(settingBtn);
+            return true;
         }
-
         void enebleBtn(Guna2Button disabledBtn)
         {
             enrollBtn.Enabled = true;

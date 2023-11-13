@@ -146,7 +146,7 @@
             this.recordBtn.DisabledState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
             this.recordBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(130)))), ((int)(((byte)(45)))), ((int)(((byte)(70)))));
             this.recordBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(171)))), ((int)(((byte)(121)))));
-            this.recordBtn.DisabledState.Image = global::Student_Attendance_System.Properties.Resources.Admin;
+            this.recordBtn.DisabledState.Image = global::Student_Attendance_System.Properties.Resources.record;
             this.recordBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
             this.recordBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.recordBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
@@ -211,7 +211,7 @@
             this.sidepanelBtn.Image = global::Student_Attendance_System.Properties.Resources.left_arrow;
             this.sidepanelBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.sidepanelBtn.ImageOffset = new System.Drawing.Point(-5, 0);
-            this.sidepanelBtn.Location = new System.Drawing.Point(191, 392);
+            this.sidepanelBtn.Location = new System.Drawing.Point(191, 401);
             this.sidepanelBtn.Name = "sidepanelBtn";
             this.sidepanelBtn.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.sidepanelBtn.Size = new System.Drawing.Size(50, 50);

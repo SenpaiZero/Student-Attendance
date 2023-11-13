@@ -59,6 +59,7 @@ namespace Student_Attendance_System.Classes.Helper
                 {
                     dr.Close();
 
+                    //  TIME IN
                     String query_newRow = "INSERT INTO attendance (StudentID, Date, TimeIn) " +
                         "VALUES (@id, @date, @timein)";
 
