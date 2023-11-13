@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Student_Attendance_System.Classes.Helper;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -116,6 +117,8 @@ namespace Student_Attendance_System.Forms.Admin
             genderCB.SelectedIndex = 0;
             isAdminCB.Checked = false;
 
+
+            logsHelper.insertAddStaff($"Added a new staff: {surnameTB.Text.ToUpper()}, {firstNameTB.Text.ToUpper()} {middleNameTB.Text.ToUpper()}");
             MessageForm msg = new MessageForm()
             {
                 header = "Woo hoo!!",

@@ -95,6 +95,7 @@
     <Compile Include="Classes\EnrollmentGlobalVariable.cs" />
     <Compile Include="Classes\Helper\databaseHelper.cs" />
     <Compile Include="Classes\Helper\LocalSaveHelper.cs" />
+    <Compile Include="Classes\Helper\logsHelper.cs" />
     <Compile Include="Classes\Helper\QrCodeHelper.cs" />
     <Compile Include="Classes\Helper\UIHelper.cs" />
     <Compile Include="Forms\Admin\addStaff.cs">

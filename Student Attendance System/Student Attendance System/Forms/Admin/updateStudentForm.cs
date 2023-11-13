@@ -1,4 +1,5 @@
 ﻿using Guna.UI2.WinForms;
+using Student_Attendance_System.Classes.Helper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -360,6 +361,7 @@ namespace Student_Attendance_System.Forms.Admin
 
                             trans.Commit();
 
+                            logsHelper.insertUpdateStudent($"Has updated {nameTB.Text.ToUpper()}'s data");
                             MessageForm msg = new MessageForm()
                             {
                                 messageType = "Success",

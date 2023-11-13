@@ -1,4 +1,5 @@
 ﻿using Student_Attendance_System.Classes;
+using Student_Attendance_System.Classes.Helper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -81,11 +82,12 @@ namespace Student_Attendance_System.Forms.Admin
 
         private void unerollBtn_Click(object sender, EventArgs e)
         {
-            String selectedID;
+            String selectedID, selectedName;
             if (listTable.Rows.Count > 0)
             {
                 DataGridViewRow selectedRow = listTable.SelectedRows[0];
                 selectedID = selectedRow.Cells[0].Value.ToString();
+                selectedName = selectedRow.Cells[1].Value.ToString();
 
                 string prefix = isViewEnroll ? "unenroll" : "enroll";
                 MessageForm msg = new MessageForm()
@@ -134,7 +136,8 @@ namespace Student_Attendance_System.Forms.Admin
                             db.cmd.ExecuteNonQuery();
                         }
                     }
-
+                    string logPrefix = isViewEnroll ? "ENROLL" : "UNENROLL";
+                    logsHelper.insertUpdateEnroll($"Has updated {selectedName}'s enrollment to {logPrefix}");
                     showData(false, isViewEnroll);
                 }
             }

@@ -1,4 +1,5 @@
 ﻿using Guna.UI2.WinForms;
+using Student_Attendance_System.Classes.Helper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -100,7 +101,7 @@ namespace Student_Attendance_System.Forms.Admin
                             db.cmd.ExecuteNonQuery();
 
                             trans.Commit();
-
+                            logsHelper.insertUpdateStaff($"Updated {name}'s data");
                             MessageForm msg = new MessageForm()
                             {
                                 messageType = "Success",

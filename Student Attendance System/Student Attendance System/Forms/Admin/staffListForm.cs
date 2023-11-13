@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Student_Attendance_System.Classes.Helper;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -89,11 +90,12 @@ namespace Student_Attendance_System.Forms.Admin
 
         private void deleteBtn_Click(object sender, EventArgs e)
         {
-            String selectedID;
+            String selectedID, selectedName;
             if (listTable.Rows.Count > 0)
             {
                 DataGridViewRow selectedRow = listTable.SelectedRows[0];
                 selectedID = selectedRow.Cells[1].Value.ToString();
+                selectedName = selectedRow.Cells[0].Value.ToString();
 
                 MessageForm msg = new MessageForm()
                 {
@@ -113,7 +115,7 @@ namespace Student_Attendance_System.Forms.Admin
                     {
                         db.cmd.ExecuteNonQuery();
                     }
-
+                    logsHelper.insertDeleteStaff($"Removed {selectedName} from staff");
                     showData(false);
                 }
             }

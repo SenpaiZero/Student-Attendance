@@ -109,6 +109,8 @@ namespace Student_Attendance_System.Forms.Modals
                     db.cmd.Parameters.AddWithValue("moreDetails", EnrollmentGlobalVariable.moreDetails);
                     db.cmd.Parameters.AddWithValue("birthday", SqlDbType.Date).Value = EnrollmentGlobalVariable.birthday;
                     db.cmd.ExecuteNonQuery();
+                    logsHelper.insertNewEnroll($"Has enrolled a student: {EnrollmentGlobalVariable.lastName.ToUpper()}, " +
+                        $"{EnrollmentGlobalVariable.firstName.ToUpper()} {EnrollmentGlobalVariable.middleName.ToUpper()}");
                 }
             }catch(Exception ex)
             {
