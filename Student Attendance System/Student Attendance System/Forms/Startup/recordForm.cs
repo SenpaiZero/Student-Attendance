@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Data.SqlTypes;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,8 @@ namespace Student_Attendance_System.Forms.Startup
 {
     public partial class recordForm : Form
     {
+        DataGridViewButtonColumn button;
+        DateTime currentValue;
         public recordForm()
         {
             InitializeComponent();
@@ -70,8 +73,7 @@ namespace Student_Attendance_System.Forms.Startup
             listTable.Columns["StudentID"].HeaderText = "STUDENT ID";
             listTable.Columns["Name"].HeaderText = "NAME";
 
-            removeActionBtn();
-            DataGridViewButtonColumn button = new DataGridViewButtonColumn();
+            button = new DataGridViewButtonColumn();
             {
                 button.Name = "presentBtn";
                 button.HeaderText = "ACTION";
@@ -80,9 +82,6 @@ namespace Student_Attendance_System.Forms.Startup
                 this.listTable.Columns.Add(button);
             }
             listTable.Columns["presentBtn"].Width = 80;
-
-            // Hook up the event handler for the button click
-            //listTable.CellContentClick += new DataGridViewCellEventHandler(listTable_AbsentButtonClick);
         }
         void showPresent()
         {
@@ -106,7 +105,6 @@ namespace Student_Attendance_System.Forms.Startup
                 query += $" WHERE a.Date = '{datePicker.Value.Date}'";
             }
 
-            removeActionBtn();
             using (db.cmd = new SqlCommand(query, databaseHelper.con))
             {
                 SqlDataAdapter da = new SqlDataAdapter(db.cmd);
@@ -122,10 +120,7 @@ namespace Student_Attendance_System.Forms.Startup
             listTable.Columns["TimeIn"].HeaderText = "TIME IN";
             listTable.Columns["TimeOut"].HeaderText = "TIME OUT";
 
-            if (listTable.Columns.Contains("absentBtn"))
-                listTable.Columns.Remove("absentBtn");
-
-            DataGridViewButtonColumn button = new DataGridViewButtonColumn();
+            button = new DataGridViewButtonColumn();
             {
                 button.Name = "absentBtn";
                 button.HeaderText = "ACTION";
@@ -145,43 +140,92 @@ namespace Student_Attendance_System.Forms.Startup
 
         void showData()
         {
-            if(viewBtn.Text == "ABSENTS")
-            {
+            removeActionBtn();
+
+            if (viewBtn.Text == "ABSENTS")
                 showAbsent();
-            }
             else
-            {
                 showPresent();
-            }
         }
 
         private void recordForm_Load(object sender, EventArgs e)
         {
+            datePicker.Value = DateTime.Now;
             showData();
         }
 
         private void listTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(viewBtn.Text == "ABSENTS")
+            var senderGrid = (DataGridView)sender;
+
+            if (databaseHelper.con.State != ConnectionState.Open)
+                databaseHelper.open();
+
+            databaseHelper db = new databaseHelper();
+            String selectedID;
+
+            if (listTable.Rows.Count > 0)
             {
-                if (e.ColumnIndex == listTable.Columns["presentBtn"].Index && e.RowIndex >= 0)
+                DataGridViewRow selectedRow = listTable.SelectedRows[0];
+                selectedID = selectedRow.Cells[0].Value.ToString();
+
+                if (viewBtn.Text == "PRESENTS")
                 {
-                    MessageBox.Show("Button clicked in row " + e.RowIndex.ToString());
+                    if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
+                    {
+                        String remove_query = $"DELETE FROM attendance WHERE StudentID = @id";
+
+                        using (db.cmd = new SqlCommand(remove_query, databaseHelper.con))
+                        {
+                            db.cmd.Parameters.AddWithValue("id", selectedID);
+                            db.cmd.ExecuteNonQuery();
+                        }
+                        Console.WriteLine("teasdt");
+                    }
                 }
-            }
-            else
-            {
-                if (e.ColumnIndex == listTable.Columns["absentBtn"].Index && e.RowIndex >= 0)
+                else if (viewBtn.Text == "ABSENTS")
                 {
-                    MessageBox.Show("Button clicked in row " + e.RowIndex.ToString());
+                    if (senderGrid.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
+                    {
+                        String insert_query = $"INSERT INTO attendance (StudentID, Date, TimeIn, TimeOut) VALUES (@id, @date, @timein, @timeout)";
+                        using (db.cmd = new SqlCommand(insert_query, databaseHelper.con))
+                        {
+                            db.cmd.Parameters.AddWithValue("id", selectedID);
+                            db.cmd.Parameters.AddWithValue("date", datePicker.Value.Date);
+                            db.cmd.Parameters.AddWithValue("timein", "00:00:00");
+                            db.cmd.Parameters.AddWithValue("timeout", "00:00:00");
+                            db.cmd.ExecuteNonQuery();
+                        }
+                        Console.WriteLine("test");
+                    }
                 }
+                showData();
             }
-            
         }
+
 
         private void datePicker_ValueChanged(object sender, EventArgs e)
         {
+            if(datePicker.Value.Date > DateTime.Now.Date)
+            {
+                MessageForm msg = new MessageForm()
+                {
+                    messageType = "Information",
+                    header = "Woooops",
+                    message = "Date value is invalid",
+                    isYesNo = false
+                };
+                msg.ShowDialog();
+
+                datePicker.Value = currentValue;
+                return;
+            }
             showData();
+        }
+
+        private void datePicker_Click(object sender, EventArgs e)
+        {
+            currentValue = datePicker.Value;
         }
     }
 }

@@ -17,6 +17,7 @@ namespace Student_Attendance_System.Forms.Admin
         String categoryQuery = "";
         String dateQuery = "";
         DateTime date;
+        DateTime currentValue;
         public logsForm()
         {
             InitializeComponent();
@@ -33,9 +34,10 @@ namespace Student_Attendance_System.Forms.Admin
         }
         private void logsForm_Load(object sender, EventArgs e)
         {
+            datePicker.Value = DateTime.Now.Date;
             date = datePicker.Value.Date;
-            categoryCB.Text = "ALL CATEGORIES";
-            dateCB.Text = "ALL DATES";
+            categoryCB.SelectedIndex = 0;
+            dateCB.SelectedIndex = 0;
 
             loadData();
         }
@@ -85,7 +87,7 @@ namespace Student_Attendance_System.Forms.Admin
             listTable.Columns["Details"].HeaderText = "DETAILS";
             listTable.Columns["Details"].FillWeight = 180;
             listTable.Columns["Category"].HeaderText = "CATEGORY";
-            listTable.Columns["Category"].FillWeight = 50;
+            listTable.Columns["Category"].FillWeight = 60;
             listTable.Columns["Date"].HeaderText = "DATE";
             listTable.Columns["Date"].FillWeight = 40;
         }
@@ -124,8 +126,6 @@ namespace Student_Attendance_System.Forms.Admin
 
         private void dateCB_SelectedIndexChanged(object sender, EventArgs e)
         {
-            checkDateCB();
-            loadData();
         }
 
         private void datePicker_ValueChanged(object sender, EventArgs e)
@@ -152,9 +152,29 @@ namespace Student_Attendance_System.Forms.Admin
 
         private void datePicker_CloseUp(object sender, EventArgs e)
         {
+            if (datePicker.Value.Date > DateTime.Now.Date)
+            {
+                MessageForm msg = new MessageForm()
+                {
+                    messageType = "Information",
+                    header = "Woooops",
+                    message = "Date value is invalid",
+                    isYesNo = false
+                };
+                msg.ShowDialog();
+
+                datePicker.Value = currentValue;
+                return;
+            }
+
             checkDateCB();
             date = datePicker.Value.Date;
             loadData();
+        }
+
+        private void datePicker_Click(object sender, EventArgs e)
+        {
+            currentValue = datePicker.Value.Date;
         }
     }
 }

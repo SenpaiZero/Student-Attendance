@@ -97,6 +97,7 @@
     <Compile Include="Classes\Helper\LocalSaveHelper.cs" />
     <Compile Include="Classes\Helper\logsHelper.cs" />
     <Compile Include="Classes\Helper\QrCodeHelper.cs" />
+    <Compile Include="Classes\Helper\securityHelper.cs" />
     <Compile Include="Classes\Helper\UIHelper.cs" />
     <Compile Include="Forms\Admin\addStaff.cs">
       <SubType>Form</SubType>

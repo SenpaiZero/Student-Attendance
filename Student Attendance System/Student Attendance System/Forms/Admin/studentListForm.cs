@@ -136,8 +136,8 @@ namespace Student_Attendance_System.Forms.Admin
                             db.cmd.ExecuteNonQuery();
                         }
                     }
-                    string logPrefix = isViewEnroll ? "ENROLL" : "UNENROLL";
-                    logsHelper.insertUpdateEnroll($"Has updated {selectedName}'s enrollment to {logPrefix}");
+                    string logPrefix = !isViewEnroll ? "ENROLL" : "UNENROLL";
+                    logsHelper.insertUpdateEnroll($"Updated {selectedName}'s enrollment to {logPrefix}");
                     showData(false, isViewEnroll);
                 }
             }
@@ -161,12 +161,12 @@ namespace Student_Attendance_System.Forms.Admin
             if(isViewEnroll)
             {
                 changeViewBtn.Text = "UNENROLLED";
-                unerollBtn.Text = "ENROLLED";
+                unerollBtn.Text = "ENROLL";
             }
             else
             {
                 changeViewBtn.Text = "ENROLLED";
-                unerollBtn.Text = "UNENROLLED";
+                unerollBtn.Text = "UNENROLL";
             }
             isViewEnroll = !isViewEnroll;
             viewBtn.Enabled = isViewEnroll;

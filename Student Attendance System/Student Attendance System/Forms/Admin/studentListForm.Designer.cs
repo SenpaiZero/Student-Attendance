@@ -329,7 +329,7 @@
             this.searchTB.MinimumSize = new System.Drawing.Size(10, 10);
             this.searchTB.Name = "searchTB";
             this.searchTB.PasswordChar = '\0';
-            this.searchTB.PlaceholderText = "";
+            this.searchTB.PlaceholderText = "Search";
             this.searchTB.SelectedText = "";
             this.searchTB.Size = new System.Drawing.Size(194, 40);
             this.searchTB.TabIndex = 32;

@@ -105,6 +105,7 @@ namespace Student_Attendance_System.Forms.Admin
 
         void successAdd()
         {
+            logsHelper.insertAddStaff($"Added a new staff: {surnameTB.Text.ToUpper()}, {firstNameTB.Text.ToUpper()} {middleNameTB.Text.ToUpper()}");
             firstNameTB.Text = "";
             middleNameTB.Text = "";
             surnameTB.Text = "";
@@ -117,8 +118,6 @@ namespace Student_Attendance_System.Forms.Admin
             genderCB.SelectedIndex = 0;
             isAdminCB.Checked = false;
 
-
-            logsHelper.insertAddStaff($"Added a new staff: {surnameTB.Text.ToUpper()}, {firstNameTB.Text.ToUpper()} {middleNameTB.Text.ToUpper()}");
             MessageForm msg = new MessageForm()
             {
                 header = "Woo hoo!!",
