@@ -239,6 +239,14 @@ namespace Student_Attendance_System
             enebleBtn(settingBtn);
         }
 
+        private void dashboardBtn_Click(object sender, EventArgs e)
+        {
+            if (!checkAdmin()) return;
+
+            pageHelper.loadForm(new Dashboard_Form(), mainPanel);
+            enebleBtn(dashboardBtn);
+        }
+
         bool checkAdmin()
         {
             if (!loginHelper.isLogin)
@@ -263,6 +271,7 @@ namespace Student_Attendance_System
             attBtn.Enabled = true;
             settingBtn.Enabled = true;
             recordBtn.Enabled = true;
+            dashboardBtn.Enabled = true;
 
             if(disabledBtn != null)
                 disabledBtn.Enabled = false;

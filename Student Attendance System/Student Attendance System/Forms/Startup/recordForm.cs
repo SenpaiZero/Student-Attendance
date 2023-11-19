@@ -16,6 +16,7 @@ namespace Student_Attendance_System.Forms.Startup
     {
         DataGridViewButtonColumn button;
         DateTime currentValue;
+        string totalAbsent, totalPresent;
         public recordForm()
         {
             InitializeComponent();
@@ -49,9 +50,54 @@ namespace Student_Attendance_System.Forms.Startup
             int i;
             databaseHelper.open();
             databaseHelper db = new databaseHelper();
-            String query = "SELECT d.StudentID, d.Name FROM studentData d " +
-                           "WHERE NOT EXISTS (SELECT 1 FROM attendance a " +
-                           $"WHERE a.StudentID = d.StudentID AND a.Date = '{datePicker.Value.Date}')";
+            String query = "SELECT d.StudentID, d.Name " +
+                           "FROM studentData d " +
+                           "LEFT JOIN attendance a ON d.StudentID = a.StudentID AND CONVERT(DATE, a.Date) = @SelectedDate " +
+                           "WHERE d.EnrollDate <= @SelectedDate AND a.StudentID IS NULL";
+
+            if (!string.IsNullOrEmpty(searchTB.Text))
+            {
+                if (int.TryParse(searchTB.Text, out i))
+                    query += $" AND d.StudentID LIKE '%{searchTB.Text}%'";
+                else
+                    query += $" AND d.Name LIKE '%{searchTB.Text}%'";
+            }
+
+            using (db.cmd = new SqlCommand(query, databaseHelper.con))
+            {
+                db.cmd.Parameters.AddWithValue("@SelectedDate", datePicker.Value.Date);
+
+                SqlDataAdapter da = new SqlDataAdapter(db.cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                listTable.DataSource = dt;
+            }
+
+            // Modify column headers
+            listTable.Columns["StudentID"].HeaderText = "STUDENT ID";
+            listTable.Columns["Name"].HeaderText = "NAME";
+
+            button = new DataGridViewButtonColumn();
+            {
+                button.Name = "presentBtn";
+                button.HeaderText = "ACTION";
+                button.Text = "PRESENT";
+                button.UseColumnTextForButtonValue = true;
+                this.listTable.Columns.Add(button);
+            }
+            listTable.Columns["presentBtn"].Width = 80;
+        }
+
+
+        void showPresent()
+        {
+            int i;
+            databaseHelper.open();
+            databaseHelper db = new databaseHelper();
+            String query = "SELECT a.StudentID, d.Name, a.TimeIn, a.TimeOut " +
+                           "FROM attendance a " +
+                           "JOIN studentData d ON a.StudentID = d.StudentID " +
+                           $"WHERE a.Date = '{datePicker.Value.Date}' AND d.EnrollDate <= a.Date";
 
             if (!string.IsNullOrEmpty(searchTB.Text))
             {
@@ -72,51 +118,6 @@ namespace Student_Attendance_System.Forms.Startup
             // Modify column headers
             listTable.Columns["StudentID"].HeaderText = "STUDENT ID";
             listTable.Columns["Name"].HeaderText = "NAME";
-
-            button = new DataGridViewButtonColumn();
-            {
-                button.Name = "presentBtn";
-                button.HeaderText = "ACTION";
-                button.Text = "PRESENT";
-                button.UseColumnTextForButtonValue = true; 
-                this.listTable.Columns.Add(button);
-            }
-            listTable.Columns["presentBtn"].Width = 80;
-        }
-        void showPresent()
-        {
-            int i;
-            databaseHelper.open();
-            databaseHelper db = new databaseHelper();
-            String query = "SELECT a.StudentID, d.Name, a.TimeIn, a.TimeOut FROM attendance a " +
-                   "JOIN studentData d ON a.StudentID = d.StudentID";
-
-            if (!string.IsNullOrEmpty(searchTB.Text))
-            {
-                if (int.TryParse(searchTB.Text, out i))
-                    query += $" WHERE d.StudentID LIKE '%{searchTB.Text}%'";
-                else
-                    query += $" WHERE d.Name LIKE '%{searchTB.Text}%'";
-
-                query += $" AND a.Date = '{datePicker.Value.Date}'";
-            }
-            else
-            {
-                query += $" WHERE a.Date = '{datePicker.Value.Date}'";
-            }
-
-            using (db.cmd = new SqlCommand(query, databaseHelper.con))
-            {
-                SqlDataAdapter da = new SqlDataAdapter(db.cmd);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                listTable.DataSource = dt;
-            }
-
-
-            // Modify column headers
-            listTable.Columns["StudentID"].HeaderText = "STUDENT ID";
-            listTable.Columns["Name"].HeaderText = "NAME";
             listTable.Columns["TimeIn"].HeaderText = "TIME IN";
             listTable.Columns["TimeOut"].HeaderText = "TIME OUT";
 
@@ -125,11 +126,12 @@ namespace Student_Attendance_System.Forms.Startup
                 button.Name = "absentBtn";
                 button.HeaderText = "ACTION";
                 button.Text = "ABSENT";
-                button.UseColumnTextForButtonValue = true; //dont forget this line
+                button.UseColumnTextForButtonValue = true;
                 this.listTable.Columns.Add(button);
             }
             listTable.Columns["absentBtn"].Width = 80;
         }
+
         void removeActionBtn()
         {
             if (listTable.Columns.Contains("presentBtn"))
@@ -140,12 +142,44 @@ namespace Student_Attendance_System.Forms.Startup
 
         void showData()
         {
+            String query;
             removeActionBtn();
 
             if (viewBtn.Text == "ABSENTS")
                 showAbsent();
             else
                 showPresent();
+
+            if(databaseHelper.con.State != ConnectionState.Open)
+                databaseHelper.open();
+            query = "SELECT COUNT(*) FROM attendance a " +
+                           $"JOIN studentData d ON a.StudentID = d.StudentID WHERE a.Date = '{datePicker.Value.Date}'";
+            using (SqlCommand cmd = new SqlCommand(query, databaseHelper.con))
+            {
+                SqlDataReader dr = cmd.ExecuteReader();
+                if(dr.Read())
+                    totalPresent = dr.GetInt32(0).ToString();
+
+                dr.Close();
+            }
+
+            query = "SELECT COUNT(*) " +
+                           "FROM studentData d " +
+                           "LEFT JOIN attendance a ON d.StudentID = a.StudentID AND CONVERT(DATE, a.Date) = @SelectedDate " +
+                           "WHERE d.EnrollDate <= @SelectedDate AND a.StudentID IS NULL";
+            using (SqlCommand cmd = new SqlCommand(query, databaseHelper.con))
+            {
+                cmd.Parameters.AddWithValue("SelectedDate", datePicker.Value.Date);
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read())
+                    totalAbsent = dr.GetInt32(0).ToString();
+
+                dr.Close();
+            }
+
+
+            absentLbl.Text = "TOTAL ABSENTS: " + totalAbsent.ToString();
+            presentLbl.Text = "TOTAL PRESENTS: " + totalPresent.ToString();
         }
 
         private void recordForm_Load(object sender, EventArgs e)

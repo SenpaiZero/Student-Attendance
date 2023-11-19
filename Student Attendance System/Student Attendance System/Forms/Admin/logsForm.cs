@@ -126,6 +126,7 @@ namespace Student_Attendance_System.Forms.Admin
 
         private void dateCB_SelectedIndexChanged(object sender, EventArgs e)
         {
+            loadData();
         }
 
         private void datePicker_ValueChanged(object sender, EventArgs e)
