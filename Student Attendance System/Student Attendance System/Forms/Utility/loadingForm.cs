@@ -26,6 +26,8 @@ namespace Student_Attendance_System
         public loadingForm()
         {
             InitializeComponent();
+            loadTime = 1000;
+            isTask = false;
         }
 
         private void loadingForm_Load(object sender, EventArgs e)
@@ -33,7 +35,8 @@ namespace Student_Attendance_System
             titleLbl.Text = title;
             descLbl.Text = description;
 
-            loadTime = 1000;
+            if (isTask) return;
+
             loadTimer.Interval = 500;
             loadTimer.Start();
             stopwatch.Start();
@@ -41,6 +44,7 @@ namespace Student_Attendance_System
         public string title { get; set; }
         public string description { get; set; }
         public int loadTime { get; set; }
+        public bool isTask { get; set; }
 
         private void loadTimer_Tick(object sender, EventArgs e)
         {
@@ -52,6 +56,11 @@ namespace Student_Attendance_System
                 this.Close();
 
             }
+        }
+
+        public void closeForm()
+        {
+            this.Close();
         }
     }
 }
