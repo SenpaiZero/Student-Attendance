@@ -117,7 +117,7 @@ namespace Student_Attendance_System.Forms.Admin
 
                     string query_insert =
                         $"INSERT INTO studentContacts{tablePrefixInsert} (StudentID, Email, PhoneNumber, Address) SELECT StudentID, Email, PhoneNumber, Address FROM studentContacts{tablePrefix} WHERE StudentID = @id; " +
-                        $"INSERT INTO studentData{tablePrefixInsert} (StudentID, Name, Section, Year, StudentType) SELECT StudentID, Name, Section, Year, StudentType FROM studentData{tablePrefix} WHERE StudentID = @id; " +
+                        $"INSERT INTO studentData{tablePrefixInsert} (StudentID, Name, Section, Year, StudentType, EnrollDate) SELECT StudentID, Name, Section, Year, StudentType, EnrollDate FROM studentData{tablePrefix} WHERE StudentID = @id; " +
                         $"INSERT INTO studentFather{tablePrefixInsert} (StudentID, Name, Email, PhoneNumber, Occupation) SELECT StudentID, Name, Email, PhoneNumber, Occupation FROM studentFather{tablePrefix} WHERE StudentID = @id; " +
                         $"INSERT INTO studentMother{tablePrefixInsert} (StudentID, Name, Email, PhoneNumber, Occupation) SELECT StudentID, Name, Email, PhoneNumber, Occupation FROM studentMother{tablePrefix} WHERE StudentID = @id; " +
                         $"INSERT INTO studentIdentity{tablePrefixInsert} (StudentID, QRCode, Picture) SELECT StudentID, QRCode, Picture FROM studentIdentity{tablePrefix} WHERE StudentID = @id; " +

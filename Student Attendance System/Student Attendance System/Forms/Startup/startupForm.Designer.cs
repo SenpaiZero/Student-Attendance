@@ -34,12 +34,12 @@
             this.versionLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.miscLine = new Guna.UI2.WinForms.Guna2Shapes();
             this.menuContainer = new Guna.UI2.WinForms.Guna2Panel();
+            this.appNameLbl = new Guna.UI2.WinForms.Guna2Button();
             this.dashboardBtn = new Guna.UI2.WinForms.Guna2Button();
             this.recordBtn = new Guna.UI2.WinForms.Guna2Button();
             this.dateLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dayLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.sidepanelBtn = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.appNameLbl = new Guna.UI2.WinForms.Guna2Button();
             this.miscLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.studentLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.adminLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -58,7 +58,6 @@
             this.guna2Shapes5 = new Guna.UI2.WinForms.Guna2Shapes();
             this.mainPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.mainPanelContainer = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.loginBtn = new Guna.UI2.WinForms.Guna2Button();
             this.accountMenuStrip = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.lOGOUTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -138,6 +137,34 @@
             this.menuContainer.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
             this.menuContainer.Size = new System.Drawing.Size(220, 750);
             this.menuContainer.TabIndex = 1;
+            // 
+            // appNameLbl
+            // 
+            this.appNameLbl.BackColor = System.Drawing.Color.Transparent;
+            this.appNameLbl.BorderColor = System.Drawing.Color.Transparent;
+            this.appNameLbl.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.appNameLbl.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(25)))), ((int)(((byte)(82)))));
+            this.appNameLbl.DisabledState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(25)))), ((int)(((byte)(82)))));
+            this.appNameLbl.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(25)))), ((int)(((byte)(82)))));
+            this.appNameLbl.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.appNameLbl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.appNameLbl.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(25)))), ((int)(((byte)(82)))));
+            this.appNameLbl.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.appNameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.appNameLbl.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(25)))), ((int)(((byte)(82)))));
+            this.appNameLbl.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(25)))), ((int)(((byte)(82)))));
+            this.appNameLbl.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(25)))), ((int)(((byte)(82)))));
+            this.appNameLbl.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.appNameLbl.ImageSize = new System.Drawing.Size(40, 40);
+            this.appNameLbl.Location = new System.Drawing.Point(0, 0);
+            this.appNameLbl.Name = "appNameLbl";
+            this.appNameLbl.PressedColor = System.Drawing.Color.Transparent;
+            this.appNameLbl.PressedDepth = 0;
+            this.appNameLbl.Size = new System.Drawing.Size(220, 44);
+            this.appNameLbl.TabIndex = 11;
+            this.appNameLbl.TabStop = false;
+            this.appNameLbl.Text = "AttendTrackPro";
+            this.appNameLbl.UseTransparentBackground = true;
             // 
             // dashboardBtn
             // 
@@ -248,28 +275,6 @@
             this.sidepanelBtn.Click += new System.EventHandler(this.sidepanelBtn_Click);
             this.sidepanelBtn.MouseLeave += new System.EventHandler(this.sidepanelBtn_MouseLeave);
             this.sidepanelBtn.MouseHover += new System.EventHandler(this.sidepanelBtn_MouseHover);
-            // 
-            // appNameLbl
-            // 
-            this.appNameLbl.BackColor = System.Drawing.Color.Transparent;
-            this.appNameLbl.DisabledState.BorderColor = System.Drawing.Color.Transparent;
-            this.appNameLbl.DisabledState.CustomBorderColor = System.Drawing.Color.Transparent;
-            this.appNameLbl.DisabledState.FillColor = System.Drawing.Color.Transparent;
-            this.appNameLbl.DisabledState.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Bold);
-            this.appNameLbl.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.appNameLbl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.appNameLbl.Enabled = false;
-            this.appNameLbl.FillColor = System.Drawing.Color.Transparent;
-            this.appNameLbl.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.appNameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.appNameLbl.ImageSize = new System.Drawing.Size(40, 40);
-            this.appNameLbl.Location = new System.Drawing.Point(0, 0);
-            this.appNameLbl.Name = "appNameLbl";
-            this.appNameLbl.Size = new System.Drawing.Size(220, 56);
-            this.appNameLbl.TabIndex = 11;
-            this.appNameLbl.TabStop = false;
-            this.appNameLbl.Text = "AttendTrackPro";
-            this.appNameLbl.UseTransparentBackground = true;
             // 
             // miscLbl
             // 
@@ -579,7 +584,6 @@
             // 
             this.mainPanelContainer.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.mainPanelContainer.BackColor = System.Drawing.Color.Transparent;
-            this.mainPanelContainer.Controls.Add(this.guna2ControlBox3);
             this.mainPanelContainer.Controls.Add(this.loginBtn);
             this.mainPanelContainer.Controls.Add(this.mainPanel);
             this.mainPanelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -589,18 +593,6 @@
             this.mainPanelContainer.Size = new System.Drawing.Size(730, 750);
             this.mainPanelContainer.TabIndex = 8;
             this.mainPanelContainer.UseTransparentBackground = true;
-            // 
-            // guna2ControlBox3
-            // 
-            this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
-            this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.guna2ControlBox3.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(478, 12);
-            this.guna2ControlBox3.Name = "guna2ControlBox3";
-            this.guna2ControlBox3.Size = new System.Drawing.Size(43, 21);
-            this.guna2ControlBox3.TabIndex = 2;
-            this.guna2ControlBox3.Click += new System.EventHandler(this.guna2ControlBox3_Click);
             // 
             // loginBtn
             // 
@@ -680,6 +672,7 @@
             this.Controls.Add(this.guna2Shapes3);
             this.Controls.Add(this.guna2Shapes2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "startupForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -727,7 +720,6 @@
         private System.Windows.Forms.ToolStripMenuItem changePasswordToolStripMenuItem;
         private Guna.UI2.WinForms.Guna2Button loginBtn;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
-        public Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
         private Guna.UI2.WinForms.Guna2Button recordBtn;
         private Guna.UI2.WinForms.Guna2Button dashboardBtn;
     }

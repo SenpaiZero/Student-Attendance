@@ -64,6 +64,7 @@ namespace Student_Attendance_System
             settingBtn.Text = "SETTING";
             dashboardBtn.Text = "DASHBOARD";
             recordBtn.Text = "RECORDS";
+            enrollBtn.Text = "ENROLL";
 
             dayLbl.Text = DateTime.Now.DayOfWeek.ToString();
             dateLbl.Text = DateTime.Now.ToShortDateString();
@@ -87,7 +88,7 @@ namespace Student_Attendance_System
                 setTitlePos(miscLbl);
 
                 appNameLbl.Text = "";
-                appNameLbl.Image = Properties.Resources.dummy_logo;
+                appNameLbl.Image = Properties.Resources.logo;
                 appNameLbl.ImageAlign = HorizontalAlignment.Left;
                 setTitlePos(appNameLbl);
 
@@ -99,10 +100,11 @@ namespace Student_Attendance_System
                 recordBtn.Text = "";
                 dashboardBtn.Text = "";
                 versionLbl.Text = "";
+                enrollBtn.Text = "";
                 
                 menuExpand = false;
                 sidepanelBtn.Image = Properties.Resources.right_arrow;
-                menuContainer.Size = new Size(76, menuContainer.Size.Height);
+                menuContainer.Size = new Size(86, menuContainer.Size.Height);
             }
             else
             {
