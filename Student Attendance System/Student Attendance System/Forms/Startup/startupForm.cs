@@ -62,6 +62,8 @@ namespace Student_Attendance_System
             adminBtn.Text = "ADMIN";
             attBtn.Text = "ATTENDANCE";
             settingBtn.Text = "SETTING";
+            dashboardBtn.Text = "DASHBOARD";
+            recordBtn.Text = "RECORDS";
 
             dayLbl.Text = DateTime.Now.DayOfWeek.ToString();
             dateLbl.Text = DateTime.Now.ToShortDateString();
@@ -94,6 +96,8 @@ namespace Student_Attendance_System
                 adminBtn.Text = "";
                 attBtn.Text = "";
                 settingBtn.Text = "";
+                recordBtn.Text = "";
+                dashboardBtn.Text = "";
                 versionLbl.Text = "";
                 
                 menuExpand = false;
@@ -110,7 +114,7 @@ namespace Student_Attendance_System
                 setTitlePosBack(adminLbl);
                 setTitlePosBack(miscLbl);
 
-                appNameLbl.Text = "APP NAME";
+                appNameLbl.Text = "AttendTrackPro";
                 appNameLbl.Image = null;
                 setTitlePosBack(appNameLbl);
 

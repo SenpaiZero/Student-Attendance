@@ -115,13 +115,13 @@
             // menuContainer
             // 
             this.menuContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(25)))), ((int)(((byte)(82)))));
+            this.menuContainer.Controls.Add(this.appNameLbl);
             this.menuContainer.Controls.Add(this.dashboardBtn);
             this.menuContainer.Controls.Add(this.recordBtn);
             this.menuContainer.Controls.Add(this.dateLbl);
             this.menuContainer.Controls.Add(this.dayLbl);
             this.menuContainer.Controls.Add(this.versionLbl);
             this.menuContainer.Controls.Add(this.sidepanelBtn);
-            this.menuContainer.Controls.Add(this.appNameLbl);
             this.menuContainer.Controls.Add(this.miscLbl);
             this.menuContainer.Controls.Add(this.studentLbl);
             this.menuContainer.Controls.Add(this.adminLbl);
@@ -257,17 +257,18 @@
             this.appNameLbl.DisabledState.FillColor = System.Drawing.Color.Transparent;
             this.appNameLbl.DisabledState.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Bold);
             this.appNameLbl.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.appNameLbl.Dock = System.Windows.Forms.DockStyle.Top;
             this.appNameLbl.Enabled = false;
             this.appNameLbl.FillColor = System.Drawing.Color.Transparent;
             this.appNameLbl.Font = new System.Drawing.Font("Segoe UI Variable Display", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.appNameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.appNameLbl.ImageSize = new System.Drawing.Size(40, 40);
-            this.appNameLbl.Location = new System.Drawing.Point(25, 12);
+            this.appNameLbl.Location = new System.Drawing.Point(0, 0);
             this.appNameLbl.Name = "appNameLbl";
-            this.appNameLbl.Size = new System.Drawing.Size(174, 36);
+            this.appNameLbl.Size = new System.Drawing.Size(220, 56);
             this.appNameLbl.TabIndex = 11;
             this.appNameLbl.TabStop = false;
-            this.appNameLbl.Text = "APP NAME";
+            this.appNameLbl.Text = "AttendTrackPro";
             this.appNameLbl.UseTransparentBackground = true;
             // 
             // miscLbl
