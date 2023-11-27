@@ -215,14 +215,6 @@ namespace Student_Attendance_System
 
         private void guna2ControlBox3_Click(object sender, EventArgs e)
         {
-            if (Config.isMaximized)
-            {
-                Config.isMaximized = false;
-            }
-            else
-            {
-                Config.isMaximized = true;
-            }
         }
 
         private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)

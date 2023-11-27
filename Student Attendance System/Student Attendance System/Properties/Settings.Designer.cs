@@ -70,5 +70,29 @@ namespace Student_Attendance_System.Properties {
                 this["loginAdmin"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string qrcodePath {
+            get {
+                return ((string)(this["qrcodePath"]));
+            }
+            set {
+                this["qrcodePath"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string picPath {
+            get {
+                return ((string)(this["picPath"]));
+            }
+            set {
+                this["picPath"] = value;
+            }
+        }
     }
 }

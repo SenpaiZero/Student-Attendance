@@ -23,8 +23,9 @@ namespace Student_Attendance_System
             "TrustServerCertificate=False;" +
             "Connection Timeout=30;";
 
-        public static string qrcodePath = "C:\\Users\\Xeb\\Desktop\\test\\qrcode";
-        public static string picturePath = "C:\\Users\\Xeb\\Desktop\\test\\picture";
-        public static bool isMaximized {get; set;}
+        public static string qrcodePath = "";
+        public static string qrcodePath_unenroll = "";
+        public static string picturePath = "";
+        public static string picturePath_unenroll = "";
     }
 }

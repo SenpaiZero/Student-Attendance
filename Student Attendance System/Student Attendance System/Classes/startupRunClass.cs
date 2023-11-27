@@ -1,11 +1,13 @@
 ﻿using Student_Attendance_System.Classes;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Shapes;
 
 namespace Student_Attendance_System
 {
@@ -16,23 +18,49 @@ namespace Student_Attendance_System
         {
             startupRunClass startupRunClass = new startupRunClass();
             startupRunClass.setDBConnection();
-
+            startupRunClass.setOutputConfig();
             if (!Properties.Settings.Default.stayLogin)
                 isFirst = true;
 
             EnrollmentGlobalVariable.page = 0;
-            Config.isMaximized = false;
         }
         void setDBConnection()
         {
             databaseHelper.con = new System.Data.SqlClient.SqlConnection(Config.databaseConnection);
         }
 
+        void setOutputConfig()
+        {
+
+            if (String.IsNullOrEmpty(Properties.Settings.Default.qrcodePath) 
+                || Properties.Settings.Default.qrcodePath == Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\attendance_pic\qrcode")
+            {
+                if (!Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\attendance_pic"))
+                {
+                    Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\attendance_pic");
+                    Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\attendance_pic\qrcode");
+                    Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\attendance_pic\picture");
+                    Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\attendance_pic\qrcode\unenroll");
+                    Directory.CreateDirectory(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\attendance_pic\picture\unenroll");
+                }
+
+                Properties.Settings.Default.qrcodePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\attendance_pic\qrcode";
+            }
+            if (String.IsNullOrEmpty(Properties.Settings.Default.picPath))
+                Properties.Settings.Default.picPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\attendance_pic\picture";
+
+            Config.qrcodePath = Properties.Settings.Default.qrcodePath;
+            Config.qrcodePath_unenroll = Properties.Settings.Default.qrcodePath + @"\unenroll";
+            Config.picturePath = Properties.Settings.Default.picPath;
+            Config.picturePath_unenroll = Properties.Settings.Default.picPath + @"\unenroll";
+
+            Properties.Settings.Default.Save();
+        }
         public static bool persistentLogin()
         {
             //Remove comment below if login has issue
             //Properties.Settings.Default.Reset(); 
-            // Don't login if stay logged in is not checked
+            // stop login if stay logged in is not checked
             if (Properties.Settings.Default.stayLogin == false)
                 return false;
 

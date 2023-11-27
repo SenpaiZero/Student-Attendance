@@ -50,6 +50,7 @@
             this.themeLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.displayContainer = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,6 +90,7 @@
             this.picOutputTB.SelectedText = "";
             this.picOutputTB.Size = new System.Drawing.Size(645, 40);
             this.picOutputTB.TabIndex = 9;
+            this.picOutputTB.IconRightClick += new System.EventHandler(this.picOutputTB_IconRightClick);
             // 
             // picLbl
             // 
@@ -134,6 +136,7 @@
             this.qrOutputTB.SelectedText = "";
             this.qrOutputTB.Size = new System.Drawing.Size(645, 40);
             this.qrOutputTB.TabIndex = 10;
+            this.qrOutputTB.IconRightClick += new System.EventHandler(this.qrOutputTB_IconRightClick);
             // 
             // qrLbl
             // 
@@ -521,5 +524,6 @@
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog;
     }
 }
