@@ -37,20 +37,20 @@
             this.qrLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.headeLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.dbConStringTB = new Guna.UI2.WinForms.Guna2TextBox();
-            this.dbStrinlbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.advanceContainer = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.applyBtn = new Guna.UI2.WinForms.Guna2Button();
             this.resetBtn = new Guna.UI2.WinForms.Guna2Button();
             this.cancelBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.themeCB = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.fullScreenCB = new Guna.UI2.WinForms.Guna2ComboBox();
             this.themeLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.displayContainer = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.startupCB = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.saveLocalCB = new Guna.UI2.WinForms.Guna2ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -192,53 +192,6 @@
             this.headeLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.headeLbl.Click += new System.EventHandler(this.headeLbl_Click);
             // 
-            // dbConStringTB
-            // 
-            this.dbConStringTB.BorderRadius = 5;
-            this.tableLayoutPanel1.SetColumnSpan(this.dbConStringTB, 10);
-            this.dbConStringTB.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.dbConStringTB.DefaultText = "";
-            this.dbConStringTB.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.dbConStringTB.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.dbConStringTB.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.dbConStringTB.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.dbConStringTB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dbConStringTB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.dbConStringTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.dbConStringTB.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dbConStringTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.dbConStringTB.IconRight = global::Student_Attendance_System.Properties.Resources.hidden;
-            this.dbConStringTB.IconRightOffset = new System.Drawing.Point(5, 0);
-            this.dbConStringTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.dbConStringTB.Location = new System.Drawing.Point(15, 345);
-            this.dbConStringTB.Margin = new System.Windows.Forms.Padding(10);
-            this.dbConStringTB.Name = "dbConStringTB";
-            this.dbConStringTB.PasswordChar = '●';
-            this.dbConStringTB.PlaceholderText = "";
-            this.tableLayoutPanel1.SetRowSpan(this.dbConStringTB, 2);
-            this.dbConStringTB.SelectedText = "";
-            this.dbConStringTB.Size = new System.Drawing.Size(645, 40);
-            this.dbConStringTB.TabIndex = 10;
-            this.dbConStringTB.UseSystemPasswordChar = true;
-            this.dbConStringTB.IconRightClick += new System.EventHandler(this.dbConStringTB_IconRightClick);
-            // 
-            // dbStrinlbl
-            // 
-            this.dbStrinlbl.AutoSize = false;
-            this.dbStrinlbl.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.SetColumnSpan(this.dbStrinlbl, 6);
-            this.dbStrinlbl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dbStrinlbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dbStrinlbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.dbStrinlbl.IsContextMenuEnabled = false;
-            this.dbStrinlbl.IsSelectionEnabled = false;
-            this.dbStrinlbl.Location = new System.Drawing.Point(8, 308);
-            this.dbStrinlbl.Name = "dbStrinlbl";
-            this.dbStrinlbl.Size = new System.Drawing.Size(390, 24);
-            this.dbStrinlbl.TabIndex = 8;
-            this.dbStrinlbl.TabStop = false;
-            this.dbStrinlbl.Text = "DB Connection String";
-            // 
             // advanceContainer
             // 
             this.advanceContainer.AutoSize = false;
@@ -328,79 +281,46 @@
             this.cancelBtn.TabIndex = 5;
             this.cancelBtn.Text = "CANCEL";
             // 
-            // guna2ComboBox1
+            // fullScreenCB
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderRadius = 5;
-            this.tableLayoutPanel1.SetColumnSpan(this.guna2ComboBox1, 4);
-            this.guna2ComboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(142, 550);
-            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(254, 36);
-            this.guna2ComboBox1.TabIndex = 11;
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.AutoSize = false;
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.SetColumnSpan(this.guna2HtmlLabel2, 2);
-            this.guna2HtmlLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel2.IsContextMenuEnabled = false;
-            this.guna2HtmlLabel2.IsSelectionEnabled = false;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(8, 548);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(126, 24);
-            this.guna2HtmlLabel2.TabIndex = 10;
-            this.guna2HtmlLabel2.TabStop = false;
-            this.guna2HtmlLabel2.Text = "Language";
-            // 
-            // themeCB
-            // 
-            this.themeCB.BackColor = System.Drawing.Color.Transparent;
-            this.themeCB.BorderRadius = 5;
-            this.tableLayoutPanel1.SetColumnSpan(this.themeCB, 4);
-            this.themeCB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.themeCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.themeCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.themeCB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.themeCB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.themeCB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.themeCB.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.themeCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.themeCB.ItemHeight = 30;
-            this.themeCB.Location = new System.Drawing.Point(142, 490);
-            this.themeCB.Margin = new System.Windows.Forms.Padding(5);
-            this.themeCB.Name = "themeCB";
-            this.themeCB.Size = new System.Drawing.Size(254, 36);
-            this.themeCB.TabIndex = 9;
+            this.fullScreenCB.BackColor = System.Drawing.Color.Transparent;
+            this.fullScreenCB.BorderRadius = 5;
+            this.tableLayoutPanel1.SetColumnSpan(this.fullScreenCB, 3);
+            this.fullScreenCB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.fullScreenCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.fullScreenCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.fullScreenCB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
+            this.fullScreenCB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.fullScreenCB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.fullScreenCB.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.fullScreenCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.fullScreenCB.ItemHeight = 30;
+            this.fullScreenCB.Items.AddRange(new object[] {
+            "YES",
+            "NO"});
+            this.fullScreenCB.Location = new System.Drawing.Point(274, 550);
+            this.fullScreenCB.Margin = new System.Windows.Forms.Padding(5);
+            this.fullScreenCB.Name = "fullScreenCB";
+            this.fullScreenCB.Size = new System.Drawing.Size(188, 36);
+            this.fullScreenCB.TabIndex = 9;
+            this.fullScreenCB.SelectedIndexChanged += new System.EventHandler(this.fullScreenCB_SelectedIndexChanged);
             // 
             // themeLbl
             // 
             this.themeLbl.AutoSize = false;
             this.themeLbl.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.SetColumnSpan(this.themeLbl, 2);
+            this.tableLayoutPanel1.SetColumnSpan(this.themeLbl, 4);
             this.themeLbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.themeLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.themeLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.themeLbl.IsContextMenuEnabled = false;
             this.themeLbl.IsSelectionEnabled = false;
-            this.themeLbl.Location = new System.Drawing.Point(8, 488);
+            this.themeLbl.Location = new System.Drawing.Point(8, 548);
             this.themeLbl.Name = "themeLbl";
-            this.themeLbl.Size = new System.Drawing.Size(126, 24);
+            this.themeLbl.Size = new System.Drawing.Size(258, 24);
             this.themeLbl.TabIndex = 8;
             this.themeLbl.TabStop = false;
-            this.themeLbl.Text = "Theme";
+            this.themeLbl.Text = "FILL BACKGROUND";
             // 
             // displayContainer
             // 
@@ -412,7 +332,7 @@
             this.displayContainer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(133)))), ((int)(((byte)(46)))));
             this.displayContainer.IsContextMenuEnabled = false;
             this.displayContainer.IsSelectionEnabled = false;
-            this.displayContainer.Location = new System.Drawing.Point(8, 428);
+            this.displayContainer.Location = new System.Drawing.Point(8, 488);
             this.displayContainer.Name = "displayContainer";
             this.tableLayoutPanel1.SetRowSpan(this.displayContainer, 2);
             this.displayContainer.Size = new System.Drawing.Size(390, 54);
@@ -433,22 +353,22 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.Controls.Add(this.saveLocalCB, 3, 12);
+            this.tableLayoutPanel1.Controls.Add(this.guna2HtmlLabel3, 0, 12);
+            this.tableLayoutPanel1.Controls.Add(this.startupCB, 3, 10);
+            this.tableLayoutPanel1.Controls.Add(this.guna2HtmlLabel2, 0, 10);
             this.tableLayoutPanel1.Controls.Add(this.guna2Separator1, 8, 15);
             this.tableLayoutPanel1.Controls.Add(this.picOutputTB, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.cancelBtn, 8, 18);
             this.tableLayoutPanel1.Controls.Add(this.applyBtn, 8, 16);
-            this.tableLayoutPanel1.Controls.Add(this.themeCB, 2, 16);
-            this.tableLayoutPanel1.Controls.Add(this.guna2HtmlLabel2, 0, 18);
+            this.tableLayoutPanel1.Controls.Add(this.fullScreenCB, 4, 18);
             this.tableLayoutPanel1.Controls.Add(this.guna2HtmlLabel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.picLbl, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.themeLbl, 0, 16);
+            this.tableLayoutPanel1.Controls.Add(this.themeLbl, 0, 18);
             this.tableLayoutPanel1.Controls.Add(this.qrLbl, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.qrOutputTB, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.displayContainer, 0, 14);
-            this.tableLayoutPanel1.Controls.Add(this.dbConStringTB, 0, 11);
-            this.tableLayoutPanel1.Controls.Add(this.dbStrinlbl, 0, 10);
+            this.tableLayoutPanel1.Controls.Add(this.displayContainer, 0, 16);
             this.tableLayoutPanel1.Controls.Add(this.advanceContainer, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.guna2ComboBox1, 2, 18);
             this.tableLayoutPanel1.Controls.Add(this.resetBtn, 8, 13);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(15, 70);
@@ -479,6 +399,88 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(675, 615);
             this.tableLayoutPanel1.TabIndex = 7;
             // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.AutoSize = false;
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.SetColumnSpan(this.guna2HtmlLabel2, 4);
+            this.guna2HtmlLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.guna2HtmlLabel2.IsContextMenuEnabled = false;
+            this.guna2HtmlLabel2.IsSelectionEnabled = false;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(8, 308);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(258, 24);
+            this.guna2HtmlLabel2.TabIndex = 11;
+            this.guna2HtmlLabel2.TabStop = false;
+            this.guna2HtmlLabel2.Text = "RUN ON STARTUP";
+            // 
+            // startupCB
+            // 
+            this.startupCB.BackColor = System.Drawing.Color.Transparent;
+            this.startupCB.BorderRadius = 5;
+            this.tableLayoutPanel1.SetColumnSpan(this.startupCB, 3);
+            this.startupCB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.startupCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.startupCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.startupCB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
+            this.startupCB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.startupCB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.startupCB.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.startupCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.startupCB.ItemHeight = 30;
+            this.startupCB.Items.AddRange(new object[] {
+            "YES",
+            "NO"});
+            this.startupCB.Location = new System.Drawing.Point(274, 310);
+            this.startupCB.Margin = new System.Windows.Forms.Padding(5);
+            this.startupCB.Name = "startupCB";
+            this.startupCB.Size = new System.Drawing.Size(188, 36);
+            this.startupCB.TabIndex = 12;
+            this.startupCB.SelectedIndexChanged += new System.EventHandler(this.startupCB_SelectedIndexChanged);
+            // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.AutoSize = false;
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.SetColumnSpan(this.guna2HtmlLabel3, 4);
+            this.guna2HtmlLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.guna2HtmlLabel3.IsContextMenuEnabled = false;
+            this.guna2HtmlLabel3.IsSelectionEnabled = false;
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(8, 368);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(258, 24);
+            this.guna2HtmlLabel3.TabIndex = 13;
+            this.guna2HtmlLabel3.TabStop = false;
+            this.guna2HtmlLabel3.Text = "SAVE IMAGE LOCALLY";
+            // 
+            // saveLocalCB
+            // 
+            this.saveLocalCB.BackColor = System.Drawing.Color.Transparent;
+            this.saveLocalCB.BorderRadius = 5;
+            this.tableLayoutPanel1.SetColumnSpan(this.saveLocalCB, 3);
+            this.saveLocalCB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.saveLocalCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.saveLocalCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.saveLocalCB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
+            this.saveLocalCB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.saveLocalCB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.saveLocalCB.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.saveLocalCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.saveLocalCB.ItemHeight = 30;
+            this.saveLocalCB.Items.AddRange(new object[] {
+            "YES",
+            "NO"});
+            this.saveLocalCB.Location = new System.Drawing.Point(274, 370);
+            this.saveLocalCB.Margin = new System.Windows.Forms.Padding(5);
+            this.saveLocalCB.Name = "saveLocalCB";
+            this.saveLocalCB.Size = new System.Drawing.Size(188, 36);
+            this.saveLocalCB.TabIndex = 14;
+            this.saveLocalCB.SelectedIndexChanged += new System.EventHandler(this.saveLocalCB_SelectedIndexChanged);
+            // 
             // settingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -505,7 +507,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private Guna.UI2.WinForms.Guna2ComboBox themeCB;
+        private Guna.UI2.WinForms.Guna2ComboBox fullScreenCB;
         private Guna.UI2.WinForms.Guna2HtmlLabel themeLbl;
         private Guna.UI2.WinForms.Guna2HtmlLabel displayContainer;
         private Guna.UI2.WinForms.Guna2Button applyBtn;
@@ -516,14 +518,14 @@
         private Guna.UI2.WinForms.Guna2TextBox qrOutputTB;
         private Guna.UI2.WinForms.Guna2HtmlLabel qrLbl;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2TextBox dbConStringTB;
-        private Guna.UI2.WinForms.Guna2HtmlLabel dbStrinlbl;
         private Guna.UI2.WinForms.Guna2HtmlLabel advanceContainer;
         private Guna.UI2.WinForms.Guna2HtmlLabel headeLbl;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog;
+        private Guna.UI2.WinForms.Guna2ComboBox startupCB;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2ComboBox saveLocalCB;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
     }
 }

@@ -89,6 +89,11 @@ namespace Student_Attendance_System
         {
             HeaderLbl.Text = header;
             descLbl.Text = message;
+
+            if(descLbl.Text.Length > 20)
+            {
+                descLbl.Font = new Font("Segoe UI Semibold", 10, FontStyle.Bold);
+            }
         }
 
         private void yesBtn_Click(object sender, EventArgs e)

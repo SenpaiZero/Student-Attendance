@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Student_Attendance_System.Classes.Helper;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,9 @@ namespace Student_Attendance_System.Startup
     {
         string newQrPath;
         string newPicturePath;
+        bool startupChange = false;
+        bool saveLocalChange = false;
+        bool fillBackground = false;
         public settingForm()
         {
             InitializeComponent();
@@ -24,14 +28,12 @@ namespace Student_Attendance_System.Startup
 
         private void settingForm_Load(object sender, EventArgs e)
         {
-            dbConStringTB.UseSystemPasswordChar= true;
-            if (Properties.Settings.Default.loginAdmin != "ADMIN")
-                dbConStringTB.ReadOnly = true;
-
-            dbConStringTB.Text = "this is a test only";
-
             qrOutputTB.Text = Config.qrcodePath;
             picOutputTB.Text = Config.picturePath;
+
+            startupCB.Text = Properties.Settings.Default.startup ? "YES" : "NO";
+            saveLocalCB.Text = Properties.Settings.Default.saveLocal ? "YES" : "NO";
+            fullScreenCB.Text = Properties.Settings.Default.fullscreen ? "YES" : "NO";
         }
         protected override CreateParams CreateParams
         {
@@ -67,68 +69,100 @@ namespace Student_Attendance_System.Startup
             {
                 if (!string.IsNullOrEmpty(newPicturePath) && !Directory.Exists(newPicturePath))
                 {
-                    Directory.CreateDirectory(folderBrowserDialog.SelectedPath + @"\pictures");
-                    Directory.CreateDirectory(folderBrowserDialog.SelectedPath + @"\pictures\unenroll");
+                    Directory.CreateDirectory(newPicturePath);
+                    Directory.CreateDirectory(newPicturePath + @"\unenroll");
 
-                    Properties.Settings.Default.picPath = folderBrowserDialog.SelectedPath + @"\pictures";
+                    Properties.Settings.Default.picPath = newPicturePath;
 
-                    Config.picturePath = folderBrowserDialog.SelectedPath + @"\picture";
-                    Config.picturePath_unenroll = folderBrowserDialog.SelectedPath + @"\picture\unenroll";
-                    picOutputTB.Text = folderBrowserDialog.SelectedPath + @"\pictures";
+                    Config.picturePath = newPicturePath;
+                    Config.picturePath_unenroll = newPicturePath + @"\unenroll";
+                    picOutputTB.Text = newPicturePath;
                 }
 
                 if (!string.IsNullOrEmpty(newQrPath) && !Directory.Exists(folderBrowserDialog.SelectedPath + @"\qrcode"))
                 {
-                    Directory.CreateDirectory(folderBrowserDialog.SelectedPath + @"\qrcode");
-                    Directory.CreateDirectory(folderBrowserDialog.SelectedPath + @"\qrcode\unenroll");
+                    Directory.CreateDirectory(newQrPath);
+                    Directory.CreateDirectory(newQrPath + @"\unenroll");
 
-                    Properties.Settings.Default.picPath = folderBrowserDialog.SelectedPath + @"\qrcode";
+                    Properties.Settings.Default.qrcodePath = newQrPath;
 
-                    Config.qrcodePath = folderBrowserDialog.SelectedPath + @"\qrcode";
-                    Config.qrcodePath_unenroll = folderBrowserDialog.SelectedPath + @"\qrcode\unenroll";
-                    qrOutputTB.Text = folderBrowserDialog.SelectedPath + @"\qrcode";
+                    Config.qrcodePath = newQrPath;
+                    Config.qrcodePath_unenroll = newQrPath + @"\unenroll";
+                    qrOutputTB.Text = newQrPath;
                 }
 
-                Properties.Settings.Default.Save();
-            }
-        }
-
-        private void dbConStringTB_IconRightClick(object sender, EventArgs e)
-        {
-            if(dbConStringTB.ReadOnly)
-            {
-                MessageForm msg = new MessageForm()
+                if(startupChange)
                 {
-                    messageType = "Information",
-                    header = "Ooooops!",
-                    message = "You do not have permission to access and modify database connection",
-                    isYesNo = false
-                };
-                msg.ShowDialog();
-                return;
-            }
-
-            if (dbConStringTB.UseSystemPasswordChar)
-            {
-                dbConStringTB.IconRight = Properties.Resources.visible;
-                dbConStringTB.PasswordChar = '\0';
-                dbConStringTB.UseSystemPasswordChar = false;
-            }
-            else
-            {
-                dbConStringTB.IconRight = Properties.Resources.hidden;
-                dbConStringTB.PasswordChar = '●';
-                dbConStringTB.UseSystemPasswordChar = true;
+                    if (startupCB.Text == "NO")
+                    {
+                        startupHelper.RemoveStartup();
+                        Properties.Settings.Default.startup = false;
+                    }
+                    else
+                    {
+                        startupHelper.SetStartup();
+                        Properties.Settings.Default.startup = true;
+                    }
+                }
+                if(saveLocalChange)
+                {
+                    if(saveLocalCB.Text == "NO")
+                    {
+                        Properties.Settings.Default.saveLocal = false;
+                        Config.saveLocal = false;
+                    }
+                    else
+                    {
+                        Properties.Settings.Default.saveLocal = true;
+                        Config.saveLocal = true;
+                    }
+                }
+                Properties.Settings.Default.Save();
             }
         }
 
         private void resetBtn_Click(object sender, EventArgs e)
         {
-
+            MessageForm msg = new MessageForm()
+            {
+                isYesNo = true,
+                messageType = "Information",
+                header = "Are you sure?",
+                message = "You cannot undo what you are about to do"
+            };
+            if(msg.ShowDialog() == DialogResult.OK)
+            {
+                MessageForm msg2 = new MessageForm()
+                {
+                    isYesNo = true,
+                    messageType = "Information",
+                    header = "Last warning!",
+                    message = "Are you really sure you want to reset setting?"
+                };
+                if(msg2.ShowDialog() == DialogResult.OK)
+                {
+                    Properties.Settings.Default.Reset();
+                    Application.Restart();
+                    Environment.Exit(0);
+                }
+            }
         }
 
         private void picOutputTB_IconRightClick(object sender, EventArgs e)
         {
+            // Disable textbox/filepath if save image locally is disabled
+            if (!Config.saveLocal)
+            {
+                MessageForm msgSave = new MessageForm()
+                {
+                    isYesNo = false,
+                    messageType = "Information",
+                    header = "Woooops",
+                    message = "Save image locally is disabled"
+                };
+                msgSave.ShowDialog();
+                return;
+            }
             folderBrowserDialog.Description = "Choose a folder for picture";
             if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
             {
@@ -154,13 +188,27 @@ namespace Student_Attendance_System.Startup
 
         private void qrOutputTB_IconRightClick(object sender, EventArgs e)
         {
+            // Disable textbox/filepath if save image locally is disabled
+            if(!Config.saveLocal)
+            {
+                MessageForm msgSave = new MessageForm()
+                {
+                    isYesNo = false,
+                    messageType = "Information",
+                    header = "Woooops",
+                    message = "Save image locally is disabled"
+                };
+               msgSave.ShowDialog();
+               return;
+            }
+
             folderBrowserDialog.Description = "Choose a folder for qr codes";
             if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
             {
-
+                newQrPath = folderBrowserDialog.SelectedPath + @"\qrcode";
                 if (!Directory.Exists(folderBrowserDialog.SelectedPath + @"\qrcode"))
                 {
-                    newQrPath = folderBrowserDialog.SelectedPath + @"\qrcode";
+                    qrOutputTB.Text = newQrPath;
                 }
                 else
                 {
@@ -174,6 +222,21 @@ namespace Student_Attendance_System.Startup
                     msg.ShowDialog();
                 }
             }
+        }
+
+        private void startupCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            startupChange = true;
+        }
+
+        private void saveLocalCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            saveLocalChange = true;
+        }
+
+        private void fullScreenCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            fillBackground = true;
         }
     }
 }

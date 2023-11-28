@@ -45,6 +45,8 @@ namespace Student_Attendance_System
             setLabels();
             startupRunClass.runStartup();
 
+            timer1.Start();
+
             if(startupRunClass.persistentLogin())
                 loginBtn.Text = loginHelper.Name;
         }
@@ -66,7 +68,7 @@ namespace Student_Attendance_System
             recordBtn.Text = "RECORDS";
             enrollBtn.Text = "ENROLL";
 
-            dayLbl.Text = DateTime.Now.DayOfWeek.ToString();
+            dayLbl.Text = DateTime.Now.DayOfWeek.ToString() + " ";
             dateLbl.Text = DateTime.Now.ToShortDateString();
             versionLbl.Text = Config.appVersion;
         }
@@ -101,7 +103,8 @@ namespace Student_Attendance_System
                 dashboardBtn.Text = "";
                 versionLbl.Text = "";
                 enrollBtn.Text = "";
-                
+                dayLbl.Visible = false;
+
                 menuExpand = false;
                 sidepanelBtn.Image = Properties.Resources.right_arrow;
                 menuContainer.Size = new Size(86, menuContainer.Size.Height);
@@ -124,6 +127,7 @@ namespace Student_Attendance_System
                 sidepanelBtn.Image = Properties.Resources.left_arrow;
                 menuContainer.Size = defaultMenuSize;
 
+                dayLbl.Visible = true;
                 setLabels();
             }
             foreach (Form form in Application.OpenForms)
@@ -243,6 +247,16 @@ namespace Student_Attendance_System
 
             pageHelper.loadForm(new Dashboard_Form(), mainPanel);
             enebleBtn(dashboardBtn);
+        }
+
+        private void versionLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            dayLbl.Text = $"{DateTime.Now.DayOfWeek} {DateTime.Now.ToString(" hh:mm tt")}";
         }
 
         bool checkAdmin()

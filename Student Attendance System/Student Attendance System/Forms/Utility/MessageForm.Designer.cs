@@ -158,15 +158,16 @@
             // 
             // descLbl
             // 
-            this.descLbl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.descLbl.AutoSize = false;
             this.descLbl.BackColor = System.Drawing.Color.Transparent;
+            this.descLbl.Dock = System.Windows.Forms.DockStyle.Top;
             this.descLbl.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.descLbl.IsContextMenuEnabled = false;
             this.descLbl.IsSelectionEnabled = false;
             this.descLbl.Location = new System.Drawing.Point(3, 282);
             this.descLbl.Name = "descLbl";
-            this.descLbl.Size = new System.Drawing.Size(324, 94);
+            this.descLbl.Size = new System.Drawing.Size(324, 112);
             this.descLbl.TabIndex = 2;
             this.descLbl.TabStop = false;
             this.descLbl.Text = "Details";
@@ -183,11 +184,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(25)))), ((int)(((byte)(82)))));
             this.ClientSize = new System.Drawing.Size(355, 519);
+            this.ControlBox = false;
             this.Controls.Add(this.guna2Panel2);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "MessageForm";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MessageForm";
             this.Load += new System.EventHandler(this.MessageForm_Load);

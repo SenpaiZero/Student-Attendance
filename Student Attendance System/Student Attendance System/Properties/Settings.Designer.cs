@@ -94,5 +94,41 @@ namespace Student_Attendance_System.Properties {
                 this["picPath"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool startup {
+            get {
+                return ((bool)(this["startup"]));
+            }
+            set {
+                this["startup"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool saveLocal {
+            get {
+                return ((bool)(this["saveLocal"]));
+            }
+            set {
+                this["saveLocal"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool fullscreen {
+            get {
+                return ((bool)(this["fullscreen"]));
+            }
+            set {
+                this["fullscreen"] = value;
+            }
+        }
     }
 }

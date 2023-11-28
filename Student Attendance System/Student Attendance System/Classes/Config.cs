@@ -27,5 +27,8 @@ namespace Student_Attendance_System
         public static string qrcodePath_unenroll = "";
         public static string picturePath = "";
         public static string picturePath_unenroll = "";
+
+        public static bool saveLocal;
+        public static bool fullScreen;
     }
 }

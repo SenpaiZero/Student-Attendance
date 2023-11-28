@@ -63,6 +63,7 @@
             this.lOGOUTToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changePasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuContainer.SuspendLayout();
             this.mainPanelContainer.SuspendLayout();
             this.accountMenuStrip.SuspendLayout();
@@ -91,6 +92,7 @@
             this.versionLbl.TabStop = false;
             this.versionLbl.Text = "1.0.0";
             this.versionLbl.TextAlignment = System.Drawing.ContentAlignment.BottomCenter;
+            this.versionLbl.Click += new System.EventHandler(this.versionLbl_Click);
             // 
             // miscLine
             // 
@@ -656,6 +658,12 @@
             this.guna2DragControl1.TargetControl = this.mainPanelContainer;
             this.guna2DragControl1.UseTransparentDrag = true;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // startupForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -722,6 +730,7 @@
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2Button recordBtn;
         private Guna.UI2.WinForms.Guna2Button dashboardBtn;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

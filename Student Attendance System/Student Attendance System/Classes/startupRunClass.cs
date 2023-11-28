@@ -19,6 +19,7 @@ namespace Student_Attendance_System
             startupRunClass startupRunClass = new startupRunClass();
             startupRunClass.setDBConnection();
             startupRunClass.setOutputConfig();
+            startupRunClass.setSettings();
             if (!Properties.Settings.Default.stayLogin)
                 isFirst = true;
 
@@ -58,9 +59,6 @@ namespace Student_Attendance_System
         }
         public static bool persistentLogin()
         {
-            //Remove comment below if login has issue
-            //Properties.Settings.Default.Reset(); 
-            // stop login if stay logged in is not checked
             if (Properties.Settings.Default.stayLogin == false)
                 return false;
 
@@ -92,6 +90,12 @@ namespace Student_Attendance_System
                     checkInternet(parent);
                 }
             }
+        }
+
+        public void setSettings()
+        {
+            Config.fullScreen = Properties.Settings.Default.fullscreen;
+            Config.saveLocal = Properties.Settings.Default.saveLocal;
         }
     }
 }

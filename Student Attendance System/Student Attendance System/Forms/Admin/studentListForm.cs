@@ -88,6 +88,7 @@ namespace Student_Attendance_System.Forms.Admin
                 DataGridViewRow selectedRow = listTable.SelectedRows[0];
                 selectedID = selectedRow.Cells[0].Value.ToString();
                 selectedName = selectedRow.Cells[1].Value.ToString();
+                string logPrefix = !isViewEnroll ? "ENROLL" : "UNENROLL";
 
                 string prefix = isViewEnroll ? "unenroll" : "enroll";
                 MessageForm msg = new MessageForm()
@@ -100,6 +101,16 @@ namespace Student_Attendance_System.Forms.Admin
 
                 if (msg.ShowDialog() == DialogResult.OK)
                 {
+                    if (logPrefix == "ENROLL")
+                    {
+                        if (!LocalSaveHelper.moveImage(false, selectedID))
+                            return;
+                    }
+                    else if (logPrefix == "UNENROLL")
+                    {
+                        if (!LocalSaveHelper.moveImage(true, selectedID))
+                            return;
+                    }
                     if (databaseHelper.con.State != ConnectionState.Open)
                         databaseHelper.open();
                     databaseHelper db = new databaseHelper();
@@ -136,9 +147,9 @@ namespace Student_Attendance_System.Forms.Admin
                             db.cmd.ExecuteNonQuery();
                         }
                     }
-                    string logPrefix = !isViewEnroll ? "ENROLL" : "UNENROLL";
                     logsHelper.insertUpdateEnroll($"Updated {selectedName}'s enrollment to {logPrefix}");
                     showData(false, isViewEnroll);
+
                 }
             }
         }
