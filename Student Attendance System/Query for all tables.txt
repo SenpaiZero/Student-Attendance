@@ -1,0 +1,154 @@
+CREATE TABLE [dbo].[studentMother_unenroll] (
+    [Id]          INT          IDENTITY (1, 1) NOT NULL,
+    [StudentID]   VARCHAR (50) NOT NULL,
+    [Name]        VARCHAR (50) NOT NULL,
+    [Email]       VARCHAR (50) NOT NULL,
+    [PhoneNumber] VARCHAR (50) NOT NULL,
+    [Occupation]  VARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[studentMother] (
+    [Id]          INT          IDENTITY (1, 1) NOT NULL,
+    [StudentID]   VARCHAR (50) NOT NULL,
+    [Name]        VARCHAR (50) NOT NULL,
+    [Email]       VARCHAR (50) NOT NULL,
+    [PhoneNumber] VARCHAR (50) NOT NULL,
+    [Occupation]  VARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[studentInformation_unenroll] (
+    [Id]          INT           IDENTITY (1, 1) NOT NULL,
+    [StudentID]   VARCHAR (50)  NOT NULL,
+    [Age]         VARCHAR (50)  NOT NULL,
+    [Religion]    VARCHAR (50)  NOT NULL,
+    [Gender]      VARCHAR (50)  NOT NULL,
+    [MoreDetails] VARCHAR (150) NOT NULL,
+    [Birthday]    DATE          NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[studentInformation] (
+    [Id]          INT           IDENTITY (1, 1) NOT NULL,
+    [StudentID]   VARCHAR (50)  NOT NULL,
+    [Age]         VARCHAR (50)  NOT NULL,
+    [Religion]    VARCHAR (50)  NOT NULL,
+    [Gender]      VARCHAR (50)  NOT NULL,
+    [MoreDetails] VARCHAR (150) NOT NULL,
+    [Birthday]    DATE          NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[studentIdentity_unenroll] (
+    [Id]        INT             IDENTITY (1, 1) NOT NULL,
+    [StudentID] VARCHAR (50)    NOT NULL,
+    [QRCode]    VARBINARY (MAX) NOT NULL,
+    [Picture]   VARBINARY (MAX) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[studentIdentity] (
+    [Id]        INT             IDENTITY (1, 1) NOT NULL,
+    [StudentID] VARCHAR (50)    NOT NULL,
+    [QRCode]    VARBINARY (MAX) NOT NULL,
+    [Picture]   VARBINARY (MAX) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[studentFather_unenroll] (
+    [Id]          INT          IDENTITY (1, 1) NOT NULL,
+    [StudentID]   VARCHAR (50) NOT NULL,
+    [Name]        VARCHAR (50) NOT NULL,
+    [Email]       VARCHAR (50) NOT NULL,
+    [PhoneNumber] VARCHAR (50) NOT NULL,
+    [Occupation]  VARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[studentFather] (
+    [Id]          INT          IDENTITY (1, 1) NOT NULL,
+    [StudentID]   VARCHAR (50) NOT NULL,
+    [Name]        VARCHAR (50) NOT NULL,
+    [Email]       VARCHAR (50) NOT NULL,
+    [PhoneNumber] VARCHAR (50) NOT NULL,
+    [Occupation]  VARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[studentData_unenroll] (
+    [Id]          INT          IDENTITY (1, 1) NOT NULL,
+    [StudentID]   VARCHAR (50) NOT NULL,
+    [Name]        VARCHAR (50) NOT NULL,
+    [Section]     VARCHAR (50) NOT NULL,
+    [Year]        VARCHAR (50) NOT NULL,
+    [StudentType] VARCHAR (50) NOT NULL,
+    [EnrollDate]  DATE         NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[studentData] (
+    [Id]          INT          IDENTITY (1, 1) NOT NULL,
+    [StudentID]   VARCHAR (50) NOT NULL,
+    [Name]        VARCHAR (50) NOT NULL,
+    [Section]     VARCHAR (50) NOT NULL,
+    [Year]        VARCHAR (50) NOT NULL,
+    [StudentType] VARCHAR (50) NOT NULL,
+    [EnrollDate]  DATE         NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[studentContacts_unenroll] (
+    [Id]          INT           IDENTITY (1, 1) NOT NULL,
+    [StudentID]   VARCHAR (50)  NOT NULL,
+    [Email]       VARCHAR (50)  NOT NULL,
+    [PhoneNumber] VARCHAR (50)  NOT NULL,
+    [Address]     VARCHAR (100) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[studentContacts] (
+    [Id]          INT           IDENTITY (1, 1) NOT NULL,
+    [StudentID]   VARCHAR (50)  NOT NULL,
+    [Email]       VARCHAR (50)  NOT NULL,
+    [PhoneNumber] VARCHAR (50)  NOT NULL,
+    [Address]     VARCHAR (100) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[Logs] (
+    [Id]       INT           IDENTITY (1, 1) NOT NULL,
+    [Name]     VARCHAR (50)  NOT NULL,
+    [StaffID]  VARCHAR (50)  NOT NULL,
+    [Details]  VARCHAR (200) NULL,
+    [Category] VARCHAR (50)  NOT NULL,
+    [Date]     DATE          NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[attendance] (
+    [Id]        INT          IDENTITY (1, 1) NOT NULL,
+    [StudentID] VARCHAR (50) NULL,
+    [Date]      DATE         NULL,
+    [TimeIn]    TIME (7)     NULL,
+    [TimeOut]   TIME (7)     NULL,
+    CONSTRAINT [PK_attendance] PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[Accounts] (
+    [Id]       INT           IDENTITY (1, 1) NOT NULL,
+    [Name]     VARCHAR (50)  NOT NULL,
+    [StaffID]  VARCHAR (50)  NOT NULL,
+    [Password] VARCHAR (50)  NOT NULL,
+    [Age]      VARCHAR (3)   NOT NULL,
+    [Email]    VARCHAR (50)  NOT NULL,
+    [Address]  VARCHAR (100) NOT NULL,
+    [Phone]    VARCHAR (20)  NOT NULL,
+    [Gender]   VARCHAR (10)  NOT NULL,
+    [Status]   VARCHAR (20)  NOT NULL,
+    [Admin]    VARCHAR (10)  NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+
+
