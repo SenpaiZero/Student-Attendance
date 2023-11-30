@@ -1,4 +1,5 @@
 ﻿using Student_Attendance_System.Classes.Helper;
+using Student_Attendance_System.Forms.Utility;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -62,7 +63,9 @@ namespace Student_Attendance_System.Startup
                 isYesNo = true,
                 messageType = "Information",
                 header = "Are you sure?",
-                message = "You can't undo what you are about to do"
+                message = "You can't undo what you are about to do",
+                isTimer = true,
+                maxTime = 5
             };
 
             if(msg.ShowDialog() == DialogResult.OK)
@@ -117,6 +120,22 @@ namespace Student_Attendance_System.Startup
                         Config.saveLocal = true;
                     }
                 }
+
+                if(fillBackground)
+                {
+                    if(fullScreenCB.Text == "NO")
+                    {
+                        Properties.Settings.Default.fullscreen = false;
+                        Config.fullScreen = false;
+                        background.closeBackground();
+                    }
+                    else
+                    {
+                        Properties.Settings.Default.fullscreen = true;
+                        Config.fullScreen = true;
+                        background.openBackground();
+                    }
+                }
                 Properties.Settings.Default.Save();
             }
         }
@@ -137,7 +156,9 @@ namespace Student_Attendance_System.Startup
                     isYesNo = true,
                     messageType = "Information",
                     header = "Last warning!",
-                    message = "Are you really sure you want to reset setting?"
+                    message = "Are you really sure you want to reset setting?",
+                    isTimer = true,
+                    maxTime = 5
                 };
                 if(msg2.ShowDialog() == DialogResult.OK)
                 {

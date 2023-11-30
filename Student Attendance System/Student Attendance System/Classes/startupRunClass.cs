@@ -96,6 +96,7 @@ namespace Student_Attendance_System
         {
             Config.fullScreen = Properties.Settings.Default.fullscreen;
             Config.saveLocal = Properties.Settings.Default.saveLocal;
+            Config.fullScreen = Properties.Settings.Default.fullscreen;
         }
     }
 }

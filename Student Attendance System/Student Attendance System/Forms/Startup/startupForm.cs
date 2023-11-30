@@ -1,6 +1,7 @@
 ﻿using Guna.UI2.WinForms;
 using Student_Attendance_System.Forms;
 using Student_Attendance_System.Forms.Startup;
+using Student_Attendance_System.Forms.Utility;
 using Student_Attendance_System.Startup;
 using System;
 using System.Collections.Generic;
@@ -257,6 +258,11 @@ namespace Student_Attendance_System
         private void timer1_Tick(object sender, EventArgs e)
         {
             dayLbl.Text = $"{DateTime.Now.DayOfWeek} {DateTime.Now.ToString(" hh:mm tt")}";
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            background.closeBackgroundForm();
         }
 
         bool checkAdmin()

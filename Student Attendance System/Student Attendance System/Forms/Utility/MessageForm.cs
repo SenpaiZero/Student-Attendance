@@ -27,6 +27,7 @@ namespace Student_Attendance_System
         public MessageForm()
         {
             InitializeComponent();
+            maxTime = 3;
         }
 
         // Suceess, Failed, Information
@@ -34,13 +35,27 @@ namespace Student_Attendance_System
         public string header { get; set; }
         public string message { get; set; }
         public bool isYesNo { get; set; }
+        public bool isTimer { get; set; }
+        public int maxTime { get; set; }
+
+        int timer = 0;
         private void MessageForm_Load(object sender, EventArgs e)
         {
+            buttonTimer.Interval = 1000;
             setImage();
             setMessage();
 
-            if(isYesNo)
+            if (isTimer)
+                buttonTimer.Start();
+
+            if (isYesNo)
             {
+                if (isTimer)
+                {
+                    yesBtn.Enabled = false;
+                    yesBtn.Text = maxTime.ToString();
+                }
+
                 yesBtn.Visible = true;
                 yesBtn.FillColor = greenBtn;
 
@@ -48,9 +63,15 @@ namespace Student_Attendance_System
                 noBtn.FillColor = redBtn;
 
                 okBtn.Visible = false;
+
             }
             else
             {
+                if (isTimer)
+                {
+                    okBtn.Enabled = false;
+                    okBtn.Text = maxTime.ToString();
+                }
                 yesBtn.Visible = false;
                 noBtn.Visible = false;
 
@@ -62,7 +83,9 @@ namespace Student_Attendance_System
                     okBtn.FillColor = redBtn;
                 else
                     okBtn.FillColor = defaultBtn;
+
             }
+
 
         }
 
@@ -112,6 +135,31 @@ namespace Student_Attendance_System
         {
             this.DialogResult = DialogResult.OK;
             this.Close();
+        }
+
+        private void buttonTimer_Tick(object sender, EventArgs e)
+        {
+            timer++;
+
+            if (isYesNo)
+                yesBtn.Text = Math.Abs(timer - maxTime).ToString();
+            else
+                okBtn.Text = Math.Abs(timer - maxTime).ToString();
+
+            if (timer >= maxTime)
+            {
+                if (isYesNo)
+                {
+                    yesBtn.Enabled = true;
+                    yesBtn.Text = "YES";
+                }
+                else
+                {
+                    okBtn.Enabled = true;
+                    okBtn.Text = "OK";
+                }
+                buttonTimer.Stop();
+            }
         }
     }
 }

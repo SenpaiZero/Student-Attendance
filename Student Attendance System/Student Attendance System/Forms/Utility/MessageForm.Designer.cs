@@ -39,6 +39,7 @@
             this.HeaderLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.descLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.buttonTimer = new System.Windows.Forms.Timer(this.components);
             this.guna2Panel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
@@ -68,10 +69,10 @@
             // yesBtn
             // 
             this.yesBtn.BorderRadius = 5;
-            this.yesBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.yesBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.yesBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.yesBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.yesBtn.DisabledState.BorderColor = System.Drawing.Color.IndianRed;
+            this.yesBtn.DisabledState.CustomBorderColor = System.Drawing.Color.IndianRed;
+            this.yesBtn.DisabledState.FillColor = System.Drawing.Color.IndianRed;
+            this.yesBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.yesBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
             this.yesBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.yesBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -102,10 +103,10 @@
             // okBtn
             // 
             this.okBtn.BorderRadius = 5;
-            this.okBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.okBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.okBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.okBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.okBtn.DisabledState.BorderColor = System.Drawing.Color.IndianRed;
+            this.okBtn.DisabledState.CustomBorderColor = System.Drawing.Color.IndianRed;
+            this.okBtn.DisabledState.FillColor = System.Drawing.Color.IndianRed;
+            this.okBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.okBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
             this.okBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.okBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -178,6 +179,10 @@
             this.guna2Elipse1.BorderRadius = 25;
             this.guna2Elipse1.TargetControl = this.guna2Panel2;
             // 
+            // buttonTimer
+            // 
+            this.buttonTimer.Tick += new System.EventHandler(this.buttonTimer_Tick);
+            // 
             // MessageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -215,5 +220,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox picture;
         private Guna.UI2.WinForms.Guna2Button yesBtn;
         private Guna.UI2.WinForms.Guna2Button noBtn;
+        private System.Windows.Forms.Timer buttonTimer;
     }
 }

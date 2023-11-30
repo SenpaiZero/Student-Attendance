@@ -46,11 +46,11 @@
             this.themeLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.displayContainer = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.startupCB = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.saveLocalCB = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.startupCB = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.folderBrowserDialog = new System.Windows.Forms.FolderBrowserDialog();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -399,22 +399,46 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(675, 615);
             this.tableLayoutPanel1.TabIndex = 7;
             // 
-            // guna2HtmlLabel2
+            // saveLocalCB
             // 
-            this.guna2HtmlLabel2.AutoSize = false;
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.SetColumnSpan(this.guna2HtmlLabel2, 4);
-            this.guna2HtmlLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel2.IsContextMenuEnabled = false;
-            this.guna2HtmlLabel2.IsSelectionEnabled = false;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(8, 308);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(258, 24);
-            this.guna2HtmlLabel2.TabIndex = 11;
-            this.guna2HtmlLabel2.TabStop = false;
-            this.guna2HtmlLabel2.Text = "RUN ON STARTUP";
+            this.saveLocalCB.BackColor = System.Drawing.Color.Transparent;
+            this.saveLocalCB.BorderRadius = 5;
+            this.tableLayoutPanel1.SetColumnSpan(this.saveLocalCB, 3);
+            this.saveLocalCB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.saveLocalCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.saveLocalCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.saveLocalCB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
+            this.saveLocalCB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.saveLocalCB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.saveLocalCB.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.saveLocalCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.saveLocalCB.ItemHeight = 30;
+            this.saveLocalCB.Items.AddRange(new object[] {
+            "YES",
+            "NO"});
+            this.saveLocalCB.Location = new System.Drawing.Point(274, 370);
+            this.saveLocalCB.Margin = new System.Windows.Forms.Padding(5);
+            this.saveLocalCB.Name = "saveLocalCB";
+            this.saveLocalCB.Size = new System.Drawing.Size(188, 36);
+            this.saveLocalCB.TabIndex = 14;
+            this.saveLocalCB.SelectedIndexChanged += new System.EventHandler(this.saveLocalCB_SelectedIndexChanged);
+            // 
+            // guna2HtmlLabel3
+            // 
+            this.guna2HtmlLabel3.AutoSize = false;
+            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.SetColumnSpan(this.guna2HtmlLabel3, 4);
+            this.guna2HtmlLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.guna2HtmlLabel3.IsContextMenuEnabled = false;
+            this.guna2HtmlLabel3.IsSelectionEnabled = false;
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(8, 368);
+            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(258, 24);
+            this.guna2HtmlLabel3.TabIndex = 13;
+            this.guna2HtmlLabel3.TabStop = false;
+            this.guna2HtmlLabel3.Text = "SAVE IMAGE LOCALLY";
             // 
             // startupCB
             // 
@@ -440,46 +464,22 @@
             this.startupCB.TabIndex = 12;
             this.startupCB.SelectedIndexChanged += new System.EventHandler(this.startupCB_SelectedIndexChanged);
             // 
-            // guna2HtmlLabel3
+            // guna2HtmlLabel2
             // 
-            this.guna2HtmlLabel3.AutoSize = false;
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel1.SetColumnSpan(this.guna2HtmlLabel3, 4);
-            this.guna2HtmlLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel3.IsContextMenuEnabled = false;
-            this.guna2HtmlLabel3.IsSelectionEnabled = false;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(8, 368);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(258, 24);
-            this.guna2HtmlLabel3.TabIndex = 13;
-            this.guna2HtmlLabel3.TabStop = false;
-            this.guna2HtmlLabel3.Text = "SAVE IMAGE LOCALLY";
-            // 
-            // saveLocalCB
-            // 
-            this.saveLocalCB.BackColor = System.Drawing.Color.Transparent;
-            this.saveLocalCB.BorderRadius = 5;
-            this.tableLayoutPanel1.SetColumnSpan(this.saveLocalCB, 3);
-            this.saveLocalCB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.saveLocalCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.saveLocalCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.saveLocalCB.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.saveLocalCB.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.saveLocalCB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.saveLocalCB.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.saveLocalCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.saveLocalCB.ItemHeight = 30;
-            this.saveLocalCB.Items.AddRange(new object[] {
-            "YES",
-            "NO"});
-            this.saveLocalCB.Location = new System.Drawing.Point(274, 370);
-            this.saveLocalCB.Margin = new System.Windows.Forms.Padding(5);
-            this.saveLocalCB.Name = "saveLocalCB";
-            this.saveLocalCB.Size = new System.Drawing.Size(188, 36);
-            this.saveLocalCB.TabIndex = 14;
-            this.saveLocalCB.SelectedIndexChanged += new System.EventHandler(this.saveLocalCB_SelectedIndexChanged);
+            this.guna2HtmlLabel2.AutoSize = false;
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.SetColumnSpan(this.guna2HtmlLabel2, 4);
+            this.guna2HtmlLabel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.guna2HtmlLabel2.IsContextMenuEnabled = false;
+            this.guna2HtmlLabel2.IsSelectionEnabled = false;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(8, 308);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(258, 24);
+            this.guna2HtmlLabel2.TabIndex = 11;
+            this.guna2HtmlLabel2.TabStop = false;
+            this.guna2HtmlLabel2.Text = "RUN ON STARTUP";
             // 
             // settingForm
             // 

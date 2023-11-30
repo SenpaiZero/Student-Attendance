@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Student_Attendance_System.Forms.Utility;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,10 @@ namespace Student_Attendance_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new startupForm());
+            if (Properties.Settings.Default.fullscreen)
+                Application.Run(new background());
+            else
+                Application.Run(new startupForm());
         }
     }
 }

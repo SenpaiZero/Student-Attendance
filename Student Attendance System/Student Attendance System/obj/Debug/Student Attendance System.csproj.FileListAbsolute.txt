@@ -64,3 +64,4 @@ C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attend
 C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Forms.Admin.updateStudentForm.resources
 C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Forms.Startup.recordForm.resources
 C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Forms.Startup.Dashboard_Form.resources
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Forms.Utility.background.resources
