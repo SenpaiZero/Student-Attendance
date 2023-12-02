@@ -20,6 +20,7 @@ namespace Student_Attendance_System
             startupRunClass.setDBConnection();
             startupRunClass.setOutputConfig();
             startupRunClass.setSettings();
+            Config.isPopup = false;
             if (!Properties.Settings.Default.stayLogin)
                 isFirst = true;
 

@@ -112,6 +112,7 @@
             this.settingContainer.Size = new System.Drawing.Size(250, 219);
             this.settingContainer.TabIndex = 4;
             this.settingContainer.Visible = false;
+            this.settingContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.settingContainer_Paint);
             // 
             // guna2HtmlLabel2
             // 

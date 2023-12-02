@@ -37,12 +37,13 @@ namespace Student_Attendance_System.Forms
         private void splitPopup_Load(object sender, EventArgs e)
         {
             mainCam = new cameraHelper();
-
+            Config.isPopup = true;
         }
 
         private void splitPopup_FormClosing(object sender, FormClosingEventArgs e)
         {
             mainCam.closeForm();
+            Config.isPopup = false;
         }
 
         private void maximizeBtn_Click(object sender, EventArgs e)
@@ -93,5 +94,9 @@ namespace Student_Attendance_System.Forms
             }
         }
 
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

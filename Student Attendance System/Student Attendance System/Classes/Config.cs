@@ -30,5 +30,8 @@ namespace Student_Attendance_System
 
         public static bool saveLocal;
         public static bool fullScreen;
+
+        //Config for 2nd cam
+        public static bool isPopup { get; set; }
     }
 }

@@ -263,6 +263,9 @@ namespace Student_Attendance_System
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
             background.closeBackgroundForm();
+            Application.ExitThread();
+
+            Environment.Exit(Environment.ExitCode);
         }
 
         bool checkAdmin()

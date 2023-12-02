@@ -71,7 +71,14 @@ namespace Student_Attendance_System.Classes
                 closeForm();
             }
 
-            videoSource = new VideoCaptureDevice(videoDevices[index].MonikerString);
+            
+            try
+            {
+                videoSource = new VideoCaptureDevice(videoDevices[index].MonikerString);
+            } catch(System.ArgumentOutOfRangeException ex)
+            {
+                videoSource = new VideoCaptureDevice(videoDevices[0].MonikerString);
+            }
 
             // Event handler for new frames
             videoSource.NewFrame += new NewFrameEventHandler(videoSource_NewFrame);

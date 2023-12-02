@@ -42,15 +42,15 @@ namespace Student_Attendance_System.Startup
             std = this;
 
             mainCamera = new cameraHelper();
-            if (camList.Items.Count > 0)
-            {
+            //if (camList.Items.Count > 0)
+            //{
                 //Picture cam
                 mainCamera.qrcode = false;
                 mainCamera.camListCB = camList;
                 mainCamera.selfPic = secondPic;
                 mainCamera.onLoad();
                 mainCamera.changeCam(1);
-            }
+            //}
             //Scanner cam
             scanningCamera = new cameraHelper();
             scanningCamera.qrcode = true;
@@ -58,6 +58,7 @@ namespace Student_Attendance_System.Startup
             scanningCamera.selfPic = qrScanning;
             scanningCamera.onLoad();
 
+            Config.isPopup = false;
         }
         private void videoSource_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
@@ -73,6 +74,8 @@ namespace Student_Attendance_System.Startup
         {
             scanningCamera.closeForm();
             mainCamera.closeForm();
+            splitPopup.isVisible = false;
+            split.Hide();
         }
 
         private void scannerList_SelectedIndexChanged(object sender, EventArgs e)
@@ -107,6 +110,11 @@ namespace Student_Attendance_System.Startup
         public void getFrame()
         {
             splitPopup.lastCapture = mainCamera.frame;
+        }
+
+        private void settingContainer_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

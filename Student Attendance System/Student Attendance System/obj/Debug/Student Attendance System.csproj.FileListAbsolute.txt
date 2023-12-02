@@ -65,3 +65,17 @@ C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attend
 C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Forms.Startup.recordForm.resources
 C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Forms.Startup.Dashboard_Form.resources
 C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Forms.Utility.background.resources
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\MimeKit.dll
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\System.Buffers.dll
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\System.Memory.dll
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\MimeKit.pdb
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\MimeKit.xml
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\MimeKit.dll.config
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\System.Buffers.xml
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\System.Memory.xml
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
