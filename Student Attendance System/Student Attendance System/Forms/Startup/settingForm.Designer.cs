@@ -81,14 +81,14 @@
             this.picOutputTB.IconRight = ((System.Drawing.Image)(resources.GetObject("picOutputTB.IconRight")));
             this.picOutputTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.picOutputTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.picOutputTB.Location = new System.Drawing.Point(15, 195);
-            this.picOutputTB.Margin = new System.Windows.Forms.Padding(10);
+            this.picOutputTB.Location = new System.Drawing.Point(12, 156);
+            this.picOutputTB.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
             this.picOutputTB.Name = "picOutputTB";
             this.picOutputTB.PasswordChar = '\0';
             this.picOutputTB.PlaceholderText = "";
             this.tableLayoutPanel1.SetRowSpan(this.picOutputTB, 2);
             this.picOutputTB.SelectedText = "";
-            this.picOutputTB.Size = new System.Drawing.Size(645, 40);
+            this.picOutputTB.Size = new System.Drawing.Size(483, 32);
             this.picOutputTB.TabIndex = 9;
             this.picOutputTB.IconRightClick += new System.EventHandler(this.picOutputTB_IconRightClick);
             // 
@@ -102,9 +102,10 @@
             this.picLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.picLbl.IsContextMenuEnabled = false;
             this.picLbl.IsSelectionEnabled = false;
-            this.picLbl.Location = new System.Drawing.Point(8, 158);
+            this.picLbl.Location = new System.Drawing.Point(6, 126);
+            this.picLbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picLbl.Name = "picLbl";
-            this.picLbl.Size = new System.Drawing.Size(390, 24);
+            this.picLbl.Size = new System.Drawing.Size(290, 20);
             this.picLbl.TabIndex = 7;
             this.picLbl.TabStop = false;
             this.picLbl.Text = "Picutre Output";
@@ -127,14 +128,14 @@
             this.qrOutputTB.IconRight = ((System.Drawing.Image)(resources.GetObject("qrOutputTB.IconRight")));
             this.qrOutputTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.qrOutputTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.qrOutputTB.Location = new System.Drawing.Point(15, 105);
-            this.qrOutputTB.Margin = new System.Windows.Forms.Padding(10);
+            this.qrOutputTB.Location = new System.Drawing.Point(12, 84);
+            this.qrOutputTB.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
             this.qrOutputTB.Name = "qrOutputTB";
             this.qrOutputTB.PasswordChar = '\0';
             this.qrOutputTB.PlaceholderText = "";
             this.tableLayoutPanel1.SetRowSpan(this.qrOutputTB, 2);
             this.qrOutputTB.SelectedText = "";
-            this.qrOutputTB.Size = new System.Drawing.Size(645, 40);
+            this.qrOutputTB.Size = new System.Drawing.Size(483, 32);
             this.qrOutputTB.TabIndex = 10;
             this.qrOutputTB.IconRightClick += new System.EventHandler(this.qrOutputTB_IconRightClick);
             // 
@@ -148,9 +149,10 @@
             this.qrLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.qrLbl.IsContextMenuEnabled = false;
             this.qrLbl.IsSelectionEnabled = false;
-            this.qrLbl.Location = new System.Drawing.Point(8, 68);
+            this.qrLbl.Location = new System.Drawing.Point(6, 54);
+            this.qrLbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.qrLbl.Name = "qrLbl";
-            this.qrLbl.Size = new System.Drawing.Size(390, 24);
+            this.qrLbl.Size = new System.Drawing.Size(290, 20);
             this.qrLbl.TabIndex = 8;
             this.qrLbl.TabStop = false;
             this.qrLbl.Text = "QR Code Output";
@@ -165,10 +167,11 @@
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(133)))), ((int)(((byte)(46)))));
             this.guna2HtmlLabel1.IsContextMenuEnabled = false;
             this.guna2HtmlLabel1.IsSelectionEnabled = false;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(8, 8);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(6, 6);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.tableLayoutPanel1.SetRowSpan(this.guna2HtmlLabel1, 2);
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(324, 54);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(241, 44);
             this.guna2HtmlLabel1.TabIndex = 6;
             this.guna2HtmlLabel1.TabStop = false;
             this.guna2HtmlLabel1.Text = "OUTPUT";
@@ -183,9 +186,10 @@
             this.headeLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(133)))), ((int)(((byte)(46)))));
             this.headeLbl.IsContextMenuEnabled = false;
             this.headeLbl.IsSelectionEnabled = false;
-            this.headeLbl.Location = new System.Drawing.Point(15, 15);
+            this.headeLbl.Location = new System.Drawing.Point(11, 12);
+            this.headeLbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.headeLbl.Name = "headeLbl";
-            this.headeLbl.Size = new System.Drawing.Size(675, 55);
+            this.headeLbl.Size = new System.Drawing.Size(507, 46);
             this.headeLbl.TabIndex = 0;
             this.headeLbl.TabStop = false;
             this.headeLbl.Text = "SETTING";
@@ -202,10 +206,11 @@
             this.advanceContainer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(133)))), ((int)(((byte)(46)))));
             this.advanceContainer.IsContextMenuEnabled = false;
             this.advanceContainer.IsSelectionEnabled = false;
-            this.advanceContainer.Location = new System.Drawing.Point(8, 248);
+            this.advanceContainer.Location = new System.Drawing.Point(6, 198);
+            this.advanceContainer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.advanceContainer.Name = "advanceContainer";
             this.tableLayoutPanel1.SetRowSpan(this.advanceContainer, 2);
-            this.advanceContainer.Size = new System.Drawing.Size(390, 54);
+            this.advanceContainer.Size = new System.Drawing.Size(290, 44);
             this.advanceContainer.TabIndex = 6;
             this.advanceContainer.TabStop = false;
             this.advanceContainer.Text = "ADVANCE";
@@ -216,9 +221,10 @@
             this.tableLayoutPanel1.SetColumnSpan(this.guna2Separator1, 2);
             this.guna2Separator1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Separator1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2Separator1.Location = new System.Drawing.Point(536, 458);
+            this.guna2Separator1.Location = new System.Drawing.Point(398, 366);
+            this.guna2Separator1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(131, 24);
+            this.guna2Separator1.Size = new System.Drawing.Size(103, 20);
             this.guna2Separator1.TabIndex = 7;
             this.guna2Separator1.UseTransparentBackground = true;
             // 
@@ -234,10 +240,11 @@
             this.applyBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
             this.applyBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.applyBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.applyBtn.Location = new System.Drawing.Point(536, 488);
+            this.applyBtn.Location = new System.Drawing.Point(398, 390);
+            this.applyBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.applyBtn.Name = "applyBtn";
             this.tableLayoutPanel1.SetRowSpan(this.applyBtn, 2);
-            this.applyBtn.Size = new System.Drawing.Size(131, 54);
+            this.applyBtn.Size = new System.Drawing.Size(103, 44);
             this.applyBtn.TabIndex = 4;
             this.applyBtn.Text = "APPLY";
             this.applyBtn.Click += new System.EventHandler(this.applyBtn_Click_1);
@@ -254,10 +261,11 @@
             this.resetBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
             this.resetBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.resetBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.resetBtn.Location = new System.Drawing.Point(536, 398);
+            this.resetBtn.Location = new System.Drawing.Point(398, 318);
+            this.resetBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.resetBtn.Name = "resetBtn";
             this.tableLayoutPanel1.SetRowSpan(this.resetBtn, 2);
-            this.resetBtn.Size = new System.Drawing.Size(131, 54);
+            this.resetBtn.Size = new System.Drawing.Size(103, 44);
             this.resetBtn.TabIndex = 6;
             this.resetBtn.Text = "RESET";
             this.resetBtn.Click += new System.EventHandler(this.resetBtn_Click);
@@ -274,10 +282,11 @@
             this.cancelBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
             this.cancelBtn.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cancelBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.cancelBtn.Location = new System.Drawing.Point(536, 548);
+            this.cancelBtn.Location = new System.Drawing.Point(398, 438);
+            this.cancelBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cancelBtn.Name = "cancelBtn";
             this.tableLayoutPanel1.SetRowSpan(this.cancelBtn, 2);
-            this.cancelBtn.Size = new System.Drawing.Size(131, 54);
+            this.cancelBtn.Size = new System.Drawing.Size(103, 44);
             this.cancelBtn.TabIndex = 5;
             this.cancelBtn.Text = "CANCEL";
             // 
@@ -298,10 +307,10 @@
             this.fullScreenCB.Items.AddRange(new object[] {
             "YES",
             "NO"});
-            this.fullScreenCB.Location = new System.Drawing.Point(274, 550);
-            this.fullScreenCB.Margin = new System.Windows.Forms.Padding(5);
+            this.fullScreenCB.Location = new System.Drawing.Point(204, 440);
+            this.fullScreenCB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.fullScreenCB.Name = "fullScreenCB";
-            this.fullScreenCB.Size = new System.Drawing.Size(188, 36);
+            this.fullScreenCB.Size = new System.Drawing.Size(139, 36);
             this.fullScreenCB.TabIndex = 9;
             this.fullScreenCB.SelectedIndexChanged += new System.EventHandler(this.fullScreenCB_SelectedIndexChanged);
             // 
@@ -315,9 +324,10 @@
             this.themeLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.themeLbl.IsContextMenuEnabled = false;
             this.themeLbl.IsSelectionEnabled = false;
-            this.themeLbl.Location = new System.Drawing.Point(8, 548);
+            this.themeLbl.Location = new System.Drawing.Point(6, 438);
+            this.themeLbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.themeLbl.Name = "themeLbl";
-            this.themeLbl.Size = new System.Drawing.Size(258, 24);
+            this.themeLbl.Size = new System.Drawing.Size(192, 20);
             this.themeLbl.TabIndex = 8;
             this.themeLbl.TabStop = false;
             this.themeLbl.Text = "FILL BACKGROUND";
@@ -332,10 +342,11 @@
             this.displayContainer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(133)))), ((int)(((byte)(46)))));
             this.displayContainer.IsContextMenuEnabled = false;
             this.displayContainer.IsSelectionEnabled = false;
-            this.displayContainer.Location = new System.Drawing.Point(8, 488);
+            this.displayContainer.Location = new System.Drawing.Point(6, 390);
+            this.displayContainer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.displayContainer.Name = "displayContainer";
             this.tableLayoutPanel1.SetRowSpan(this.displayContainer, 2);
-            this.displayContainer.Size = new System.Drawing.Size(390, 54);
+            this.displayContainer.Size = new System.Drawing.Size(290, 44);
             this.displayContainer.TabIndex = 6;
             this.displayContainer.TabStop = false;
             this.displayContainer.Text = "DISPLAY";
@@ -371,9 +382,10 @@
             this.tableLayoutPanel1.Controls.Add(this.advanceContainer, 0, 8);
             this.tableLayoutPanel1.Controls.Add(this.resetBtn, 8, 13);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(15, 70);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(11, 58);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(5);
+            this.tableLayoutPanel1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.RowCount = 21;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
@@ -396,7 +408,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 1F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(675, 615);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(507, 499);
             this.tableLayoutPanel1.TabIndex = 7;
             // 
             // saveLocalCB
@@ -416,10 +428,10 @@
             this.saveLocalCB.Items.AddRange(new object[] {
             "YES",
             "NO"});
-            this.saveLocalCB.Location = new System.Drawing.Point(274, 370);
-            this.saveLocalCB.Margin = new System.Windows.Forms.Padding(5);
+            this.saveLocalCB.Location = new System.Drawing.Point(204, 296);
+            this.saveLocalCB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.saveLocalCB.Name = "saveLocalCB";
-            this.saveLocalCB.Size = new System.Drawing.Size(188, 36);
+            this.saveLocalCB.Size = new System.Drawing.Size(139, 36);
             this.saveLocalCB.TabIndex = 14;
             this.saveLocalCB.SelectedIndexChanged += new System.EventHandler(this.saveLocalCB_SelectedIndexChanged);
             // 
@@ -433,9 +445,10 @@
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.guna2HtmlLabel3.IsContextMenuEnabled = false;
             this.guna2HtmlLabel3.IsSelectionEnabled = false;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(8, 368);
+            this.guna2HtmlLabel3.Location = new System.Drawing.Point(6, 294);
+            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(258, 24);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(192, 20);
             this.guna2HtmlLabel3.TabIndex = 13;
             this.guna2HtmlLabel3.TabStop = false;
             this.guna2HtmlLabel3.Text = "SAVE IMAGE LOCALLY";
@@ -457,10 +470,10 @@
             this.startupCB.Items.AddRange(new object[] {
             "YES",
             "NO"});
-            this.startupCB.Location = new System.Drawing.Point(274, 310);
-            this.startupCB.Margin = new System.Windows.Forms.Padding(5);
+            this.startupCB.Location = new System.Drawing.Point(204, 248);
+            this.startupCB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.startupCB.Name = "startupCB";
-            this.startupCB.Size = new System.Drawing.Size(188, 36);
+            this.startupCB.Size = new System.Drawing.Size(139, 36);
             this.startupCB.TabIndex = 12;
             this.startupCB.SelectedIndexChanged += new System.EventHandler(this.startupCB_SelectedIndexChanged);
             // 
@@ -474,27 +487,29 @@
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.guna2HtmlLabel2.IsContextMenuEnabled = false;
             this.guna2HtmlLabel2.IsSelectionEnabled = false;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(8, 308);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(6, 246);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(258, 24);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(192, 20);
             this.guna2HtmlLabel2.TabIndex = 11;
             this.guna2HtmlLabel2.TabStop = false;
             this.guna2HtmlLabel2.Text = "RUN ON STARTUP";
             // 
             // settingForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(705, 700);
+            this.ClientSize = new System.Drawing.Size(529, 569);
             this.ControlBox = false;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.headeLbl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "settingForm";
-            this.Padding = new System.Windows.Forms.Padding(15);
+            this.Padding = new System.Windows.Forms.Padding(11, 12, 11, 12);
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.Text = "SettingForm";

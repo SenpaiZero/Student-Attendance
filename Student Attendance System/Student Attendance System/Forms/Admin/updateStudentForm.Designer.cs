@@ -121,14 +121,15 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.mainPanel, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(15, 15);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 0.5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.495822F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.08635F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(827, 653);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(662, 522);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -143,11 +144,12 @@
             this.tableLayoutPanel2.Controls.Add(this.guardianBtn, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.personalBtn, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 6);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(2, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(821, 49);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(658, 40);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // moreBtn
@@ -161,9 +163,10 @@
             this.moreBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
             this.moreBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.moreBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.moreBtn.Location = new System.Drawing.Point(495, 3);
+            this.moreBtn.Location = new System.Drawing.Point(395, 2);
+            this.moreBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.moreBtn.Name = "moreBtn";
-            this.moreBtn.Size = new System.Drawing.Size(158, 43);
+            this.moreBtn.Size = new System.Drawing.Size(127, 36);
             this.moreBtn.TabIndex = 5;
             this.moreBtn.Text = "MORE DETAILS";
             this.moreBtn.Click += new System.EventHandler(this.moreBtn_Click);
@@ -179,9 +182,10 @@
             this.guardianBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
             this.guardianBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guardianBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.guardianBtn.Location = new System.Drawing.Point(331, 3);
+            this.guardianBtn.Location = new System.Drawing.Point(264, 2);
+            this.guardianBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guardianBtn.Name = "guardianBtn";
-            this.guardianBtn.Size = new System.Drawing.Size(158, 43);
+            this.guardianBtn.Size = new System.Drawing.Size(127, 36);
             this.guardianBtn.TabIndex = 4;
             this.guardianBtn.Text = "GUARDIAN";
             this.guardianBtn.Click += new System.EventHandler(this.guardianBtn_Click);
@@ -198,9 +202,10 @@
             this.personalBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
             this.personalBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.personalBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.personalBtn.Location = new System.Drawing.Point(167, 3);
+            this.personalBtn.Location = new System.Drawing.Point(133, 2);
+            this.personalBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.personalBtn.Name = "personalBtn";
-            this.personalBtn.Size = new System.Drawing.Size(158, 43);
+            this.personalBtn.Size = new System.Drawing.Size(127, 36);
             this.personalBtn.TabIndex = 3;
             this.personalBtn.Text = "PERSONAL";
             this.personalBtn.Click += new System.EventHandler(this.personalBtn_Click);
@@ -212,18 +217,20 @@
             this.mainPanel.Controls.Add(this.moreDetailsContainer);
             this.mainPanel.Controls.Add(this.guardianContainer);
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainPanel.Location = new System.Drawing.Point(3, 61);
+            this.mainPanel.Location = new System.Drawing.Point(2, 48);
+            this.mainPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.mainPanel.Name = "mainPanel";
-            this.mainPanel.Size = new System.Drawing.Size(821, 589);
+            this.mainPanel.Size = new System.Drawing.Size(658, 472);
             this.mainPanel.TabIndex = 1;
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.Controls.Add(this.cancelBtn);
             this.guna2Panel1.Controls.Add(this.updateBtn);
-            this.guna2Panel1.Location = new System.Drawing.Point(650, 475);
+            this.guna2Panel1.Location = new System.Drawing.Point(520, 380);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(163, 130);
+            this.guna2Panel1.Size = new System.Drawing.Size(130, 104);
             this.guna2Panel1.TabIndex = 3;
             // 
             // cancelBtn
@@ -238,9 +245,10 @@
             this.cancelBtn.FillColor = System.Drawing.Color.Transparent;
             this.cancelBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cancelBtn.ForeColor = System.Drawing.Color.IndianRed;
-            this.cancelBtn.Location = new System.Drawing.Point(6, 65);
+            this.cancelBtn.Location = new System.Drawing.Point(5, 52);
+            this.cancelBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cancelBtn.Name = "cancelBtn";
-            this.cancelBtn.Size = new System.Drawing.Size(113, 28);
+            this.cancelBtn.Size = new System.Drawing.Size(90, 22);
             this.cancelBtn.TabIndex = 59;
             this.cancelBtn.Text = "CANCEL";
             this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
@@ -256,10 +264,10 @@
             this.updateBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
             this.updateBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.updateBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.updateBtn.Location = new System.Drawing.Point(6, 0);
-            this.updateBtn.Margin = new System.Windows.Forms.Padding(20);
+            this.updateBtn.Location = new System.Drawing.Point(5, 0);
+            this.updateBtn.Margin = new System.Windows.Forms.Padding(16, 16, 16, 16);
             this.updateBtn.Name = "updateBtn";
-            this.updateBtn.Size = new System.Drawing.Size(113, 58);
+            this.updateBtn.Size = new System.Drawing.Size(90, 46);
             this.updateBtn.TabIndex = 58;
             this.updateBtn.Text = "UPDATE";
             this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
@@ -284,8 +292,9 @@
             this.personalContainer.Controls.Add(this.phoneNumberLbl);
             this.personalContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.personalContainer.Location = new System.Drawing.Point(0, 0);
+            this.personalContainer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.personalContainer.Name = "personalContainer";
-            this.personalContainer.Size = new System.Drawing.Size(821, 589);
+            this.personalContainer.Size = new System.Drawing.Size(658, 472);
             this.personalContainer.TabIndex = 2;
             // 
             // nameTB
@@ -306,15 +315,15 @@
             this.nameTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.nameTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.nameTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.nameTB.Location = new System.Drawing.Point(90, 50);
-            this.nameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.nameTB.MaximumSize = new System.Drawing.Size(1000, 60);
-            this.nameTB.MinimumSize = new System.Drawing.Size(10, 10);
+            this.nameTB.Location = new System.Drawing.Point(72, 40);
+            this.nameTB.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.nameTB.MaximumSize = new System.Drawing.Size(800, 48);
+            this.nameTB.MinimumSize = new System.Drawing.Size(8, 8);
             this.nameTB.Name = "nameTB";
             this.nameTB.PasswordChar = '\0';
             this.nameTB.PlaceholderText = "";
             this.nameTB.SelectedText = "";
-            this.nameTB.Size = new System.Drawing.Size(679, 48);
+            this.nameTB.Size = new System.Drawing.Size(543, 38);
             this.nameTB.TabIndex = 63;
             this.nameTB.Leave += new System.EventHandler(this.nameTB_Leave);
             // 
@@ -336,15 +345,15 @@
             this.phoneNumberTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.phoneNumberTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.phoneNumberTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.phoneNumberTB.Location = new System.Drawing.Point(90, 427);
-            this.phoneNumberTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.phoneNumberTB.MaximumSize = new System.Drawing.Size(1000, 60);
-            this.phoneNumberTB.MinimumSize = new System.Drawing.Size(10, 10);
+            this.phoneNumberTB.Location = new System.Drawing.Point(72, 342);
+            this.phoneNumberTB.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.phoneNumberTB.MaximumSize = new System.Drawing.Size(800, 48);
+            this.phoneNumberTB.MinimumSize = new System.Drawing.Size(8, 8);
             this.phoneNumberTB.Name = "phoneNumberTB";
             this.phoneNumberTB.PasswordChar = '\0';
             this.phoneNumberTB.PlaceholderText = "";
             this.phoneNumberTB.SelectedText = "";
-            this.phoneNumberTB.Size = new System.Drawing.Size(450, 48);
+            this.phoneNumberTB.Size = new System.Drawing.Size(360, 38);
             this.phoneNumberTB.TabIndex = 61;
             this.phoneNumberTB.Leave += new System.EventHandler(this.phoneNumberTB_Leave);
             // 
@@ -366,15 +375,15 @@
             this.addressTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.addressTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.addressTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.addressTB.Location = new System.Drawing.Point(90, 334);
-            this.addressTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.addressTB.MaximumSize = new System.Drawing.Size(1000, 60);
-            this.addressTB.MinimumSize = new System.Drawing.Size(10, 10);
+            this.addressTB.Location = new System.Drawing.Point(72, 267);
+            this.addressTB.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.addressTB.MaximumSize = new System.Drawing.Size(800, 48);
+            this.addressTB.MinimumSize = new System.Drawing.Size(8, 8);
             this.addressTB.Name = "addressTB";
             this.addressTB.PasswordChar = '\0';
             this.addressTB.PlaceholderText = "";
             this.addressTB.SelectedText = "";
-            this.addressTB.Size = new System.Drawing.Size(450, 48);
+            this.addressTB.Size = new System.Drawing.Size(360, 38);
             this.addressTB.TabIndex = 55;
             this.addressTB.Leave += new System.EventHandler(this.addressTB_Leave);
             // 
@@ -386,12 +395,13 @@
             this.birthdayDP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
             this.birthdayDP.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.birthdayDP.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.birthdayDP.Location = new System.Drawing.Point(90, 147);
+            this.birthdayDP.Location = new System.Drawing.Point(72, 118);
+            this.birthdayDP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.birthdayDP.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.birthdayDP.MaximumSize = new System.Drawing.Size(1000, 50);
+            this.birthdayDP.MaximumSize = new System.Drawing.Size(800, 40);
             this.birthdayDP.MinDate = new System.DateTime(1963, 1, 1, 0, 0, 0, 0);
             this.birthdayDP.Name = "birthdayDP";
-            this.birthdayDP.Size = new System.Drawing.Size(336, 50);
+            this.birthdayDP.Size = new System.Drawing.Size(269, 40);
             this.birthdayDP.TabIndex = 48;
             this.birthdayDP.Value = new System.DateTime(2023, 11, 2, 9, 13, 24, 172);
             this.birthdayDP.ValueChanged += new System.EventHandler(this.birthdayDP_ValueChanged);
@@ -415,15 +425,15 @@
             this.emailTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.emailTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.emailTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.emailTB.Location = new System.Drawing.Point(90, 241);
-            this.emailTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.emailTB.MaximumSize = new System.Drawing.Size(1000, 60);
-            this.emailTB.MinimumSize = new System.Drawing.Size(10, 10);
+            this.emailTB.Location = new System.Drawing.Point(72, 193);
+            this.emailTB.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.emailTB.MaximumSize = new System.Drawing.Size(800, 48);
+            this.emailTB.MinimumSize = new System.Drawing.Size(8, 8);
             this.emailTB.Name = "emailTB";
             this.emailTB.PasswordChar = '\0';
             this.emailTB.PlaceholderText = "";
             this.emailTB.SelectedText = "";
-            this.emailTB.Size = new System.Drawing.Size(450, 48);
+            this.emailTB.Size = new System.Drawing.Size(360, 38);
             this.emailTB.TabIndex = 53;
             this.emailTB.Leave += new System.EventHandler(this.emailTB_Leave);
             // 
@@ -444,11 +454,12 @@
             "IGLESIA NI CRISTO",
             "JEHOVAH",
             "ISLAM"});
-            this.religionCB.Location = new System.Drawing.Point(546, 240);
-            this.religionCB.MaximumSize = new System.Drawing.Size(1000, 0);
-            this.religionCB.MinimumSize = new System.Drawing.Size(10, 0);
+            this.religionCB.Location = new System.Drawing.Point(437, 192);
+            this.religionCB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.religionCB.MaximumSize = new System.Drawing.Size(801, 0);
+            this.religionCB.MinimumSize = new System.Drawing.Size(9, 0);
             this.religionCB.Name = "religionCB";
-            this.religionCB.Size = new System.Drawing.Size(223, 36);
+            this.religionCB.Size = new System.Drawing.Size(179, 36);
             this.religionCB.TabIndex = 58;
             this.religionCB.Leave += new System.EventHandler(this.religionCB_Leave);
             // 
@@ -467,11 +478,12 @@
             this.genderCB.Items.AddRange(new object[] {
             "MALE",
             "FEMALE"});
-            this.genderCB.Location = new System.Drawing.Point(546, 333);
-            this.genderCB.MaximumSize = new System.Drawing.Size(1000, 0);
-            this.genderCB.MinimumSize = new System.Drawing.Size(10, 0);
+            this.genderCB.Location = new System.Drawing.Point(437, 266);
+            this.genderCB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.genderCB.MaximumSize = new System.Drawing.Size(801, 0);
+            this.genderCB.MinimumSize = new System.Drawing.Size(9, 0);
             this.genderCB.Name = "genderCB";
-            this.genderCB.Size = new System.Drawing.Size(223, 36);
+            this.genderCB.Size = new System.Drawing.Size(179, 36);
             this.genderCB.TabIndex = 59;
             this.genderCB.Leave += new System.EventHandler(this.genderCB_Leave);
             // 
@@ -494,16 +506,16 @@
             this.ageTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ageTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.ageTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.ageTB.Location = new System.Drawing.Point(546, 148);
-            this.ageTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ageTB.MaximumSize = new System.Drawing.Size(1000, 60);
-            this.ageTB.MinimumSize = new System.Drawing.Size(10, 10);
+            this.ageTB.Location = new System.Drawing.Point(437, 118);
+            this.ageTB.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.ageTB.MaximumSize = new System.Drawing.Size(800, 48);
+            this.ageTB.MinimumSize = new System.Drawing.Size(8, 8);
             this.ageTB.Name = "ageTB";
             this.ageTB.PasswordChar = '\0';
             this.ageTB.PlaceholderText = "";
             this.ageTB.ReadOnly = true;
             this.ageTB.SelectedText = "";
-            this.ageTB.Size = new System.Drawing.Size(223, 48);
+            this.ageTB.Size = new System.Drawing.Size(178, 38);
             this.ageTB.TabIndex = 51;
             // 
             // nameLbl
@@ -513,10 +525,11 @@
             this.nameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.nameLbl.IsContextMenuEnabled = false;
             this.nameLbl.IsSelectionEnabled = false;
-            this.nameLbl.Location = new System.Drawing.Point(90, 12);
-            this.nameLbl.MinimumSize = new System.Drawing.Size(350, 0);
+            this.nameLbl.Location = new System.Drawing.Point(72, 10);
+            this.nameLbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nameLbl.MinimumSize = new System.Drawing.Size(280, 0);
             this.nameLbl.Name = "nameLbl";
-            this.nameLbl.Size = new System.Drawing.Size(350, 29);
+            this.nameLbl.Size = new System.Drawing.Size(280, 23);
             this.nameLbl.TabIndex = 62;
             this.nameLbl.TabStop = false;
             this.nameLbl.Text = "NAME";
@@ -529,10 +542,11 @@
             this.emailLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.emailLbl.IsContextMenuEnabled = false;
             this.emailLbl.IsSelectionEnabled = false;
-            this.emailLbl.Location = new System.Drawing.Point(90, 203);
-            this.emailLbl.MinimumSize = new System.Drawing.Size(350, 0);
+            this.emailLbl.Location = new System.Drawing.Point(72, 162);
+            this.emailLbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.emailLbl.MinimumSize = new System.Drawing.Size(280, 0);
             this.emailLbl.Name = "emailLbl";
-            this.emailLbl.Size = new System.Drawing.Size(350, 29);
+            this.emailLbl.Size = new System.Drawing.Size(280, 23);
             this.emailLbl.TabIndex = 52;
             this.emailLbl.TabStop = false;
             this.emailLbl.Text = "EMAIL";
@@ -545,10 +559,11 @@
             this.birthdayLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.birthdayLbl.IsContextMenuEnabled = false;
             this.birthdayLbl.IsSelectionEnabled = false;
-            this.birthdayLbl.Location = new System.Drawing.Point(90, 110);
-            this.birthdayLbl.MinimumSize = new System.Drawing.Size(350, 0);
+            this.birthdayLbl.Location = new System.Drawing.Point(72, 88);
+            this.birthdayLbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.birthdayLbl.MinimumSize = new System.Drawing.Size(280, 0);
             this.birthdayLbl.Name = "birthdayLbl";
-            this.birthdayLbl.Size = new System.Drawing.Size(350, 29);
+            this.birthdayLbl.Size = new System.Drawing.Size(280, 23);
             this.birthdayLbl.TabIndex = 49;
             this.birthdayLbl.TabStop = false;
             this.birthdayLbl.Text = "BIRTHDAY";
@@ -561,10 +576,11 @@
             this.ageLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.ageLbl.IsContextMenuEnabled = false;
             this.ageLbl.IsSelectionEnabled = false;
-            this.ageLbl.Location = new System.Drawing.Point(546, 110);
-            this.ageLbl.MinimumSize = new System.Drawing.Size(350, 0);
+            this.ageLbl.Location = new System.Drawing.Point(437, 88);
+            this.ageLbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ageLbl.MinimumSize = new System.Drawing.Size(280, 0);
             this.ageLbl.Name = "ageLbl";
-            this.ageLbl.Size = new System.Drawing.Size(350, 29);
+            this.ageLbl.Size = new System.Drawing.Size(280, 23);
             this.ageLbl.TabIndex = 50;
             this.ageLbl.TabStop = false;
             this.ageLbl.Text = "AGE";
@@ -577,10 +593,11 @@
             this.addressLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.addressLbl.IsContextMenuEnabled = false;
             this.addressLbl.IsSelectionEnabled = false;
-            this.addressLbl.Location = new System.Drawing.Point(90, 296);
-            this.addressLbl.MinimumSize = new System.Drawing.Size(350, 0);
+            this.addressLbl.Location = new System.Drawing.Point(72, 237);
+            this.addressLbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addressLbl.MinimumSize = new System.Drawing.Size(280, 0);
             this.addressLbl.Name = "addressLbl";
-            this.addressLbl.Size = new System.Drawing.Size(350, 29);
+            this.addressLbl.Size = new System.Drawing.Size(280, 23);
             this.addressLbl.TabIndex = 54;
             this.addressLbl.TabStop = false;
             this.addressLbl.Text = "ADDRESS";
@@ -593,10 +610,11 @@
             this.religionLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.religionLbl.IsContextMenuEnabled = false;
             this.religionLbl.IsSelectionEnabled = false;
-            this.religionLbl.Location = new System.Drawing.Point(546, 203);
-            this.religionLbl.MinimumSize = new System.Drawing.Size(350, 0);
+            this.religionLbl.Location = new System.Drawing.Point(437, 162);
+            this.religionLbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.religionLbl.MinimumSize = new System.Drawing.Size(280, 0);
             this.religionLbl.Name = "religionLbl";
-            this.religionLbl.Size = new System.Drawing.Size(350, 29);
+            this.religionLbl.Size = new System.Drawing.Size(280, 23);
             this.religionLbl.TabIndex = 57;
             this.religionLbl.TabStop = false;
             this.religionLbl.Text = "RELIGION";
@@ -609,10 +627,11 @@
             this.genderLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.genderLbl.IsContextMenuEnabled = false;
             this.genderLbl.IsSelectionEnabled = false;
-            this.genderLbl.Location = new System.Drawing.Point(546, 296);
-            this.genderLbl.MinimumSize = new System.Drawing.Size(350, 0);
+            this.genderLbl.Location = new System.Drawing.Point(437, 237);
+            this.genderLbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.genderLbl.MinimumSize = new System.Drawing.Size(280, 0);
             this.genderLbl.Name = "genderLbl";
-            this.genderLbl.Size = new System.Drawing.Size(350, 29);
+            this.genderLbl.Size = new System.Drawing.Size(280, 23);
             this.genderLbl.TabIndex = 56;
             this.genderLbl.TabStop = false;
             this.genderLbl.Text = "GENDER";
@@ -625,10 +644,11 @@
             this.phoneNumberLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.phoneNumberLbl.IsContextMenuEnabled = false;
             this.phoneNumberLbl.IsSelectionEnabled = false;
-            this.phoneNumberLbl.Location = new System.Drawing.Point(90, 389);
-            this.phoneNumberLbl.MinimumSize = new System.Drawing.Size(450, 0);
+            this.phoneNumberLbl.Location = new System.Drawing.Point(72, 311);
+            this.phoneNumberLbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.phoneNumberLbl.MinimumSize = new System.Drawing.Size(360, 0);
             this.phoneNumberLbl.Name = "phoneNumberLbl";
-            this.phoneNumberLbl.Size = new System.Drawing.Size(450, 29);
+            this.phoneNumberLbl.Size = new System.Drawing.Size(360, 23);
             this.phoneNumberLbl.TabIndex = 60;
             this.phoneNumberLbl.TabStop = false;
             this.phoneNumberLbl.Text = "PHONE NUMBER";
@@ -652,8 +672,9 @@
             this.moreDetailsContainer.Controls.Add(this.studentPicLbl);
             this.moreDetailsContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.moreDetailsContainer.Location = new System.Drawing.Point(0, 0);
+            this.moreDetailsContainer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.moreDetailsContainer.Name = "moreDetailsContainer";
-            this.moreDetailsContainer.Size = new System.Drawing.Size(821, 589);
+            this.moreDetailsContainer.Size = new System.Drawing.Size(658, 472);
             this.moreDetailsContainer.TabIndex = 1;
             // 
             // generateBtn
@@ -667,10 +688,10 @@
             this.generateBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
             this.generateBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold);
             this.generateBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
-            this.generateBtn.Location = new System.Drawing.Point(601, 299);
-            this.generateBtn.Margin = new System.Windows.Forms.Padding(20);
+            this.generateBtn.Location = new System.Drawing.Point(482, 240);
+            this.generateBtn.Margin = new System.Windows.Forms.Padding(16, 16, 16, 16);
             this.generateBtn.Name = "generateBtn";
-            this.generateBtn.Size = new System.Drawing.Size(113, 26);
+            this.generateBtn.Size = new System.Drawing.Size(90, 21);
             this.generateBtn.TabIndex = 61;
             this.generateBtn.Text = "GENERATE";
             this.generateBtn.Click += new System.EventHandler(this.generateBtn_Click);
@@ -683,10 +704,11 @@
             this.pic.FillColor = System.Drawing.Color.LightGray;
             this.pic.Image = global::Student_Attendance_System.Properties.Resources.BG;
             this.pic.ImageRotate = 0F;
-            this.pic.Location = new System.Drawing.Point(117, 56);
-            this.pic.MaximumSize = new System.Drawing.Size(262, 234);
+            this.pic.Location = new System.Drawing.Point(94, 45);
+            this.pic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pic.MaximumSize = new System.Drawing.Size(210, 187);
             this.pic.Name = "pic";
-            this.pic.Size = new System.Drawing.Size(262, 234);
+            this.pic.Size = new System.Drawing.Size(210, 187);
             this.pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic.TabIndex = 47;
             this.pic.TabStop = false;
@@ -710,13 +732,13 @@
             this.sectionTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.sectionTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.sectionTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.sectionTB.Location = new System.Drawing.Point(251, 297);
-            this.sectionTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.sectionTB.Location = new System.Drawing.Point(201, 238);
+            this.sectionTB.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.sectionTB.Name = "sectionTB";
             this.sectionTB.PasswordChar = '\0';
             this.sectionTB.PlaceholderText = "";
             this.sectionTB.SelectedText = "";
-            this.sectionTB.Size = new System.Drawing.Size(128, 22);
+            this.sectionTB.Size = new System.Drawing.Size(102, 18);
             this.sectionTB.TabIndex = 53;
             this.sectionTB.Leave += new System.EventHandler(this.sectionTB_Leave);
             // 
@@ -727,10 +749,11 @@
             this.qrCodePic.Cursor = System.Windows.Forms.Cursors.Hand;
             this.qrCodePic.FillColor = System.Drawing.Color.LightGray;
             this.qrCodePic.ImageRotate = 0F;
-            this.qrCodePic.Location = new System.Drawing.Point(452, 56);
-            this.qrCodePic.MaximumSize = new System.Drawing.Size(262, 234);
+            this.qrCodePic.Location = new System.Drawing.Point(362, 45);
+            this.qrCodePic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.qrCodePic.MaximumSize = new System.Drawing.Size(210, 187);
             this.qrCodePic.Name = "qrCodePic";
-            this.qrCodePic.Size = new System.Drawing.Size(262, 234);
+            this.qrCodePic.Size = new System.Drawing.Size(210, 187);
             this.qrCodePic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.qrCodePic.TabIndex = 56;
             this.qrCodePic.TabStop = false;
@@ -753,14 +776,14 @@
             this.idTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.idTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.idTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.idTB.Location = new System.Drawing.Point(452, 299);
-            this.idTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.idTB.Location = new System.Drawing.Point(362, 239);
+            this.idTB.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.idTB.Name = "idTB";
             this.idTB.PasswordChar = '\0';
             this.idTB.PlaceholderText = "";
             this.idTB.ReadOnly = true;
             this.idTB.SelectedText = "";
-            this.idTB.Size = new System.Drawing.Size(140, 26);
+            this.idTB.Size = new System.Drawing.Size(112, 21);
             this.idTB.TabIndex = 50;
             // 
             // moreDetailTB
@@ -778,14 +801,14 @@
             this.moreDetailTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.moreDetailTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.moreDetailTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.moreDetailTB.Location = new System.Drawing.Point(452, 387);
-            this.moreDetailTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.moreDetailTB.Location = new System.Drawing.Point(362, 310);
+            this.moreDetailTB.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.moreDetailTB.Multiline = true;
             this.moreDetailTB.Name = "moreDetailTB";
             this.moreDetailTB.PasswordChar = '\0';
             this.moreDetailTB.PlaceholderText = "";
             this.moreDetailTB.SelectedText = "";
-            this.moreDetailTB.Size = new System.Drawing.Size(262, 82);
+            this.moreDetailTB.Size = new System.Drawing.Size(210, 66);
             this.moreDetailTB.TabIndex = 55;
             this.moreDetailTB.Leave += new System.EventHandler(this.moreDetailTB_Leave);
             // 
@@ -805,11 +828,12 @@
             "Enrollee",
             "Returnee",
             "Transferee"});
-            this.studentTypeCB.Location = new System.Drawing.Point(117, 429);
-            this.studentTypeCB.MaximumSize = new System.Drawing.Size(1000, 0);
-            this.studentTypeCB.MinimumSize = new System.Drawing.Size(10, 0);
+            this.studentTypeCB.Location = new System.Drawing.Point(94, 343);
+            this.studentTypeCB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.studentTypeCB.MaximumSize = new System.Drawing.Size(801, 0);
+            this.studentTypeCB.MinimumSize = new System.Drawing.Size(9, 0);
             this.studentTypeCB.Name = "studentTypeCB";
-            this.studentTypeCB.Size = new System.Drawing.Size(262, 36);
+            this.studentTypeCB.Size = new System.Drawing.Size(210, 36);
             this.studentTypeCB.TabIndex = 52;
             this.studentTypeCB.Leave += new System.EventHandler(this.studentTypeCB_Leave);
             // 
@@ -830,11 +854,12 @@
             "2",
             "3",
             "4"});
-            this.yearCB.Location = new System.Drawing.Point(251, 326);
-            this.yearCB.MaximumSize = new System.Drawing.Size(1000, 0);
-            this.yearCB.MinimumSize = new System.Drawing.Size(10, 0);
+            this.yearCB.Location = new System.Drawing.Point(201, 261);
+            this.yearCB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.yearCB.MaximumSize = new System.Drawing.Size(801, 0);
+            this.yearCB.MinimumSize = new System.Drawing.Size(9, 0);
             this.yearCB.Name = "yearCB";
-            this.yearCB.Size = new System.Drawing.Size(128, 36);
+            this.yearCB.Size = new System.Drawing.Size(103, 36);
             this.yearCB.TabIndex = 60;
             this.yearCB.Leave += new System.EventHandler(this.yearCB_Leave);
             // 
@@ -846,10 +871,11 @@
             this.sectionlbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.sectionlbl.IsContextMenuEnabled = false;
             this.sectionlbl.IsSelectionEnabled = false;
-            this.sectionlbl.Location = new System.Drawing.Point(117, 296);
-            this.sectionlbl.MinimumSize = new System.Drawing.Size(500, 0);
+            this.sectionlbl.Location = new System.Drawing.Point(94, 237);
+            this.sectionlbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sectionlbl.MinimumSize = new System.Drawing.Size(400, 0);
             this.sectionlbl.Name = "sectionlbl";
-            this.sectionlbl.Size = new System.Drawing.Size(500, 29);
+            this.sectionlbl.Size = new System.Drawing.Size(400, 23);
             this.sectionlbl.TabIndex = 48;
             this.sectionlbl.TabStop = false;
             this.sectionlbl.Text = "SECTION";
@@ -863,10 +889,11 @@
             this.yearLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.yearLbl.IsContextMenuEnabled = false;
             this.yearLbl.IsSelectionEnabled = false;
-            this.yearLbl.Location = new System.Drawing.Point(117, 326);
-            this.yearLbl.MinimumSize = new System.Drawing.Size(500, 0);
+            this.yearLbl.Location = new System.Drawing.Point(94, 261);
+            this.yearLbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.yearLbl.MinimumSize = new System.Drawing.Size(400, 0);
             this.yearLbl.Name = "yearLbl";
-            this.yearLbl.Size = new System.Drawing.Size(500, 29);
+            this.yearLbl.Size = new System.Drawing.Size(400, 23);
             this.yearLbl.TabIndex = 49;
             this.yearLbl.TabStop = false;
             this.yearLbl.Text = "YEAR";
@@ -880,10 +907,11 @@
             this.qrcodeLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.qrcodeLbl.IsContextMenuEnabled = false;
             this.qrcodeLbl.IsSelectionEnabled = false;
-            this.qrcodeLbl.Location = new System.Drawing.Point(452, 26);
-            this.qrcodeLbl.MinimumSize = new System.Drawing.Size(500, 0);
+            this.qrcodeLbl.Location = new System.Drawing.Point(362, 21);
+            this.qrcodeLbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.qrcodeLbl.MinimumSize = new System.Drawing.Size(400, 0);
             this.qrcodeLbl.Name = "qrcodeLbl";
-            this.qrcodeLbl.Size = new System.Drawing.Size(500, 29);
+            this.qrcodeLbl.Size = new System.Drawing.Size(400, 23);
             this.qrcodeLbl.TabIndex = 58;
             this.qrcodeLbl.TabStop = false;
             this.qrcodeLbl.Text = "QR CODE";
@@ -897,10 +925,11 @@
             this.moreDetailsLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.moreDetailsLbl.IsContextMenuEnabled = false;
             this.moreDetailsLbl.IsSelectionEnabled = false;
-            this.moreDetailsLbl.Location = new System.Drawing.Point(452, 356);
-            this.moreDetailsLbl.MinimumSize = new System.Drawing.Size(500, 0);
+            this.moreDetailsLbl.Location = new System.Drawing.Point(362, 285);
+            this.moreDetailsLbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.moreDetailsLbl.MinimumSize = new System.Drawing.Size(400, 0);
             this.moreDetailsLbl.Name = "moreDetailsLbl";
-            this.moreDetailsLbl.Size = new System.Drawing.Size(500, 29);
+            this.moreDetailsLbl.Size = new System.Drawing.Size(400, 23);
             this.moreDetailsLbl.TabIndex = 54;
             this.moreDetailsLbl.TabStop = false;
             this.moreDetailsLbl.Text = "MORE DETAILS ";
@@ -914,10 +943,11 @@
             this.studentTypeLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.studentTypeLbl.IsContextMenuEnabled = false;
             this.studentTypeLbl.IsSelectionEnabled = false;
-            this.studentTypeLbl.Location = new System.Drawing.Point(117, 399);
-            this.studentTypeLbl.MinimumSize = new System.Drawing.Size(500, 0);
+            this.studentTypeLbl.Location = new System.Drawing.Point(94, 319);
+            this.studentTypeLbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.studentTypeLbl.MinimumSize = new System.Drawing.Size(400, 0);
             this.studentTypeLbl.Name = "studentTypeLbl";
-            this.studentTypeLbl.Size = new System.Drawing.Size(500, 29);
+            this.studentTypeLbl.Size = new System.Drawing.Size(400, 23);
             this.studentTypeLbl.TabIndex = 51;
             this.studentTypeLbl.TabStop = false;
             this.studentTypeLbl.Text = "STUDENT TYPE";
@@ -931,10 +961,11 @@
             this.studentPicLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.studentPicLbl.IsContextMenuEnabled = false;
             this.studentPicLbl.IsSelectionEnabled = false;
-            this.studentPicLbl.Location = new System.Drawing.Point(117, 26);
-            this.studentPicLbl.MinimumSize = new System.Drawing.Size(500, 0);
+            this.studentPicLbl.Location = new System.Drawing.Point(94, 21);
+            this.studentPicLbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.studentPicLbl.MinimumSize = new System.Drawing.Size(400, 0);
             this.studentPicLbl.Name = "studentPicLbl";
-            this.studentPicLbl.Size = new System.Drawing.Size(500, 29);
+            this.studentPicLbl.Size = new System.Drawing.Size(400, 23);
             this.studentPicLbl.TabIndex = 57;
             this.studentPicLbl.TabStop = false;
             this.studentPicLbl.Text = "STUDENT PICTURE";
@@ -962,8 +993,9 @@
             this.guardianContainer.Controls.Add(this.fatherOccupationTB);
             this.guardianContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guardianContainer.Location = new System.Drawing.Point(0, 0);
+            this.guardianContainer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guardianContainer.Name = "guardianContainer";
-            this.guardianContainer.Size = new System.Drawing.Size(821, 589);
+            this.guardianContainer.Size = new System.Drawing.Size(658, 472);
             this.guardianContainer.TabIndex = 0;
             // 
             // guna2HtmlLabel6
@@ -974,10 +1006,11 @@
             this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(133)))), ((int)(((byte)(46)))));
             this.guna2HtmlLabel6.IsContextMenuEnabled = false;
             this.guna2HtmlLabel6.IsSelectionEnabled = false;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(429, 17);
-            this.guna2HtmlLabel6.MinimumSize = new System.Drawing.Size(700, 0);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(343, 14);
+            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel6.MinimumSize = new System.Drawing.Size(560, 0);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(700, 38);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(560, 32);
             this.guna2HtmlLabel6.TabIndex = 56;
             this.guna2HtmlLabel6.TabStop = false;
             this.guna2HtmlLabel6.Text = "MOTHER\'S DETAILS";
@@ -991,10 +1024,11 @@
             this.motherEmailLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.motherEmailLbl.IsContextMenuEnabled = false;
             this.motherEmailLbl.IsSelectionEnabled = false;
-            this.motherEmailLbl.Location = new System.Drawing.Point(429, 152);
-            this.motherEmailLbl.MinimumSize = new System.Drawing.Size(360, 0);
+            this.motherEmailLbl.Location = new System.Drawing.Point(343, 122);
+            this.motherEmailLbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.motherEmailLbl.MinimumSize = new System.Drawing.Size(288, 0);
             this.motherEmailLbl.Name = "motherEmailLbl";
-            this.motherEmailLbl.Size = new System.Drawing.Size(360, 26);
+            this.motherEmailLbl.Size = new System.Drawing.Size(288, 21);
             this.motherEmailLbl.TabIndex = 64;
             this.motherEmailLbl.TabStop = false;
             this.motherEmailLbl.Text = "EMAIL ADDRESS";
@@ -1008,10 +1042,11 @@
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(133)))), ((int)(((byte)(46)))));
             this.guna2HtmlLabel4.IsContextMenuEnabled = false;
             this.guna2HtmlLabel4.IsSelectionEnabled = false;
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(33, 18);
-            this.guna2HtmlLabel4.MinimumSize = new System.Drawing.Size(700, 0);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(26, 14);
+            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guna2HtmlLabel4.MinimumSize = new System.Drawing.Size(560, 0);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(700, 38);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(560, 32);
             this.guna2HtmlLabel4.TabIndex = 55;
             this.guna2HtmlLabel4.TabStop = false;
             this.guna2HtmlLabel4.Text = "FATHER\'S DETAILS";
@@ -1025,10 +1060,11 @@
             this.fatherNameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.fatherNameLbl.IsContextMenuEnabled = false;
             this.fatherNameLbl.IsSelectionEnabled = false;
-            this.fatherNameLbl.Location = new System.Drawing.Point(33, 66);
-            this.fatherNameLbl.MinimumSize = new System.Drawing.Size(360, 0);
+            this.fatherNameLbl.Location = new System.Drawing.Point(26, 53);
+            this.fatherNameLbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fatherNameLbl.MinimumSize = new System.Drawing.Size(288, 0);
             this.fatherNameLbl.Name = "fatherNameLbl";
-            this.fatherNameLbl.Size = new System.Drawing.Size(360, 26);
+            this.fatherNameLbl.Size = new System.Drawing.Size(288, 21);
             this.fatherNameLbl.TabIndex = 52;
             this.fatherNameLbl.TabStop = false;
             this.fatherNameLbl.Text = "NAME";
@@ -1042,10 +1078,11 @@
             this.fatherEmailLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.fatherEmailLbl.IsContextMenuEnabled = false;
             this.fatherEmailLbl.IsSelectionEnabled = false;
-            this.fatherEmailLbl.Location = new System.Drawing.Point(33, 153);
-            this.fatherEmailLbl.MinimumSize = new System.Drawing.Size(360, 0);
+            this.fatherEmailLbl.Location = new System.Drawing.Point(26, 122);
+            this.fatherEmailLbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fatherEmailLbl.MinimumSize = new System.Drawing.Size(288, 0);
             this.fatherEmailLbl.Name = "fatherEmailLbl";
-            this.fatherEmailLbl.Size = new System.Drawing.Size(360, 26);
+            this.fatherEmailLbl.Size = new System.Drawing.Size(288, 21);
             this.fatherEmailLbl.TabIndex = 57;
             this.fatherEmailLbl.TabStop = false;
             this.fatherEmailLbl.Text = "EMAIL ADDRESS";
@@ -1059,10 +1096,11 @@
             this.motherNameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.motherNameLbl.IsContextMenuEnabled = false;
             this.motherNameLbl.IsSelectionEnabled = false;
-            this.motherNameLbl.Location = new System.Drawing.Point(429, 65);
-            this.motherNameLbl.MinimumSize = new System.Drawing.Size(360, 0);
+            this.motherNameLbl.Location = new System.Drawing.Point(343, 52);
+            this.motherNameLbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.motherNameLbl.MinimumSize = new System.Drawing.Size(288, 0);
             this.motherNameLbl.Name = "motherNameLbl";
-            this.motherNameLbl.Size = new System.Drawing.Size(360, 26);
+            this.motherNameLbl.Size = new System.Drawing.Size(288, 21);
             this.motherNameLbl.TabIndex = 62;
             this.motherNameLbl.TabStop = false;
             this.motherNameLbl.Text = "NAME";
@@ -1076,10 +1114,11 @@
             this.motherPhoneLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.motherPhoneLbl.IsContextMenuEnabled = false;
             this.motherPhoneLbl.IsSelectionEnabled = false;
-            this.motherPhoneLbl.Location = new System.Drawing.Point(429, 239);
-            this.motherPhoneLbl.MinimumSize = new System.Drawing.Size(360, 0);
+            this.motherPhoneLbl.Location = new System.Drawing.Point(343, 191);
+            this.motherPhoneLbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.motherPhoneLbl.MinimumSize = new System.Drawing.Size(288, 0);
             this.motherPhoneLbl.Name = "motherPhoneLbl";
-            this.motherPhoneLbl.Size = new System.Drawing.Size(360, 26);
+            this.motherPhoneLbl.Size = new System.Drawing.Size(288, 21);
             this.motherPhoneLbl.TabIndex = 66;
             this.motherPhoneLbl.TabStop = false;
             this.motherPhoneLbl.Text = "PHONE NUMBER";
@@ -1093,10 +1132,11 @@
             this.fatherPhoneLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.fatherPhoneLbl.IsContextMenuEnabled = false;
             this.fatherPhoneLbl.IsSelectionEnabled = false;
-            this.fatherPhoneLbl.Location = new System.Drawing.Point(33, 240);
-            this.fatherPhoneLbl.MinimumSize = new System.Drawing.Size(360, 0);
+            this.fatherPhoneLbl.Location = new System.Drawing.Point(26, 192);
+            this.fatherPhoneLbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fatherPhoneLbl.MinimumSize = new System.Drawing.Size(288, 0);
             this.fatherPhoneLbl.Name = "fatherPhoneLbl";
-            this.fatherPhoneLbl.Size = new System.Drawing.Size(360, 26);
+            this.fatherPhoneLbl.Size = new System.Drawing.Size(288, 21);
             this.fatherPhoneLbl.TabIndex = 58;
             this.fatherPhoneLbl.TabStop = false;
             this.fatherPhoneLbl.Text = "PHONE NUMBER";
@@ -1110,10 +1150,11 @@
             this.fatherOccupationLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.fatherOccupationLbl.IsContextMenuEnabled = false;
             this.fatherOccupationLbl.IsSelectionEnabled = false;
-            this.fatherOccupationLbl.Location = new System.Drawing.Point(33, 328);
-            this.fatherOccupationLbl.MinimumSize = new System.Drawing.Size(360, 0);
+            this.fatherOccupationLbl.Location = new System.Drawing.Point(26, 262);
+            this.fatherOccupationLbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fatherOccupationLbl.MinimumSize = new System.Drawing.Size(288, 0);
             this.fatherOccupationLbl.Name = "fatherOccupationLbl";
-            this.fatherOccupationLbl.Size = new System.Drawing.Size(360, 26);
+            this.fatherOccupationLbl.Size = new System.Drawing.Size(288, 21);
             this.fatherOccupationLbl.TabIndex = 60;
             this.fatherOccupationLbl.TabStop = false;
             this.fatherOccupationLbl.Text = "OCCUPATION";
@@ -1127,10 +1168,11 @@
             this.motherOccupationLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.motherOccupationLbl.IsContextMenuEnabled = false;
             this.motherOccupationLbl.IsSelectionEnabled = false;
-            this.motherOccupationLbl.Location = new System.Drawing.Point(429, 327);
-            this.motherOccupationLbl.MinimumSize = new System.Drawing.Size(360, 0);
+            this.motherOccupationLbl.Location = new System.Drawing.Point(343, 262);
+            this.motherOccupationLbl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.motherOccupationLbl.MinimumSize = new System.Drawing.Size(288, 0);
             this.motherOccupationLbl.Name = "motherOccupationLbl";
-            this.motherOccupationLbl.Size = new System.Drawing.Size(360, 26);
+            this.motherOccupationLbl.Size = new System.Drawing.Size(288, 21);
             this.motherOccupationLbl.TabIndex = 67;
             this.motherOccupationLbl.TabStop = false;
             this.motherOccupationLbl.Text = "OCCUPATION";
@@ -1153,13 +1195,13 @@
             this.motherOccupationTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.motherOccupationTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.motherOccupationTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.motherOccupationTB.Location = new System.Drawing.Point(429, 365);
-            this.motherOccupationTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.motherOccupationTB.Location = new System.Drawing.Point(343, 292);
+            this.motherOccupationTB.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.motherOccupationTB.Name = "motherOccupationTB";
             this.motherOccupationTB.PasswordChar = '\0';
             this.motherOccupationTB.PlaceholderText = "";
             this.motherOccupationTB.SelectedText = "";
-            this.motherOccupationTB.Size = new System.Drawing.Size(374, 45);
+            this.motherOccupationTB.Size = new System.Drawing.Size(299, 36);
             this.motherOccupationTB.TabIndex = 68;
             this.motherOccupationTB.Leave += new System.EventHandler(this.motherOccupationTB_Leave);
             // 
@@ -1180,13 +1222,13 @@
             this.fathernameTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.fathernameTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.fathernameTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.fathernameTB.Location = new System.Drawing.Point(33, 104);
-            this.fathernameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.fathernameTB.Location = new System.Drawing.Point(26, 83);
+            this.fathernameTB.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.fathernameTB.Name = "fathernameTB";
             this.fathernameTB.PasswordChar = '\0';
             this.fathernameTB.PlaceholderText = "";
             this.fathernameTB.SelectedText = "";
-            this.fathernameTB.Size = new System.Drawing.Size(374, 42);
+            this.fathernameTB.Size = new System.Drawing.Size(299, 34);
             this.fathernameTB.TabIndex = 53;
             this.fathernameTB.Leave += new System.EventHandler(this.fathernameTB_Leave);
             // 
@@ -1207,13 +1249,13 @@
             this.fatherEmailTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.fatherEmailTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.fatherEmailTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.fatherEmailTB.Location = new System.Drawing.Point(33, 191);
-            this.fatherEmailTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.fatherEmailTB.Location = new System.Drawing.Point(26, 153);
+            this.fatherEmailTB.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.fatherEmailTB.Name = "fatherEmailTB";
             this.fatherEmailTB.PasswordChar = '\0';
             this.fatherEmailTB.PlaceholderText = "";
             this.fatherEmailTB.SelectedText = "";
-            this.fatherEmailTB.Size = new System.Drawing.Size(374, 42);
+            this.fatherEmailTB.Size = new System.Drawing.Size(299, 34);
             this.fatherEmailTB.TabIndex = 54;
             this.fatherEmailTB.Leave += new System.EventHandler(this.fatherEmailTB_Leave);
             // 
@@ -1234,13 +1276,13 @@
             this.mothernameTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.mothernameTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.mothernameTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.mothernameTB.Location = new System.Drawing.Point(429, 103);
-            this.mothernameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.mothernameTB.Location = new System.Drawing.Point(343, 82);
+            this.mothernameTB.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.mothernameTB.Name = "mothernameTB";
             this.mothernameTB.PasswordChar = '\0';
             this.mothernameTB.PlaceholderText = "";
             this.mothernameTB.SelectedText = "";
-            this.mothernameTB.Size = new System.Drawing.Size(374, 42);
+            this.mothernameTB.Size = new System.Drawing.Size(299, 34);
             this.mothernameTB.TabIndex = 63;
             this.mothernameTB.Leave += new System.EventHandler(this.mothernameTB_Leave);
             // 
@@ -1261,13 +1303,13 @@
             this.motherPhoneTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.motherPhoneTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.motherPhoneTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.motherPhoneTB.Location = new System.Drawing.Point(429, 277);
-            this.motherPhoneTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.motherPhoneTB.Location = new System.Drawing.Point(343, 222);
+            this.motherPhoneTB.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.motherPhoneTB.Name = "motherPhoneTB";
             this.motherPhoneTB.PasswordChar = '\0';
             this.motherPhoneTB.PlaceholderText = "";
             this.motherPhoneTB.SelectedText = "";
-            this.motherPhoneTB.Size = new System.Drawing.Size(374, 42);
+            this.motherPhoneTB.Size = new System.Drawing.Size(299, 34);
             this.motherPhoneTB.TabIndex = 69;
             this.motherPhoneTB.Leave += new System.EventHandler(this.motherPhoneTB_Leave);
             // 
@@ -1288,13 +1330,13 @@
             this.motherEmailTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.motherEmailTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.motherEmailTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.motherEmailTB.Location = new System.Drawing.Point(429, 190);
-            this.motherEmailTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.motherEmailTB.Location = new System.Drawing.Point(343, 152);
+            this.motherEmailTB.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.motherEmailTB.Name = "motherEmailTB";
             this.motherEmailTB.PasswordChar = '\0';
             this.motherEmailTB.PlaceholderText = "";
             this.motherEmailTB.SelectedText = "";
-            this.motherEmailTB.Size = new System.Drawing.Size(374, 42);
+            this.motherEmailTB.Size = new System.Drawing.Size(299, 34);
             this.motherEmailTB.TabIndex = 65;
             this.motherEmailTB.Leave += new System.EventHandler(this.motherEmailTB_Leave);
             // 
@@ -1315,13 +1357,13 @@
             this.fatherPhoneNumberTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.fatherPhoneNumberTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.fatherPhoneNumberTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.fatherPhoneNumberTB.Location = new System.Drawing.Point(33, 278);
-            this.fatherPhoneNumberTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.fatherPhoneNumberTB.Location = new System.Drawing.Point(26, 222);
+            this.fatherPhoneNumberTB.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.fatherPhoneNumberTB.Name = "fatherPhoneNumberTB";
             this.fatherPhoneNumberTB.PasswordChar = '\0';
             this.fatherPhoneNumberTB.PlaceholderText = "";
             this.fatherPhoneNumberTB.SelectedText = "";
-            this.fatherPhoneNumberTB.Size = new System.Drawing.Size(374, 42);
+            this.fatherPhoneNumberTB.Size = new System.Drawing.Size(299, 34);
             this.fatherPhoneNumberTB.TabIndex = 59;
             this.fatherPhoneNumberTB.Leave += new System.EventHandler(this.fatherPhoneNumberTB_Leave);
             // 
@@ -1342,13 +1384,13 @@
             this.fatherOccupationTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.fatherOccupationTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.fatherOccupationTB.IconRightSize = new System.Drawing.Size(25, 25);
-            this.fatherOccupationTB.Location = new System.Drawing.Point(33, 366);
-            this.fatherOccupationTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.fatherOccupationTB.Location = new System.Drawing.Point(26, 293);
+            this.fatherOccupationTB.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.fatherOccupationTB.Name = "fatherOccupationTB";
             this.fatherOccupationTB.PasswordChar = '\0';
             this.fatherOccupationTB.PlaceholderText = "";
             this.fatherOccupationTB.SelectedText = "";
-            this.fatherOccupationTB.Size = new System.Drawing.Size(374, 42);
+            this.fatherOccupationTB.Size = new System.Drawing.Size(299, 34);
             this.fatherOccupationTB.TabIndex = 61;
             this.fatherOccupationTB.Leave += new System.EventHandler(this.fatherOccupationTB_Leave);
             // 
@@ -1357,11 +1399,13 @@
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(25)))), ((int)(((byte)(82)))));
             this.guna2Panel2.Controls.Add(this.tableLayoutPanel1);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel2.Location = new System.Drawing.Point(5, 5);
+            this.guna2Panel2.Location = new System.Drawing.Point(4, 4);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Padding = new System.Windows.Forms.Padding(15);
-            this.guna2Panel2.Size = new System.Drawing.Size(857, 683);
+            this.guna2Panel2.Padding = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.guna2Panel2.Size = new System.Drawing.Size(686, 546);
             this.guna2Panel2.TabIndex = 1;
+            this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
             // 
             // guna2Elipse1
             // 
@@ -1374,14 +1418,15 @@
             // 
             // updateStudentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(133)))), ((int)(((byte)(46)))));
-            this.ClientSize = new System.Drawing.Size(867, 693);
+            this.ClientSize = new System.Drawing.Size(694, 554);
             this.Controls.Add(this.guna2Panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "updateStudentForm";
-            this.Padding = new System.Windows.Forms.Padding(5);
+            this.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

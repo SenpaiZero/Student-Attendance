@@ -13,6 +13,7 @@ using AForge.Video.DirectShow;
 using System.Reflection;
 using Guna.UI2.WinForms;
 using Student_Attendance_System.Forms;
+using System.Drawing.Drawing2D;
 
 namespace Student_Attendance_System.Startup
 {
@@ -41,16 +42,14 @@ namespace Student_Attendance_System.Startup
             split = new splitPopup();
             std = this;
 
+            //Picture cam
             mainCamera = new cameraHelper();
-            //if (camList.Items.Count > 0)
-            //{
-                //Picture cam
-                mainCamera.qrcode = false;
-                mainCamera.camListCB = camList;
-                mainCamera.selfPic = secondPic;
-                mainCamera.onLoad();
-                mainCamera.changeCam(1);
-            //}
+            mainCamera.qrcode = false;
+            mainCamera.camListCB = camList;
+            mainCamera.selfPic = secondPic;
+            mainCamera.onLoad();
+            mainCamera.changeCam(1);
+            
             //Scanner cam
             scanningCamera = new cameraHelper();
             scanningCamera.qrcode = true;
@@ -58,7 +57,6 @@ namespace Student_Attendance_System.Startup
             scanningCamera.selfPic = qrScanning;
             scanningCamera.onLoad();
 
-            Config.isPopup = false;
         }
         private void videoSource_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
@@ -116,5 +114,6 @@ namespace Student_Attendance_System.Startup
         {
 
         }
+
     }
 }

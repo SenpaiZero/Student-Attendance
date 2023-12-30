@@ -1,5 +1,6 @@
 ﻿using Guna.UI2.WinForms;
 using Student_Attendance_System.Classes;
+using Student_Attendance_System.Classes.Helper;
 using Student_Attendance_System.Startup;
 using System;
 using System.Collections.Generic;
@@ -37,13 +38,11 @@ namespace Student_Attendance_System.Forms
         private void splitPopup_Load(object sender, EventArgs e)
         {
             mainCam = new cameraHelper();
-            Config.isPopup = true;
         }
 
         private void splitPopup_FormClosing(object sender, FormClosingEventArgs e)
         {
             mainCam.closeForm();
-            Config.isPopup = false;
         }
 
         private void maximizeBtn_Click(object sender, EventArgs e)
@@ -75,10 +74,26 @@ namespace Student_Attendance_System.Forms
                     dr.Close();
                 }
             }
-
-            lastCap.Image = lastCapture;
+            if (lastCapture == null) lastCap.Image = Properties.Resources.No_Image_Placeholder_svg;
+            else lastCap.Image = lastCapture;
+            if (Config.colorPopupLabel == 1)
+                changeColor(Color.LightSeaGreen);
+            else if(Config.colorPopupLabel == 2)
+                changeColor(Color.Orange);
+            else if(Config.colorPopupLabel == 3)
+                changeColor(Color.IndianRed);
         }
 
+        void changeColor(Color color)
+        {
+            lblName.ForeColor = color;
+            lblID.ForeColor = color;
+            lvlSection.ForeColor = color;
+
+            idNumLbl.ForeColor = color;
+            nameLbl.ForeColor = color;
+            sectionYearLbl.ForeColor = color;
+        }
         public Bitmap ConvertToImage(byte[] binary)
         {
             if (binary == null || binary.Length == 0)

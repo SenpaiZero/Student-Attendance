@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -181,7 +182,7 @@ namespace Student_Attendance_System.Forms.Admin
             }
             isViewEnroll = !isViewEnroll;
             viewBtn.Enabled = isViewEnroll;
-            printBtn.Enabled = isViewEnroll;
+            saveBtn.Enabled = isViewEnroll;
 
             showData(false, isViewEnroll);
         }
@@ -189,6 +190,57 @@ namespace Student_Attendance_System.Forms.Admin
         private void listTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void saveBtn_Click(object sender, EventArgs e)
+        {
+            // Saving image
+            String selectedID;
+            if (listTable.Rows.Count > 0)
+            {
+                DataGridViewRow selectedRow = listTable.SelectedRows[0];
+                selectedID = selectedRow.Cells[0].Value.ToString();
+
+                if(databaseHelper.con.State != ConnectionState.Open)
+                    databaseHelper.con.Open();
+
+                String query = "";
+                using (SqlCommand cmd = new SqlCommand(query, databaseHelper.con))
+                {
+                    SqlDataReader dr = cmd.ExecuteReader();
+                    if (dr.Read())
+                    {
+                        Bitmap qr = ConvertToImage((byte[])dr.GetValue(0));
+                        Bitmap pic = ConvertToImage((byte[])dr.GetValue(1));
+
+                        LocalSaveHelper.savePicture(qr, selectedID);
+                        LocalSaveHelper.savePicture(pic, selectedID);
+
+                        MessageForm msg = new MessageForm()
+                        {
+                            messageType = "Success",
+                            header = "Woo hoo!!",
+                            message = "You've successfully saved the pictures",
+                            isYesNo = false
+                        };
+                        msg.ShowDialog();
+                    }
+                }
+            }
+        }
+        public Bitmap ConvertToImage(byte[] binary)
+        {
+            if (binary == null || binary.Length == 0)
+            {
+                // Return a default image or handle the null case as needed
+                return new Bitmap(1, 1);
+            }
+
+            using (MemoryStream stream = new MemoryStream(binary))
+            {
+                Bitmap image = new Bitmap(stream);
+                return image;
+            }
         }
     }
 }

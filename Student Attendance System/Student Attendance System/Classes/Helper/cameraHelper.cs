@@ -22,7 +22,7 @@ namespace Student_Attendance_System.Classes
 {
     internal class cameraHelper
     {
-        private FilterInfoCollection videoDevices; // Stores available video devices
+        public FilterInfoCollection videoDevices; // Stores available video devices
         private VideoCaptureDevice videoSource; // Represents the video capture device
         private bool capturing = false; // Indicates if we are currently capturing
         private QRCodeReader barcodeReader;
@@ -130,13 +130,13 @@ namespace Student_Attendance_System.Classes
                     }
                 }
             }
-            
+
             try
             {
                 frame = CropToSquare(frame);
                 selfPic.Image = frame; // Display the frame on the PictureBox
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageForm msg = new MessageForm()
                 {

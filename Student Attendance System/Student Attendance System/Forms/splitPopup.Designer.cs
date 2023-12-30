@@ -46,9 +46,9 @@
             this.sectionYearLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.idNumLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.nameLbl = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lvlSection = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblID = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.tableLayoutPanel1.SuspendLayout();
             this.lastCapContainer.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -154,6 +154,7 @@
             // 
             this.lastCap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(30)))), ((int)(((byte)(73)))));
             this.lastCap.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lastCap.ErrorImage = null;
             this.lastCap.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(30)))), ((int)(((byte)(73)))));
             this.lastCap.ImageRotate = 0F;
             this.lastCap.Location = new System.Drawing.Point(3, 80);
@@ -263,9 +264,9 @@
             this.tableLayoutPanel2.Controls.Add(this.sectionYearLbl, 4, 2);
             this.tableLayoutPanel2.Controls.Add(this.idNumLbl, 4, 1);
             this.tableLayoutPanel2.Controls.Add(this.nameLbl, 4, 0);
-            this.tableLayoutPanel2.Controls.Add(this.guna2HtmlLabel6, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.guna2HtmlLabel4, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.guna2HtmlLabel1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lvlSection, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.lblID, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.lblName, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -324,50 +325,50 @@
             this.nameLbl.Text = "test test test";
             this.nameLbl.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // guna2HtmlLabel6
+            // lvlSection
             // 
-            this.guna2HtmlLabel6.AutoSize = false;
-            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel2.SetColumnSpan(this.guna2HtmlLabel6, 4);
-            this.guna2HtmlLabel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI Variable Display", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(18, 156);
-            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(414, 64);
-            this.guna2HtmlLabel6.TabIndex = 9;
-            this.guna2HtmlLabel6.Text = "SECTION & YEAR:";
-            this.guna2HtmlLabel6.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lvlSection.AutoSize = false;
+            this.lvlSection.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel2.SetColumnSpan(this.lvlSection, 4);
+            this.lvlSection.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lvlSection.Font = new System.Drawing.Font("Segoe UI Variable Display", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvlSection.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.lvlSection.Location = new System.Drawing.Point(18, 156);
+            this.lvlSection.Name = "lvlSection";
+            this.lvlSection.Size = new System.Drawing.Size(414, 64);
+            this.lvlSection.TabIndex = 9;
+            this.lvlSection.Text = "SECTION & YEAR:";
+            this.lvlSection.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // guna2HtmlLabel4
+            // lblID
             // 
-            this.guna2HtmlLabel4.AutoSize = false;
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel2.SetColumnSpan(this.guna2HtmlLabel4, 4);
-            this.guna2HtmlLabel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI Variable Display", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(18, 87);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(414, 63);
-            this.guna2HtmlLabel4.TabIndex = 7;
-            this.guna2HtmlLabel4.Text = "ID NUMBER:";
-            this.guna2HtmlLabel4.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblID.AutoSize = false;
+            this.lblID.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel2.SetColumnSpan(this.lblID, 4);
+            this.lblID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblID.Font = new System.Drawing.Font("Segoe UI Variable Display", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.lblID.Location = new System.Drawing.Point(18, 87);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(414, 63);
+            this.lblID.TabIndex = 7;
+            this.lblID.Text = "ID NUMBER:";
+            this.lblID.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // guna2HtmlLabel1
+            // lblName
             // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.tableLayoutPanel2.SetColumnSpan(this.guna2HtmlLabel1, 4);
-            this.guna2HtmlLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Variable Display", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(18, 18);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(414, 63);
-            this.guna2HtmlLabel1.TabIndex = 6;
-            this.guna2HtmlLabel1.Text = "NAME:";
-            this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblName.AutoSize = false;
+            this.lblName.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel2.SetColumnSpan(this.lblName, 4);
+            this.lblName.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblName.Font = new System.Drawing.Font("Segoe UI Variable Display", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.lblName.Location = new System.Drawing.Point(18, 18);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(414, 63);
+            this.lblName.TabIndex = 6;
+            this.lblName.Text = "NAME:";
+            this.lblName.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // splitPopup
             // 
@@ -407,9 +408,9 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lvlSection;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblID;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblName;
         private Guna.UI2.WinForms.Guna2HtmlLabel sectionYearLbl;
         private Guna.UI2.WinForms.Guna2HtmlLabel idNumLbl;
         private Guna.UI2.WinForms.Guna2HtmlLabel nameLbl;

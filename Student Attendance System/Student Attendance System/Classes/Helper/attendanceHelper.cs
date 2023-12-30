@@ -15,8 +15,6 @@ namespace Student_Attendance_System.Classes.Helper
     {
         public static void attendance(String id)
         {
-            if(splitPopup.lastCapture == null)
-                studentForm.std.getFrame();
             Bitmap lastCap = splitPopup.lastCapture;
             DateTime currentTime = DateTime.Now;
             string formattedTime = currentTime.ToString("HH:mm:ss"); // e.g., 15:30:00
@@ -43,21 +41,18 @@ namespace Student_Attendance_System.Classes.Helper
                     if(dr.IsDBNull(0))
                     {
                         dr.Close();
-                        string query2 = $"UPDATE attendance SET TimeOut = @out";
-                        if (Config.isPopup)
-                        {
-                            query2 += ", TimeOutPic = @timeoutPic ";
-                        }
-                        query2 += " WHERE StudentID = @id AND TimeOut IS NULL";
+                        string query2 = $"UPDATE attendance SET TimeOut = @out," +
+                                    $" TimeOutPic = @timeoutPic" +
+                                    $" WHERE StudentID = @id AND TimeOut IS NULL";
 
 
                         using (SqlCommand cmd2 = new SqlCommand(query2, databaseHelper.con))
                         {
                             cmd2.Parameters.AddWithValue("@out", formattedTime);
                             cmd2.Parameters.AddWithValue("@id", id);
-                            if(Config.isPopup == true)
-                                cmd2.Parameters.AddWithValue("@timeoutPic", databaseHelper.bitmapToVarBinary(lastCap));
+                            cmd2.Parameters.AddWithValue("@timeoutPic", databaseHelper.bitmapToVarBinary(lastCap));
                             cmd2.ExecuteNonQuery();
+                            Config.colorPopupLabel = 2;
 
                             Task.Run(() =>
                             {
@@ -67,6 +62,7 @@ namespace Student_Attendance_System.Classes.Helper
                     }
                     else
                     {
+                        Config.colorPopupLabel = 3;
                         dr.Close();
                     }
                 }
@@ -74,27 +70,17 @@ namespace Student_Attendance_System.Classes.Helper
                 {
                     dr.Close();
                     //  TIME IN
-                    String query_newRow = "INSERT INTO attendance (StudentID, Date, TimeIn";
-                    if (Config.isPopup)
-                    {
-                        query_newRow += ", TimeInPic";
-                    }
-                    query_newRow += ") VALUES (@id, @date, @timein";
-                    if (Config.isPopup)
-                    {
-                        query_newRow += ", @timeInPic";
-                    }
-                    query_newRow += ")";
+                    String query_newRow = "INSERT INTO attendance (StudentID, Date, TimeIn, TimeInPic) " +
+                                            "VALUES (@id, @date, @timein, @timeInPic)";
 
                     using (SqlCommand cmdNewRow = new SqlCommand(query_newRow, databaseHelper.con))
                     {
                         cmdNewRow.Parameters.AddWithValue("id", id);
                         cmdNewRow.Parameters.AddWithValue("date", formattedDate);
                         cmdNewRow.Parameters.AddWithValue("timein", formattedTime);
-                        if (Config.isPopup == true)
-                            cmdNewRow.Parameters.AddWithValue("timeInPic", databaseHelper.bitmapToVarBinary(lastCap));
+                        cmdNewRow.Parameters.AddWithValue("timeInPic", databaseHelper.bitmapToVarBinary(lastCap));
                         cmdNewRow.ExecuteNonQuery();
-
+                        Config.colorPopupLabel = 1;
                         Task.Run(() =>
                         {
                             emailHelper.sendEmail(id, formattedTime, "TIME IN");

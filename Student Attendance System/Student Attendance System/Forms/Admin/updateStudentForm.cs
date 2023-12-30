@@ -453,5 +453,10 @@ namespace Student_Attendance_System.Forms.Admin
 
             ageTB.Text = age.ToString();
         }
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

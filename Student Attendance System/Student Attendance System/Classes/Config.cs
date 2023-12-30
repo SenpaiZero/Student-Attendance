@@ -32,6 +32,6 @@ namespace Student_Attendance_System
         public static bool fullScreen;
 
         //Config for 2nd cam
-        public static bool isPopup { get; set; }
+        public static int colorPopupLabel { get; set; } // 1-in 2-out 3-done
     }
 }
