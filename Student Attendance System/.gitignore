@@ -1,0 +1,31 @@
+# Ignore Xamarin specific files
+*.userprefs
+*.suo
+*.user
+*.xcuserdata
+*.lock
+*.plist
+*.dll
+*.exe
+
+# Ignore Windows Forms specific files
+bin/
+obj/
+
+# Ignore ASP.NET specific files
+obj/
+bin/
+*.dll
+*.exe
+*.pdb
+*.user
+*.vs/
+*_i.c
+*_p.c
+*.pidb
+*.log
+*.deploy
+*.xml
+*.bak
+*.cache
+*.csproj.user
