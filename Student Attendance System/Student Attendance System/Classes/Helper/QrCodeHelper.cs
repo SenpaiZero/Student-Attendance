@@ -21,7 +21,7 @@ namespace Student_Attendance_System.Classes.Helper
                 20, // Pixel per module
                 Color.Black,
                 Color.White,
-                new Bitmap(Properties.Resources.dummy_logo) //Picutre in the middle
+                new Bitmap(Properties.Resources.logo) //Picutre in the middle
                 );
         }
 

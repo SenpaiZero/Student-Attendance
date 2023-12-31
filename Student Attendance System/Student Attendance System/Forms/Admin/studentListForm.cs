@@ -204,9 +204,10 @@ namespace Student_Attendance_System.Forms.Admin
                 if(databaseHelper.con.State != ConnectionState.Open)
                     databaseHelper.con.Open();
 
-                String query = "";
+                String query = "SELECT QRCode, Picture WHERE StudentID = @id";
                 using (SqlCommand cmd = new SqlCommand(query, databaseHelper.con))
                 {
+                    cmd.Parameters.AddWithValue("id", selectedID);
                     SqlDataReader dr = cmd.ExecuteReader();
                     if (dr.Read())
                     {

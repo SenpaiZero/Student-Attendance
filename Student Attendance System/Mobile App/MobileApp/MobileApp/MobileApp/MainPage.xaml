@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MobileApp.MainPage">
+
+    <StackLayout Padding="10">
+
+        <!-- Student List -->
+        <ListView x:Name="studentListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Padding="5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <!-- First column for student details -->
+                                <ColumnDefinition Width="Auto" />
+                                <!-- Second column for the button -->
+                            </Grid.ColumnDefinitions>
+
+                            <!-- Student Details -->
+                            <StackLayout Grid.Column="0">
+                                <Label Text="{Binding StudentID}" />
+                                <Label Text="{Binding StudentName}" />
+                            </StackLayout>
+
+                            <!-- Button Aligned to the Right -->
+                            <Button Grid.Column="1" Text="SAVE QRCODE" Clicked="Button_Clicked" CommandParameter="{Binding StudentID}" HorizontalOptions="End" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            
+        </ListView>
+
+    </StackLayout>
+
+</ContentPage>
