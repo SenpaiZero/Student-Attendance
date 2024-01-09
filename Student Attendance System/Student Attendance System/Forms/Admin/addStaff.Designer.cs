@@ -149,6 +149,7 @@
             this.tableLayoutPanel1.SetRowSpan(this.addBtn, 2);
             this.addBtn.Size = new System.Drawing.Size(124, 58);
             this.addBtn.TabIndex = 35;
+            this.addBtn.TabStop = false;
             this.addBtn.Text = "ADD";
             this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
             // 
@@ -179,7 +180,7 @@
             this.phoneTB.PlaceholderText = "";
             this.phoneTB.SelectedText = "";
             this.phoneTB.Size = new System.Drawing.Size(318, 49);
-            this.phoneTB.TabIndex = 31;
+            this.phoneTB.TabIndex = 7;
             this.phoneTB.Leave += new System.EventHandler(this.phoneTB_Leave);
             // 
             // addressTB
@@ -211,7 +212,7 @@
             this.addressTB.PlaceholderText = "";
             this.addressTB.SelectedText = "";
             this.addressTB.Size = new System.Drawing.Size(372, 49);
-            this.addressTB.TabIndex = 24;
+            this.addressTB.TabIndex = 6;
             this.addressTB.Leave += new System.EventHandler(this.addressTB_Leave);
             // 
             // guna2HtmlLabel3
@@ -279,7 +280,7 @@
             this.firstNameTB.PlaceholderText = "";
             this.firstNameTB.SelectedText = "";
             this.firstNameTB.Size = new System.Drawing.Size(210, 49);
-            this.firstNameTB.TabIndex = 14;
+            this.firstNameTB.TabIndex = 1;
             this.firstNameTB.Leave += new System.EventHandler(this.firstNameTB_Leave);
             // 
             // middleNameTB
@@ -311,7 +312,7 @@
             this.middleNameTB.PlaceholderText = "";
             this.middleNameTB.SelectedText = "";
             this.middleNameTB.Size = new System.Drawing.Size(212, 49);
-            this.middleNameTB.TabIndex = 16;
+            this.middleNameTB.TabIndex = 3;
             this.middleNameTB.Leave += new System.EventHandler(this.middleNameTB_Leave);
             // 
             // surnameTB
@@ -343,7 +344,7 @@
             this.surnameTB.PlaceholderText = "";
             this.surnameTB.SelectedText = "";
             this.surnameTB.Size = new System.Drawing.Size(210, 49);
-            this.surnameTB.TabIndex = 16;
+            this.surnameTB.TabIndex = 2;
             this.surnameTB.Leave += new System.EventHandler(this.surnameTB_Leave);
             // 
             // middleNameLbl
@@ -429,7 +430,7 @@
             this.emailTB.PlaceholderText = "";
             this.emailTB.SelectedText = "";
             this.emailTB.Size = new System.Drawing.Size(372, 49);
-            this.emailTB.TabIndex = 22;
+            this.emailTB.TabIndex = 5;
             this.emailTB.Leave += new System.EventHandler(this.emailTB_Leave);
             // 
             // guna2HtmlLabel4
@@ -583,7 +584,7 @@
             this.ageTB.PlaceholderText = "";
             this.ageTB.SelectedText = "";
             this.ageTB.Size = new System.Drawing.Size(156, 49);
-            this.ageTB.TabIndex = 20;
+            this.ageTB.TabIndex = 4;
             this.ageTB.Leave += new System.EventHandler(this.ageTB_Leave);
             // 
             // guna2HtmlLabel2
@@ -651,6 +652,7 @@
             this.randomizeBtn.Name = "randomizeBtn";
             this.randomizeBtn.Size = new System.Drawing.Size(163, 51);
             this.randomizeBtn.TabIndex = 34;
+            this.randomizeBtn.TabStop = false;
             this.randomizeBtn.Text = "GENERATE";
             this.randomizeBtn.Click += new System.EventHandler(this.randomizeBtn_Click);
             // 
@@ -684,7 +686,7 @@
             this.isAdminCB.Margin = new System.Windows.Forms.Padding(10);
             this.isAdminCB.Name = "isAdminCB";
             this.isAdminCB.Size = new System.Drawing.Size(38, 62);
-            this.isAdminCB.TabIndex = 38;
+            this.isAdminCB.TabIndex = 8;
             this.isAdminCB.Text = "guna2CustomCheckBox1";
             this.isAdminCB.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
             this.isAdminCB.UncheckedState.BorderRadius = 2;

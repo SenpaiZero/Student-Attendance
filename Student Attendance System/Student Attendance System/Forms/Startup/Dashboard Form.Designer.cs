@@ -31,6 +31,63 @@
             this.components = new System.ComponentModel.Container();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.barContainer = new Guna.UI2.WinForms.Guna2Panel();
+            this.Excuse31 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Absent31 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Present31 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Excuse30 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Absent30 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Present30 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Excuse29 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Absent29 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Present29 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Excuse28 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Absent28 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Present28 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Excuse27 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Absent27 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Present27 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Excuse26 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Absent26 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Present26 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Excuse25 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Absent25 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Present25 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Excuse24 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Absent24 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Present24 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Excuse23 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Absent23 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Present23 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Excuse22 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Absent22 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Present22 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Excuse21 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Absent21 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Present21 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Excuse20 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Absent20 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Present20 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Excuse19 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Absent19 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Present19 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Excuse18 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Absent18 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Present18 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Excuse17 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Absent17 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Present17 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Excuse16 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Absent16 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Present16 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Excuse15 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Absent15 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Present15 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Excuse14 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Absent14 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Present14 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Excuse13 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Absent13 = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.Present13 = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.Excuse12 = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.Absent12 = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.Present12 = new Guna.UI2.WinForms.Guna2ProgressBar();
@@ -98,82 +155,26 @@
             this.lbl40per = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl20per = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl0per = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.Excuse13 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Absent13 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Present13 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Excuse14 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Absent14 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Present14 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Excuse15 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Absent15 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Present15 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Excuse16 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Absent16 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Present16 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Excuse17 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Absent17 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Present17 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Excuse18 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Absent18 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Present18 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Excuse19 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Absent19 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Present19 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Excuse20 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Absent20 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Present20 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Excuse21 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Absent21 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Present21 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Excuse22 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Absent22 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Present22 = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.lbl13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl16 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl19 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl20 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl21 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl22 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.Excuse23 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Absent23 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Present23 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Excuse24 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Absent24 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Present24 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Excuse25 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Absent25 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Present25 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Excuse26 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Absent26 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Present26 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Excuse27 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Absent27 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Present27 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Excuse28 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Absent28 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Present28 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Excuse29 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Absent29 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Present29 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Excuse30 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Absent30 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Present30 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Excuse31 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Absent31 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.Present31 = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.lbl23 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl24 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl25 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl26 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl27 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl28 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl29 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lbl30 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl21 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl20 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl19 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl16 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl31 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl30 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl29 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl28 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl27 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl26 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl25 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl24 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl23 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.barContainer.SuspendLayout();
             this.attContainer.SuspendLayout();
             this.SuspendLayout();
@@ -292,6 +293,747 @@
             this.barContainer.Size = new System.Drawing.Size(462, 1065);
             this.barContainer.TabIndex = 1;
             this.barContainer.SizeChanged += new System.EventHandler(this.barContainer_SizeChanged);
+            // 
+            // Excuse31
+            // 
+            this.Excuse31.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Excuse31.Location = new System.Drawing.Point(23, 1035);
+            this.Excuse31.Name = "Excuse31";
+            this.Excuse31.ProgressColor = System.Drawing.Color.Silver;
+            this.Excuse31.ProgressColor2 = System.Drawing.Color.Silver;
+            this.Excuse31.Size = new System.Drawing.Size(395, 10);
+            this.Excuse31.TabIndex = 94;
+            this.Excuse31.Text = "guna2ProgressBar55";
+            this.Excuse31.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Excuse31.Value = 3;
+            // 
+            // Absent31
+            // 
+            this.Absent31.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Absent31.Location = new System.Drawing.Point(23, 1027);
+            this.Absent31.Name = "Absent31";
+            this.Absent31.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent31.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent31.Size = new System.Drawing.Size(395, 10);
+            this.Absent31.TabIndex = 93;
+            this.Absent31.Text = "guna2ProgressBar56";
+            this.Absent31.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Absent31.Value = 8;
+            // 
+            // Present31
+            // 
+            this.Present31.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Present31.Location = new System.Drawing.Point(23, 1018);
+            this.Present31.Name = "Present31";
+            this.Present31.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present31.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present31.Size = new System.Drawing.Size(395, 10);
+            this.Present31.TabIndex = 92;
+            this.Present31.Text = "guna2ProgressBar57";
+            this.Present31.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Present31.Value = 20;
+            // 
+            // Excuse30
+            // 
+            this.Excuse30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Excuse30.Location = new System.Drawing.Point(23, 1002);
+            this.Excuse30.Name = "Excuse30";
+            this.Excuse30.ProgressColor = System.Drawing.Color.Silver;
+            this.Excuse30.ProgressColor2 = System.Drawing.Color.Silver;
+            this.Excuse30.Size = new System.Drawing.Size(395, 10);
+            this.Excuse30.TabIndex = 91;
+            this.Excuse30.Text = "guna2ProgressBar52";
+            this.Excuse30.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Excuse30.Value = 3;
+            // 
+            // Absent30
+            // 
+            this.Absent30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Absent30.Location = new System.Drawing.Point(23, 994);
+            this.Absent30.Name = "Absent30";
+            this.Absent30.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent30.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent30.Size = new System.Drawing.Size(395, 10);
+            this.Absent30.TabIndex = 90;
+            this.Absent30.Text = "guna2ProgressBar53";
+            this.Absent30.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Absent30.Value = 8;
+            // 
+            // Present30
+            // 
+            this.Present30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Present30.Location = new System.Drawing.Point(23, 985);
+            this.Present30.Name = "Present30";
+            this.Present30.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present30.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present30.Size = new System.Drawing.Size(395, 10);
+            this.Present30.TabIndex = 89;
+            this.Present30.Text = "guna2ProgressBar54";
+            this.Present30.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Present30.Value = 20;
+            // 
+            // Excuse29
+            // 
+            this.Excuse29.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Excuse29.Location = new System.Drawing.Point(23, 969);
+            this.Excuse29.Name = "Excuse29";
+            this.Excuse29.ProgressColor = System.Drawing.Color.Silver;
+            this.Excuse29.ProgressColor2 = System.Drawing.Color.Silver;
+            this.Excuse29.Size = new System.Drawing.Size(395, 10);
+            this.Excuse29.TabIndex = 88;
+            this.Excuse29.Text = "guna2ProgressBar49";
+            this.Excuse29.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Excuse29.Value = 3;
+            // 
+            // Absent29
+            // 
+            this.Absent29.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Absent29.Location = new System.Drawing.Point(23, 961);
+            this.Absent29.Name = "Absent29";
+            this.Absent29.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent29.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent29.Size = new System.Drawing.Size(395, 10);
+            this.Absent29.TabIndex = 87;
+            this.Absent29.Text = "guna2ProgressBar50";
+            this.Absent29.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Absent29.Value = 8;
+            // 
+            // Present29
+            // 
+            this.Present29.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Present29.Location = new System.Drawing.Point(23, 952);
+            this.Present29.Name = "Present29";
+            this.Present29.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present29.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present29.Size = new System.Drawing.Size(395, 10);
+            this.Present29.TabIndex = 86;
+            this.Present29.Text = "guna2ProgressBar51";
+            this.Present29.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Present29.Value = 20;
+            // 
+            // Excuse28
+            // 
+            this.Excuse28.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Excuse28.Location = new System.Drawing.Point(23, 936);
+            this.Excuse28.Name = "Excuse28";
+            this.Excuse28.ProgressColor = System.Drawing.Color.Silver;
+            this.Excuse28.ProgressColor2 = System.Drawing.Color.Silver;
+            this.Excuse28.Size = new System.Drawing.Size(395, 10);
+            this.Excuse28.TabIndex = 85;
+            this.Excuse28.Text = "guna2ProgressBar46";
+            this.Excuse28.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Excuse28.Value = 3;
+            // 
+            // Absent28
+            // 
+            this.Absent28.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Absent28.Location = new System.Drawing.Point(23, 928);
+            this.Absent28.Name = "Absent28";
+            this.Absent28.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent28.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent28.Size = new System.Drawing.Size(395, 10);
+            this.Absent28.TabIndex = 84;
+            this.Absent28.Text = "guna2ProgressBar47";
+            this.Absent28.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Absent28.Value = 8;
+            // 
+            // Present28
+            // 
+            this.Present28.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Present28.Location = new System.Drawing.Point(23, 919);
+            this.Present28.Name = "Present28";
+            this.Present28.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present28.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present28.Size = new System.Drawing.Size(395, 10);
+            this.Present28.TabIndex = 83;
+            this.Present28.Text = "guna2ProgressBar48";
+            this.Present28.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Present28.Value = 20;
+            // 
+            // Excuse27
+            // 
+            this.Excuse27.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Excuse27.Location = new System.Drawing.Point(23, 903);
+            this.Excuse27.Name = "Excuse27";
+            this.Excuse27.ProgressColor = System.Drawing.Color.Silver;
+            this.Excuse27.ProgressColor2 = System.Drawing.Color.Silver;
+            this.Excuse27.Size = new System.Drawing.Size(395, 10);
+            this.Excuse27.TabIndex = 82;
+            this.Excuse27.Text = "guna2ProgressBar43";
+            this.Excuse27.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Excuse27.Value = 3;
+            // 
+            // Absent27
+            // 
+            this.Absent27.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Absent27.Location = new System.Drawing.Point(23, 895);
+            this.Absent27.Name = "Absent27";
+            this.Absent27.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent27.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent27.Size = new System.Drawing.Size(395, 10);
+            this.Absent27.TabIndex = 81;
+            this.Absent27.Text = "guna2ProgressBar44";
+            this.Absent27.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Absent27.Value = 8;
+            // 
+            // Present27
+            // 
+            this.Present27.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Present27.Location = new System.Drawing.Point(23, 886);
+            this.Present27.Name = "Present27";
+            this.Present27.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present27.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present27.Size = new System.Drawing.Size(395, 10);
+            this.Present27.TabIndex = 80;
+            this.Present27.Text = "guna2ProgressBar45";
+            this.Present27.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Present27.Value = 20;
+            // 
+            // Excuse26
+            // 
+            this.Excuse26.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Excuse26.Location = new System.Drawing.Point(23, 870);
+            this.Excuse26.Name = "Excuse26";
+            this.Excuse26.ProgressColor = System.Drawing.Color.Silver;
+            this.Excuse26.ProgressColor2 = System.Drawing.Color.Silver;
+            this.Excuse26.Size = new System.Drawing.Size(395, 10);
+            this.Excuse26.TabIndex = 79;
+            this.Excuse26.Text = "guna2ProgressBar40";
+            this.Excuse26.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Excuse26.Value = 3;
+            // 
+            // Absent26
+            // 
+            this.Absent26.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Absent26.Location = new System.Drawing.Point(23, 862);
+            this.Absent26.Name = "Absent26";
+            this.Absent26.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent26.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent26.Size = new System.Drawing.Size(395, 10);
+            this.Absent26.TabIndex = 78;
+            this.Absent26.Text = "guna2ProgressBar41";
+            this.Absent26.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Absent26.Value = 8;
+            // 
+            // Present26
+            // 
+            this.Present26.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Present26.Location = new System.Drawing.Point(23, 853);
+            this.Present26.Name = "Present26";
+            this.Present26.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present26.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present26.Size = new System.Drawing.Size(395, 10);
+            this.Present26.TabIndex = 77;
+            this.Present26.Text = "guna2ProgressBar42";
+            this.Present26.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Present26.Value = 20;
+            // 
+            // Excuse25
+            // 
+            this.Excuse25.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Excuse25.Location = new System.Drawing.Point(23, 837);
+            this.Excuse25.Name = "Excuse25";
+            this.Excuse25.ProgressColor = System.Drawing.Color.Silver;
+            this.Excuse25.ProgressColor2 = System.Drawing.Color.Silver;
+            this.Excuse25.Size = new System.Drawing.Size(395, 10);
+            this.Excuse25.TabIndex = 76;
+            this.Excuse25.Text = "guna2ProgressBar37";
+            this.Excuse25.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Excuse25.Value = 3;
+            // 
+            // Absent25
+            // 
+            this.Absent25.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Absent25.Location = new System.Drawing.Point(23, 829);
+            this.Absent25.Name = "Absent25";
+            this.Absent25.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent25.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent25.Size = new System.Drawing.Size(395, 10);
+            this.Absent25.TabIndex = 75;
+            this.Absent25.Text = "guna2ProgressBar38";
+            this.Absent25.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Absent25.Value = 8;
+            // 
+            // Present25
+            // 
+            this.Present25.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Present25.Location = new System.Drawing.Point(23, 820);
+            this.Present25.Name = "Present25";
+            this.Present25.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present25.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present25.Size = new System.Drawing.Size(395, 10);
+            this.Present25.TabIndex = 74;
+            this.Present25.Text = "guna2ProgressBar39";
+            this.Present25.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Present25.Value = 20;
+            // 
+            // Excuse24
+            // 
+            this.Excuse24.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Excuse24.Location = new System.Drawing.Point(23, 804);
+            this.Excuse24.Name = "Excuse24";
+            this.Excuse24.ProgressColor = System.Drawing.Color.Silver;
+            this.Excuse24.ProgressColor2 = System.Drawing.Color.Silver;
+            this.Excuse24.Size = new System.Drawing.Size(395, 10);
+            this.Excuse24.TabIndex = 73;
+            this.Excuse24.Text = "guna2ProgressBar34";
+            this.Excuse24.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Excuse24.Value = 3;
+            // 
+            // Absent24
+            // 
+            this.Absent24.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Absent24.Location = new System.Drawing.Point(23, 796);
+            this.Absent24.Name = "Absent24";
+            this.Absent24.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent24.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent24.Size = new System.Drawing.Size(395, 10);
+            this.Absent24.TabIndex = 72;
+            this.Absent24.Text = "guna2ProgressBar35";
+            this.Absent24.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Absent24.Value = 8;
+            // 
+            // Present24
+            // 
+            this.Present24.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Present24.Location = new System.Drawing.Point(23, 787);
+            this.Present24.Name = "Present24";
+            this.Present24.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present24.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present24.Size = new System.Drawing.Size(395, 10);
+            this.Present24.TabIndex = 71;
+            this.Present24.Text = "guna2ProgressBar36";
+            this.Present24.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Present24.Value = 20;
+            // 
+            // Excuse23
+            // 
+            this.Excuse23.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Excuse23.Location = new System.Drawing.Point(23, 771);
+            this.Excuse23.Name = "Excuse23";
+            this.Excuse23.ProgressColor = System.Drawing.Color.Silver;
+            this.Excuse23.ProgressColor2 = System.Drawing.Color.Silver;
+            this.Excuse23.Size = new System.Drawing.Size(395, 10);
+            this.Excuse23.TabIndex = 70;
+            this.Excuse23.Text = "guna2ProgressBar34";
+            this.Excuse23.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Excuse23.Value = 3;
+            // 
+            // Absent23
+            // 
+            this.Absent23.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Absent23.Location = new System.Drawing.Point(23, 763);
+            this.Absent23.Name = "Absent23";
+            this.Absent23.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent23.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent23.Size = new System.Drawing.Size(395, 10);
+            this.Absent23.TabIndex = 69;
+            this.Absent23.Text = "guna2ProgressBar35";
+            this.Absent23.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Absent23.Value = 8;
+            // 
+            // Present23
+            // 
+            this.Present23.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Present23.Location = new System.Drawing.Point(23, 754);
+            this.Present23.Name = "Present23";
+            this.Present23.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present23.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present23.Size = new System.Drawing.Size(395, 10);
+            this.Present23.TabIndex = 68;
+            this.Present23.Text = "guna2ProgressBar36";
+            this.Present23.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Present23.Value = 20;
+            // 
+            // Excuse22
+            // 
+            this.Excuse22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Excuse22.Location = new System.Drawing.Point(23, 738);
+            this.Excuse22.Name = "Excuse22";
+            this.Excuse22.ProgressColor = System.Drawing.Color.Silver;
+            this.Excuse22.ProgressColor2 = System.Drawing.Color.Silver;
+            this.Excuse22.Size = new System.Drawing.Size(395, 10);
+            this.Excuse22.TabIndex = 67;
+            this.Excuse22.Text = "guna2ProgressBar34";
+            this.Excuse22.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Excuse22.Value = 3;
+            // 
+            // Absent22
+            // 
+            this.Absent22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Absent22.Location = new System.Drawing.Point(23, 730);
+            this.Absent22.Name = "Absent22";
+            this.Absent22.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent22.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent22.Size = new System.Drawing.Size(395, 10);
+            this.Absent22.TabIndex = 66;
+            this.Absent22.Text = "guna2ProgressBar35";
+            this.Absent22.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Absent22.Value = 8;
+            // 
+            // Present22
+            // 
+            this.Present22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Present22.Location = new System.Drawing.Point(23, 721);
+            this.Present22.Name = "Present22";
+            this.Present22.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present22.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present22.Size = new System.Drawing.Size(395, 10);
+            this.Present22.TabIndex = 65;
+            this.Present22.Text = "guna2ProgressBar36";
+            this.Present22.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Present22.Value = 20;
+            // 
+            // Excuse21
+            // 
+            this.Excuse21.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Excuse21.Location = new System.Drawing.Point(23, 705);
+            this.Excuse21.Name = "Excuse21";
+            this.Excuse21.ProgressColor = System.Drawing.Color.Silver;
+            this.Excuse21.ProgressColor2 = System.Drawing.Color.Silver;
+            this.Excuse21.Size = new System.Drawing.Size(395, 10);
+            this.Excuse21.TabIndex = 64;
+            this.Excuse21.Text = "guna2ProgressBar34";
+            this.Excuse21.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Excuse21.Value = 3;
+            // 
+            // Absent21
+            // 
+            this.Absent21.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Absent21.Location = new System.Drawing.Point(23, 697);
+            this.Absent21.Name = "Absent21";
+            this.Absent21.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent21.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent21.Size = new System.Drawing.Size(395, 10);
+            this.Absent21.TabIndex = 63;
+            this.Absent21.Text = "guna2ProgressBar35";
+            this.Absent21.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Absent21.Value = 8;
+            // 
+            // Present21
+            // 
+            this.Present21.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Present21.Location = new System.Drawing.Point(23, 688);
+            this.Present21.Name = "Present21";
+            this.Present21.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present21.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present21.Size = new System.Drawing.Size(395, 10);
+            this.Present21.TabIndex = 62;
+            this.Present21.Text = "guna2ProgressBar36";
+            this.Present21.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Present21.Value = 20;
+            // 
+            // Excuse20
+            // 
+            this.Excuse20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Excuse20.Location = new System.Drawing.Point(23, 672);
+            this.Excuse20.Name = "Excuse20";
+            this.Excuse20.ProgressColor = System.Drawing.Color.Silver;
+            this.Excuse20.ProgressColor2 = System.Drawing.Color.Silver;
+            this.Excuse20.Size = new System.Drawing.Size(395, 10);
+            this.Excuse20.TabIndex = 61;
+            this.Excuse20.Text = "guna2ProgressBar34";
+            this.Excuse20.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Excuse20.Value = 3;
+            // 
+            // Absent20
+            // 
+            this.Absent20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Absent20.Location = new System.Drawing.Point(23, 664);
+            this.Absent20.Name = "Absent20";
+            this.Absent20.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent20.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent20.Size = new System.Drawing.Size(395, 10);
+            this.Absent20.TabIndex = 60;
+            this.Absent20.Text = "guna2ProgressBar35";
+            this.Absent20.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Absent20.Value = 8;
+            // 
+            // Present20
+            // 
+            this.Present20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Present20.Location = new System.Drawing.Point(23, 655);
+            this.Present20.Name = "Present20";
+            this.Present20.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present20.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present20.Size = new System.Drawing.Size(395, 10);
+            this.Present20.TabIndex = 59;
+            this.Present20.Text = "guna2ProgressBar36";
+            this.Present20.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Present20.Value = 20;
+            // 
+            // Excuse19
+            // 
+            this.Excuse19.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Excuse19.Location = new System.Drawing.Point(23, 639);
+            this.Excuse19.Name = "Excuse19";
+            this.Excuse19.ProgressColor = System.Drawing.Color.Silver;
+            this.Excuse19.ProgressColor2 = System.Drawing.Color.Silver;
+            this.Excuse19.Size = new System.Drawing.Size(395, 10);
+            this.Excuse19.TabIndex = 58;
+            this.Excuse19.Text = "guna2ProgressBar34";
+            this.Excuse19.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Excuse19.Value = 3;
+            // 
+            // Absent19
+            // 
+            this.Absent19.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Absent19.Location = new System.Drawing.Point(23, 631);
+            this.Absent19.Name = "Absent19";
+            this.Absent19.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent19.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent19.Size = new System.Drawing.Size(395, 10);
+            this.Absent19.TabIndex = 57;
+            this.Absent19.Text = "guna2ProgressBar35";
+            this.Absent19.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Absent19.Value = 8;
+            // 
+            // Present19
+            // 
+            this.Present19.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Present19.Location = new System.Drawing.Point(23, 622);
+            this.Present19.Name = "Present19";
+            this.Present19.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present19.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present19.Size = new System.Drawing.Size(395, 10);
+            this.Present19.TabIndex = 56;
+            this.Present19.Text = "guna2ProgressBar36";
+            this.Present19.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Present19.Value = 20;
+            // 
+            // Excuse18
+            // 
+            this.Excuse18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Excuse18.Location = new System.Drawing.Point(23, 606);
+            this.Excuse18.Name = "Excuse18";
+            this.Excuse18.ProgressColor = System.Drawing.Color.Silver;
+            this.Excuse18.ProgressColor2 = System.Drawing.Color.Silver;
+            this.Excuse18.Size = new System.Drawing.Size(395, 10);
+            this.Excuse18.TabIndex = 55;
+            this.Excuse18.Text = "guna2ProgressBar34";
+            this.Excuse18.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Excuse18.Value = 3;
+            // 
+            // Absent18
+            // 
+            this.Absent18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Absent18.Location = new System.Drawing.Point(23, 598);
+            this.Absent18.Name = "Absent18";
+            this.Absent18.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent18.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent18.Size = new System.Drawing.Size(395, 10);
+            this.Absent18.TabIndex = 54;
+            this.Absent18.Text = "guna2ProgressBar35";
+            this.Absent18.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Absent18.Value = 8;
+            // 
+            // Present18
+            // 
+            this.Present18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Present18.Location = new System.Drawing.Point(23, 589);
+            this.Present18.Name = "Present18";
+            this.Present18.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present18.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present18.Size = new System.Drawing.Size(395, 10);
+            this.Present18.TabIndex = 53;
+            this.Present18.Text = "guna2ProgressBar36";
+            this.Present18.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Present18.Value = 20;
+            // 
+            // Excuse17
+            // 
+            this.Excuse17.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Excuse17.Location = new System.Drawing.Point(23, 573);
+            this.Excuse17.Name = "Excuse17";
+            this.Excuse17.ProgressColor = System.Drawing.Color.Silver;
+            this.Excuse17.ProgressColor2 = System.Drawing.Color.Silver;
+            this.Excuse17.Size = new System.Drawing.Size(395, 10);
+            this.Excuse17.TabIndex = 52;
+            this.Excuse17.Text = "guna2ProgressBar34";
+            this.Excuse17.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Excuse17.Value = 3;
+            // 
+            // Absent17
+            // 
+            this.Absent17.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Absent17.Location = new System.Drawing.Point(23, 565);
+            this.Absent17.Name = "Absent17";
+            this.Absent17.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent17.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent17.Size = new System.Drawing.Size(395, 10);
+            this.Absent17.TabIndex = 51;
+            this.Absent17.Text = "guna2ProgressBar35";
+            this.Absent17.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Absent17.Value = 8;
+            // 
+            // Present17
+            // 
+            this.Present17.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Present17.Location = new System.Drawing.Point(23, 556);
+            this.Present17.Name = "Present17";
+            this.Present17.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present17.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present17.Size = new System.Drawing.Size(395, 10);
+            this.Present17.TabIndex = 50;
+            this.Present17.Text = "guna2ProgressBar36";
+            this.Present17.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Present17.Value = 20;
+            // 
+            // Excuse16
+            // 
+            this.Excuse16.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Excuse16.Location = new System.Drawing.Point(23, 540);
+            this.Excuse16.Name = "Excuse16";
+            this.Excuse16.ProgressColor = System.Drawing.Color.Silver;
+            this.Excuse16.ProgressColor2 = System.Drawing.Color.Silver;
+            this.Excuse16.Size = new System.Drawing.Size(395, 10);
+            this.Excuse16.TabIndex = 49;
+            this.Excuse16.Text = "guna2ProgressBar34";
+            this.Excuse16.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Excuse16.Value = 3;
+            // 
+            // Absent16
+            // 
+            this.Absent16.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Absent16.Location = new System.Drawing.Point(23, 532);
+            this.Absent16.Name = "Absent16";
+            this.Absent16.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent16.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent16.Size = new System.Drawing.Size(395, 10);
+            this.Absent16.TabIndex = 48;
+            this.Absent16.Text = "guna2ProgressBar35";
+            this.Absent16.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Absent16.Value = 8;
+            // 
+            // Present16
+            // 
+            this.Present16.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Present16.Location = new System.Drawing.Point(23, 523);
+            this.Present16.Name = "Present16";
+            this.Present16.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present16.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present16.Size = new System.Drawing.Size(395, 10);
+            this.Present16.TabIndex = 47;
+            this.Present16.Text = "guna2ProgressBar36";
+            this.Present16.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Present16.Value = 20;
+            // 
+            // Excuse15
+            // 
+            this.Excuse15.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Excuse15.Location = new System.Drawing.Point(23, 507);
+            this.Excuse15.Name = "Excuse15";
+            this.Excuse15.ProgressColor = System.Drawing.Color.Silver;
+            this.Excuse15.ProgressColor2 = System.Drawing.Color.Silver;
+            this.Excuse15.Size = new System.Drawing.Size(395, 10);
+            this.Excuse15.TabIndex = 46;
+            this.Excuse15.Text = "guna2ProgressBar34";
+            this.Excuse15.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Excuse15.Value = 3;
+            // 
+            // Absent15
+            // 
+            this.Absent15.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Absent15.Location = new System.Drawing.Point(23, 499);
+            this.Absent15.Name = "Absent15";
+            this.Absent15.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent15.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent15.Size = new System.Drawing.Size(395, 10);
+            this.Absent15.TabIndex = 45;
+            this.Absent15.Text = "guna2ProgressBar35";
+            this.Absent15.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Absent15.Value = 8;
+            // 
+            // Present15
+            // 
+            this.Present15.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Present15.Location = new System.Drawing.Point(23, 490);
+            this.Present15.Name = "Present15";
+            this.Present15.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present15.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present15.Size = new System.Drawing.Size(395, 10);
+            this.Present15.TabIndex = 44;
+            this.Present15.Text = "guna2ProgressBar36";
+            this.Present15.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Present15.Value = 20;
+            // 
+            // Excuse14
+            // 
+            this.Excuse14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Excuse14.Location = new System.Drawing.Point(23, 474);
+            this.Excuse14.Name = "Excuse14";
+            this.Excuse14.ProgressColor = System.Drawing.Color.Silver;
+            this.Excuse14.ProgressColor2 = System.Drawing.Color.Silver;
+            this.Excuse14.Size = new System.Drawing.Size(395, 10);
+            this.Excuse14.TabIndex = 43;
+            this.Excuse14.Text = "guna2ProgressBar34";
+            this.Excuse14.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Excuse14.Value = 3;
+            // 
+            // Absent14
+            // 
+            this.Absent14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Absent14.Location = new System.Drawing.Point(23, 466);
+            this.Absent14.Name = "Absent14";
+            this.Absent14.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent14.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent14.Size = new System.Drawing.Size(395, 10);
+            this.Absent14.TabIndex = 42;
+            this.Absent14.Text = "guna2ProgressBar35";
+            this.Absent14.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Absent14.Value = 8;
+            // 
+            // Present14
+            // 
+            this.Present14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Present14.Location = new System.Drawing.Point(23, 457);
+            this.Present14.Name = "Present14";
+            this.Present14.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present14.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present14.Size = new System.Drawing.Size(395, 10);
+            this.Present14.TabIndex = 41;
+            this.Present14.Text = "guna2ProgressBar36";
+            this.Present14.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Present14.Value = 20;
+            // 
+            // Excuse13
+            // 
+            this.Excuse13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Excuse13.Location = new System.Drawing.Point(23, 441);
+            this.Excuse13.Name = "Excuse13";
+            this.Excuse13.ProgressColor = System.Drawing.Color.Silver;
+            this.Excuse13.ProgressColor2 = System.Drawing.Color.Silver;
+            this.Excuse13.Size = new System.Drawing.Size(395, 10);
+            this.Excuse13.TabIndex = 40;
+            this.Excuse13.Text = "guna2ProgressBar34";
+            this.Excuse13.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Excuse13.Value = 3;
+            // 
+            // Absent13
+            // 
+            this.Absent13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Absent13.Location = new System.Drawing.Point(23, 433);
+            this.Absent13.Name = "Absent13";
+            this.Absent13.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent13.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Absent13.Size = new System.Drawing.Size(395, 10);
+            this.Absent13.TabIndex = 39;
+            this.Absent13.Text = "guna2ProgressBar35";
+            this.Absent13.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Absent13.Value = 8;
+            // 
+            // Present13
+            // 
+            this.Present13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
+            this.Present13.Location = new System.Drawing.Point(23, 424);
+            this.Present13.Name = "Present13";
+            this.Present13.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present13.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.Present13.Size = new System.Drawing.Size(395, 10);
+            this.Present13.TabIndex = 38;
+            this.Present13.Text = "guna2ProgressBar36";
+            this.Present13.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.Present13.Value = 20;
             // 
             // Excuse12
             // 
@@ -860,6 +1602,7 @@
             // attContainer
             // 
             this.attContainer.AutoScroll = true;
+            this.attContainer.Controls.Add(this.guna2ImageButton1);
             this.attContainer.Controls.Add(this.barContainer);
             this.attContainer.Controls.Add(this.guna2HtmlLabel14);
             this.attContainer.Controls.Add(this.guna2Panel4);
@@ -1315,396 +2058,6 @@
             this.lbl0per.Text = "0";
             this.lbl0per.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // Excuse13
-            // 
-            this.Excuse13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Excuse13.Location = new System.Drawing.Point(23, 441);
-            this.Excuse13.Name = "Excuse13";
-            this.Excuse13.ProgressColor = System.Drawing.Color.Silver;
-            this.Excuse13.ProgressColor2 = System.Drawing.Color.Silver;
-            this.Excuse13.Size = new System.Drawing.Size(395, 10);
-            this.Excuse13.TabIndex = 40;
-            this.Excuse13.Text = "guna2ProgressBar34";
-            this.Excuse13.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Excuse13.Value = 3;
-            // 
-            // Absent13
-            // 
-            this.Absent13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Absent13.Location = new System.Drawing.Point(23, 433);
-            this.Absent13.Name = "Absent13";
-            this.Absent13.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent13.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent13.Size = new System.Drawing.Size(395, 10);
-            this.Absent13.TabIndex = 39;
-            this.Absent13.Text = "guna2ProgressBar35";
-            this.Absent13.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Absent13.Value = 8;
-            // 
-            // Present13
-            // 
-            this.Present13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Present13.Location = new System.Drawing.Point(23, 424);
-            this.Present13.Name = "Present13";
-            this.Present13.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present13.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present13.Size = new System.Drawing.Size(395, 10);
-            this.Present13.TabIndex = 38;
-            this.Present13.Text = "guna2ProgressBar36";
-            this.Present13.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Present13.Value = 20;
-            // 
-            // Excuse14
-            // 
-            this.Excuse14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Excuse14.Location = new System.Drawing.Point(23, 474);
-            this.Excuse14.Name = "Excuse14";
-            this.Excuse14.ProgressColor = System.Drawing.Color.Silver;
-            this.Excuse14.ProgressColor2 = System.Drawing.Color.Silver;
-            this.Excuse14.Size = new System.Drawing.Size(395, 10);
-            this.Excuse14.TabIndex = 43;
-            this.Excuse14.Text = "guna2ProgressBar34";
-            this.Excuse14.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Excuse14.Value = 3;
-            // 
-            // Absent14
-            // 
-            this.Absent14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Absent14.Location = new System.Drawing.Point(23, 466);
-            this.Absent14.Name = "Absent14";
-            this.Absent14.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent14.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent14.Size = new System.Drawing.Size(395, 10);
-            this.Absent14.TabIndex = 42;
-            this.Absent14.Text = "guna2ProgressBar35";
-            this.Absent14.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Absent14.Value = 8;
-            // 
-            // Present14
-            // 
-            this.Present14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Present14.Location = new System.Drawing.Point(23, 457);
-            this.Present14.Name = "Present14";
-            this.Present14.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present14.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present14.Size = new System.Drawing.Size(395, 10);
-            this.Present14.TabIndex = 41;
-            this.Present14.Text = "guna2ProgressBar36";
-            this.Present14.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Present14.Value = 20;
-            // 
-            // Excuse15
-            // 
-            this.Excuse15.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Excuse15.Location = new System.Drawing.Point(23, 507);
-            this.Excuse15.Name = "Excuse15";
-            this.Excuse15.ProgressColor = System.Drawing.Color.Silver;
-            this.Excuse15.ProgressColor2 = System.Drawing.Color.Silver;
-            this.Excuse15.Size = new System.Drawing.Size(395, 10);
-            this.Excuse15.TabIndex = 46;
-            this.Excuse15.Text = "guna2ProgressBar34";
-            this.Excuse15.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Excuse15.Value = 3;
-            // 
-            // Absent15
-            // 
-            this.Absent15.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Absent15.Location = new System.Drawing.Point(23, 499);
-            this.Absent15.Name = "Absent15";
-            this.Absent15.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent15.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent15.Size = new System.Drawing.Size(395, 10);
-            this.Absent15.TabIndex = 45;
-            this.Absent15.Text = "guna2ProgressBar35";
-            this.Absent15.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Absent15.Value = 8;
-            // 
-            // Present15
-            // 
-            this.Present15.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Present15.Location = new System.Drawing.Point(23, 490);
-            this.Present15.Name = "Present15";
-            this.Present15.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present15.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present15.Size = new System.Drawing.Size(395, 10);
-            this.Present15.TabIndex = 44;
-            this.Present15.Text = "guna2ProgressBar36";
-            this.Present15.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Present15.Value = 20;
-            // 
-            // Excuse16
-            // 
-            this.Excuse16.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Excuse16.Location = new System.Drawing.Point(23, 540);
-            this.Excuse16.Name = "Excuse16";
-            this.Excuse16.ProgressColor = System.Drawing.Color.Silver;
-            this.Excuse16.ProgressColor2 = System.Drawing.Color.Silver;
-            this.Excuse16.Size = new System.Drawing.Size(395, 10);
-            this.Excuse16.TabIndex = 49;
-            this.Excuse16.Text = "guna2ProgressBar34";
-            this.Excuse16.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Excuse16.Value = 3;
-            // 
-            // Absent16
-            // 
-            this.Absent16.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Absent16.Location = new System.Drawing.Point(23, 532);
-            this.Absent16.Name = "Absent16";
-            this.Absent16.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent16.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent16.Size = new System.Drawing.Size(395, 10);
-            this.Absent16.TabIndex = 48;
-            this.Absent16.Text = "guna2ProgressBar35";
-            this.Absent16.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Absent16.Value = 8;
-            // 
-            // Present16
-            // 
-            this.Present16.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Present16.Location = new System.Drawing.Point(23, 523);
-            this.Present16.Name = "Present16";
-            this.Present16.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present16.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present16.Size = new System.Drawing.Size(395, 10);
-            this.Present16.TabIndex = 47;
-            this.Present16.Text = "guna2ProgressBar36";
-            this.Present16.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Present16.Value = 20;
-            // 
-            // Excuse17
-            // 
-            this.Excuse17.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Excuse17.Location = new System.Drawing.Point(23, 573);
-            this.Excuse17.Name = "Excuse17";
-            this.Excuse17.ProgressColor = System.Drawing.Color.Silver;
-            this.Excuse17.ProgressColor2 = System.Drawing.Color.Silver;
-            this.Excuse17.Size = new System.Drawing.Size(395, 10);
-            this.Excuse17.TabIndex = 52;
-            this.Excuse17.Text = "guna2ProgressBar34";
-            this.Excuse17.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Excuse17.Value = 3;
-            // 
-            // Absent17
-            // 
-            this.Absent17.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Absent17.Location = new System.Drawing.Point(23, 565);
-            this.Absent17.Name = "Absent17";
-            this.Absent17.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent17.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent17.Size = new System.Drawing.Size(395, 10);
-            this.Absent17.TabIndex = 51;
-            this.Absent17.Text = "guna2ProgressBar35";
-            this.Absent17.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Absent17.Value = 8;
-            // 
-            // Present17
-            // 
-            this.Present17.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Present17.Location = new System.Drawing.Point(23, 556);
-            this.Present17.Name = "Present17";
-            this.Present17.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present17.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present17.Size = new System.Drawing.Size(395, 10);
-            this.Present17.TabIndex = 50;
-            this.Present17.Text = "guna2ProgressBar36";
-            this.Present17.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Present17.Value = 20;
-            // 
-            // Excuse18
-            // 
-            this.Excuse18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Excuse18.Location = new System.Drawing.Point(23, 606);
-            this.Excuse18.Name = "Excuse18";
-            this.Excuse18.ProgressColor = System.Drawing.Color.Silver;
-            this.Excuse18.ProgressColor2 = System.Drawing.Color.Silver;
-            this.Excuse18.Size = new System.Drawing.Size(395, 10);
-            this.Excuse18.TabIndex = 55;
-            this.Excuse18.Text = "guna2ProgressBar34";
-            this.Excuse18.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Excuse18.Value = 3;
-            // 
-            // Absent18
-            // 
-            this.Absent18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Absent18.Location = new System.Drawing.Point(23, 598);
-            this.Absent18.Name = "Absent18";
-            this.Absent18.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent18.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent18.Size = new System.Drawing.Size(395, 10);
-            this.Absent18.TabIndex = 54;
-            this.Absent18.Text = "guna2ProgressBar35";
-            this.Absent18.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Absent18.Value = 8;
-            // 
-            // Present18
-            // 
-            this.Present18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Present18.Location = new System.Drawing.Point(23, 589);
-            this.Present18.Name = "Present18";
-            this.Present18.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present18.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present18.Size = new System.Drawing.Size(395, 10);
-            this.Present18.TabIndex = 53;
-            this.Present18.Text = "guna2ProgressBar36";
-            this.Present18.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Present18.Value = 20;
-            // 
-            // Excuse19
-            // 
-            this.Excuse19.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Excuse19.Location = new System.Drawing.Point(23, 639);
-            this.Excuse19.Name = "Excuse19";
-            this.Excuse19.ProgressColor = System.Drawing.Color.Silver;
-            this.Excuse19.ProgressColor2 = System.Drawing.Color.Silver;
-            this.Excuse19.Size = new System.Drawing.Size(395, 10);
-            this.Excuse19.TabIndex = 58;
-            this.Excuse19.Text = "guna2ProgressBar34";
-            this.Excuse19.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Excuse19.Value = 3;
-            // 
-            // Absent19
-            // 
-            this.Absent19.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Absent19.Location = new System.Drawing.Point(23, 631);
-            this.Absent19.Name = "Absent19";
-            this.Absent19.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent19.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent19.Size = new System.Drawing.Size(395, 10);
-            this.Absent19.TabIndex = 57;
-            this.Absent19.Text = "guna2ProgressBar35";
-            this.Absent19.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Absent19.Value = 8;
-            // 
-            // Present19
-            // 
-            this.Present19.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Present19.Location = new System.Drawing.Point(23, 622);
-            this.Present19.Name = "Present19";
-            this.Present19.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present19.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present19.Size = new System.Drawing.Size(395, 10);
-            this.Present19.TabIndex = 56;
-            this.Present19.Text = "guna2ProgressBar36";
-            this.Present19.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Present19.Value = 20;
-            // 
-            // Excuse20
-            // 
-            this.Excuse20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Excuse20.Location = new System.Drawing.Point(23, 672);
-            this.Excuse20.Name = "Excuse20";
-            this.Excuse20.ProgressColor = System.Drawing.Color.Silver;
-            this.Excuse20.ProgressColor2 = System.Drawing.Color.Silver;
-            this.Excuse20.Size = new System.Drawing.Size(395, 10);
-            this.Excuse20.TabIndex = 61;
-            this.Excuse20.Text = "guna2ProgressBar34";
-            this.Excuse20.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Excuse20.Value = 3;
-            // 
-            // Absent20
-            // 
-            this.Absent20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Absent20.Location = new System.Drawing.Point(23, 664);
-            this.Absent20.Name = "Absent20";
-            this.Absent20.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent20.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent20.Size = new System.Drawing.Size(395, 10);
-            this.Absent20.TabIndex = 60;
-            this.Absent20.Text = "guna2ProgressBar35";
-            this.Absent20.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Absent20.Value = 8;
-            // 
-            // Present20
-            // 
-            this.Present20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Present20.Location = new System.Drawing.Point(23, 655);
-            this.Present20.Name = "Present20";
-            this.Present20.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present20.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present20.Size = new System.Drawing.Size(395, 10);
-            this.Present20.TabIndex = 59;
-            this.Present20.Text = "guna2ProgressBar36";
-            this.Present20.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Present20.Value = 20;
-            // 
-            // Excuse21
-            // 
-            this.Excuse21.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Excuse21.Location = new System.Drawing.Point(23, 705);
-            this.Excuse21.Name = "Excuse21";
-            this.Excuse21.ProgressColor = System.Drawing.Color.Silver;
-            this.Excuse21.ProgressColor2 = System.Drawing.Color.Silver;
-            this.Excuse21.Size = new System.Drawing.Size(395, 10);
-            this.Excuse21.TabIndex = 64;
-            this.Excuse21.Text = "guna2ProgressBar34";
-            this.Excuse21.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Excuse21.Value = 3;
-            // 
-            // Absent21
-            // 
-            this.Absent21.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Absent21.Location = new System.Drawing.Point(23, 697);
-            this.Absent21.Name = "Absent21";
-            this.Absent21.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent21.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent21.Size = new System.Drawing.Size(395, 10);
-            this.Absent21.TabIndex = 63;
-            this.Absent21.Text = "guna2ProgressBar35";
-            this.Absent21.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Absent21.Value = 8;
-            // 
-            // Present21
-            // 
-            this.Present21.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Present21.Location = new System.Drawing.Point(23, 688);
-            this.Present21.Name = "Present21";
-            this.Present21.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present21.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present21.Size = new System.Drawing.Size(395, 10);
-            this.Present21.TabIndex = 62;
-            this.Present21.Text = "guna2ProgressBar36";
-            this.Present21.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Present21.Value = 20;
-            // 
-            // Excuse22
-            // 
-            this.Excuse22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Excuse22.Location = new System.Drawing.Point(23, 738);
-            this.Excuse22.Name = "Excuse22";
-            this.Excuse22.ProgressColor = System.Drawing.Color.Silver;
-            this.Excuse22.ProgressColor2 = System.Drawing.Color.Silver;
-            this.Excuse22.Size = new System.Drawing.Size(395, 10);
-            this.Excuse22.TabIndex = 67;
-            this.Excuse22.Text = "guna2ProgressBar34";
-            this.Excuse22.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Excuse22.Value = 3;
-            // 
-            // Absent22
-            // 
-            this.Absent22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Absent22.Location = new System.Drawing.Point(23, 730);
-            this.Absent22.Name = "Absent22";
-            this.Absent22.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent22.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent22.Size = new System.Drawing.Size(395, 10);
-            this.Absent22.TabIndex = 66;
-            this.Absent22.Text = "guna2ProgressBar35";
-            this.Absent22.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Absent22.Value = 8;
-            // 
-            // Present22
-            // 
-            this.Present22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Present22.Location = new System.Drawing.Point(23, 721);
-            this.Present22.Name = "Present22";
-            this.Present22.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present22.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present22.Size = new System.Drawing.Size(395, 10);
-            this.Present22.TabIndex = 65;
-            this.Present22.Text = "guna2ProgressBar36";
-            this.Present22.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Present22.Value = 20;
-            // 
             // lbl13
             // 
             this.lbl13.AutoSize = false;
@@ -1720,134 +2073,6 @@
             this.lbl13.TabStop = false;
             this.lbl13.Text = "13";
             this.lbl13.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl14
-            // 
-            this.lbl14.AutoSize = false;
-            this.lbl14.AutoSizeHeightOnly = true;
-            this.lbl14.BackColor = System.Drawing.Color.Transparent;
-            this.lbl14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.lbl14.IsContextMenuEnabled = false;
-            this.lbl14.IsSelectionEnabled = false;
-            this.lbl14.Location = new System.Drawing.Point(11, 593);
-            this.lbl14.Name = "lbl14";
-            this.lbl14.Size = new System.Drawing.Size(163, 17);
-            this.lbl14.TabIndex = 89;
-            this.lbl14.TabStop = false;
-            this.lbl14.Text = "14";
-            this.lbl14.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl15
-            // 
-            this.lbl15.AutoSize = false;
-            this.lbl15.AutoSizeHeightOnly = true;
-            this.lbl15.BackColor = System.Drawing.Color.Transparent;
-            this.lbl15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.lbl15.IsContextMenuEnabled = false;
-            this.lbl15.IsSelectionEnabled = false;
-            this.lbl15.Location = new System.Drawing.Point(11, 626);
-            this.lbl15.Name = "lbl15";
-            this.lbl15.Size = new System.Drawing.Size(163, 17);
-            this.lbl15.TabIndex = 90;
-            this.lbl15.TabStop = false;
-            this.lbl15.Text = "15";
-            this.lbl15.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl16
-            // 
-            this.lbl16.AutoSize = false;
-            this.lbl16.AutoSizeHeightOnly = true;
-            this.lbl16.BackColor = System.Drawing.Color.Transparent;
-            this.lbl16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.lbl16.IsContextMenuEnabled = false;
-            this.lbl16.IsSelectionEnabled = false;
-            this.lbl16.Location = new System.Drawing.Point(12, 659);
-            this.lbl16.Name = "lbl16";
-            this.lbl16.Size = new System.Drawing.Size(163, 17);
-            this.lbl16.TabIndex = 91;
-            this.lbl16.TabStop = false;
-            this.lbl16.Text = "16";
-            this.lbl16.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl17
-            // 
-            this.lbl17.AutoSize = false;
-            this.lbl17.AutoSizeHeightOnly = true;
-            this.lbl17.BackColor = System.Drawing.Color.Transparent;
-            this.lbl17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.lbl17.IsContextMenuEnabled = false;
-            this.lbl17.IsSelectionEnabled = false;
-            this.lbl17.Location = new System.Drawing.Point(11, 692);
-            this.lbl17.Name = "lbl17";
-            this.lbl17.Size = new System.Drawing.Size(163, 17);
-            this.lbl17.TabIndex = 92;
-            this.lbl17.TabStop = false;
-            this.lbl17.Text = "17";
-            this.lbl17.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl18
-            // 
-            this.lbl18.AutoSize = false;
-            this.lbl18.AutoSizeHeightOnly = true;
-            this.lbl18.BackColor = System.Drawing.Color.Transparent;
-            this.lbl18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.lbl18.IsContextMenuEnabled = false;
-            this.lbl18.IsSelectionEnabled = false;
-            this.lbl18.Location = new System.Drawing.Point(11, 725);
-            this.lbl18.Name = "lbl18";
-            this.lbl18.Size = new System.Drawing.Size(163, 17);
-            this.lbl18.TabIndex = 93;
-            this.lbl18.TabStop = false;
-            this.lbl18.Text = "18";
-            this.lbl18.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl19
-            // 
-            this.lbl19.AutoSize = false;
-            this.lbl19.AutoSizeHeightOnly = true;
-            this.lbl19.BackColor = System.Drawing.Color.Transparent;
-            this.lbl19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.lbl19.IsContextMenuEnabled = false;
-            this.lbl19.IsSelectionEnabled = false;
-            this.lbl19.Location = new System.Drawing.Point(11, 758);
-            this.lbl19.Name = "lbl19";
-            this.lbl19.Size = new System.Drawing.Size(163, 17);
-            this.lbl19.TabIndex = 94;
-            this.lbl19.TabStop = false;
-            this.lbl19.Text = "19";
-            this.lbl19.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl20
-            // 
-            this.lbl20.AutoSize = false;
-            this.lbl20.AutoSizeHeightOnly = true;
-            this.lbl20.BackColor = System.Drawing.Color.Transparent;
-            this.lbl20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.lbl20.IsContextMenuEnabled = false;
-            this.lbl20.IsSelectionEnabled = false;
-            this.lbl20.Location = new System.Drawing.Point(12, 791);
-            this.lbl20.Name = "lbl20";
-            this.lbl20.Size = new System.Drawing.Size(163, 17);
-            this.lbl20.TabIndex = 95;
-            this.lbl20.TabStop = false;
-            this.lbl20.Text = "20";
-            this.lbl20.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl21
-            // 
-            this.lbl21.AutoSize = false;
-            this.lbl21.AutoSizeHeightOnly = true;
-            this.lbl21.BackColor = System.Drawing.Color.Transparent;
-            this.lbl21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.lbl21.IsContextMenuEnabled = false;
-            this.lbl21.IsSelectionEnabled = false;
-            this.lbl21.Location = new System.Drawing.Point(11, 824);
-            this.lbl21.Name = "lbl21";
-            this.lbl21.Size = new System.Drawing.Size(163, 17);
-            this.lbl21.TabIndex = 96;
-            this.lbl21.TabStop = false;
-            this.lbl21.Text = "21";
-            this.lbl21.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl22
             // 
@@ -1865,468 +2090,149 @@
             this.lbl22.Text = "22";
             this.lbl22.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // Excuse23
-            // 
-            this.Excuse23.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Excuse23.Location = new System.Drawing.Point(23, 771);
-            this.Excuse23.Name = "Excuse23";
-            this.Excuse23.ProgressColor = System.Drawing.Color.Silver;
-            this.Excuse23.ProgressColor2 = System.Drawing.Color.Silver;
-            this.Excuse23.Size = new System.Drawing.Size(395, 10);
-            this.Excuse23.TabIndex = 70;
-            this.Excuse23.Text = "guna2ProgressBar34";
-            this.Excuse23.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Excuse23.Value = 3;
-            // 
-            // Absent23
-            // 
-            this.Absent23.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Absent23.Location = new System.Drawing.Point(23, 763);
-            this.Absent23.Name = "Absent23";
-            this.Absent23.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent23.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent23.Size = new System.Drawing.Size(395, 10);
-            this.Absent23.TabIndex = 69;
-            this.Absent23.Text = "guna2ProgressBar35";
-            this.Absent23.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Absent23.Value = 8;
-            // 
-            // Present23
-            // 
-            this.Present23.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Present23.Location = new System.Drawing.Point(23, 754);
-            this.Present23.Name = "Present23";
-            this.Present23.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present23.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present23.Size = new System.Drawing.Size(395, 10);
-            this.Present23.TabIndex = 68;
-            this.Present23.Text = "guna2ProgressBar36";
-            this.Present23.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Present23.Value = 20;
-            // 
-            // Excuse24
-            // 
-            this.Excuse24.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Excuse24.Location = new System.Drawing.Point(23, 804);
-            this.Excuse24.Name = "Excuse24";
-            this.Excuse24.ProgressColor = System.Drawing.Color.Silver;
-            this.Excuse24.ProgressColor2 = System.Drawing.Color.Silver;
-            this.Excuse24.Size = new System.Drawing.Size(395, 10);
-            this.Excuse24.TabIndex = 73;
-            this.Excuse24.Text = "guna2ProgressBar34";
-            this.Excuse24.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Excuse24.Value = 3;
-            // 
-            // Absent24
-            // 
-            this.Absent24.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Absent24.Location = new System.Drawing.Point(23, 796);
-            this.Absent24.Name = "Absent24";
-            this.Absent24.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent24.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent24.Size = new System.Drawing.Size(395, 10);
-            this.Absent24.TabIndex = 72;
-            this.Absent24.Text = "guna2ProgressBar35";
-            this.Absent24.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Absent24.Value = 8;
-            // 
-            // Present24
-            // 
-            this.Present24.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Present24.Location = new System.Drawing.Point(23, 787);
-            this.Present24.Name = "Present24";
-            this.Present24.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present24.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present24.Size = new System.Drawing.Size(395, 10);
-            this.Present24.TabIndex = 71;
-            this.Present24.Text = "guna2ProgressBar36";
-            this.Present24.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Present24.Value = 20;
-            // 
-            // Excuse25
-            // 
-            this.Excuse25.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Excuse25.Location = new System.Drawing.Point(23, 837);
-            this.Excuse25.Name = "Excuse25";
-            this.Excuse25.ProgressColor = System.Drawing.Color.Silver;
-            this.Excuse25.ProgressColor2 = System.Drawing.Color.Silver;
-            this.Excuse25.Size = new System.Drawing.Size(395, 10);
-            this.Excuse25.TabIndex = 76;
-            this.Excuse25.Text = "guna2ProgressBar37";
-            this.Excuse25.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Excuse25.Value = 3;
-            // 
-            // Absent25
-            // 
-            this.Absent25.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Absent25.Location = new System.Drawing.Point(23, 829);
-            this.Absent25.Name = "Absent25";
-            this.Absent25.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent25.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent25.Size = new System.Drawing.Size(395, 10);
-            this.Absent25.TabIndex = 75;
-            this.Absent25.Text = "guna2ProgressBar38";
-            this.Absent25.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Absent25.Value = 8;
-            // 
-            // Present25
-            // 
-            this.Present25.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Present25.Location = new System.Drawing.Point(23, 820);
-            this.Present25.Name = "Present25";
-            this.Present25.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present25.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present25.Size = new System.Drawing.Size(395, 10);
-            this.Present25.TabIndex = 74;
-            this.Present25.Text = "guna2ProgressBar39";
-            this.Present25.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Present25.Value = 20;
-            // 
-            // Excuse26
-            // 
-            this.Excuse26.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Excuse26.Location = new System.Drawing.Point(23, 870);
-            this.Excuse26.Name = "Excuse26";
-            this.Excuse26.ProgressColor = System.Drawing.Color.Silver;
-            this.Excuse26.ProgressColor2 = System.Drawing.Color.Silver;
-            this.Excuse26.Size = new System.Drawing.Size(395, 10);
-            this.Excuse26.TabIndex = 79;
-            this.Excuse26.Text = "guna2ProgressBar40";
-            this.Excuse26.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Excuse26.Value = 3;
-            // 
-            // Absent26
-            // 
-            this.Absent26.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Absent26.Location = new System.Drawing.Point(23, 862);
-            this.Absent26.Name = "Absent26";
-            this.Absent26.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent26.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent26.Size = new System.Drawing.Size(395, 10);
-            this.Absent26.TabIndex = 78;
-            this.Absent26.Text = "guna2ProgressBar41";
-            this.Absent26.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Absent26.Value = 8;
-            // 
-            // Present26
-            // 
-            this.Present26.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Present26.Location = new System.Drawing.Point(23, 853);
-            this.Present26.Name = "Present26";
-            this.Present26.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present26.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present26.Size = new System.Drawing.Size(395, 10);
-            this.Present26.TabIndex = 77;
-            this.Present26.Text = "guna2ProgressBar42";
-            this.Present26.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Present26.Value = 20;
-            // 
-            // Excuse27
-            // 
-            this.Excuse27.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Excuse27.Location = new System.Drawing.Point(23, 903);
-            this.Excuse27.Name = "Excuse27";
-            this.Excuse27.ProgressColor = System.Drawing.Color.Silver;
-            this.Excuse27.ProgressColor2 = System.Drawing.Color.Silver;
-            this.Excuse27.Size = new System.Drawing.Size(395, 10);
-            this.Excuse27.TabIndex = 82;
-            this.Excuse27.Text = "guna2ProgressBar43";
-            this.Excuse27.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Excuse27.Value = 3;
-            // 
-            // Absent27
-            // 
-            this.Absent27.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Absent27.Location = new System.Drawing.Point(23, 895);
-            this.Absent27.Name = "Absent27";
-            this.Absent27.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent27.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent27.Size = new System.Drawing.Size(395, 10);
-            this.Absent27.TabIndex = 81;
-            this.Absent27.Text = "guna2ProgressBar44";
-            this.Absent27.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Absent27.Value = 8;
-            // 
-            // Present27
-            // 
-            this.Present27.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Present27.Location = new System.Drawing.Point(23, 886);
-            this.Present27.Name = "Present27";
-            this.Present27.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present27.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present27.Size = new System.Drawing.Size(395, 10);
-            this.Present27.TabIndex = 80;
-            this.Present27.Text = "guna2ProgressBar45";
-            this.Present27.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Present27.Value = 20;
-            // 
-            // Excuse28
-            // 
-            this.Excuse28.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Excuse28.Location = new System.Drawing.Point(23, 936);
-            this.Excuse28.Name = "Excuse28";
-            this.Excuse28.ProgressColor = System.Drawing.Color.Silver;
-            this.Excuse28.ProgressColor2 = System.Drawing.Color.Silver;
-            this.Excuse28.Size = new System.Drawing.Size(395, 10);
-            this.Excuse28.TabIndex = 85;
-            this.Excuse28.Text = "guna2ProgressBar46";
-            this.Excuse28.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Excuse28.Value = 3;
-            // 
-            // Absent28
-            // 
-            this.Absent28.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Absent28.Location = new System.Drawing.Point(23, 928);
-            this.Absent28.Name = "Absent28";
-            this.Absent28.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent28.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent28.Size = new System.Drawing.Size(395, 10);
-            this.Absent28.TabIndex = 84;
-            this.Absent28.Text = "guna2ProgressBar47";
-            this.Absent28.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Absent28.Value = 8;
-            // 
-            // Present28
-            // 
-            this.Present28.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Present28.Location = new System.Drawing.Point(23, 919);
-            this.Present28.Name = "Present28";
-            this.Present28.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present28.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present28.Size = new System.Drawing.Size(395, 10);
-            this.Present28.TabIndex = 83;
-            this.Present28.Text = "guna2ProgressBar48";
-            this.Present28.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Present28.Value = 20;
-            // 
-            // Excuse29
-            // 
-            this.Excuse29.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Excuse29.Location = new System.Drawing.Point(23, 969);
-            this.Excuse29.Name = "Excuse29";
-            this.Excuse29.ProgressColor = System.Drawing.Color.Silver;
-            this.Excuse29.ProgressColor2 = System.Drawing.Color.Silver;
-            this.Excuse29.Size = new System.Drawing.Size(395, 10);
-            this.Excuse29.TabIndex = 88;
-            this.Excuse29.Text = "guna2ProgressBar49";
-            this.Excuse29.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Excuse29.Value = 3;
-            // 
-            // Absent29
-            // 
-            this.Absent29.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Absent29.Location = new System.Drawing.Point(23, 961);
-            this.Absent29.Name = "Absent29";
-            this.Absent29.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent29.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent29.Size = new System.Drawing.Size(395, 10);
-            this.Absent29.TabIndex = 87;
-            this.Absent29.Text = "guna2ProgressBar50";
-            this.Absent29.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Absent29.Value = 8;
-            // 
-            // Present29
-            // 
-            this.Present29.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Present29.Location = new System.Drawing.Point(23, 952);
-            this.Present29.Name = "Present29";
-            this.Present29.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present29.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present29.Size = new System.Drawing.Size(395, 10);
-            this.Present29.TabIndex = 86;
-            this.Present29.Text = "guna2ProgressBar51";
-            this.Present29.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Present29.Value = 20;
-            // 
-            // Excuse30
-            // 
-            this.Excuse30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Excuse30.Location = new System.Drawing.Point(23, 1002);
-            this.Excuse30.Name = "Excuse30";
-            this.Excuse30.ProgressColor = System.Drawing.Color.Silver;
-            this.Excuse30.ProgressColor2 = System.Drawing.Color.Silver;
-            this.Excuse30.Size = new System.Drawing.Size(395, 10);
-            this.Excuse30.TabIndex = 91;
-            this.Excuse30.Text = "guna2ProgressBar52";
-            this.Excuse30.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Excuse30.Value = 3;
-            // 
-            // Absent30
-            // 
-            this.Absent30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Absent30.Location = new System.Drawing.Point(23, 994);
-            this.Absent30.Name = "Absent30";
-            this.Absent30.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent30.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent30.Size = new System.Drawing.Size(395, 10);
-            this.Absent30.TabIndex = 90;
-            this.Absent30.Text = "guna2ProgressBar53";
-            this.Absent30.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Absent30.Value = 8;
-            // 
-            // Present30
-            // 
-            this.Present30.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Present30.Location = new System.Drawing.Point(23, 985);
-            this.Present30.Name = "Present30";
-            this.Present30.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present30.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present30.Size = new System.Drawing.Size(395, 10);
-            this.Present30.TabIndex = 89;
-            this.Present30.Text = "guna2ProgressBar54";
-            this.Present30.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Present30.Value = 20;
-            // 
-            // Excuse31
-            // 
-            this.Excuse31.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Excuse31.Location = new System.Drawing.Point(23, 1035);
-            this.Excuse31.Name = "Excuse31";
-            this.Excuse31.ProgressColor = System.Drawing.Color.Silver;
-            this.Excuse31.ProgressColor2 = System.Drawing.Color.Silver;
-            this.Excuse31.Size = new System.Drawing.Size(395, 10);
-            this.Excuse31.TabIndex = 94;
-            this.Excuse31.Text = "guna2ProgressBar55";
-            this.Excuse31.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Excuse31.Value = 3;
-            // 
-            // Absent31
-            // 
-            this.Absent31.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Absent31.Location = new System.Drawing.Point(23, 1027);
-            this.Absent31.Name = "Absent31";
-            this.Absent31.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent31.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.Absent31.Size = new System.Drawing.Size(395, 10);
-            this.Absent31.TabIndex = 93;
-            this.Absent31.Text = "guna2ProgressBar56";
-            this.Absent31.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Absent31.Value = 8;
-            // 
-            // Present31
-            // 
-            this.Present31.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.Present31.Location = new System.Drawing.Point(23, 1018);
-            this.Present31.Name = "Present31";
-            this.Present31.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present31.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.Present31.Size = new System.Drawing.Size(395, 10);
-            this.Present31.TabIndex = 92;
-            this.Present31.Text = "guna2ProgressBar57";
-            this.Present31.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.Present31.Value = 20;
-            // 
-            // lbl23
-            // 
-            this.lbl23.AutoSize = false;
-            this.lbl23.AutoSizeHeightOnly = true;
-            this.lbl23.BackColor = System.Drawing.Color.Transparent;
-            this.lbl23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.lbl23.IsContextMenuEnabled = false;
-            this.lbl23.IsSelectionEnabled = false;
-            this.lbl23.Location = new System.Drawing.Point(12, 890);
-            this.lbl23.Name = "lbl23";
-            this.lbl23.Size = new System.Drawing.Size(163, 17);
-            this.lbl23.TabIndex = 98;
-            this.lbl23.TabStop = false;
-            this.lbl23.Text = "23";
-            this.lbl23.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl24
-            // 
-            this.lbl24.AutoSize = false;
-            this.lbl24.AutoSizeHeightOnly = true;
-            this.lbl24.BackColor = System.Drawing.Color.Transparent;
-            this.lbl24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.lbl24.IsContextMenuEnabled = false;
-            this.lbl24.IsSelectionEnabled = false;
-            this.lbl24.Location = new System.Drawing.Point(12, 925);
-            this.lbl24.Name = "lbl24";
-            this.lbl24.Size = new System.Drawing.Size(163, 17);
-            this.lbl24.TabIndex = 99;
-            this.lbl24.TabStop = false;
-            this.lbl24.Text = "24";
-            this.lbl24.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl25
-            // 
-            this.lbl25.AutoSize = false;
-            this.lbl25.AutoSizeHeightOnly = true;
-            this.lbl25.BackColor = System.Drawing.Color.Transparent;
-            this.lbl25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.lbl25.IsContextMenuEnabled = false;
-            this.lbl25.IsSelectionEnabled = false;
-            this.lbl25.Location = new System.Drawing.Point(11, 956);
-            this.lbl25.Name = "lbl25";
-            this.lbl25.Size = new System.Drawing.Size(163, 17);
-            this.lbl25.TabIndex = 100;
-            this.lbl25.TabStop = false;
-            this.lbl25.Text = "25";
-            this.lbl25.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl26
-            // 
-            this.lbl26.AutoSize = false;
-            this.lbl26.AutoSizeHeightOnly = true;
-            this.lbl26.BackColor = System.Drawing.Color.Transparent;
-            this.lbl26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.lbl26.IsContextMenuEnabled = false;
-            this.lbl26.IsSelectionEnabled = false;
-            this.lbl26.Location = new System.Drawing.Point(11, 989);
-            this.lbl26.Name = "lbl26";
-            this.lbl26.Size = new System.Drawing.Size(163, 17);
-            this.lbl26.TabIndex = 101;
-            this.lbl26.TabStop = false;
-            this.lbl26.Text = "26";
-            this.lbl26.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl27
-            // 
-            this.lbl27.AutoSize = false;
-            this.lbl27.AutoSizeHeightOnly = true;
-            this.lbl27.BackColor = System.Drawing.Color.Transparent;
-            this.lbl27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.lbl27.IsContextMenuEnabled = false;
-            this.lbl27.IsSelectionEnabled = false;
-            this.lbl27.Location = new System.Drawing.Point(11, 1022);
-            this.lbl27.Name = "lbl27";
-            this.lbl27.Size = new System.Drawing.Size(163, 17);
-            this.lbl27.TabIndex = 102;
-            this.lbl27.TabStop = false;
-            this.lbl27.Text = "27";
-            this.lbl27.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl28
-            // 
-            this.lbl28.AutoSize = false;
-            this.lbl28.AutoSizeHeightOnly = true;
-            this.lbl28.BackColor = System.Drawing.Color.Transparent;
-            this.lbl28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.lbl28.IsContextMenuEnabled = false;
-            this.lbl28.IsSelectionEnabled = false;
-            this.lbl28.Location = new System.Drawing.Point(11, 1055);
-            this.lbl28.Name = "lbl28";
-            this.lbl28.Size = new System.Drawing.Size(163, 17);
-            this.lbl28.TabIndex = 103;
-            this.lbl28.TabStop = false;
-            this.lbl28.Text = "28";
-            this.lbl28.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // lbl29
-            // 
-            this.lbl29.AutoSize = false;
-            this.lbl29.AutoSizeHeightOnly = true;
-            this.lbl29.BackColor = System.Drawing.Color.Transparent;
-            this.lbl29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.lbl29.IsContextMenuEnabled = false;
-            this.lbl29.IsSelectionEnabled = false;
-            this.lbl29.Location = new System.Drawing.Point(12, 1088);
-            this.lbl29.Name = "lbl29";
-            this.lbl29.Size = new System.Drawing.Size(163, 17);
-            this.lbl29.TabIndex = 104;
-            this.lbl29.TabStop = false;
-            this.lbl29.Text = "29";
-            this.lbl29.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // lbl21
+            // 
+            this.lbl21.AutoSize = false;
+            this.lbl21.AutoSizeHeightOnly = true;
+            this.lbl21.BackColor = System.Drawing.Color.Transparent;
+            this.lbl21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.lbl21.IsContextMenuEnabled = false;
+            this.lbl21.IsSelectionEnabled = false;
+            this.lbl21.Location = new System.Drawing.Point(11, 824);
+            this.lbl21.Name = "lbl21";
+            this.lbl21.Size = new System.Drawing.Size(163, 17);
+            this.lbl21.TabIndex = 96;
+            this.lbl21.TabStop = false;
+            this.lbl21.Text = "21";
+            this.lbl21.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl20
+            // 
+            this.lbl20.AutoSize = false;
+            this.lbl20.AutoSizeHeightOnly = true;
+            this.lbl20.BackColor = System.Drawing.Color.Transparent;
+            this.lbl20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.lbl20.IsContextMenuEnabled = false;
+            this.lbl20.IsSelectionEnabled = false;
+            this.lbl20.Location = new System.Drawing.Point(12, 791);
+            this.lbl20.Name = "lbl20";
+            this.lbl20.Size = new System.Drawing.Size(163, 17);
+            this.lbl20.TabIndex = 95;
+            this.lbl20.TabStop = false;
+            this.lbl20.Text = "20";
+            this.lbl20.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl19
+            // 
+            this.lbl19.AutoSize = false;
+            this.lbl19.AutoSizeHeightOnly = true;
+            this.lbl19.BackColor = System.Drawing.Color.Transparent;
+            this.lbl19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.lbl19.IsContextMenuEnabled = false;
+            this.lbl19.IsSelectionEnabled = false;
+            this.lbl19.Location = new System.Drawing.Point(11, 758);
+            this.lbl19.Name = "lbl19";
+            this.lbl19.Size = new System.Drawing.Size(163, 17);
+            this.lbl19.TabIndex = 94;
+            this.lbl19.TabStop = false;
+            this.lbl19.Text = "19";
+            this.lbl19.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl18
+            // 
+            this.lbl18.AutoSize = false;
+            this.lbl18.AutoSizeHeightOnly = true;
+            this.lbl18.BackColor = System.Drawing.Color.Transparent;
+            this.lbl18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.lbl18.IsContextMenuEnabled = false;
+            this.lbl18.IsSelectionEnabled = false;
+            this.lbl18.Location = new System.Drawing.Point(11, 725);
+            this.lbl18.Name = "lbl18";
+            this.lbl18.Size = new System.Drawing.Size(163, 17);
+            this.lbl18.TabIndex = 93;
+            this.lbl18.TabStop = false;
+            this.lbl18.Text = "18";
+            this.lbl18.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl17
+            // 
+            this.lbl17.AutoSize = false;
+            this.lbl17.AutoSizeHeightOnly = true;
+            this.lbl17.BackColor = System.Drawing.Color.Transparent;
+            this.lbl17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.lbl17.IsContextMenuEnabled = false;
+            this.lbl17.IsSelectionEnabled = false;
+            this.lbl17.Location = new System.Drawing.Point(11, 692);
+            this.lbl17.Name = "lbl17";
+            this.lbl17.Size = new System.Drawing.Size(163, 17);
+            this.lbl17.TabIndex = 92;
+            this.lbl17.TabStop = false;
+            this.lbl17.Text = "17";
+            this.lbl17.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl16
+            // 
+            this.lbl16.AutoSize = false;
+            this.lbl16.AutoSizeHeightOnly = true;
+            this.lbl16.BackColor = System.Drawing.Color.Transparent;
+            this.lbl16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.lbl16.IsContextMenuEnabled = false;
+            this.lbl16.IsSelectionEnabled = false;
+            this.lbl16.Location = new System.Drawing.Point(12, 659);
+            this.lbl16.Name = "lbl16";
+            this.lbl16.Size = new System.Drawing.Size(163, 17);
+            this.lbl16.TabIndex = 91;
+            this.lbl16.TabStop = false;
+            this.lbl16.Text = "16";
+            this.lbl16.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl15
+            // 
+            this.lbl15.AutoSize = false;
+            this.lbl15.AutoSizeHeightOnly = true;
+            this.lbl15.BackColor = System.Drawing.Color.Transparent;
+            this.lbl15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.lbl15.IsContextMenuEnabled = false;
+            this.lbl15.IsSelectionEnabled = false;
+            this.lbl15.Location = new System.Drawing.Point(11, 626);
+            this.lbl15.Name = "lbl15";
+            this.lbl15.Size = new System.Drawing.Size(163, 17);
+            this.lbl15.TabIndex = 90;
+            this.lbl15.TabStop = false;
+            this.lbl15.Text = "15";
+            this.lbl15.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl14
+            // 
+            this.lbl14.AutoSize = false;
+            this.lbl14.AutoSizeHeightOnly = true;
+            this.lbl14.BackColor = System.Drawing.Color.Transparent;
+            this.lbl14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.lbl14.IsContextMenuEnabled = false;
+            this.lbl14.IsSelectionEnabled = false;
+            this.lbl14.Location = new System.Drawing.Point(11, 593);
+            this.lbl14.Name = "lbl14";
+            this.lbl14.Size = new System.Drawing.Size(163, 17);
+            this.lbl14.TabIndex = 89;
+            this.lbl14.TabStop = false;
+            this.lbl14.Text = "14";
+            this.lbl14.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl31
+            // 
+            this.lbl31.AutoSize = false;
+            this.lbl31.AutoSizeHeightOnly = true;
+            this.lbl31.BackColor = System.Drawing.Color.Transparent;
+            this.lbl31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.lbl31.IsContextMenuEnabled = false;
+            this.lbl31.IsSelectionEnabled = false;
+            this.lbl31.Location = new System.Drawing.Point(12, 1154);
+            this.lbl31.Name = "lbl31";
+            this.lbl31.Size = new System.Drawing.Size(163, 17);
+            this.lbl31.TabIndex = 106;
+            this.lbl31.TabStop = false;
+            this.lbl31.Text = "31";
+            this.lbl31.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lbl30
             // 
@@ -2344,21 +2250,133 @@
             this.lbl30.Text = "30";
             this.lbl30.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lbl31
+            // lbl29
             // 
-            this.lbl31.AutoSize = false;
-            this.lbl31.AutoSizeHeightOnly = true;
-            this.lbl31.BackColor = System.Drawing.Color.Transparent;
-            this.lbl31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.lbl31.IsContextMenuEnabled = false;
-            this.lbl31.IsSelectionEnabled = false;
-            this.lbl31.Location = new System.Drawing.Point(12, 1154);
-            this.lbl31.Name = "lbl31";
-            this.lbl31.Size = new System.Drawing.Size(163, 17);
-            this.lbl31.TabIndex = 106;
-            this.lbl31.TabStop = false;
-            this.lbl31.Text = "31";
-            this.lbl31.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl29.AutoSize = false;
+            this.lbl29.AutoSizeHeightOnly = true;
+            this.lbl29.BackColor = System.Drawing.Color.Transparent;
+            this.lbl29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.lbl29.IsContextMenuEnabled = false;
+            this.lbl29.IsSelectionEnabled = false;
+            this.lbl29.Location = new System.Drawing.Point(12, 1088);
+            this.lbl29.Name = "lbl29";
+            this.lbl29.Size = new System.Drawing.Size(163, 17);
+            this.lbl29.TabIndex = 104;
+            this.lbl29.TabStop = false;
+            this.lbl29.Text = "29";
+            this.lbl29.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl28
+            // 
+            this.lbl28.AutoSize = false;
+            this.lbl28.AutoSizeHeightOnly = true;
+            this.lbl28.BackColor = System.Drawing.Color.Transparent;
+            this.lbl28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.lbl28.IsContextMenuEnabled = false;
+            this.lbl28.IsSelectionEnabled = false;
+            this.lbl28.Location = new System.Drawing.Point(11, 1055);
+            this.lbl28.Name = "lbl28";
+            this.lbl28.Size = new System.Drawing.Size(163, 17);
+            this.lbl28.TabIndex = 103;
+            this.lbl28.TabStop = false;
+            this.lbl28.Text = "28";
+            this.lbl28.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl27
+            // 
+            this.lbl27.AutoSize = false;
+            this.lbl27.AutoSizeHeightOnly = true;
+            this.lbl27.BackColor = System.Drawing.Color.Transparent;
+            this.lbl27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.lbl27.IsContextMenuEnabled = false;
+            this.lbl27.IsSelectionEnabled = false;
+            this.lbl27.Location = new System.Drawing.Point(11, 1022);
+            this.lbl27.Name = "lbl27";
+            this.lbl27.Size = new System.Drawing.Size(163, 17);
+            this.lbl27.TabIndex = 102;
+            this.lbl27.TabStop = false;
+            this.lbl27.Text = "27";
+            this.lbl27.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl26
+            // 
+            this.lbl26.AutoSize = false;
+            this.lbl26.AutoSizeHeightOnly = true;
+            this.lbl26.BackColor = System.Drawing.Color.Transparent;
+            this.lbl26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.lbl26.IsContextMenuEnabled = false;
+            this.lbl26.IsSelectionEnabled = false;
+            this.lbl26.Location = new System.Drawing.Point(11, 989);
+            this.lbl26.Name = "lbl26";
+            this.lbl26.Size = new System.Drawing.Size(163, 17);
+            this.lbl26.TabIndex = 101;
+            this.lbl26.TabStop = false;
+            this.lbl26.Text = "26";
+            this.lbl26.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl25
+            // 
+            this.lbl25.AutoSize = false;
+            this.lbl25.AutoSizeHeightOnly = true;
+            this.lbl25.BackColor = System.Drawing.Color.Transparent;
+            this.lbl25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.lbl25.IsContextMenuEnabled = false;
+            this.lbl25.IsSelectionEnabled = false;
+            this.lbl25.Location = new System.Drawing.Point(11, 956);
+            this.lbl25.Name = "lbl25";
+            this.lbl25.Size = new System.Drawing.Size(163, 17);
+            this.lbl25.TabIndex = 100;
+            this.lbl25.TabStop = false;
+            this.lbl25.Text = "25";
+            this.lbl25.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl24
+            // 
+            this.lbl24.AutoSize = false;
+            this.lbl24.AutoSizeHeightOnly = true;
+            this.lbl24.BackColor = System.Drawing.Color.Transparent;
+            this.lbl24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.lbl24.IsContextMenuEnabled = false;
+            this.lbl24.IsSelectionEnabled = false;
+            this.lbl24.Location = new System.Drawing.Point(12, 925);
+            this.lbl24.Name = "lbl24";
+            this.lbl24.Size = new System.Drawing.Size(163, 17);
+            this.lbl24.TabIndex = 99;
+            this.lbl24.TabStop = false;
+            this.lbl24.Text = "24";
+            this.lbl24.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl23
+            // 
+            this.lbl23.AutoSize = false;
+            this.lbl23.AutoSizeHeightOnly = true;
+            this.lbl23.BackColor = System.Drawing.Color.Transparent;
+            this.lbl23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.lbl23.IsContextMenuEnabled = false;
+            this.lbl23.IsSelectionEnabled = false;
+            this.lbl23.Location = new System.Drawing.Point(12, 890);
+            this.lbl23.Name = "lbl23";
+            this.lbl23.Size = new System.Drawing.Size(163, 17);
+            this.lbl23.TabIndex = 98;
+            this.lbl23.TabStop = false;
+            this.lbl23.Text = "23";
+            this.lbl23.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.BackColor = System.Drawing.Color.RosyBrown;
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(32, 32);
+            this.guna2ImageButton1.Image = global::Student_Attendance_System.Properties.Resources.refresh;
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(26, 26);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(593, 35);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(32, 32);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(54, 44);
+            this.guna2ImageButton1.TabIndex = 107;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.refreshBtn_Click);
             // 
             // Dashboard_Form
             // 
@@ -2524,5 +2542,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl25;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl24;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl23;
+        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
     }
 }

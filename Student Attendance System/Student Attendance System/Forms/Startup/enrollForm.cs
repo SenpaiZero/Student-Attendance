@@ -36,57 +36,14 @@ namespace Student_Attendance_System.Startup
         {
             pageHelper.loadEnrollForm(new personalDetails(), mainPanel);
             bringFront();
-            defaultData();
+            EnrollmentGlobalVariable.defaultData();
         }
         private void attendanceForm_Load(object sender, EventArgs e)
         {
             restart();
         }
         
-        void defaultData()
-        {
-            EnrollmentGlobalVariable.page = 0;
-            //page 1
-            EnrollmentGlobalVariable.firstName = "";
-            EnrollmentGlobalVariable.middleName = "";
-            EnrollmentGlobalVariable.lastName = "";
-
-            EnrollmentGlobalVariable.birthday = "";
-            EnrollmentGlobalVariable.age = "";
-            EnrollmentGlobalVariable.religion = "";
-            EnrollmentGlobalVariable.gender = "";
-            EnrollmentGlobalVariable.address = "";
-            EnrollmentGlobalVariable.phone = "";
-            EnrollmentGlobalVariable.email = "";
-            personalDetails.checkAttemp = new bool[] { false, false, false, false, false, false, false };
-
-            //Page 2
-            EnrollmentGlobalVariable.fatherfName = "";
-            EnrollmentGlobalVariable.fathermName = "";
-            EnrollmentGlobalVariable.fatherlName = "";
-            EnrollmentGlobalVariable.fatherEmail = "";
-            EnrollmentGlobalVariable.fatherPhone = "";
-            EnrollmentGlobalVariable.fatherOccupation = "";
-
-
-            EnrollmentGlobalVariable.motherfName = "";
-            EnrollmentGlobalVariable.mothermName = "";
-            EnrollmentGlobalVariable.motherlName = "";
-            EnrollmentGlobalVariable.motherEmail = "";
-            EnrollmentGlobalVariable.motherPhone = "";
-            EnrollmentGlobalVariable.motherOccupation = "";
-            guardianDetails.checkAttemp = new bool[] { false, false, false, false, false, false, false, false, false, false, false, false };
-
-
-            //Page 3
-            EnrollmentGlobalVariable.section = "";
-            EnrollmentGlobalVariable.year = "";
-            EnrollmentGlobalVariable.id = "";
-            EnrollmentGlobalVariable.moreDetails = "";
-            EnrollmentGlobalVariable.frame = null;
-            EnrollmentGlobalVariable.QRCode = null;
-            moreDetailsForm.checkAttemp = new bool[] { false, false };
-        }
+        
         void bringFront()
         {
             nextBtn.BringToFront();
@@ -151,7 +108,7 @@ namespace Student_Attendance_System.Startup
         private void enrollForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             EnrollmentGlobalVariable.page = 0;
-            defaultData();
+            EnrollmentGlobalVariable.defaultData();
         }
 
     }

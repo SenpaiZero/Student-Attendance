@@ -18,6 +18,7 @@ namespace Student_Attendance_System
 {
     public partial class startupForm : Form
     {
+        public static startupForm form;
         bool menuExpand = true;
         Size defaultMenuSize, defaultMainPanelSize;
         Point defaultSidePanelBtnLoc, defaultLblX;
@@ -38,6 +39,7 @@ namespace Student_Attendance_System
 
         private void startupForm_Load(object sender, EventArgs e)
         {
+            if (form == null) form = this;
             defaultMenuSize = menuContainer.Size;
             defaultSidePanelBtnLoc = sidepanelBtn.Location;
             defaultLblX = adminLine.Location;
@@ -48,10 +50,16 @@ namespace Student_Attendance_System
 
             timer1.Start();
 
-            if(startupRunClass.persistentLogin())
-                loginBtn.Text = loginHelper.Name;
+
+            if (startupRunClass.persistentLogin())
+                setName();
         }
 
+        public void setName()
+        {
+            if(loginHelper.isLogin)
+                loginBtn.Text = loginHelper.Name;
+        }
         void setTitlePos(Control ctrl)
         {
             ctrl.Location = new Point(12, ctrl.Location.Y);
@@ -268,6 +276,11 @@ namespace Student_Attendance_System
             Environment.Exit(Environment.ExitCode);
         }
 
+        private void mainPanelContainer_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         bool checkAdmin()
         {
             if (!loginHelper.isLogin)
@@ -285,7 +298,7 @@ namespace Student_Attendance_System
             }
             return true;
         }
-        void enebleBtn(Guna2Button disabledBtn)
+        public void enebleBtn(Guna2Button disabledBtn)
         {
             enrollBtn.Enabled = true;
             adminBtn.Enabled = true;

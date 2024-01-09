@@ -18,6 +18,18 @@ namespace Student_Attendance_System
 
         public static void open()
         {
+            if(!validationHelper.internetAvailability())
+            {
+                MessageForm msg = new MessageForm()
+                {
+                    header = "Ooooops!",
+                    message = "Please check your internet connection",
+                    messageType = "Failed",
+                    isYesNo = false
+                };
+                msg.ShowDialog();
+                return;
+            }
             if (con.State != ConnectionState.Closed)
                 con.Close();
 

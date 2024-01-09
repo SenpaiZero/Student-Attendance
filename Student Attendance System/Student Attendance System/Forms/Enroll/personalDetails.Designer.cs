@@ -146,7 +146,7 @@
             this.phoneNumberTB.PlaceholderText = "";
             this.phoneNumberTB.SelectedText = "";
             this.phoneNumberTB.Size = new System.Drawing.Size(450, 48);
-            this.phoneNumberTB.TabIndex = 31;
+            this.phoneNumberTB.TabIndex = 7;
             this.phoneNumberTB.Leave += new System.EventHandler(this.phoneNumberTB_Leave);
             // 
             // addressTB
@@ -178,7 +178,7 @@
             this.addressTB.PlaceholderText = "";
             this.addressTB.SelectedText = "";
             this.addressTB.Size = new System.Drawing.Size(450, 48);
-            this.addressTB.TabIndex = 24;
+            this.addressTB.TabIndex = 6;
             this.addressTB.Leave += new System.EventHandler(this.addressTB_Leave);
             // 
             // guna2HtmlLabel3
@@ -246,7 +246,7 @@
             this.firstNameTB.PlaceholderText = "";
             this.firstNameTB.SelectedText = "";
             this.firstNameTB.Size = new System.Drawing.Size(222, 48);
-            this.firstNameTB.TabIndex = 14;
+            this.firstNameTB.TabIndex = 1;
             this.firstNameTB.Leave += new System.EventHandler(this.firstNameTB_Leave);
             // 
             // middleNameTB
@@ -278,7 +278,7 @@
             this.middleNameTB.PlaceholderText = "";
             this.middleNameTB.SelectedText = "";
             this.middleNameTB.Size = new System.Drawing.Size(223, 48);
-            this.middleNameTB.TabIndex = 16;
+            this.middleNameTB.TabIndex = 3;
             this.middleNameTB.Leave += new System.EventHandler(this.middleNameTB_Leave);
             // 
             // surnameTB
@@ -310,7 +310,7 @@
             this.surnameTB.PlaceholderText = "";
             this.surnameTB.SelectedText = "";
             this.surnameTB.Size = new System.Drawing.Size(222, 48);
-            this.surnameTB.TabIndex = 16;
+            this.surnameTB.TabIndex = 2;
             this.surnameTB.Leave += new System.EventHandler(this.surnameTB_Leave);
             // 
             // middleNameLbl
@@ -384,6 +384,7 @@
             this.birthdayDP.Name = "birthdayDP";
             this.birthdayDP.Size = new System.Drawing.Size(336, 50);
             this.birthdayDP.TabIndex = 17;
+            this.birthdayDP.TabStop = false;
             this.birthdayDP.Value = new System.DateTime(2023, 11, 2, 9, 13, 24, 172);
             this.birthdayDP.ValueChanged += new System.EventHandler(this.birthdayDP_ValueChanged);
             // 
@@ -434,7 +435,7 @@
             this.emailTB.PlaceholderText = "";
             this.emailTB.SelectedText = "";
             this.emailTB.Size = new System.Drawing.Size(450, 48);
-            this.emailTB.TabIndex = 22;
+            this.emailTB.TabIndex = 5;
             this.emailTB.Leave += new System.EventHandler(this.emailTB_Leave);
             // 
             // guna2HtmlLabel4
@@ -498,6 +499,7 @@
             this.religionCB.Name = "religionCB";
             this.religionCB.Size = new System.Drawing.Size(223, 36);
             this.religionCB.TabIndex = 28;
+            this.religionCB.TabStop = false;
             // 
             // guna2HtmlLabel5
             // 
@@ -540,6 +542,7 @@
             this.genderCB.Name = "genderCB";
             this.genderCB.Size = new System.Drawing.Size(223, 36);
             this.genderCB.TabIndex = 29;
+            this.genderCB.TabStop = false;
             // 
             // guna2HtmlLabel7
             // 
@@ -590,7 +593,7 @@
             this.ageTB.ReadOnly = true;
             this.ageTB.SelectedText = "";
             this.ageTB.Size = new System.Drawing.Size(223, 48);
-            this.ageTB.TabIndex = 20;
+            this.ageTB.TabIndex = 4;
             // 
             // errorProvider1
             // 

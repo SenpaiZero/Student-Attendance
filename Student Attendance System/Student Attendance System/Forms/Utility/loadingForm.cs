@@ -40,11 +40,21 @@ namespace Student_Attendance_System
             loadTimer.Interval = 500;
             loadTimer.Start();
             stopwatch.Start();
+
+            if(parentControl != null)
+            {
+                Point listTableLocationOnForm = parentControl.Parent.PointToScreen(parentControl.Location);
+                int loadingFormX = listTableLocationOnForm.X + (parentControl.Width - this.Width) / 2;
+                int loadingFormY = listTableLocationOnForm.Y + (parentControl.Height - this.Height) / 2;
+                this.Location = new Point(loadingFormX, loadingFormY);
+            }
+            
         }
         public string title { get; set; }
         public string description { get; set; }
         public int loadTime { get; set; }
         public bool isTask { get; set; }
+        public Control parentControl { get; set; }
 
         private void loadTimer_Tick(object sender, EventArgs e)
         {
@@ -61,6 +71,11 @@ namespace Student_Attendance_System
         public void closeForm()
         {
             this.Close();
+        }
+
+        private void descLbl_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

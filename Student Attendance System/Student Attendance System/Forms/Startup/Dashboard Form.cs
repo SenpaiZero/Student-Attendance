@@ -46,15 +46,15 @@ namespace Student_Attendance_System.Forms.Startup
         }
         private void Dashboard_Form_Load(object sender, EventArgs e)
         {
-            barContainer.AutoSize = true;
-            lblVisibility(new Control[]{ lbl27, lbl28, lbl29, lbl30, lbl31});
-            setComboBox();
 
             Task.Run(async () =>
             {
                 await LoadData();
             });
 
+            barContainer.AutoSize = true;
+            lblVisibility(new Control[] { lbl27, lbl28, lbl29, lbl30, lbl31 });
+            setComboBox();
             load = new loadingForm()
             {
                 isTask = true,
@@ -126,12 +126,16 @@ namespace Student_Attendance_System.Forms.Startup
                 presentBar.ElementAtOrDefault(i).Value = (int)presentPercentage.ElementAtOrDefault(i);
                 excuseBar.ElementAtOrDefault(i).Value = (int)excusePercentage.ElementAtOrDefault(i);
 
-                if(DateTime.Now.Month <= i)
+                if(dateCB.Text == DateTime.Now.Year.ToString())
                 {
-                    absentBar.ElementAtOrDefault(i).Value = 0;
-                    presentBar.ElementAtOrDefault(i).Value = 0;
-                    excuseBar.ElementAtOrDefault(i).Value = 0;
+                    if (DateTime.Now.Month <= i)
+                    {
+                        absentBar.ElementAtOrDefault(i).Value = 0;
+                        presentBar.ElementAtOrDefault(i).Value = 0;
+                        excuseBar.ElementAtOrDefault(i).Value = 0;
+                    }
                 }
+                
             }
         }
 
@@ -396,6 +400,23 @@ namespace Student_Attendance_System.Forms.Startup
         }
         async Task LoadData()
         {
+            absentPercentage.Clear();
+            excusePercentage.Clear();
+            presentPercentage.Clear();
+            absents.Clear();
+            presents.Clear();
+            excuses.Clear();
+            if(absentBar != null)
+                for (int i = 0; i < absentBar.Count; i++)
+                {
+                    if(absentBar != null)
+                        absentBar.ElementAtOrDefault(i).Value = 0;
+                    if (presentBar != null)
+                        presentBar.ElementAtOrDefault(i).Value = 0;
+                    if (excuseBar != null)
+                        excuseBar.ElementAtOrDefault(i).Value = 0;
+                }
+
             absents = await calculateAbsent();
             presents = await calculatePresent();
             excuses = await calculateExcuse();
@@ -436,7 +457,6 @@ namespace Student_Attendance_System.Forms.Startup
 
         private void dateCB_SelectedIndexChanged(object sender, EventArgs e)
         {
-
         }
 
         private void barContainer_SizeChanged(object sender, EventArgs e)
@@ -452,28 +472,36 @@ namespace Student_Attendance_System.Forms.Startup
 
         private void monthCB_SelectedIndexChanged(object sender, EventArgs e)
         {
-             
         }
 
         private void sizeCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(sizeCB.Text.ToUpper().Equals("MONTHLY"))
+            {
+                monthCB.Enabled = false;
+            }
+            else
+            {
+                monthCB.Enabled = true;
+            }
+        }
+
+        private void refreshBtn_Click(object sender, EventArgs e)
         {
             Task.Run(async () =>
             {
                 await LoadData();
             });
-
-
             if (sizeCB.Text == "MONTHLY")
             {
-                  
-                removeControl(new string[] { "31", "30", "29", "28", "27", "26", "25", "24", "23", "22", "21", "20", "19", "18", "17", "16", "15", "14", "13"});
+
+                removeControl(new string[] { "31", "30", "29", "28", "27", "26", "25", "24", "23", "22", "21", "20", "19", "18", "17", "16", "15", "14", "13" });
             }
             else
             {
                 addControl();
-                lblVisibility(new Control[] { lbl31, lbl30, lbl29, lbl28, lbl27, lbl26, lbl25, lbl24, lbl23, lbl22, lbl21, lbl20, lbl19, lbl18, lbl17, lbl16, lbl15, lbl14, lbl13});
+                lblVisibility(new Control[] { lbl31, lbl30, lbl29, lbl28, lbl27, lbl26, lbl25, lbl24, lbl23, lbl22, lbl21, lbl20, lbl19, lbl18, lbl17, lbl16, lbl15, lbl14, lbl13 });
             }
-
             load = new loadingForm()
             {
                 isTask = true,

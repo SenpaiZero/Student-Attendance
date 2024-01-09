@@ -81,7 +81,7 @@
             this.newPassTB.PlaceholderText = "";
             this.newPassTB.SelectedText = "";
             this.newPassTB.Size = new System.Drawing.Size(423, 35);
-            this.newPassTB.TabIndex = 12;
+            this.newPassTB.TabIndex = 2;
             this.newPassTB.UseSystemPasswordChar = true;
             this.newPassTB.IconRightClick += new System.EventHandler(this.newPassTB_IconRightClick);
             // 
@@ -139,9 +139,10 @@
             this.reEnterPassTB.PlaceholderText = "";
             this.reEnterPassTB.SelectedText = "";
             this.reEnterPassTB.Size = new System.Drawing.Size(423, 35);
-            this.reEnterPassTB.TabIndex = 14;
+            this.reEnterPassTB.TabIndex = 3;
             this.reEnterPassTB.UseSystemPasswordChar = true;
             this.reEnterPassTB.IconRightClick += new System.EventHandler(this.reEnterPassTB_IconRightClick);
+            this.reEnterPassTB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.reEnterPassTB_KeyDown);
             // 
             // currentPassTB
             // 
@@ -167,7 +168,7 @@
             this.currentPassTB.PlaceholderText = "";
             this.currentPassTB.SelectedText = "";
             this.currentPassTB.Size = new System.Drawing.Size(423, 35);
-            this.currentPassTB.TabIndex = 16;
+            this.currentPassTB.TabIndex = 1;
             this.currentPassTB.UseSystemPasswordChar = true;
             this.currentPassTB.IconRightClick += new System.EventHandler(this.currentPassTB_IconRightClick);
             // 
@@ -238,6 +239,7 @@
             this.cancelBtn.Name = "cancelBtn";
             this.cancelBtn.Size = new System.Drawing.Size(100, 26);
             this.cancelBtn.TabIndex = 18;
+            this.cancelBtn.TabStop = false;
             this.cancelBtn.Text = "CANCEL";
             this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click_1);
             // 
@@ -257,6 +259,7 @@
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(180, 45);
             this.updateBtn.TabIndex = 17;
+            this.updateBtn.TabStop = false;
             this.updateBtn.Text = "UPDATE";
             this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
             // 

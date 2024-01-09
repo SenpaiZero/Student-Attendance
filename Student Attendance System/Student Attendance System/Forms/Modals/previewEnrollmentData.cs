@@ -71,10 +71,10 @@ namespace Student_Attendance_System.Forms.Modals
             try
             {
                 if (databaseHelper.con.State != System.Data.ConnectionState.Open)
-                    databaseHelper.con.Open();
+                    databaseHelper.open();
                 databaseHelper db = new databaseHelper();
                 String query = "INSERT INTO studentContacts (StudentID, Email, PhoneNumber, Address) VALUES (@studentID, @Email, @PhoneNumber, @Address); " +
-               "INSERT INTO studentData (StudentID, Name, Section, Year, StudentType) VALUES (@StudentID, @Name, @Section, @Year, @StudentType); " +
+               "INSERT INTO studentData (StudentID, Name, Section, Year, StudentType, EnrollDate) VALUES (@StudentID, @Name, @Section, @Year, @StudentType, @EnrollDate); " +
                "INSERT INTO studentFather (StudentID, Name, Email, PhoneNumber, Occupation) VALUES (@StudentID, @fatherName, @fatherEmail, @fatherPhoneNumber, @fatherOccupation); " +
                "INSERT INTO studentMother (StudentID, Name, Email, PhoneNumber, Occupation) VALUES (@StudentID, @motherName, @motherEmail, @motherPhoneNumber, @motherOccupation); " +
                "INSERT INTO studentIdentity (StudentID, QRCode, Picture) VALUES (@StudentID, @qrcode, @picture); " +
@@ -107,6 +107,7 @@ namespace Student_Attendance_System.Forms.Modals
                     db.cmd.Parameters.AddWithValue("religion", EnrollmentGlobalVariable.religion);
                     db.cmd.Parameters.AddWithValue("gender", EnrollmentGlobalVariable.gender);
                     db.cmd.Parameters.AddWithValue("moreDetails", EnrollmentGlobalVariable.moreDetails);
+                    db.cmd.Parameters.AddWithValue("EnrollDate", DateTime.Now.Date);
                     db.cmd.Parameters.AddWithValue("birthday", SqlDbType.Date).Value = EnrollmentGlobalVariable.birthday;
                     db.cmd.ExecuteNonQuery();
                     logsHelper.insertNewEnroll($"Has enrolled a student: {EnrollmentGlobalVariable.lastName.ToUpper()}, " +
@@ -114,12 +115,14 @@ namespace Student_Attendance_System.Forms.Modals
                 }
             }catch(Exception ex)
             {
-                throw;
+                MessageBox.Show(ex.Message);
             }
 
             LocalSaveHelper.saveQRCode(EnrollmentGlobalVariable.QRCode, EnrollmentGlobalVariable.id);
             LocalSaveHelper.savePicture(EnrollmentGlobalVariable.frame, EnrollmentGlobalVariable.id);
             this.DialogResult = DialogResult.OK;
+
+            EnrollmentGlobalVariable.defaultData();
             this.Close();
         }
     }

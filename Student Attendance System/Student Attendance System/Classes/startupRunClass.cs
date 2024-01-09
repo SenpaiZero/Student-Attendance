@@ -90,6 +90,10 @@ namespace Student_Attendance_System
                     checkInternet(parent);
                 }
             }
+            else
+            {
+                startupForm.form.setName();
+            }
         }
 
         public void setSettings()

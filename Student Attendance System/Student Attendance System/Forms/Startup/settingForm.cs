@@ -58,6 +58,31 @@ namespace Student_Attendance_System.Startup
 
         private void applyBtn_Click_1(object sender, EventArgs e)
         {
+            if (!loginHelper.isLogin)
+            {
+                MessageForm msg1 = new MessageForm()
+                {
+                    header = "Oooops!!",
+                    message = "Please login first.",
+                    messageType = "Failed",
+                    isYesNo = false,
+
+                };
+                msg1.ShowDialog();
+                return;
+            }
+            if (loginHelper.Admin.ToUpper() != "ADMIN")
+            {
+                MessageForm msg2 = new MessageForm()
+                {
+                    messageType = "Information",
+                    header = "Ooooops!",
+                    message = "You do not have permission to access and use this page",
+                    isYesNo = false
+                };
+                msg2.ShowDialog();
+                return;
+            }
             MessageForm msg = new MessageForm()
             {
                 isYesNo = true,
@@ -137,11 +162,46 @@ namespace Student_Attendance_System.Startup
                     }
                 }
                 Properties.Settings.Default.Save();
+
+                MessageForm success = new MessageForm()
+                {
+                    messageType = "Success",
+                    header = "Woo hoo!!",
+                    message = "You've successfully updated the setting",
+                    isYesNo = false
+                };
+                success.ShowDialog();
             }
         }
 
         private void resetBtn_Click(object sender, EventArgs e)
         {
+            if (!loginHelper.isLogin)
+            {
+                MessageForm msg1 = new MessageForm()
+                {
+                    header = "Oooops!!",
+                    message = "Please login first.",
+                    messageType = "Failed",
+                    isYesNo = false,
+
+                };
+                msg1.ShowDialog();
+                return;
+            }
+
+            if (loginHelper.Admin.ToUpper() != "ADMIN")
+            {
+                MessageForm msg2 = new MessageForm()
+                {
+                    messageType = "Information",
+                    header = "Ooooops!",
+                    message = "You do not have permission to access and use this page",
+                    isYesNo = false
+                };
+                msg2.ShowDialog();
+                return;
+            }
             MessageForm msg = new MessageForm()
             {
                 isYesNo = true,
@@ -162,6 +222,15 @@ namespace Student_Attendance_System.Startup
                 };
                 if(msg2.ShowDialog() == DialogResult.OK)
                 {
+                    MessageForm msg4 = new MessageForm()
+                    {
+                        isYesNo = false,
+                        messageType = "Information",
+                        header = "RESET SUCCESSFUL",
+                        message = "The application will restart",
+                        isTimer = false
+                    };
+                    msg4.ShowDialog();
                     Properties.Settings.Default.Reset();
                     Application.Restart();
                     Environment.Exit(0);
@@ -206,7 +275,6 @@ namespace Student_Attendance_System.Startup
                 }
             }
         }
-
         private void qrOutputTB_IconRightClick(object sender, EventArgs e)
         {
             // Disable textbox/filepath if save image locally is disabled
@@ -258,6 +326,17 @@ namespace Student_Attendance_System.Startup
         private void fullScreenCB_SelectedIndexChanged(object sender, EventArgs e)
         {
             fillBackground = true;
+        }
+
+        private void qrOutputTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cancelBtn_Click(object sender, EventArgs e)
+        {
+            startupForm.form.enebleBtn(null);
+            this.Dispose();
         }
     }
 }

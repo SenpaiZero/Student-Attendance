@@ -46,7 +46,8 @@ namespace Student_Attendance_System.Forms.Admin
                && validationHelper.textBoxValidation_Email(emailTB, "EMAIL", errorProvider1)
                && validationHelper.textBoxValidation_Address(addressTB, "ADDRESS", errorProvider1)
                && validationHelper.textBoxValidation_PhoneNumber(phoneTB, "PHONE NUMBER", errorProvider1)
-               && validationHelper.textBoxValidation_Numeric(ageTB, "AGE", errorProvider1, 2))
+               && validationHelper.textBoxValidation_Numeric(ageTB, "AGE", errorProvider1, 2)
+               && !String.IsNullOrEmpty(idNumTB.Text))
                    return true;
             return false;
         }
@@ -69,12 +70,23 @@ namespace Student_Attendance_System.Forms.Admin
         private void addBtn_Click(object sender, EventArgs e)
         {
             if (!checkValid())
+            {
+
+                MessageForm msg = new MessageForm()
+                {
+                    header = "Wooops",
+                    message = "Double check the input fields",
+                    isYesNo = false,
+                    messageType = "failed"
+                };
+                msg.ShowDialog();
                 return;
+            }
 
             try
             {
                 if (databaseHelper.con.State != System.Data.ConnectionState.Open)
-                    databaseHelper.con.Open();
+                    databaseHelper.open();
                 string query = "INSERT INTO Accounts (Name, StaffID, Password, Age, Email, Address, Phone, Gender, Status, Admin) " +
                    "VALUES (@Name, @StaffID, @Password, @Age, @Email, @Address, @Phone, @Gender, @Status, @Admin)";
 
@@ -99,7 +111,6 @@ namespace Student_Attendance_System.Forms.Admin
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
             }
         }
 

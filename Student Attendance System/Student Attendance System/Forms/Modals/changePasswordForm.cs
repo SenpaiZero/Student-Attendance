@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Student_Attendance_System.Classes.Helper;
 
 namespace Student_Attendance_System.Forms
 {
@@ -43,7 +44,7 @@ namespace Student_Attendance_System.Forms
                 header = "Ooooops.",
                 isYesNo = false
             };
-            if (currentPassTB.Text != loginHelper.Password)
+            if (securityHelper.HashPassword(currentPassTB.Text) != securityHelper.HashPassword(loginHelper.Password))
             {
                 msg.message = "Current password is incorrect.";
                 msg.ShowDialog();
@@ -63,12 +64,12 @@ namespace Student_Attendance_System.Forms
                 String query = "UPDATE Accounts SET Password = @password WHERE Name = @name";
                 using (db.cmd = new SqlCommand(query, databaseHelper.con))
                 {
-                    db.cmd.Parameters.AddWithValue("@password", newPassTB.Text);
+                    db.cmd.Parameters.AddWithValue("@password", securityHelper.HashPassword(newPassTB.Text));
                     db.cmd.Parameters.AddWithValue("@name", loginHelper.Name);
 
                     db.cmd.ExecuteNonQuery();
                     if (Properties.Settings.Default.stayLogin)
-                        Properties.Settings.Default.loginPassword = newPassTB.Text;
+                        Properties.Settings.Default.loginPassword = securityHelper.HashPassword(newPassTB.Text);
                     MessageForm msgf = new MessageForm()
                     {
                         messageType = "Success",
@@ -123,6 +124,14 @@ namespace Student_Attendance_System.Forms
                 passwordTB.IconRight = Properties.Resources.hidden;
                 passwordTB.PasswordChar = '●';
                 passwordTB.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void reEnterPassTB_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                updateBtn.PerformClick();
             }
         }
     }

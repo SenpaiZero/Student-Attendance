@@ -182,7 +182,6 @@ namespace Student_Attendance_System.Forms.Admin
             }
             isViewEnroll = !isViewEnroll;
             viewBtn.Enabled = isViewEnroll;
-            saveBtn.Enabled = isViewEnroll;
 
             showData(false, isViewEnroll);
         }
@@ -204,7 +203,16 @@ namespace Student_Attendance_System.Forms.Admin
                 if(databaseHelper.con.State != ConnectionState.Open)
                     databaseHelper.con.Open();
 
-                String query = "SELECT QRCode, Picture WHERE StudentID = @id";
+                String table;
+                if(isViewEnroll)
+                {
+                    table = "studentIdentity";
+                }
+                else
+                {
+                    table = "studentIdentity_unenroll";
+                }
+                String query = $"SELECT QRCode, Picture FROM {table} WHERE StudentID = @id";
                 using (SqlCommand cmd = new SqlCommand(query, databaseHelper.con))
                 {
                     cmd.Parameters.AddWithValue("id", selectedID);
@@ -214,9 +222,20 @@ namespace Student_Attendance_System.Forms.Admin
                         Bitmap qr = ConvertToImage((byte[])dr.GetValue(0));
                         Bitmap pic = ConvertToImage((byte[])dr.GetValue(1));
 
-                        LocalSaveHelper.savePicture(qr, selectedID);
-                        LocalSaveHelper.savePicture(pic, selectedID);
+                        if(isViewEnroll)
+                        {
+                            LocalSaveHelper.saveQRCode(qr, selectedID);
+                            LocalSaveHelper.savePicture(pic, selectedID);
+                        }
+                        else
+                        {
+                            LocalSaveHelper.saveQRCode_unenroll(qr, selectedID);
+                            LocalSaveHelper.savePicture_unenroll(pic, selectedID);
+                        }
 
+                        qr.Dispose();
+                        pic.Dispose();
+                        dr.Close();
                         MessageForm msg = new MessageForm()
                         {
                             messageType = "Success",
@@ -237,10 +256,24 @@ namespace Student_Attendance_System.Forms.Admin
                 return new Bitmap(1, 1);
             }
 
-            using (MemoryStream stream = new MemoryStream(binary))
+            try
             {
-                Bitmap image = new Bitmap(stream);
-                return image;
+                using (MemoryStream stream = new MemoryStream(binary))
+                {
+                    // Ensure the stream position is at the beginning
+                    stream.Position = 0;
+                    Bitmap image = new Bitmap(stream);
+
+                    // Clone the bitmap to ensure it's fully loaded before disposing the stream
+                    Bitmap clonedImage = new Bitmap(image);
+                    return clonedImage;
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log or handle the exception accordingly
+                Console.WriteLine($"Exception during image conversion: {ex.Message}");
+                return new Bitmap(1, 1); // Return a default image or handle the error case
             }
         }
     }

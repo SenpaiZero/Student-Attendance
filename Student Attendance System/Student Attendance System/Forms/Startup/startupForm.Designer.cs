@@ -596,6 +596,7 @@
             this.mainPanelContainer.Size = new System.Drawing.Size(730, 750);
             this.mainPanelContainer.TabIndex = 8;
             this.mainPanelContainer.UseTransparentBackground = true;
+            this.mainPanelContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanelContainer_Paint);
             // 
             // loginBtn
             // 

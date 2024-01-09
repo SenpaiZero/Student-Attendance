@@ -203,11 +203,13 @@ namespace Student_Attendance_System.Forms.Admin
 
         private void nameTB_Leave(object sender, EventArgs e)
         {
+            validationHelper.textBoxValidation_Alpha_comma(nameTB, "NAME", errorProvider1);
             checkChange(nameTB, name, nameLbl);
         }
 
         private void emailTB_Leave(object sender, EventArgs e)
         {
+            validationHelper.textBoxValidation_Email(emailTB, "EMAIL", errorProvider1);
             checkChange(emailTB, email, emailLbl);
         }
 
@@ -229,11 +231,13 @@ namespace Student_Attendance_System.Forms.Admin
 
         private void addressTB_Leave(object sender, EventArgs e)
         {
+            validationHelper.textBoxValidation_Address(addressTB, "ADDRESS", errorProvider1);
             checkChange(addressTB, address, addressLbl);
         }
 
         private void phoneNumberTB_Leave(object sender, EventArgs e)
         {
+            validationHelper.textBoxValidation_PhoneNumber(phoneNumberTB, "PHONE NUMBER", errorProvider1);
             checkChange(phoneNumberTB, phone, phoneNumberLbl);
         }
 
@@ -249,6 +253,7 @@ namespace Student_Attendance_System.Forms.Admin
 
         private void sectionTB_Leave(object sender, EventArgs e)
         {
+            validationHelper.textBoxValidation_Alpha(sectionTB, "SECTION", errorProvider1);
             checkChange(sectionTB, section, sectionlbl);
         }
 
@@ -264,52 +269,72 @@ namespace Student_Attendance_System.Forms.Admin
 
         private void moreDetailTB_Leave(object sender, EventArgs e)
         {
+            validationHelper.textBoxValidation_Alpha(moreDetailTB, "MORE DETAILS", errorProvider1);
             checkChange(moreDetailTB, moreDetails, moreDetailsLbl);
         }
 
         private void fathernameTB_Leave(object sender, EventArgs e)
         {
+            validationHelper.textBoxValidation_Alpha_comma(fathernameTB, "NAME", errorProvider1);
             checkChange(fathernameTB, fatherName, fatherNameLbl);
         }
 
         private void fatherEmailTB_Leave(object sender, EventArgs e)
         {
+            validationHelper.textBoxValidation_Email(fatherEmailTB, "EMAIL", errorProvider1);
             checkChange(fatherEmailTB, fatherEmail, fatherEmailLbl);
         }
 
         private void fatherPhoneNumberTB_Leave(object sender, EventArgs e)
         {
+            validationHelper.textBoxValidation_PhoneNumber(fatherPhoneNumberTB, "PHONE NUMBER", errorProvider1);
             checkChange(fatherPhoneNumberTB, fatherPhone, fatherPhoneLbl);
         }
 
         private void fatherOccupationTB_Leave(object sender, EventArgs e)
         {
+            validationHelper.textBoxValidation_Alpha(fatherOccupationTB, "OCCUPATION", errorProvider1);
             checkChange(fatherOccupationTB, fatherOccupation, fatherOccupationLbl);
         }
 
         private void mothernameTB_Leave(object sender, EventArgs e)
         {
+            validationHelper.textBoxValidation_Alpha_comma(mothernameTB, "NAME", errorProvider1);
             checkChange(mothernameTB, motherName, motherNameLbl);
         }
 
         private void motherEmailTB_Leave(object sender, EventArgs e)
         {
+            validationHelper.textBoxValidation_Email(motherEmailTB, "EMAIL", errorProvider1);
             checkChange(motherEmailTB, motherEmail, motherEmailLbl);
         }
 
         private void motherPhoneTB_Leave(object sender, EventArgs e)
         {
+            validationHelper.textBoxValidation_PhoneNumber(motherPhoneTB, "PHONE NUMBER", errorProvider1);
             checkChange(motherPhoneTB, motherPhone, motherPhoneLbl);
         }
 
         private void motherOccupationTB_Leave(object sender, EventArgs e)
         {
+            validationHelper.textBoxValidation_Alpha(motherOccupationTB, "OCCUPATION", errorProvider1);
             checkChange(motherOccupationTB, motherOccupation, motherOccupationLbl);
         }
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
-            if (!checkValid()) return;
+            if (!checkValid())
+            {
+                MessageForm msg = new MessageForm()
+                {
+                    header = "Ooooops!",
+                    message = "Please check the input fields.",
+                    messageType = "Failed",
+                    isYesNo = false
+                };
+                msg.ShowDialog();
+                return;
+            }
 
             try
             {

@@ -30,7 +30,7 @@ namespace Student_Attendance_System.Classes.Helper
             checkFolderExist(Config.qrcodePath_unenroll);
             if (image != null)
             {
-                image.Save($"{Config.qrcodePath}\\{studentID}.png", ImageFormat.Png);
+                image.Save($"{Config.qrcodePath_unenroll}\\{studentID}.png", ImageFormat.Png);
             }
         }
         public static void savePicture(Bitmap image, string studentID)
@@ -40,7 +40,7 @@ namespace Student_Attendance_System.Classes.Helper
             checkFolderExist(Config.picturePath);
             if (image != null)
             {
-                image.Save($"{Config.picturePath_unenroll}\\{studentID}.png", ImageFormat.Png);
+                image.Save($"{Config.picturePath}\\{studentID}.png", ImageFormat.Png);
             }
         }
         public static void savePicture_unenroll(Bitmap image, string studentID)
@@ -77,9 +77,24 @@ namespace Student_Attendance_System.Classes.Helper
                 }
 
                 return true;
-            } catch (Exception ex)
+            } 
+            catch (Exception ex)
             {
-                MessageForm msg = new MessageForm()
+                if (ex.Message.Contains("file already exist"))
+                {
+                    if (moveToUnenroll)
+                    {
+                        File.Delete(enrollPathQR);
+                        File.Delete(enrollPathPic);
+                    }
+                    else
+                    {
+                        File.Delete(unenrollPathQR);
+                        File.Delete(unenrollPathPic);
+                    }
+                    return true;
+                }
+                    MessageForm msg = new MessageForm()
                 {
                     isYesNo = false,
                     messageType = "Failed",

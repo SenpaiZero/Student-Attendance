@@ -1,0 +1,1044 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Student_Attendance_System.Config">
+    <Position X="21.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAQAAAAAAAAACAAAAACAAAAACAAAAAAAAQgAAAAAAI=</HashCode>
+      <FileName>Classes\Config.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.databaseHelper">
+    <Position X="3.75" Y="11" Width="1.5" />
+    <InheritanceLine Type="System.Object" ManuallyRouted="true">
+      <Path>
+        <Point X="18.75" Y="8.312" />
+        <Point X="18.75" Y="19.62" />
+        <Point X="2.125" Y="19.62" />
+        <Point X="2.125" Y="12.066" />
+        <Point X="3.75" Y="12.066" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAQAACAAAQAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Helper\databaseHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.loginHelper">
+    <Position X="10.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAQAAAAAAAAAAAAAQQAAAACAAACAAIAAAAAEAA=</HashCode>
+      <FileName>Classes\Helper\loginHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.pageHelper">
+    <Position X="3.75" Y="14.5" Width="1.5" />
+    <InheritanceLine Type="System.Object" ManuallyRouted="true">
+      <Path>
+        <Point X="18.75" Y="8.312" />
+        <Point X="18.75" Y="19.386" />
+        <Point X="5.779" Y="19.386" />
+        <Point X="5.779" Y="15.47" />
+        <Point X="3.75" Y="15.47" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAQAAEAABAAAAA=</HashCode>
+      <FileName>Classes\Helper\pageHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.validationHelper">
+    <Position X="0.75" Y="11" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>QIIAAAgAACEBQBIEARAAAAAAAAAIQABAAARAAAgBQAg=</HashCode>
+      <FileName>Classes\Helper\validationHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.startupRunClass">
+    <Position X="21.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAQAAAAAIAAAAAAAAAAAAgwAACAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\startupRunClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.startupForm">
+    <Position X="0.75" Y="0.75" Width="3" />
+    <Members>
+      <Field Name="accountMenuStrip" Hidden="true" />
+      <Field Name="adminBtn" Hidden="true" />
+      <Field Name="adminLbl" Hidden="true" />
+      <Field Name="adminLine" Hidden="true" />
+      <Field Name="appNameLbl" Hidden="true" />
+      <Field Name="attBtn" Hidden="true" />
+      <Field Name="changePasswordToolStripMenuItem" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Property Name="CreateParams" Hidden="true" />
+      <Field Name="dashboardBtn" Hidden="true" />
+      <Field Name="dateLbl" Hidden="true" />
+      <Field Name="dayLbl" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="enrollBtn" Hidden="true" />
+      <Field Name="guna2BorderlessForm1" Hidden="true" />
+      <Field Name="guna2ControlBox1" Hidden="true" />
+      <Field Name="guna2ControlBox2" Hidden="true" />
+      <Field Name="guna2DragControl1" Hidden="true" />
+      <Field Name="guna2Shapes1" Hidden="true" />
+      <Field Name="guna2Shapes2" Hidden="true" />
+      <Field Name="guna2Shapes3" Hidden="true" />
+      <Field Name="guna2Shapes4" Hidden="true" />
+      <Field Name="guna2Shapes5" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="loginBtn" Hidden="true" />
+      <Field Name="lOGOUTToolStripMenuItem" Hidden="true" />
+      <Field Name="mainPanel" Hidden="true" />
+      <Field Name="mainPanelContainer" Hidden="true" />
+      <Field Name="menuContainer" Hidden="true" />
+      <Field Name="miscLbl" Hidden="true" />
+      <Field Name="miscLine" Hidden="true" />
+      <Field Name="recordBtn" Hidden="true" />
+      <Field Name="settingBtn" Hidden="true" />
+      <Field Name="sidepanelBtn" Hidden="true" />
+      <Field Name="studentLbl" Hidden="true" />
+      <Field Name="studentLine" Hidden="true" />
+      <Field Name="timer1" Hidden="true" />
+      <Field Name="versionLbl" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IgQAJEQAAWAQCEAAYALYggwHYUYKKBwoAwBACEQBhAA=</HashCode>
+      <FileName>Forms\Startup\startupForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.loadingForm">
+    <Position X="25" Y="11.5" Width="1.5" />
+    <Members>
+      <Field Name="components" Hidden="true" />
+      <Field Name="descLbl" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="guna2BorderlessForm1" Hidden="true" />
+      <Field Name="guna2Shapes1" Hidden="true" />
+      <Field Name="guna2Shapes10" Hidden="true" />
+      <Field Name="guna2Shapes2" Hidden="true" />
+      <Field Name="guna2Shapes3" Hidden="true" />
+      <Field Name="guna2Shapes4" Hidden="true" />
+      <Field Name="guna2Shapes5" Hidden="true" />
+      <Field Name="guna2Shapes6" Hidden="true" />
+      <Field Name="guna2Shapes7" Hidden="true" />
+      <Field Name="guna2Shapes8" Hidden="true" />
+      <Field Name="guna2Shapes9" Hidden="true" />
+      <Field Name="guna2WinProgressIndicator1" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="loadTimer" Hidden="true" />
+      <Field Name="titleLbl" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgAAAABAQSAIIAEAJACABAQCIAAAAAAAgAAgAAAEBAE=</HashCode>
+      <FileName>Forms\Utility\loadingForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.MessageForm">
+    <Position X="26.75" Y="11.5" Width="1.5" />
+    <Members>
+      <Field Name="buttonTimer" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="descLbl" Hidden="true" />
+      <Field Name="flowLayoutPanel1" Hidden="true" />
+      <Field Name="guna2BorderlessForm1" Hidden="true" />
+      <Field Name="guna2Elipse1" Hidden="true" />
+      <Field Name="guna2Panel2" Hidden="true" />
+      <Field Name="HeaderLbl" Hidden="true" />
+      <Field Name="noBtn" Hidden="true" />
+      <Field Name="okBtn" Hidden="true" />
+      <Field Name="picture" Hidden="true" />
+      <Field Name="yesBtn" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ggQAIAQgALAEAABBAwDAAAICAIAAABAAQAAMwAAEBCA=</HashCode>
+      <FileName>Forms\Utility\MessageForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Program" Collapsed="true">
+    <Position X="25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Classes.EnrollmentGlobalVariable">
+    <Position X="19.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gIoEAAQQAABCQQAgEIAEgghAEAIIAAAgEAAECQIAAgA=</HashCode>
+      <FileName>Classes\EnrollmentGlobalVariable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Classes.cameraHelper">
+    <Position X="9" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEACAEiAYKgBBAAICEEAQAggEQAAQAAABA=</HashCode>
+      <FileName>Classes\Helper\cameraHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Classes.Helper.attendanceHelper">
+    <Position X="3.75" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Helper\attendanceHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Classes.Helper.emailHelper">
+    <Position X="10.75" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAAAIAAAAEAAAAAAA=</HashCode>
+      <FileName>Classes\Helper\emailHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Classes.Helper.LocalSaveHelper">
+    <Position X="5.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAgAAAAAACAAAUAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Helper\LocalSaveHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Classes.Helper.logsHelper">
+    <Position X="7.25" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAgAAAEAAAACAAEBAiBAEAABQAAAgA=</HashCode>
+      <FileName>Classes\Helper\logsHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Classes.Helper.QrCodeHelper">
+    <Position X="7.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Helper\QrCodeHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Classes.Helper.securityHelper">
+    <Position X="5.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Helper\securityHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Classes.Helper.startupHelper">
+    <Position X="5.5" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAABAAAACAAAIAAAAA=</HashCode>
+      <FileName>Classes\Helper\startupHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Classes.Helper.UIHelper">
+    <Position X="5.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Helper\UIHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Forms.Admin.addStaff">
+    <Position X="31" Y="0.75" Width="1.5" />
+    <Members>
+      <Field Name="addBtn" Hidden="true" />
+      <Field Name="addressTB" Hidden="true" />
+      <Field Name="ageTB" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="emailTB" Hidden="true" />
+      <Field Name="errorProvider1" Hidden="true" />
+      <Field Name="firstNameLbl" Hidden="true" />
+      <Field Name="firstNameTB" Hidden="true" />
+      <Field Name="genderCB" Hidden="true" />
+      <Field Name="guna2BorderlessForm1" Hidden="true" />
+      <Field Name="guna2HtmlLabel1" Hidden="true" />
+      <Field Name="guna2HtmlLabel2" Hidden="true" />
+      <Field Name="guna2HtmlLabel3" Hidden="true" />
+      <Field Name="guna2HtmlLabel4" Hidden="true" />
+      <Field Name="guna2HtmlLabel5" Hidden="true" />
+      <Field Name="guna2HtmlLabel6" Hidden="true" />
+      <Field Name="guna2HtmlLabel7" Hidden="true" />
+      <Field Name="idNumTB" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="isAdminCB" Hidden="true" />
+      <Field Name="middleNameLbl" Hidden="true" />
+      <Field Name="middleNameTB" Hidden="true" />
+      <Field Name="phoneTB" Hidden="true" />
+      <Field Name="randomizeBtn" Hidden="true" />
+      <Field Name="statusCB" Hidden="true" />
+      <Field Name="statusCBs" Hidden="true" />
+      <Field Name="surnameLbl" Hidden="true" />
+      <Field Name="surnameTB" Hidden="true" />
+      <Field Name="tableLayoutPanel1" Hidden="true" />
+      <Field Name="tableLayoutPanel2" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgRgAAARQKkAQYFkAAC4gAACAIOEAANQgIAMAIBABCE=</HashCode>
+      <FileName>Forms\Admin\addStaff.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Forms.Admin.logsForm">
+    <Position X="9.25" Y="0.75" Width="1.5" />
+    <Members>
+      <Field Name="categoryCB" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dateCB" Hidden="true" />
+      <Field Name="datePicker" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="guna2BorderlessForm1" Hidden="true" />
+      <Field Name="guna2BorderlessForm2" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="listTable" Hidden="true" />
+      <Field Name="searchTB" Hidden="true" />
+      <Field Name="tableLayoutPanel1" Hidden="true" />
+      <Field Name="tableLayoutPanel2" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgAAABBQASCACAAFAgKAQAACAAAAAABAAEAoIVAIBCA=</HashCode>
+      <FileName>Forms\Admin\logsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Forms.Admin.staffListForm">
+    <Position X="36.25" Y="0.75" Width="1.5" />
+    <Members>
+      <Field Name="components" Hidden="true" />
+      <Field Name="deleteBtn" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="guna2BorderlessForm1" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="listTable" Hidden="true" />
+      <Field Name="searchTB" Hidden="true" />
+      <Field Name="tableLayoutPanel1" Hidden="true" />
+      <Field Name="tableLayoutPanel2" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAABAAAQACBAAAAAAACERAACAAAAAAAACAAgIBAIBCA=</HashCode>
+      <FileName>Forms\Admin\staffListForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Forms.Admin.studentListForm">
+    <Position X="7.5" Y="5.25" Width="1.5" />
+    <Members>
+      <Field Name="changeViewBtn" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="guna2BorderlessForm1" Hidden="true" />
+      <Field Name="guna2BorderlessForm2" Hidden="true" />
+      <Field Name="guna2DataGridView1" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="listTable" Hidden="true" />
+      <Field Name="saveBtn" Hidden="true" />
+      <Field Name="searchTB" Hidden="true" />
+      <Field Name="tableLayoutPanel1" Hidden="true" />
+      <Field Name="tableLayoutPanel2" Hidden="true" />
+      <Field Name="unerollBtn" Hidden="true" />
+      <Field Name="viewBtn" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgAAAAAwwTAAAAAAIACEQAACECAAAAAACAAkIAAIhGA=</HashCode>
+      <FileName>Forms\Admin\studentListForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Forms.Admin.updateStaffForm">
+    <Position X="28.75" Y="0.75" Width="2" />
+    <Members>
+      <Field Name="addressLbl" Hidden="true" />
+      <Field Name="addressTB" Hidden="true" />
+      <Field Name="adminLbl" Hidden="true" />
+      <Field Name="ageLbl" Hidden="true" />
+      <Field Name="ageTB" Hidden="true" />
+      <Field Name="cancelBtn" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="emailLbl" Hidden="true" />
+      <Field Name="emailTB" Hidden="true" />
+      <Field Name="errorProvider1" Hidden="true" />
+      <Field Name="genderCB" Hidden="true" />
+      <Field Name="genderLbl" Hidden="true" />
+      <Field Name="guna2BorderlessForm1" Hidden="true" />
+      <Field Name="guna2Panel1" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="isAdminCB" Hidden="true" />
+      <Field Name="nameLbl" Hidden="true" />
+      <Field Name="nameTB" Hidden="true" />
+      <Field Name="phoneLbl" Hidden="true" />
+      <Field Name="phoneTB" Hidden="true" />
+      <Field Name="statusCB" Hidden="true" />
+      <Field Name="statusLbl" Hidden="true" />
+      <Field Name="updateBtn" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BgQoAQQBSKAAwQEgAACMgEAmEMMGEAFggAAIAhBQBAA=</HashCode>
+      <FileName>Forms\Admin\updateStaffForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Forms.Admin.updateStudentForm">
+    <Position X="32.75" Y="0.75" Width="1.5" />
+    <Members>
+      <Field Name="addressLbl" Hidden="true" />
+      <Field Name="addressTB" Hidden="true" />
+      <Field Name="ageLbl" Hidden="true" />
+      <Field Name="ageTB" Hidden="true" />
+      <Field Name="birthdayDP" Hidden="true" />
+      <Field Name="birthdayLbl" Hidden="true" />
+      <Field Name="cancelBtn" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="emailLbl" Hidden="true" />
+      <Field Name="emailTB" Hidden="true" />
+      <Field Name="errorProvider1" Hidden="true" />
+      <Field Name="fatherEmailLbl" Hidden="true" />
+      <Field Name="fatherEmailTB" Hidden="true" />
+      <Field Name="fatherNameLbl" Hidden="true" />
+      <Field Name="fathernameTB" Hidden="true" />
+      <Field Name="fatherOccupationLbl" Hidden="true" />
+      <Field Name="fatherOccupationTB" Hidden="true" />
+      <Field Name="fatherPhoneLbl" Hidden="true" />
+      <Field Name="fatherPhoneNumberTB" Hidden="true" />
+      <Field Name="genderCB" Hidden="true" />
+      <Field Name="genderLbl" Hidden="true" />
+      <Field Name="generateBtn" Hidden="true" />
+      <Field Name="guardianBtn" Hidden="true" />
+      <Field Name="guardianContainer" Hidden="true" />
+      <Field Name="guna2BorderlessForm1" Hidden="true" />
+      <Field Name="guna2Elipse1" Hidden="true" />
+      <Field Name="guna2HtmlLabel4" Hidden="true" />
+      <Field Name="guna2HtmlLabel6" Hidden="true" />
+      <Field Name="guna2Panel1" Hidden="true" />
+      <Field Name="guna2Panel2" Hidden="true" />
+      <Field Name="idTB" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="mainPanel" Hidden="true" />
+      <Field Name="moreBtn" Hidden="true" />
+      <Field Name="moreDetailsContainer" Hidden="true" />
+      <Field Name="moreDetailsLbl" Hidden="true" />
+      <Field Name="moreDetailTB" Hidden="true" />
+      <Field Name="motherEmailLbl" Hidden="true" />
+      <Field Name="motherEmailTB" Hidden="true" />
+      <Field Name="motherNameLbl" Hidden="true" />
+      <Field Name="mothernameTB" Hidden="true" />
+      <Field Name="motherOccupationLbl" Hidden="true" />
+      <Field Name="motherOccupationTB" Hidden="true" />
+      <Field Name="motherPhoneLbl" Hidden="true" />
+      <Field Name="motherPhoneTB" Hidden="true" />
+      <Field Name="nameLbl" Hidden="true" />
+      <Field Name="nameTB" Hidden="true" />
+      <Field Name="personalBtn" Hidden="true" />
+      <Field Name="personalContainer" Hidden="true" />
+      <Field Name="phoneNumberLbl" Hidden="true" />
+      <Field Name="phoneNumberTB" Hidden="true" />
+      <Field Name="pic" Hidden="true" />
+      <Field Name="qrcodeLbl" Hidden="true" />
+      <Field Name="qrCodePic" Hidden="true" />
+      <Field Name="religionCB" Hidden="true" />
+      <Field Name="religionLbl" Hidden="true" />
+      <Field Name="sectionlbl" Hidden="true" />
+      <Field Name="sectionTB" Hidden="true" />
+      <Field Name="studentPicLbl" Hidden="true" />
+      <Field Name="studentTypeCB" Hidden="true" />
+      <Field Name="studentTypeLbl" Hidden="true" />
+      <Field Name="tableLayoutPanel1" Hidden="true" />
+      <Field Name="tableLayoutPanel2" Hidden="true" />
+      <Field Name="updateBtn" Hidden="true" />
+      <Field Name="yearCB" Hidden="true" />
+      <Field Name="yearLbl" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>5rssLQwRGvJlwcM4NICMzkkOEEJmADliywQMFRLRjyk=</HashCode>
+      <FileName>Forms\Admin\updateStudentForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Forms.Enroll.guardianDetails">
+    <Position X="17" Y="0.75" Width="2.5" />
+    <Members>
+      <Field Name="components" Hidden="true" />
+      <Property Name="CreateParams" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="errorProvider1" Hidden="true" />
+      <Field Name="fatherEmailTB" Hidden="true" />
+      <Field Name="fatherfnameTB" Hidden="true" />
+      <Field Name="fatherlnameTB" Hidden="true" />
+      <Field Name="fathermnameTB" Hidden="true" />
+      <Field Name="fatherOccupationTB" Hidden="true" />
+      <Field Name="fatherPhoneNumberTB" Hidden="true" />
+      <Field Name="firstNameLbl" Hidden="true" />
+      <Field Name="guna2BorderlessForm1" Hidden="true" />
+      <Field Name="guna2HtmlLabel1" Hidden="true" />
+      <Field Name="guna2HtmlLabel10" Hidden="true" />
+      <Field Name="guna2HtmlLabel11" Hidden="true" />
+      <Field Name="guna2HtmlLabel2" Hidden="true" />
+      <Field Name="guna2HtmlLabel3" Hidden="true" />
+      <Field Name="guna2HtmlLabel4" Hidden="true" />
+      <Field Name="guna2HtmlLabel5" Hidden="true" />
+      <Field Name="guna2HtmlLabel6" Hidden="true" />
+      <Field Name="guna2HtmlLabel7" Hidden="true" />
+      <Field Name="guna2HtmlLabel8" Hidden="true" />
+      <Field Name="guna2HtmlLabel9" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="middleNameLbl" Hidden="true" />
+      <Field Name="motherEmailTB" Hidden="true" />
+      <Field Name="motherfnameTB" Hidden="true" />
+      <Field Name="motherlnameTB" Hidden="true" />
+      <Field Name="mothermnameTB" Hidden="true" />
+      <Field Name="motherOccupationTB" Hidden="true" />
+      <Field Name="motherPhoneTB" Hidden="true" />
+      <Field Name="surnameLbl" Hidden="true" />
+      <Field Name="tableLayoutPanel1" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AggQBAABwGAgAUEABADQIDAKAAAgABBAQAQAD0AxJCk=</HashCode>
+      <FileName>Forms\Enroll\guardianDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Forms.Enroll.moreDetailsForm">
+    <Position X="14.5" Y="0.75" Width="2.25" />
+    <Members>
+      <Field Name="components" Hidden="true" />
+      <Property Name="CreateParams" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="errorProvider1" Hidden="true" />
+      <Field Name="generateBtn" Hidden="true" />
+      <Field Name="guna2BorderlessForm1" Hidden="true" />
+      <Field Name="guna2HtmlLabel1" Hidden="true" />
+      <Field Name="guna2HtmlLabel2" Hidden="true" />
+      <Field Name="guna2HtmlLabel3" Hidden="true" />
+      <Field Name="guna2HtmlLabel5" Hidden="true" />
+      <Field Name="idTB" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="moreDetailTB" Hidden="true" />
+      <Field Name="pic" Hidden="true" />
+      <Field Name="qrCodePic" Hidden="true" />
+      <Field Name="sectionlbl" Hidden="true" />
+      <Field Name="sectionTB" Hidden="true" />
+      <Field Name="studentTypeCB" Hidden="true" />
+      <Field Name="tableLayoutPanel1" Hidden="true" />
+      <Field Name="yearCB" Hidden="true" />
+      <Field Name="yearLbl" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgAIAAgASDAQAAIAJACAACACACABAChiSAAAEAAADSE=</HashCode>
+      <FileName>Forms\Enroll\moreDetailsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Forms.Enroll.personalDetails">
+    <Position X="19.75" Y="0.75" Width="1.5" />
+    <Members>
+      <Field Name="addressTB" Hidden="true" />
+      <Field Name="ageTB" Hidden="true" />
+      <Field Name="birthdayDP" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Property Name="CreateParams" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="emailTB" Hidden="true" />
+      <Field Name="errorProvider1" Hidden="true" />
+      <Field Name="firstNameLbl" Hidden="true" />
+      <Field Name="firstNameTB" Hidden="true" />
+      <Field Name="genderCB" Hidden="true" />
+      <Field Name="guna2BorderlessForm1" Hidden="true" />
+      <Field Name="guna2HtmlLabel1" Hidden="true" />
+      <Field Name="guna2HtmlLabel2" Hidden="true" />
+      <Field Name="guna2HtmlLabel3" Hidden="true" />
+      <Field Name="guna2HtmlLabel4" Hidden="true" />
+      <Field Name="guna2HtmlLabel5" Hidden="true" />
+      <Field Name="guna2HtmlLabel6" Hidden="true" />
+      <Field Name="guna2HtmlLabel7" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="middleNameLbl" Hidden="true" />
+      <Field Name="middleNameTB" Hidden="true" />
+      <Field Name="phoneNumberTB" Hidden="true" />
+      <Field Name="religionCB" Hidden="true" />
+      <Field Name="surnameLbl" Hidden="true" />
+      <Field Name="surnameTB" Hidden="true" />
+      <Field Name="tableLayoutPanel1" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IiBgAAABQLEBAUFIABCYAAACAAAAAAFQQAAMAAAEJCE=</HashCode>
+      <FileName>Forms\Enroll\personalDetails.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Forms.changePasswordForm">
+    <Position X="9.25" Y="5.75" Width="1.5" />
+    <Members>
+      <Field Name="cancelBtn" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Property Name="CreateParams" Hidden="true" />
+      <Field Name="currentLbl" Hidden="true" />
+      <Field Name="currentPassTB" Hidden="true" />
+      <Field Name="guna2BorderlessForm1" Hidden="true" />
+      <Field Name="guna2DragControl1" Hidden="true" />
+      <Field Name="guna2DragControl2" Hidden="true" />
+      <Field Name="guna2Elipse1" Hidden="true" />
+      <Field Name="guna2HtmlLabel3" Hidden="true" />
+      <Field Name="guna2Panel1" Hidden="true" />
+      <Field Name="guna2Panel2" Hidden="true" />
+      <Field Name="newpassLbl" Hidden="true" />
+      <Field Name="newPassTB" Hidden="true" />
+      <Field Name="reenterPassLbl" Hidden="true" />
+      <Field Name="reEnterPassTB" Hidden="true" />
+      <Field Name="updateBtn" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>CgCAAAAAADAkCAUAACCEBEDCAAACAKAIAAAAABQABIE=</HashCode>
+      <FileName>Forms\Modals\changePasswordForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Forms.studentPictureForm">
+    <Position X="22.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAACAAACAAAAEAAACAAFACggAAEAAAAlAAAQAAJgA=</HashCode>
+      <FileName>Forms\Modals\studentPictureForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Forms.splitPopup">
+    <Position X="26.5" Y="0.75" Width="1.5" />
+    <Members>
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="guna2BorderlessForm1" Hidden="true" />
+      <Field Name="guna2DragControl1" Hidden="true" />
+      <Field Name="guna2HtmlLabel2" Hidden="true" />
+      <Field Name="guna2HtmlLabel3" Hidden="true" />
+      <Field Name="guna2Panel1" Hidden="true" />
+      <Field Name="guna2Panel2" Hidden="true" />
+      <Field Name="idNumLbl" Hidden="true" />
+      <Field Name="idPic" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="lastCap" Hidden="true" />
+      <Field Name="lastCapContainer" Hidden="true" />
+      <Field Name="lblID" Hidden="true" />
+      <Field Name="lblName" Hidden="true" />
+      <Field Name="lvlSection" Hidden="true" />
+      <Field Name="maximizeBtn" Hidden="true" />
+      <Field Name="nameLbl" Hidden="true" />
+      <Field Name="sectionYearLbl" Hidden="true" />
+      <Field Name="tableLayoutPanel1" Hidden="true" />
+      <Field Name="tableLayoutPanel2" Hidden="true" />
+      <Field Name="tableLayoutPanel3" Hidden="true" />
+      <Field Name="tableLayoutPanel4" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AwgBBACQADgACSAAABKAAAAGEiACAAAAgGAEASAAhCM=</HashCode>
+      <FileName>Forms\splitPopup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Startup.loginForm">
+    <Position X="4" Y="0.75" Width="1.5" />
+    <Members>
+      <Field Name="cancelBtn" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Property Name="CreateParams" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="guna2BorderlessForm1" Hidden="true" />
+      <Field Name="guna2Elipse1" Hidden="true" />
+      <Field Name="guna2HtmlLabel1" Hidden="true" />
+      <Field Name="guna2HtmlLabel2" Hidden="true" />
+      <Field Name="guna2HtmlLabel3" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="loginBtn" Hidden="true" />
+      <Field Name="loginLbl" Hidden="true" />
+      <Field Name="mainPanel" Hidden="true" />
+      <Field Name="passwordTB" Hidden="true" />
+      <Field Name="staffIdTB" Hidden="true" />
+      <Field Name="stayLoginCB" Hidden="true" />
+      <Field Name="timer1" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ggQAJAAABCAEABEAAAjAAMACKCYAIAAAAAIAAAACBgE=</HashCode>
+      <FileName>Forms\Modals\loginForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Startup.adminForm">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <Members>
+      <Field Name="components" Hidden="true" />
+      <Property Name="CreateParams" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="guna2BorderlessForm1" Hidden="true" />
+      <Field Name="guna2Panel1" Hidden="true" />
+      <Field Name="header" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="logsBtn" Hidden="true" />
+      <Field Name="mainPanel" Hidden="true" />
+      <Field Name="staffBtn" Hidden="true" />
+      <Field Name="studentBtn" Hidden="true" />
+      <Field Name="tableLayoutPanel1" Hidden="true" />
+      <Field Name="tableLayoutPanel2" Hidden="true" />
+      <Field Name="viewStaffBtn" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgIAMQQQACAAAwAAIACEAABCAIQCBAAAAAAAAACABGA=</HashCode>
+      <FileName>Forms\Startup\adminForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Startup.enrollForm">
+    <Position X="12.75" Y="0.75" Width="1.5" />
+    <Members>
+      <Field Name="backBtn" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Property Name="CreateParams" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="guna2BorderlessForm1" Hidden="true" />
+      <Field Name="headerLbl" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="mainPanel" Hidden="true" />
+      <Field Name="nextBtn" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QgBAIBACACEACgAAIACAAAECAQAAAAABAAAAAAAABAA=</HashCode>
+      <FileName>Forms\Startup\enrollForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Startup.settingForm">
+    <Position X="7.5" Y="0.75" Width="1.5" />
+    <Members>
+      <Field Name="advanceContainer" Hidden="true" />
+      <Field Name="applyBtn" Hidden="true" />
+      <Field Name="cancelBtn" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Property Name="CreateParams" Hidden="true" />
+      <Field Name="displayContainer" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="folderBrowserDialog" Hidden="true" />
+      <Field Name="fullScreenCB" Hidden="true" />
+      <Field Name="guna2BorderlessForm1" Hidden="true" />
+      <Field Name="guna2HtmlLabel1" Hidden="true" />
+      <Field Name="guna2HtmlLabel2" Hidden="true" />
+      <Field Name="guna2HtmlLabel3" Hidden="true" />
+      <Field Name="guna2Separator1" Hidden="true" />
+      <Field Name="headeLbl" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="picLbl" Hidden="true" />
+      <Field Name="picOutputTB" Hidden="true" />
+      <Field Name="qrLbl" Hidden="true" />
+      <Field Name="qrOutputTB" Hidden="true" />
+      <Field Name="resetBtn" Hidden="true" />
+      <Field Name="saveLocalCB" Hidden="true" />
+      <Field Name="startupCB" Hidden="true" />
+      <Field Name="tableLayoutPanel1" Hidden="true" />
+      <Field Name="themeLbl" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IyAgAEAAACCAQgUAAAaUIEAHACICAQAAAYAABAABJDE=</HashCode>
+      <FileName>Forms\Startup\settingForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Startup.studentForm">
+    <Position X="34.5" Y="0.75" Width="1.5" />
+    <Members>
+      <Field Name="camList" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="guna2BorderlessForm1" Hidden="true" />
+      <Field Name="guna2HtmlLabel1" Hidden="true" />
+      <Field Name="guna2HtmlLabel2" Hidden="true" />
+      <Field Name="guna2ImageButton1" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="popupCB" Hidden="true" />
+      <Field Name="qrScanning" Hidden="true" />
+      <Field Name="scannerList" Hidden="true" />
+      <Field Name="secondPic" Hidden="true" />
+      <Field Name="settingContainer" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AwAAAAgAADAAAABAEACAABICABJFELAAIjAAAAAAFAE=</HashCode>
+      <FileName>Forms\Startup\studentForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Forms.Modals.previewEnrollmentData">
+    <Position X="19.75" Y="5.25" Width="1.5" />
+    <Members>
+      <Field Name="addBtn" Hidden="true" />
+      <Field Name="addressTB" Hidden="true" />
+      <Field Name="ageTB" Hidden="true" />
+      <Field Name="backBtn" Hidden="true" />
+      <Field Name="bdayTB" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Field Name="dataContainer" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="fatherEmailTB" Hidden="true" />
+      <Field Name="fatherNameTB" Hidden="true" />
+      <Field Name="fatherOccupationTB" Hidden="true" />
+      <Field Name="fatherPhoneNumberTB" Hidden="true" />
+      <Field Name="firstNameLbl" Hidden="true" />
+      <Field Name="genderTB" Hidden="true" />
+      <Field Name="guardianContainer" Hidden="true" />
+      <Field Name="guna2BorderlessForm1" Hidden="true" />
+      <Field Name="guna2DragControl1" Hidden="true" />
+      <Field Name="guna2Elipse1" Hidden="true" />
+      <Field Name="guna2Elipse2" Hidden="true" />
+      <Field Name="guna2Elipse3" Hidden="true" />
+      <Field Name="guna2HtmlLabel1" Hidden="true" />
+      <Field Name="guna2HtmlLabel10" Hidden="true" />
+      <Field Name="guna2HtmlLabel12" Hidden="true" />
+      <Field Name="guna2HtmlLabel13" Hidden="true" />
+      <Field Name="guna2HtmlLabel14" Hidden="true" />
+      <Field Name="guna2HtmlLabel15" Hidden="true" />
+      <Field Name="guna2HtmlLabel16" Hidden="true" />
+      <Field Name="guna2HtmlLabel17" Hidden="true" />
+      <Field Name="guna2HtmlLabel18" Hidden="true" />
+      <Field Name="guna2HtmlLabel19" Hidden="true" />
+      <Field Name="guna2HtmlLabel2" Hidden="true" />
+      <Field Name="guna2HtmlLabel20" Hidden="true" />
+      <Field Name="guna2HtmlLabel21" Hidden="true" />
+      <Field Name="guna2HtmlLabel3" Hidden="true" />
+      <Field Name="guna2HtmlLabel4" Hidden="true" />
+      <Field Name="guna2HtmlLabel5" Hidden="true" />
+      <Field Name="guna2HtmlLabel6" Hidden="true" />
+      <Field Name="guna2HtmlLabel7" Hidden="true" />
+      <Field Name="guna2HtmlLabel8" Hidden="true" />
+      <Field Name="guna2HtmlLabel9" Hidden="true" />
+      <Field Name="guna2Panel1" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="moreTB" Hidden="true" />
+      <Field Name="motherEmailTB" Hidden="true" />
+      <Field Name="motherNameTB" Hidden="true" />
+      <Field Name="motherOcupationTB" Hidden="true" />
+      <Field Name="motherPhoneTB" Hidden="true" />
+      <Field Name="nameLbl" Hidden="true" />
+      <Field Name="personalContainer" Hidden="true" />
+      <Field Name="qrPic" Hidden="true" />
+      <Field Name="religionTB" Hidden="true" />
+      <Field Name="sectionTB" Hidden="true" />
+      <Field Name="selfPic" Hidden="true" />
+      <Field Name="studentEmai" Hidden="true" />
+      <Field Name="studentEmailTB" Hidden="true" />
+      <Field Name="studentIDTB" Hidden="true" />
+      <Field Name="studentNameTB" Hidden="true" />
+      <Field Name="studentPhoneTB" Hidden="true" />
+      <Field Name="studentTypeTB" Hidden="true" />
+      <Field Name="tableLayoutPanel1" Hidden="true" />
+      <Field Name="yearTB" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAgiBAAICTFCAkQAAiAAAEGBCCiABEASIT/jwQADCE=</HashCode>
+      <FileName>Forms\Modals\previewEnrollmentData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Forms.Startup.blank">
+    <Position X="30.25" Y="11.5" Width="1.5" />
+    <Members>
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="guna2BorderlessForm1" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Forms\Startup\blank.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Forms.Startup.Dashboard_Form">
+    <Position X="5.75" Y="0.75" Width="1.5" />
+    <Members>
+      <Field Name="Absent1" Hidden="true" />
+      <Field Name="Absent10" Hidden="true" />
+      <Field Name="Absent11" Hidden="true" />
+      <Field Name="Absent12" Hidden="true" />
+      <Field Name="Absent13" Hidden="true" />
+      <Field Name="Absent14" Hidden="true" />
+      <Field Name="Absent15" Hidden="true" />
+      <Field Name="Absent16" Hidden="true" />
+      <Field Name="Absent17" Hidden="true" />
+      <Field Name="Absent18" Hidden="true" />
+      <Field Name="Absent19" Hidden="true" />
+      <Field Name="Absent2" Hidden="true" />
+      <Field Name="Absent20" Hidden="true" />
+      <Field Name="Absent21" Hidden="true" />
+      <Field Name="Absent22" Hidden="true" />
+      <Field Name="Absent23" Hidden="true" />
+      <Field Name="Absent24" Hidden="true" />
+      <Field Name="Absent25" Hidden="true" />
+      <Field Name="Absent26" Hidden="true" />
+      <Field Name="Absent27" Hidden="true" />
+      <Field Name="Absent28" Hidden="true" />
+      <Field Name="Absent29" Hidden="true" />
+      <Field Name="Absent3" Hidden="true" />
+      <Field Name="Absent30" Hidden="true" />
+      <Field Name="Absent31" Hidden="true" />
+      <Field Name="Absent4" Hidden="true" />
+      <Field Name="Absent5" Hidden="true" />
+      <Field Name="Absent6" Hidden="true" />
+      <Field Name="Absent7" Hidden="true" />
+      <Field Name="Absent8" Hidden="true" />
+      <Field Name="Absent9" Hidden="true" />
+      <Field Name="appNameLbl" Hidden="true" />
+      <Field Name="attContainer" Hidden="true" />
+      <Field Name="barContainer" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Property Name="CreateParams" Hidden="true" />
+      <Field Name="dateCB" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="Excuse1" Hidden="true" />
+      <Field Name="Excuse10" Hidden="true" />
+      <Field Name="Excuse11" Hidden="true" />
+      <Field Name="Excuse12" Hidden="true" />
+      <Field Name="Excuse13" Hidden="true" />
+      <Field Name="Excuse14" Hidden="true" />
+      <Field Name="Excuse15" Hidden="true" />
+      <Field Name="Excuse16" Hidden="true" />
+      <Field Name="Excuse17" Hidden="true" />
+      <Field Name="Excuse18" Hidden="true" />
+      <Field Name="Excuse19" Hidden="true" />
+      <Field Name="Excuse2" Hidden="true" />
+      <Field Name="Excuse20" Hidden="true" />
+      <Field Name="Excuse21" Hidden="true" />
+      <Field Name="Excuse22" Hidden="true" />
+      <Field Name="Excuse23" Hidden="true" />
+      <Field Name="Excuse24" Hidden="true" />
+      <Field Name="Excuse25" Hidden="true" />
+      <Field Name="Excuse26" Hidden="true" />
+      <Field Name="Excuse27" Hidden="true" />
+      <Field Name="Excuse28" Hidden="true" />
+      <Field Name="Excuse29" Hidden="true" />
+      <Field Name="Excuse3" Hidden="true" />
+      <Field Name="Excuse30" Hidden="true" />
+      <Field Name="Excuse31" Hidden="true" />
+      <Field Name="Excuse4" Hidden="true" />
+      <Field Name="Excuse5" Hidden="true" />
+      <Field Name="Excuse6" Hidden="true" />
+      <Field Name="Excuse7" Hidden="true" />
+      <Field Name="Excuse8" Hidden="true" />
+      <Field Name="Excuse9" Hidden="true" />
+      <Field Name="guna2BorderlessForm1" Hidden="true" />
+      <Field Name="guna2HtmlLabel12" Hidden="true" />
+      <Field Name="guna2HtmlLabel13" Hidden="true" />
+      <Field Name="guna2HtmlLabel14" Hidden="true" />
+      <Field Name="guna2ImageButton1" Hidden="true" />
+      <Field Name="guna2Panel2" Hidden="true" />
+      <Field Name="guna2Panel3" Hidden="true" />
+      <Field Name="guna2Panel4" Hidden="true" />
+      <Field Name="guna2Panel5" Hidden="true" />
+      <Field Name="holder" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="lbl0per" Hidden="true" />
+      <Field Name="lbl1" Hidden="true" />
+      <Field Name="lbl10" Hidden="true" />
+      <Field Name="lbl100per" Hidden="true" />
+      <Field Name="lbl11" Hidden="true" />
+      <Field Name="lbl12" Hidden="true" />
+      <Field Name="lbl13" Hidden="true" />
+      <Field Name="lbl14" Hidden="true" />
+      <Field Name="lbl15" Hidden="true" />
+      <Field Name="lbl16" Hidden="true" />
+      <Field Name="lbl17" Hidden="true" />
+      <Field Name="lbl18" Hidden="true" />
+      <Field Name="lbl19" Hidden="true" />
+      <Field Name="lbl2" Hidden="true" />
+      <Field Name="lbl20" Hidden="true" />
+      <Field Name="lbl20per" Hidden="true" />
+      <Field Name="lbl21" Hidden="true" />
+      <Field Name="lbl22" Hidden="true" />
+      <Field Name="lbl23" Hidden="true" />
+      <Field Name="lbl24" Hidden="true" />
+      <Field Name="lbl25" Hidden="true" />
+      <Field Name="lbl26" Hidden="true" />
+      <Field Name="lbl27" Hidden="true" />
+      <Field Name="lbl28" Hidden="true" />
+      <Field Name="lbl29" Hidden="true" />
+      <Field Name="lbl3" Hidden="true" />
+      <Field Name="lbl30" Hidden="true" />
+      <Field Name="lbl31" Hidden="true" />
+      <Field Name="lbl4" Hidden="true" />
+      <Field Name="lbl40per" Hidden="true" />
+      <Field Name="lbl5" Hidden="true" />
+      <Field Name="lbl6" Hidden="true" />
+      <Field Name="lbl60per" Hidden="true" />
+      <Field Name="lbl7" Hidden="true" />
+      <Field Name="lbl8" Hidden="true" />
+      <Field Name="lbl80per" Hidden="true" />
+      <Field Name="lbl9" Hidden="true" />
+      <Field Name="monthCB" Hidden="true" />
+      <Field Name="Present1" Hidden="true" />
+      <Field Name="Present10" Hidden="true" />
+      <Field Name="Present11" Hidden="true" />
+      <Field Name="Present12" Hidden="true" />
+      <Field Name="Present13" Hidden="true" />
+      <Field Name="Present14" Hidden="true" />
+      <Field Name="Present15" Hidden="true" />
+      <Field Name="Present16" Hidden="true" />
+      <Field Name="Present17" Hidden="true" />
+      <Field Name="Present18" Hidden="true" />
+      <Field Name="Present19" Hidden="true" />
+      <Field Name="Present2" Hidden="true" />
+      <Field Name="Present20" Hidden="true" />
+      <Field Name="Present21" Hidden="true" />
+      <Field Name="Present22" Hidden="true" />
+      <Field Name="Present23" Hidden="true" />
+      <Field Name="Present24" Hidden="true" />
+      <Field Name="Present25" Hidden="true" />
+      <Field Name="Present26" Hidden="true" />
+      <Field Name="Present27" Hidden="true" />
+      <Field Name="Present28" Hidden="true" />
+      <Field Name="Present29" Hidden="true" />
+      <Field Name="Present3" Hidden="true" />
+      <Field Name="Present30" Hidden="true" />
+      <Field Name="Present31" Hidden="true" />
+      <Field Name="Present4" Hidden="true" />
+      <Field Name="Present5" Hidden="true" />
+      <Field Name="Present6" Hidden="true" />
+      <Field Name="Present7" Hidden="true" />
+      <Field Name="Present8" Hidden="true" />
+      <Field Name="Present9" Hidden="true" />
+      <Field Name="sizeCB" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>SiMnAB9Lo/SaDZv8N2jZTyJqbfxPCypCJEjYRQBIpQI=</HashCode>
+      <FileName>Forms\Startup\Dashboard Form.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Forms.Startup.recordForm">
+    <Position X="24.25" Y="0.75" Width="2" />
+    <Members>
+      <Field Name="absentLbl" Hidden="true" />
+      <Field Name="components" Hidden="true" />
+      <Property Name="CreateParams" Hidden="true" />
+      <Field Name="datePicker" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="guna2BorderlessForm1" Hidden="true" />
+      <Field Name="guna2BorderlessForm2" Hidden="true" />
+      <Field Name="guna2Panel1" Hidden="true" />
+      <Field Name="header" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+      <Field Name="listTable" Hidden="true" />
+      <Field Name="mainPanel" Hidden="true" />
+      <Field Name="presentLbl" Hidden="true" />
+      <Field Name="searchTB" Hidden="true" />
+      <Field Name="tableLayoutPanel1" Hidden="true" />
+      <Field Name="tableLayoutPanel2" Hidden="true" />
+      <Field Name="viewBtn" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgEgIARRASACEAAAAgCABAACAAACAAAACFAkIFAoBCA=</HashCode>
+      <FileName>Forms\Startup\recordForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Forms.Utility.background">
+    <Position X="28.5" Y="11.5" Width="1.5" />
+    <Members>
+      <Field Name="components" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Field Name="guna2BorderlessForm1" Hidden="true" />
+      <Method Name="InitializeComponent" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAACAAAAIIAECAAAACAAAAAAEAAAAAAgAABAA=</HashCode>
+      <FileName>Forms\Utility\background.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Properties.Resources" Collapsed="true">
+    <Position X="23.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QEAGAEAAAAEQAABQAEVREwAgCQAAAAgAJAQACAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Student_Attendance_System.Properties.Settings" Collapsed="true">
+    <Position X="21.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAAEAAIAAgACABQAAAAAQCAAACAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Object" Collapsed="true">
+    <Position X="18" Y="7.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Forms.Form" Collapsed="true">
+    <Position X="19.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

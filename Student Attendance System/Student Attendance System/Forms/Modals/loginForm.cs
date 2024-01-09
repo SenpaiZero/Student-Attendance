@@ -1,8 +1,10 @@
 ﻿using Guna.UI2.WinForms;
+using Student_Attendance_System.Classes.Helper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
@@ -20,6 +22,9 @@ namespace Student_Attendance_System.Startup
         Stopwatch stopwatch = new Stopwatch();
         Stopwatch countdown = new Stopwatch();
         int countdownInt = 5;
+
+        Size panelSz;
+        Size formSz;
         protected override CreateParams CreateParams
         {
             get
@@ -36,7 +41,9 @@ namespace Student_Attendance_System.Startup
 
         private void loginForm_Load(object sender, EventArgs e)
         {
-            loginLbl.Visible = false;
+            loginLbl.Visible = false; 
+            panelSz = mainPanel.Size;
+            formSz = this.Size;
         }
 
         private void cancelBtn_Click(object sender, EventArgs e)
@@ -67,6 +74,9 @@ namespace Student_Attendance_System.Startup
                 timer1.Start();
                 stopwatch.Start();
                 countdown.Start();
+                loginBtn.Visible = false;
+                cancelBtn.Visible = false;
+                stayLoginCB.Visible = false;
             }
             else
             {
@@ -76,10 +86,24 @@ namespace Student_Attendance_System.Startup
 
         void checkLogin(String message, bool success)
         {
+            isResize = true;
             if (success)
+            {
                 loginLbl.ForeColor = Color.Green;
+                this.Size = new Size(formSz.Width, formSz.Height - loginLbl.Height);
+                mainPanel.Size = new Size(panelSz.Width, panelSz.Height - loginLbl.Height);
+                
+            }
             else
+            {
                 loginLbl.ForeColor = Color.Red;
+                if(!loginLbl.Visible)
+                {
+                    this.Size = new Size(formSz.Width, formSz.Height + (loginLbl.Height * 2));
+                    mainPanel.Size = new Size(panelSz.Width, panelSz.Height + (loginLbl.Height * 2));
+                }
+                
+            }
 
             loginLbl.Text = message;
             loginLbl.TextAlignment = ContentAlignment.MiddleCenter;
@@ -88,9 +112,6 @@ namespace Student_Attendance_System.Startup
             if (isResize)
                 return;
 
-            isResize = true;
-            this.Size = new Size(this.Width, this.Height + loginLbl.Height);
-            mainPanel.Size = new Size(mainPanel.Width, mainPanel.Height + loginLbl.Height);
         }
         private void passwordTB_IconRightClick(object sender, EventArgs e)
         {
@@ -120,6 +141,14 @@ namespace Student_Attendance_System.Startup
             {
                 this.DialogResult = DialogResult.OK;
                 this.Close();
+            }
+        }
+
+        private void passwordTB_KeyDown(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                loginBtn.PerformClick();
             }
         }
     }

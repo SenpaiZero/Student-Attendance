@@ -13,6 +13,7 @@ namespace Student_Attendance_System.Classes.Helper
 {
     internal class attendanceHelper
     {
+        private const int MinimumAttendanceSeconds = 10; // Define the minimum attendance time in seconds
         public static void attendance(String id)
         {
             Bitmap lastCap = splitPopup.lastCapture;
@@ -25,7 +26,7 @@ namespace Student_Attendance_System.Classes.Helper
 
             databaseHelper db = new databaseHelper();
             String query_checkExist = $"" +
-                    $"SELECT TimeOut " +
+                    $"SELECT TimeIn, TimeOut " +
                     $"FROM attendance " +
                     $"WHERE StudentID = @id " +
                     $"AND Date = @date " +
@@ -38,8 +39,18 @@ namespace Student_Attendance_System.Classes.Helper
 
                 if (dr.Read())
                 {
-                    if(dr.IsDBNull(0))
+                    if(dr.IsDBNull(1))
                     {
+                        DateTime timeinTemp;
+                        if (DateTime.TryParse(dr.GetValue(0).ToString(), out timeinTemp))
+                        {
+                            TimeSpan attendanceDuration = DateTime.Now - timeinTemp;
+
+                            if (attendanceDuration.TotalSeconds < MinimumAttendanceSeconds)
+                            {
+                                return;
+                            }
+                        }
                         dr.Close();
                         string query2 = $"UPDATE attendance SET TimeOut = @out," +
                                     $" TimeOutPic = @timeoutPic" +

@@ -21,16 +21,19 @@ namespace Student_Attendance_System.Forms.Admin
 
         private void emailTB_Leave(object sender, EventArgs e)
         {
+            validationHelper.textBoxValidation_Email(emailTB, "EMAIL", errorProvider1);
             checkChange(emailTB, email, emailLbl);
         }
 
         private void ageTB_Leave(object sender, EventArgs e)
         {
+            validationHelper.textBoxValidation_Numeric(ageTB, "AGE", errorProvider1, 2);
             checkChange(ageTB, age, ageLbl);
         }
 
         private void phoneTB_Leave(object sender, EventArgs e)
         {
+            validationHelper.textBoxValidation_PhoneNumber(phoneTB, "PHONE NUMBER", errorProvider1);
             checkChange(phoneTB, phone, phoneLbl);
         }
 
@@ -60,18 +63,30 @@ namespace Student_Attendance_System.Forms.Admin
 
         private void addressTB_Leave(object sender, EventArgs e)
         {
+            validationHelper.textBoxValidation_Address(addressTB, "ADDRESS", errorProvider1);
             checkChange(addressTB, address, addressLbl);
         }
 
         private void nameTB_Leave(object sender, EventArgs e)
         {
+            validationHelper.textBoxValidation_Alpha_comma(nameTB, "NAME", errorProvider1);
             checkChange(nameTB, name, nameLbl);
         }
 
         private void updateBtn_Click(object sender, EventArgs e)
         {
             if (!checkValid())
+            {
+                MessageForm msg = new MessageForm()
+                {
+                    isYesNo = false,
+                    messageType = "Failed",
+                    header = "Woooops",
+                    message = $"Please check the input fields."
+                };
+                msg.ShowDialog();
                 return;
+            }
 
             try
             {
@@ -145,7 +160,7 @@ namespace Student_Attendance_System.Forms.Admin
         }
         bool checkValid()
         {
-            if (validationHelper.textBoxValidation_Alpha_comma(nameTB, "FIRST NAME", errorProvider1)
+            if (validationHelper.textBoxValidation_Alpha_comma(nameTB, "NAME", errorProvider1)
                && validationHelper.textBoxValidation_Email(emailTB, "EMAIL", errorProvider1)
                && validationHelper.textBoxValidation_Address(addressTB, "ADDRESS", errorProvider1)
                && validationHelper.textBoxValidation_PhoneNumber(phoneTB, "PHONE NUMBER", errorProvider1)

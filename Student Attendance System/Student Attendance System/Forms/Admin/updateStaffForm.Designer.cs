@@ -79,6 +79,7 @@
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(113, 58);
             this.updateBtn.TabIndex = 43;
+            this.updateBtn.TabStop = false;
             this.updateBtn.Text = "UPDATE";
             this.updateBtn.Click += new System.EventHandler(this.updateBtn_Click);
             // 
@@ -109,7 +110,7 @@
             this.nameTB.PlaceholderText = "";
             this.nameTB.SelectedText = "";
             this.nameTB.Size = new System.Drawing.Size(498, 49);
-            this.nameTB.TabIndex = 41;
+            this.nameTB.TabIndex = 1;
             this.nameTB.Leave += new System.EventHandler(this.nameTB_Leave);
             // 
             // nameLbl
@@ -187,6 +188,7 @@
             this.statusCB.Name = "statusCB";
             this.statusCB.Size = new System.Drawing.Size(166, 36);
             this.statusCB.TabIndex = 42;
+            this.statusCB.TabStop = false;
             this.statusCB.Leave += new System.EventHandler(this.statusCB_Leave);
             // 
             // addressTB
@@ -216,7 +218,7 @@
             this.addressTB.PlaceholderText = "";
             this.addressTB.SelectedText = "";
             this.addressTB.Size = new System.Drawing.Size(498, 49);
-            this.addressTB.TabIndex = 47;
+            this.addressTB.TabIndex = 2;
             this.addressTB.Leave += new System.EventHandler(this.addressTB_Leave);
             // 
             // addressLbl
@@ -262,7 +264,7 @@
             this.ageTB.PlaceholderText = "";
             this.ageTB.SelectedText = "";
             this.ageTB.Size = new System.Drawing.Size(112, 49);
-            this.ageTB.TabIndex = 49;
+            this.ageTB.TabIndex = 4;
             this.ageTB.Leave += new System.EventHandler(this.ageTB_Leave);
             // 
             // ageLbl
@@ -308,7 +310,7 @@
             this.emailTB.PlaceholderText = "";
             this.emailTB.SelectedText = "";
             this.emailTB.Size = new System.Drawing.Size(380, 49);
-            this.emailTB.TabIndex = 51;
+            this.emailTB.TabIndex = 3;
             this.emailTB.Leave += new System.EventHandler(this.emailTB_Leave);
             // 
             // emailLbl
@@ -354,7 +356,7 @@
             this.phoneTB.PlaceholderText = "";
             this.phoneTB.SelectedText = "";
             this.phoneTB.Size = new System.Drawing.Size(380, 49);
-            this.phoneTB.TabIndex = 53;
+            this.phoneTB.TabIndex = 5;
             this.phoneTB.Leave += new System.EventHandler(this.phoneTB_Leave);
             // 
             // phoneLbl
@@ -394,6 +396,7 @@
             this.genderCB.Name = "genderCB";
             this.genderCB.Size = new System.Drawing.Size(166, 36);
             this.genderCB.TabIndex = 54;
+            this.genderCB.TabStop = false;
             this.genderCB.Leave += new System.EventHandler(this.genderCB_Leave);
             // 
             // statusLbl
@@ -444,6 +447,7 @@
             this.cancelBtn.Name = "cancelBtn";
             this.cancelBtn.Size = new System.Drawing.Size(88, 28);
             this.cancelBtn.TabIndex = 57;
+            this.cancelBtn.TabStop = false;
             this.cancelBtn.Text = "CANCEL";
             this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 

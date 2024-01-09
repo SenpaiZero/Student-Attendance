@@ -102,6 +102,7 @@
             this.descLbl.Text = "TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING TESTING T" +
     "ESTING TESTING TESTING TESTING TESTING TESTING TESTING ";
             this.descLbl.TextAlignment = System.Drawing.ContentAlignment.TopCenter;
+            this.descLbl.Click += new System.EventHandler(this.descLbl_Click);
             // 
             // guna2Shapes1
             // 

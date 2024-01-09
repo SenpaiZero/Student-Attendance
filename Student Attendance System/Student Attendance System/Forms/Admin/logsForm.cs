@@ -126,6 +126,7 @@ namespace Student_Attendance_System.Forms.Admin
 
         private void dateCB_SelectedIndexChanged(object sender, EventArgs e)
         {
+            checkDateCB();
             loadData();
         }
 
@@ -138,7 +139,9 @@ namespace Student_Attendance_System.Forms.Admin
         void checkDateCB()
         {
             if (dateCB.Text == "DAY")
-                dateQuery = $"DAY(Date) = '{date.Day}'";
+            {
+                dateQuery = $"DAY(Date) = '{date.Day}' AND MONTH(Date) = '{date.Month}'";
+            }
             else if (dateCB.Text == "MONTH")
                 dateQuery = $"MONTH(Date) = '{date.Month}'";
             else if (dateCB.Text == "YEAR")

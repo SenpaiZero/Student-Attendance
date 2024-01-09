@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Student_Attendance_System.Classes.Helper;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
@@ -27,6 +28,7 @@ namespace Student_Attendance_System
 
         public bool login()
         {
+            
             if (!checkLogin())
                 return false;
 
@@ -51,7 +53,7 @@ namespace Student_Attendance_System
                 databaseHelper db = new databaseHelper();
                 db.cmd = new System.Data.SqlClient.SqlCommand
                     ($"SELECT * FROM Accounts WHERE StaffID COLLATE Latin1_General_CS_AS = '{staffID}' " +
-                    $"AND Password COLLATE Latin1_General_CS_AS = '{Password}'", databaseHelper.con);
+                    $"AND Password COLLATE Latin1_General_CS_AS = '{securityHelper.HashPassword(Password)}'", databaseHelper.con);
 
                 db.dr = db.cmd.ExecuteReader();
 

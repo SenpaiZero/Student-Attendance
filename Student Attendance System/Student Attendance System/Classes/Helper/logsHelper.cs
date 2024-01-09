@@ -17,6 +17,7 @@ namespace Student_Attendance_System.Classes.Helper
             id = Properties.Settings.Default.loginStaffID;
             name = loginHelper.Name;
             date = DateTime.Now;
+
         }
         private static void insertLog(String details, String category)
         {

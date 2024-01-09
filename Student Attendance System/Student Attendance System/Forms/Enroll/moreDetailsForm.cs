@@ -126,6 +126,15 @@ namespace Student_Attendance_System.Forms.Enroll
                 if (checkAttemp[i] == false)
                 {
                     EnrollmentGlobalVariable.isNext = false;
+
+                    MessageForm msg4 = new MessageForm()
+                    {
+                        header = "Ooooops!",
+                        message = "Please check all input fields.",
+                        messageType = "Failed",
+                        isYesNo = false
+                    };
+                    msg4.ShowDialog();
                     return;
                 }
             }

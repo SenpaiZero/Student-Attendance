@@ -363,6 +363,7 @@
     <EmbeddedResource Include="Forms\Startup\studentForm.resx">
       <DependentUpon>studentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ClassDiagram.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -460,6 +461,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\No-Image-Placeholder.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -85,7 +85,7 @@
             this.stayLoginCB.Location = new System.Drawing.Point(63, 268);
             this.stayLoginCB.Name = "stayLoginCB";
             this.stayLoginCB.Size = new System.Drawing.Size(161, 26);
-            this.stayLoginCB.TabIndex = 8;
+            this.stayLoginCB.TabIndex = 3;
             this.stayLoginCB.Text = "STAY LOGGED IN";
             this.stayLoginCB.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
             this.stayLoginCB.UncheckedState.BorderRadius = 0;
@@ -97,10 +97,6 @@
             this.cancelBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.cancelBtn.BorderRadius = 5;
             this.cancelBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.cancelBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.cancelBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.cancelBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.cancelBtn.FillColor = System.Drawing.Color.Transparent;
             this.cancelBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.cancelBtn.ForeColor = System.Drawing.Color.IndianRed;
@@ -108,6 +104,7 @@
             this.cancelBtn.Name = "cancelBtn";
             this.cancelBtn.Size = new System.Drawing.Size(100, 28);
             this.cancelBtn.TabIndex = 7;
+            this.cancelBtn.TabStop = false;
             this.cancelBtn.Text = "CANCEL";
             this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
             // 
@@ -145,10 +142,6 @@
             // 
             this.loginBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.loginBtn.BorderRadius = 10;
-            this.loginBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.loginBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.loginBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.loginBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.loginBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(97)))), ((int)(((byte)(128)))));
             this.loginBtn.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.loginBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
@@ -156,6 +149,7 @@
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(180, 45);
             this.loginBtn.TabIndex = 3;
+            this.loginBtn.TabStop = false;
             this.loginBtn.Text = "LOGIN";
             this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
@@ -185,6 +179,7 @@
             this.passwordTB.TabIndex = 2;
             this.passwordTB.UseSystemPasswordChar = true;
             this.passwordTB.IconRightClick += new System.EventHandler(this.passwordTB_IconRightClick);
+            this.passwordTB.KeyDown += new System.Windows.Forms.KeyEventHandler(this.passwordTB_KeyDown);
             // 
             // staffIdTB
             // 

@@ -423,10 +423,10 @@
             this.yearCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.yearCB.ItemHeight = 30;
             this.yearCB.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4"});
+            "7",
+            "8",
+            "9",
+            "10"});
             this.yearCB.Location = new System.Drawing.Point(148, 344);
             this.yearCB.MaximumSize = new System.Drawing.Size(1000, 0);
             this.yearCB.MinimumSize = new System.Drawing.Size(10, 0);

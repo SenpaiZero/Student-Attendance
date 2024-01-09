@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Student_Attendance_System.Forms.Enroll;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -51,6 +52,49 @@ namespace Student_Attendance_System.Classes
         public static string id { get; set; }
         public static string studentType { get; set; }
 
+        public static void defaultData()
+        {
+            EnrollmentGlobalVariable.page = 0;
+            //page 1
+            EnrollmentGlobalVariable.firstName = "";
+            EnrollmentGlobalVariable.middleName = "";
+            EnrollmentGlobalVariable.lastName = "";
 
+            EnrollmentGlobalVariable.birthday = "";
+            EnrollmentGlobalVariable.age = "";
+            EnrollmentGlobalVariable.religion = "";
+            EnrollmentGlobalVariable.gender = "";
+            EnrollmentGlobalVariable.address = "";
+            EnrollmentGlobalVariable.phone = "";
+            EnrollmentGlobalVariable.email = "";
+            personalDetails.checkAttemp = new bool[] { false, false, false, false, false, false, false };
+
+            //Page 2
+            EnrollmentGlobalVariable.fatherfName = "";
+            EnrollmentGlobalVariable.fathermName = "";
+            EnrollmentGlobalVariable.fatherlName = "";
+            EnrollmentGlobalVariable.fatherEmail = "";
+            EnrollmentGlobalVariable.fatherPhone = "";
+            EnrollmentGlobalVariable.fatherOccupation = "";
+
+
+            EnrollmentGlobalVariable.motherfName = "";
+            EnrollmentGlobalVariable.mothermName = "";
+            EnrollmentGlobalVariable.motherlName = "";
+            EnrollmentGlobalVariable.motherEmail = "";
+            EnrollmentGlobalVariable.motherPhone = "";
+            EnrollmentGlobalVariable.motherOccupation = "";
+            guardianDetails.checkAttemp = new bool[] { false, false, false, false, false, false, false, false, false, false, false, false };
+
+
+            //Page 3
+            EnrollmentGlobalVariable.section = "";
+            EnrollmentGlobalVariable.year = "";
+            EnrollmentGlobalVariable.id = "";
+            EnrollmentGlobalVariable.moreDetails = "";
+            EnrollmentGlobalVariable.frame = null;
+            EnrollmentGlobalVariable.QRCode = null;
+            moreDetailsForm.checkAttemp = new bool[] { false, false };
+        }
     }
 }
