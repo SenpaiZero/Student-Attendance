@@ -153,14 +153,14 @@ namespace Student_Attendance_System.Forms.Startup
                                 Excuse15, Excuse16, Excuse17, Excuse18, Excuse19, Excuse20, Excuse21, Excuse22, Excuse23, Excuse24, Excuse25, Excuse26, Excuse27, Excuse28, Excuse29,
                                 Excuse30, Excuse31};
 
-            if(days == 30)
+            if(days <= 30)
             {
                 absentBar.Remove(Absent31);
                 presentBar.Remove(Present31);
                 excuseBar.Remove(Excuse31);
             }
 
-            if(days == 28)
+            if(days <= 28)
             {
                 absentBar.Remove(Absent31);
                 presentBar.Remove(Present31);
@@ -213,7 +213,40 @@ namespace Student_Attendance_System.Forms.Startup
                 query += @"AND DATEPART(day, a.Date) = @day
                             AND DATEPART(month, a.Date) = @month
                             AND DATEPART(year, a.Date) = @year);";
-                for (int i = 0; i < 12; i++)
+
+                int max = 0;
+                int min = 0;
+                DateTime minDate;
+                DateTime maxDate;
+                using (SqlCommand cmd1 = new SqlCommand("SELECT Min(date), Max(date) FROM [dbo].[attendance] WHERE YEAR(date) = @year", databaseHelper.con))
+                {
+                    cmd1.Parameters.AddWithValue("year", int.Parse(dateCB.Text));
+                    SqlDataReader dr1 = cmd1.ExecuteReader();
+                    if(dr1.Read())
+                    {
+                        maxDate = dr1.GetDateTime(1);
+                        max = maxDate.Month;
+                        dr1.Close();
+                        cmd1.Dispose();
+                    }
+                }
+                using (SqlCommand cmd2 = new SqlCommand("SELECT Min(EnrollDate) FROM [dbo].[studentData] WHERE YEAR(EnrollDate) = @year", databaseHelper.con))
+                {
+                    cmd2.Parameters.AddWithValue("year", int.Parse(dateCB.Text));
+                    SqlDataReader dr2 = cmd2.ExecuteReader();
+                    if (dr2.Read())
+                    {
+                        minDate = dr2.GetDateTime(0);
+                        min = minDate.Month-1;
+                        dr2.Close();
+                        cmd2.Dispose();
+                    }
+                }
+                for (int i = 0; i < min; i++)
+                {
+                    monthlyAbsentList.Add(0);
+                }
+                for (int i = min; i < max; i++)
                 {
                     using (SqlCommand cmd = new SqlCommand(query, databaseHelper.con))
                     {
@@ -254,7 +287,6 @@ namespace Student_Attendance_System.Forms.Startup
                         cmd.Parameters.AddWithValue("month", (monthCB.SelectedIndex+1));
                         cmd.Parameters.AddWithValue("year", dateCB.Text);
                         cmd.Parameters.AddWithValue("day", (i + 1));
-
                          
                         int absentCount = 0;
                         SqlDataReader dr = cmd.ExecuteReader();
@@ -457,6 +489,19 @@ namespace Student_Attendance_System.Forms.Startup
 
         private void dateCB_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if(int.Parse(dateCB.Text) > DateTime.Now.Year)
+            {
+                MessageForm msg = new MessageForm()
+                {
+                    isYesNo = false,
+                    isTimer = false,
+                    header = "Oooops",
+                    message = "Invalid year",
+                    messageType = "Failed"
+                };
+                msg.ShowDialog();
+                dateCB.Text = DateTime.Now.Year.ToString(); 
+            }
         }
 
         private void barContainer_SizeChanged(object sender, EventArgs e)
@@ -472,6 +517,22 @@ namespace Student_Attendance_System.Forms.Startup
 
         private void monthCB_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if(DateTime.Now.Year == int.Parse(dateCB.Text))
+            {
+                if ((monthCB.SelectedIndex+1) > DateTime.Now.Month)
+                {
+                    MessageForm msg = new MessageForm()
+                    {
+                        isYesNo = false,
+                        isTimer = false,
+                        header = "Oooops",
+                        message = "Invalid month",
+                        messageType = "Failed"
+                    };
+                    msg.ShowDialog();
+                    monthCB.SelectedIndex = (DateTime.Now.Month-1);
+                }
+            }
         }
 
         private void sizeCB_SelectedIndexChanged(object sender, EventArgs e)
