@@ -18,7 +18,7 @@ namespace Student_Attendance_System
 
         public static void open()
         {
-            if(!validationHelper.internetAvailability())
+            if (!validationHelper.internetAvailability())
             {
                 MessageForm msg = new MessageForm()
                 {

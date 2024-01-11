@@ -14,6 +14,23 @@ namespace Student_Attendance_System
     internal class startupRunClass
     {
         public static bool isFirst = false;
+
+        public Startup.adminForm adminForm
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public startupForm startupForm
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public static void runStartup()
         {
             startupRunClass startupRunClass = new startupRunClass();
@@ -33,7 +50,7 @@ namespace Student_Attendance_System
         void setOutputConfig()
         {
 
-            if (String.IsNullOrEmpty(Properties.Settings.Default.qrcodePath) 
+            if (String.IsNullOrEmpty(Properties.Settings.Default.qrcodePath)
                 || Properties.Settings.Default.qrcodePath == Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\attendance_pic\qrcode")
             {
                 if (!Directory.Exists(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\attendance_pic"))
@@ -85,7 +102,7 @@ namespace Student_Attendance_System
                     isYesNo = false
                 };
                 Thread.Sleep(1000);
-                if(msg.ShowDialog(parent) == DialogResult.OK)
+                if (msg.ShowDialog(parent) == DialogResult.OK)
                 {
                     checkInternet(parent);
                 }

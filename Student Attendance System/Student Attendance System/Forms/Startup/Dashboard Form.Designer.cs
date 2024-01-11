@@ -129,6 +129,7 @@
             this.appNameLbl = new Guna.UI2.WinForms.Guna2Button();
             this.lbl1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.attContainer = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -174,7 +175,7 @@
             this.lbl25 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl24 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lbl23 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.barContainer.SuspendLayout();
             this.attContainer.SuspendLayout();
             this.SuspendLayout();
@@ -287,10 +288,10 @@
             this.barContainer.Controls.Add(this.Excuse1);
             this.barContainer.Controls.Add(this.Absent1);
             this.barContainer.Controls.Add(this.Present1);
-            this.barContainer.Location = new System.Drawing.Point(97, 136);
+            this.barContainer.Location = new System.Drawing.Point(97, 172);
             this.barContainer.Name = "barContainer";
             this.barContainer.Padding = new System.Windows.Forms.Padding(30);
-            this.barContainer.Size = new System.Drawing.Size(462, 1065);
+            this.barContainer.Size = new System.Drawing.Size(449, 1056);
             this.barContainer.TabIndex = 1;
             this.barContainer.SizeChanged += new System.EventHandler(this.barContainer_SizeChanged);
             // 
@@ -1591,7 +1592,7 @@
             this.lbl1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl1.IsContextMenuEnabled = false;
             this.lbl1.IsSelectionEnabled = false;
-            this.lbl1.Location = new System.Drawing.Point(12, 158);
+            this.lbl1.Location = new System.Drawing.Point(12, 194);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(163, 17);
             this.lbl1.TabIndex = 62;
@@ -1602,14 +1603,14 @@
             // attContainer
             // 
             this.attContainer.AutoScroll = true;
-            this.attContainer.Controls.Add(this.guna2ImageButton1);
-            this.attContainer.Controls.Add(this.barContainer);
             this.attContainer.Controls.Add(this.guna2HtmlLabel14);
             this.attContainer.Controls.Add(this.guna2Panel4);
             this.attContainer.Controls.Add(this.guna2HtmlLabel13);
             this.attContainer.Controls.Add(this.guna2Panel3);
             this.attContainer.Controls.Add(this.guna2HtmlLabel12);
             this.attContainer.Controls.Add(this.guna2Panel2);
+            this.attContainer.Controls.Add(this.guna2ImageButton1);
+            this.attContainer.Controls.Add(this.barContainer);
             this.attContainer.Controls.Add(this.lbl11);
             this.attContainer.Controls.Add(this.lbl12);
             this.attContainer.Controls.Add(this.lbl10);
@@ -1656,9 +1657,25 @@
             this.attContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.attContainer.Location = new System.Drawing.Point(0, 0);
             this.attContainer.Name = "attContainer";
-            this.attContainer.Size = new System.Drawing.Size(705, 1311);
+            this.attContainer.Size = new System.Drawing.Size(705, 1102);
             this.attContainer.TabIndex = 63;
             this.attContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.attContainer_Paint);
+            // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.BackColor = System.Drawing.Color.RosyBrown;
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(32, 32);
+            this.guna2ImageButton1.Image = global::Student_Attendance_System.Properties.Resources.refresh;
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(24, 24);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(593, 35);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(32, 32);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(50, 40);
+            this.guna2ImageButton1.TabIndex = 107;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.refreshBtn_Click);
             // 
             // guna2HtmlLabel14
             // 
@@ -1669,7 +1686,7 @@
             this.guna2HtmlLabel14.ForeColor = System.Drawing.Color.Silver;
             this.guna2HtmlLabel14.IsContextMenuEnabled = false;
             this.guna2HtmlLabel14.IsSelectionEnabled = false;
-            this.guna2HtmlLabel14.Location = new System.Drawing.Point(591, 197);
+            this.guna2HtmlLabel14.Location = new System.Drawing.Point(601, 268);
             this.guna2HtmlLabel14.Name = "guna2HtmlLabel14";
             this.guna2HtmlLabel14.Size = new System.Drawing.Size(87, 17);
             this.guna2HtmlLabel14.TabIndex = 78;
@@ -1681,7 +1698,7 @@
             // 
             this.guna2Panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel4.BackColor = System.Drawing.Color.Silver;
-            this.guna2Panel4.Location = new System.Drawing.Point(565, 197);
+            this.guna2Panel4.Location = new System.Drawing.Point(575, 268);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(20, 16);
             this.guna2Panel4.TabIndex = 77;
@@ -1695,7 +1712,7 @@
             this.guna2HtmlLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.guna2HtmlLabel13.IsContextMenuEnabled = false;
             this.guna2HtmlLabel13.IsSelectionEnabled = false;
-            this.guna2HtmlLabel13.Location = new System.Drawing.Point(591, 172);
+            this.guna2HtmlLabel13.Location = new System.Drawing.Point(601, 243);
             this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
             this.guna2HtmlLabel13.Size = new System.Drawing.Size(88, 17);
             this.guna2HtmlLabel13.TabIndex = 76;
@@ -1707,7 +1724,7 @@
             // 
             this.guna2Panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2Panel3.Location = new System.Drawing.Point(565, 172);
+            this.guna2Panel3.Location = new System.Drawing.Point(575, 243);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(20, 16);
             this.guna2Panel3.TabIndex = 75;
@@ -1721,7 +1738,7 @@
             this.guna2HtmlLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.guna2HtmlLabel12.IsContextMenuEnabled = false;
             this.guna2HtmlLabel12.IsSelectionEnabled = false;
-            this.guna2HtmlLabel12.Location = new System.Drawing.Point(591, 146);
+            this.guna2HtmlLabel12.Location = new System.Drawing.Point(601, 217);
             this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
             this.guna2HtmlLabel12.Size = new System.Drawing.Size(98, 17);
             this.guna2HtmlLabel12.TabIndex = 74;
@@ -1733,7 +1750,7 @@
             // 
             this.guna2Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
-            this.guna2Panel2.Location = new System.Drawing.Point(565, 146);
+            this.guna2Panel2.Location = new System.Drawing.Point(575, 217);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(20, 16);
             this.guna2Panel2.TabIndex = 73;
@@ -1746,7 +1763,7 @@
             this.lbl11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl11.IsContextMenuEnabled = false;
             this.lbl11.IsSelectionEnabled = false;
-            this.lbl11.Location = new System.Drawing.Point(12, 488);
+            this.lbl11.Location = new System.Drawing.Point(12, 524);
             this.lbl11.Name = "lbl11";
             this.lbl11.Size = new System.Drawing.Size(164, 17);
             this.lbl11.TabIndex = 71;
@@ -1762,7 +1779,7 @@
             this.lbl12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl12.IsContextMenuEnabled = false;
             this.lbl12.IsSelectionEnabled = false;
-            this.lbl12.Location = new System.Drawing.Point(12, 521);
+            this.lbl12.Location = new System.Drawing.Point(12, 557);
             this.lbl12.Name = "lbl12";
             this.lbl12.Size = new System.Drawing.Size(163, 17);
             this.lbl12.TabIndex = 72;
@@ -1778,7 +1795,7 @@
             this.lbl10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl10.IsContextMenuEnabled = false;
             this.lbl10.IsSelectionEnabled = false;
-            this.lbl10.Location = new System.Drawing.Point(12, 455);
+            this.lbl10.Location = new System.Drawing.Point(12, 491);
             this.lbl10.Name = "lbl10";
             this.lbl10.Size = new System.Drawing.Size(163, 17);
             this.lbl10.TabIndex = 70;
@@ -1794,7 +1811,7 @@
             this.lbl9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl9.IsContextMenuEnabled = false;
             this.lbl9.IsSelectionEnabled = false;
-            this.lbl9.Location = new System.Drawing.Point(11, 422);
+            this.lbl9.Location = new System.Drawing.Point(11, 458);
             this.lbl9.Name = "lbl9";
             this.lbl9.Size = new System.Drawing.Size(165, 17);
             this.lbl9.TabIndex = 69;
@@ -1810,7 +1827,7 @@
             this.lbl8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl8.IsContextMenuEnabled = false;
             this.lbl8.IsSelectionEnabled = false;
-            this.lbl8.Location = new System.Drawing.Point(12, 389);
+            this.lbl8.Location = new System.Drawing.Point(12, 425);
             this.lbl8.Name = "lbl8";
             this.lbl8.Size = new System.Drawing.Size(163, 17);
             this.lbl8.TabIndex = 68;
@@ -1826,7 +1843,7 @@
             this.lbl7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl7.IsContextMenuEnabled = false;
             this.lbl7.IsSelectionEnabled = false;
-            this.lbl7.Location = new System.Drawing.Point(12, 356);
+            this.lbl7.Location = new System.Drawing.Point(12, 392);
             this.lbl7.Name = "lbl7";
             this.lbl7.Size = new System.Drawing.Size(163, 17);
             this.lbl7.TabIndex = 67;
@@ -1842,7 +1859,7 @@
             this.lbl6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl6.IsContextMenuEnabled = false;
             this.lbl6.IsSelectionEnabled = false;
-            this.lbl6.Location = new System.Drawing.Point(12, 323);
+            this.lbl6.Location = new System.Drawing.Point(12, 359);
             this.lbl6.Name = "lbl6";
             this.lbl6.Size = new System.Drawing.Size(163, 17);
             this.lbl6.TabIndex = 63;
@@ -1858,7 +1875,7 @@
             this.lbl5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl5.IsContextMenuEnabled = false;
             this.lbl5.IsSelectionEnabled = false;
-            this.lbl5.Location = new System.Drawing.Point(11, 290);
+            this.lbl5.Location = new System.Drawing.Point(11, 326);
             this.lbl5.Name = "lbl5";
             this.lbl5.Size = new System.Drawing.Size(164, 17);
             this.lbl5.TabIndex = 66;
@@ -1874,7 +1891,7 @@
             this.lbl4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl4.IsContextMenuEnabled = false;
             this.lbl4.IsSelectionEnabled = false;
-            this.lbl4.Location = new System.Drawing.Point(11, 257);
+            this.lbl4.Location = new System.Drawing.Point(11, 293);
             this.lbl4.Name = "lbl4";
             this.lbl4.Size = new System.Drawing.Size(165, 17);
             this.lbl4.TabIndex = 65;
@@ -1890,7 +1907,7 @@
             this.lbl3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl3.IsContextMenuEnabled = false;
             this.lbl3.IsSelectionEnabled = false;
-            this.lbl3.Location = new System.Drawing.Point(11, 224);
+            this.lbl3.Location = new System.Drawing.Point(11, 260);
             this.lbl3.Name = "lbl3";
             this.lbl3.Size = new System.Drawing.Size(165, 17);
             this.lbl3.TabIndex = 64;
@@ -1906,7 +1923,7 @@
             this.lbl2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl2.IsContextMenuEnabled = false;
             this.lbl2.IsSelectionEnabled = false;
-            this.lbl2.Location = new System.Drawing.Point(12, 191);
+            this.lbl2.Location = new System.Drawing.Point(12, 227);
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(163, 17);
             this.lbl2.TabIndex = 63;
@@ -1927,12 +1944,11 @@
             this.dateCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.dateCB.ItemHeight = 30;
             this.dateCB.Items.AddRange(new object[] {
-            "2020",
-            "2021",
-            "2022",
             "2023",
             "2024",
-            "2025"});
+            "2025",
+            "2026",
+            "2027"});
             this.dateCB.Location = new System.Drawing.Point(254, 38);
             this.dateCB.MaximumSize = new System.Drawing.Size(1000, 0);
             this.dateCB.MinimumSize = new System.Drawing.Size(10, 0);
@@ -1944,7 +1960,7 @@
             // 
             // holder
             // 
-            this.holder.Location = new System.Drawing.Point(3, 1298);
+            this.holder.Location = new System.Drawing.Point(3, 1259);
             this.holder.Name = "holder";
             this.holder.Size = new System.Drawing.Size(16, 10);
             this.holder.TabIndex = 86;
@@ -1965,7 +1981,7 @@
             this.lbl100per.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl100per.IsContextMenuEnabled = false;
             this.lbl100per.IsSelectionEnabled = false;
-            this.lbl100per.Location = new System.Drawing.Point(488, 1220);
+            this.lbl100per.Location = new System.Drawing.Point(463, 149);
             this.lbl100per.Name = "lbl100per";
             this.lbl100per.Size = new System.Drawing.Size(108, 17);
             this.lbl100per.TabIndex = 84;
@@ -1982,7 +1998,7 @@
             this.lbl80per.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl80per.IsContextMenuEnabled = false;
             this.lbl80per.IsSelectionEnabled = false;
-            this.lbl80per.Location = new System.Drawing.Point(408, 1220);
+            this.lbl80per.Location = new System.Drawing.Point(383, 149);
             this.lbl80per.Name = "lbl80per";
             this.lbl80per.Size = new System.Drawing.Size(101, 17);
             this.lbl80per.TabIndex = 83;
@@ -1999,7 +2015,7 @@
             this.lbl60per.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl60per.IsContextMenuEnabled = false;
             this.lbl60per.IsSelectionEnabled = false;
-            this.lbl60per.Location = new System.Drawing.Point(332, 1220);
+            this.lbl60per.Location = new System.Drawing.Point(307, 149);
             this.lbl60per.Name = "lbl60per";
             this.lbl60per.Size = new System.Drawing.Size(101, 17);
             this.lbl60per.TabIndex = 82;
@@ -2016,7 +2032,7 @@
             this.lbl40per.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl40per.IsContextMenuEnabled = false;
             this.lbl40per.IsSelectionEnabled = false;
-            this.lbl40per.Location = new System.Drawing.Point(251, 1220);
+            this.lbl40per.Location = new System.Drawing.Point(226, 149);
             this.lbl40per.Name = "lbl40per";
             this.lbl40per.Size = new System.Drawing.Size(101, 17);
             this.lbl40per.TabIndex = 81;
@@ -2033,7 +2049,7 @@
             this.lbl20per.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl20per.IsContextMenuEnabled = false;
             this.lbl20per.IsSelectionEnabled = false;
-            this.lbl20per.Location = new System.Drawing.Point(185, 1220);
+            this.lbl20per.Location = new System.Drawing.Point(160, 149);
             this.lbl20per.Name = "lbl20per";
             this.lbl20per.Size = new System.Drawing.Size(101, 17);
             this.lbl20per.TabIndex = 80;
@@ -2050,7 +2066,7 @@
             this.lbl0per.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl0per.IsContextMenuEnabled = false;
             this.lbl0per.IsSelectionEnabled = false;
-            this.lbl0per.Location = new System.Drawing.Point(117, 1220);
+            this.lbl0per.Location = new System.Drawing.Point(92, 149);
             this.lbl0per.Name = "lbl0per";
             this.lbl0per.Size = new System.Drawing.Size(94, 17);
             this.lbl0per.TabIndex = 79;
@@ -2066,7 +2082,7 @@
             this.lbl13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl13.IsContextMenuEnabled = false;
             this.lbl13.IsSelectionEnabled = false;
-            this.lbl13.Location = new System.Drawing.Point(11, 560);
+            this.lbl13.Location = new System.Drawing.Point(11, 596);
             this.lbl13.Name = "lbl13";
             this.lbl13.Size = new System.Drawing.Size(163, 17);
             this.lbl13.TabIndex = 88;
@@ -2082,7 +2098,7 @@
             this.lbl22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl22.IsContextMenuEnabled = false;
             this.lbl22.IsSelectionEnabled = false;
-            this.lbl22.Location = new System.Drawing.Point(11, 857);
+            this.lbl22.Location = new System.Drawing.Point(11, 893);
             this.lbl22.Name = "lbl22";
             this.lbl22.Size = new System.Drawing.Size(163, 17);
             this.lbl22.TabIndex = 97;
@@ -2098,7 +2114,7 @@
             this.lbl21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl21.IsContextMenuEnabled = false;
             this.lbl21.IsSelectionEnabled = false;
-            this.lbl21.Location = new System.Drawing.Point(11, 824);
+            this.lbl21.Location = new System.Drawing.Point(11, 860);
             this.lbl21.Name = "lbl21";
             this.lbl21.Size = new System.Drawing.Size(163, 17);
             this.lbl21.TabIndex = 96;
@@ -2114,7 +2130,7 @@
             this.lbl20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl20.IsContextMenuEnabled = false;
             this.lbl20.IsSelectionEnabled = false;
-            this.lbl20.Location = new System.Drawing.Point(12, 791);
+            this.lbl20.Location = new System.Drawing.Point(12, 827);
             this.lbl20.Name = "lbl20";
             this.lbl20.Size = new System.Drawing.Size(163, 17);
             this.lbl20.TabIndex = 95;
@@ -2130,7 +2146,7 @@
             this.lbl19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl19.IsContextMenuEnabled = false;
             this.lbl19.IsSelectionEnabled = false;
-            this.lbl19.Location = new System.Drawing.Point(11, 758);
+            this.lbl19.Location = new System.Drawing.Point(11, 794);
             this.lbl19.Name = "lbl19";
             this.lbl19.Size = new System.Drawing.Size(163, 17);
             this.lbl19.TabIndex = 94;
@@ -2146,7 +2162,7 @@
             this.lbl18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl18.IsContextMenuEnabled = false;
             this.lbl18.IsSelectionEnabled = false;
-            this.lbl18.Location = new System.Drawing.Point(11, 725);
+            this.lbl18.Location = new System.Drawing.Point(11, 761);
             this.lbl18.Name = "lbl18";
             this.lbl18.Size = new System.Drawing.Size(163, 17);
             this.lbl18.TabIndex = 93;
@@ -2162,7 +2178,7 @@
             this.lbl17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl17.IsContextMenuEnabled = false;
             this.lbl17.IsSelectionEnabled = false;
-            this.lbl17.Location = new System.Drawing.Point(11, 692);
+            this.lbl17.Location = new System.Drawing.Point(11, 728);
             this.lbl17.Name = "lbl17";
             this.lbl17.Size = new System.Drawing.Size(163, 17);
             this.lbl17.TabIndex = 92;
@@ -2178,7 +2194,7 @@
             this.lbl16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl16.IsContextMenuEnabled = false;
             this.lbl16.IsSelectionEnabled = false;
-            this.lbl16.Location = new System.Drawing.Point(12, 659);
+            this.lbl16.Location = new System.Drawing.Point(12, 695);
             this.lbl16.Name = "lbl16";
             this.lbl16.Size = new System.Drawing.Size(163, 17);
             this.lbl16.TabIndex = 91;
@@ -2194,7 +2210,7 @@
             this.lbl15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl15.IsContextMenuEnabled = false;
             this.lbl15.IsSelectionEnabled = false;
-            this.lbl15.Location = new System.Drawing.Point(11, 626);
+            this.lbl15.Location = new System.Drawing.Point(11, 662);
             this.lbl15.Name = "lbl15";
             this.lbl15.Size = new System.Drawing.Size(163, 17);
             this.lbl15.TabIndex = 90;
@@ -2210,7 +2226,7 @@
             this.lbl14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl14.IsContextMenuEnabled = false;
             this.lbl14.IsSelectionEnabled = false;
-            this.lbl14.Location = new System.Drawing.Point(11, 593);
+            this.lbl14.Location = new System.Drawing.Point(11, 629);
             this.lbl14.Name = "lbl14";
             this.lbl14.Size = new System.Drawing.Size(163, 17);
             this.lbl14.TabIndex = 89;
@@ -2226,7 +2242,7 @@
             this.lbl31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl31.IsContextMenuEnabled = false;
             this.lbl31.IsSelectionEnabled = false;
-            this.lbl31.Location = new System.Drawing.Point(12, 1154);
+            this.lbl31.Location = new System.Drawing.Point(12, 1190);
             this.lbl31.Name = "lbl31";
             this.lbl31.Size = new System.Drawing.Size(163, 17);
             this.lbl31.TabIndex = 106;
@@ -2242,7 +2258,7 @@
             this.lbl30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl30.IsContextMenuEnabled = false;
             this.lbl30.IsSelectionEnabled = false;
-            this.lbl30.Location = new System.Drawing.Point(11, 1121);
+            this.lbl30.Location = new System.Drawing.Point(11, 1157);
             this.lbl30.Name = "lbl30";
             this.lbl30.Size = new System.Drawing.Size(163, 17);
             this.lbl30.TabIndex = 105;
@@ -2258,7 +2274,7 @@
             this.lbl29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl29.IsContextMenuEnabled = false;
             this.lbl29.IsSelectionEnabled = false;
-            this.lbl29.Location = new System.Drawing.Point(12, 1088);
+            this.lbl29.Location = new System.Drawing.Point(12, 1124);
             this.lbl29.Name = "lbl29";
             this.lbl29.Size = new System.Drawing.Size(163, 17);
             this.lbl29.TabIndex = 104;
@@ -2274,7 +2290,7 @@
             this.lbl28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl28.IsContextMenuEnabled = false;
             this.lbl28.IsSelectionEnabled = false;
-            this.lbl28.Location = new System.Drawing.Point(11, 1055);
+            this.lbl28.Location = new System.Drawing.Point(11, 1091);
             this.lbl28.Name = "lbl28";
             this.lbl28.Size = new System.Drawing.Size(163, 17);
             this.lbl28.TabIndex = 103;
@@ -2290,7 +2306,7 @@
             this.lbl27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl27.IsContextMenuEnabled = false;
             this.lbl27.IsSelectionEnabled = false;
-            this.lbl27.Location = new System.Drawing.Point(11, 1022);
+            this.lbl27.Location = new System.Drawing.Point(11, 1058);
             this.lbl27.Name = "lbl27";
             this.lbl27.Size = new System.Drawing.Size(163, 17);
             this.lbl27.TabIndex = 102;
@@ -2306,7 +2322,7 @@
             this.lbl26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl26.IsContextMenuEnabled = false;
             this.lbl26.IsSelectionEnabled = false;
-            this.lbl26.Location = new System.Drawing.Point(11, 989);
+            this.lbl26.Location = new System.Drawing.Point(11, 1025);
             this.lbl26.Name = "lbl26";
             this.lbl26.Size = new System.Drawing.Size(163, 17);
             this.lbl26.TabIndex = 101;
@@ -2322,7 +2338,7 @@
             this.lbl25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl25.IsContextMenuEnabled = false;
             this.lbl25.IsSelectionEnabled = false;
-            this.lbl25.Location = new System.Drawing.Point(11, 956);
+            this.lbl25.Location = new System.Drawing.Point(11, 992);
             this.lbl25.Name = "lbl25";
             this.lbl25.Size = new System.Drawing.Size(163, 17);
             this.lbl25.TabIndex = 100;
@@ -2338,7 +2354,7 @@
             this.lbl24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl24.IsContextMenuEnabled = false;
             this.lbl24.IsSelectionEnabled = false;
-            this.lbl24.Location = new System.Drawing.Point(12, 925);
+            this.lbl24.Location = new System.Drawing.Point(12, 961);
             this.lbl24.Name = "lbl24";
             this.lbl24.Size = new System.Drawing.Size(163, 17);
             this.lbl24.TabIndex = 99;
@@ -2354,7 +2370,7 @@
             this.lbl23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
             this.lbl23.IsContextMenuEnabled = false;
             this.lbl23.IsSelectionEnabled = false;
-            this.lbl23.Location = new System.Drawing.Point(12, 890);
+            this.lbl23.Location = new System.Drawing.Point(12, 926);
             this.lbl23.Name = "lbl23";
             this.lbl23.Size = new System.Drawing.Size(163, 17);
             this.lbl23.TabIndex = 98;
@@ -2362,28 +2378,16 @@
             this.lbl23.Text = "23";
             this.lbl23.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // guna2ImageButton1
+            // guna2Elipse1
             // 
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.RosyBrown;
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(32, 32);
-            this.guna2ImageButton1.Image = global::Student_Attendance_System.Properties.Resources.refresh;
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(26, 26);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(593, 35);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(32, 32);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(54, 44);
-            this.guna2ImageButton1.TabIndex = 107;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.refreshBtn_Click);
+            this.guna2Elipse1.TargetControl = this.guna2ImageButton1;
             // 
             // Dashboard_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(37)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(705, 1311);
+            this.ClientSize = new System.Drawing.Size(705, 1102);
             this.Controls.Add(this.attContainer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dashboard_Form";
@@ -2543,5 +2547,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl24;
         private Guna.UI2.WinForms.Guna2HtmlLabel lbl23;
         private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }

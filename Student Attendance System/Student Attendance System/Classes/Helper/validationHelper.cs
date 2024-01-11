@@ -414,5 +414,37 @@ namespace Student_Attendance_System
                 return ms.ToArray();
             }
         }
+
+        public Forms.Enroll.moreDetailsForm moreDetailsForm
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public Forms.Enroll.guardianDetails guardianDetails
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public Forms.Enroll.personalDetails personalDetails
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public Forms.Admin.updateStudentForm updateStudentForm
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

@@ -31,6 +31,15 @@ namespace Student_Attendance_System.Forms.Admin
                 return handleParams;
             }
         }
+
+        internal databaseHelper databaseHelper
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 

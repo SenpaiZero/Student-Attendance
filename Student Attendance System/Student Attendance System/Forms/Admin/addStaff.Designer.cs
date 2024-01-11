@@ -169,6 +169,7 @@
             this.phoneTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.phoneTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.phoneTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.phoneTB, -8);
             this.phoneTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.phoneTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.phoneTB.Location = new System.Drawing.Point(13, 447);
@@ -200,6 +201,7 @@
             this.addressTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.addressTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.addressTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.addressTB, -8);
             this.addressTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.addressTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.addressTB.Location = new System.Drawing.Point(13, 349);
@@ -268,6 +270,7 @@
             this.firstNameTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.firstNameTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.firstNameTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.firstNameTB, -8);
             this.firstNameTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.firstNameTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.firstNameTB.Location = new System.Drawing.Point(13, 55);
@@ -300,6 +303,7 @@
             this.middleNameTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.middleNameTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.middleNameTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.middleNameTB, -8);
             this.middleNameTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.middleNameTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.middleNameTB.Location = new System.Drawing.Point(445, 55);
@@ -332,6 +336,7 @@
             this.surnameTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.surnameTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.surnameTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.surnameTB, -8);
             this.surnameTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.surnameTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.surnameTB.Location = new System.Drawing.Point(229, 55);
@@ -418,6 +423,7 @@
             this.emailTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.emailTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.emailTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.emailTB, -8);
             this.emailTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.emailTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.emailTB.Location = new System.Drawing.Point(13, 251);
@@ -482,6 +488,7 @@
             this.statusCB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.statusCB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.statusCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.errorProvider1.SetIconPadding(this.statusCB, -8);
             this.statusCB.ItemHeight = 30;
             this.statusCB.Items.AddRange(new object[] {
             "SINGLE",
@@ -526,6 +533,7 @@
             this.genderCB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.genderCB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.genderCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.errorProvider1.SetIconPadding(this.genderCB, -8);
             this.genderCB.ItemHeight = 30;
             this.genderCB.Items.AddRange(new object[] {
             "MALE",
@@ -572,6 +580,7 @@
             this.ageTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ageTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ageTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.ageTB, -8);
             this.ageTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.ageTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.ageTB.Location = new System.Drawing.Point(445, 153);
@@ -621,6 +630,7 @@
             this.idNumTB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.idNumTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.idNumTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.idNumTB, -8);
             this.idNumTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.idNumTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.idNumTB.Location = new System.Drawing.Point(13, 153);

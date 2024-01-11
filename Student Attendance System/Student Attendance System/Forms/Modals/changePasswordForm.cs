@@ -28,6 +28,15 @@ namespace Student_Attendance_System.Forms
                 return handleParams;
             }
         }
+
+        internal loginHelper loginHelper
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         private void cancelBtn_Click(object sender, EventArgs e)
         {
 

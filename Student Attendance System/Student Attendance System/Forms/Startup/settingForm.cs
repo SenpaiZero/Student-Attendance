@@ -338,5 +338,13 @@ namespace Student_Attendance_System.Startup
             startupForm.form.enebleBtn(null);
             this.Dispose();
         }
+
+        internal LocalSaveHelper LocalSaveHelper
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

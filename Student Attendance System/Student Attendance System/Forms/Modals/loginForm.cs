@@ -34,6 +34,15 @@ namespace Student_Attendance_System.Startup
                 return handleParams;
             }
         }
+
+        internal loginHelper loginHelper
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public loginForm()
         {
             InitializeComponent();

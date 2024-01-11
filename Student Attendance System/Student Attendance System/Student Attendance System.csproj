@@ -212,6 +212,18 @@
     <Compile Include="Forms\Startup\Dashboard Form.Designer.cs">
       <DependentUpon>Dashboard Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Startup\dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Startup\dashboard.Designer.cs">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Startup\dashboardStats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Startup\dashboardStats.Designer.cs">
+      <DependentUpon>dashboardStats.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Startup\recordForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -322,6 +334,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Startup\Dashboard Form.resx">
       <DependentUpon>Dashboard Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Startup\dashboard.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Startup\dashboardStats.resx">
+      <DependentUpon>dashboardStats.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Startup\recordForm.resx">
       <DependentUpon>recordForm.cs</DependentUpon>

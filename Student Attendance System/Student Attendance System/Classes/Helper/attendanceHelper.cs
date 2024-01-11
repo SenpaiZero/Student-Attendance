@@ -11,9 +11,18 @@ using System.Windows;
 
 namespace Student_Attendance_System.Classes.Helper
 {
-    internal class attendanceHelper
+    internal class attendanceHelper : databaseHelper
     {
         private const int MinimumAttendanceSeconds = 10; // Define the minimum attendance time in seconds
+
+        public studentForm studentForm
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public static void attendance(String id)
         {
             Bitmap lastCap = splitPopup.lastCapture;
@@ -39,7 +48,7 @@ namespace Student_Attendance_System.Classes.Helper
 
                 if (dr.Read())
                 {
-                    if(dr.IsDBNull(1))
+                    if (dr.IsDBNull(1))
                     {
                         DateTime timeinTemp;
                         if (DateTime.TryParse(dr.GetValue(0).ToString(), out timeinTemp))

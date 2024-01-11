@@ -31,6 +31,7 @@ namespace Student_Attendance_System.Startup
                 return handleParams;
             }
         }
+
         private void adminForm_Load(object sender, EventArgs e)
         {
         }

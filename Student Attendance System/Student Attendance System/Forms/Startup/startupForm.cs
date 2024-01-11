@@ -31,6 +31,7 @@ namespace Student_Attendance_System
                 return handleParams;
             }
         }
+
         public startupForm()
         {
             InitializeComponent();
@@ -254,7 +255,7 @@ namespace Student_Attendance_System
         {
             if (!checkAdmin()) return;
 
-            pageHelper.loadForm(new Dashboard_Form(), mainPanel);
+            pageHelper.loadForm(new dashboard(), mainPanel);
             enebleBtn(dashboardBtn);
         }
 

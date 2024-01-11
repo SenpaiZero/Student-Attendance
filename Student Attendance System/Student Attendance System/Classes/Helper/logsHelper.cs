@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Student_Attendance_System.Classes.Helper
 {
-    internal class logsHelper
+    internal class logsHelper : databaseHelper
     {
         static string id;
         static string name;

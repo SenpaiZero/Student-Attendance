@@ -208,5 +208,21 @@ namespace Student_Attendance_System.Classes
         public Guna2ComboBox camListCB { get; set; }
         public Guna2PictureBox selfPic { get; set; }
         public bool qrcode { get; set; }
+
+        internal attendanceHelper attendanceHelper
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        internal LocalSaveHelper LocalSaveHelper
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

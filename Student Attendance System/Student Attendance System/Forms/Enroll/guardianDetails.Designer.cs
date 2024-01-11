@@ -414,6 +414,7 @@
             this.motherOccupationTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.motherOccupationTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.motherOccupationTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.motherOccupationTB, -8);
             this.motherOccupationTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.motherOccupationTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.motherOccupationTB.Location = new System.Drawing.Point(3, 572);
@@ -443,6 +444,7 @@
             this.fatherlnameTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.fatherlnameTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.fatherlnameTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.fatherlnameTB, -8);
             this.fatherlnameTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.fatherlnameTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.fatherlnameTB.Location = new System.Drawing.Point(459, 89);
@@ -472,6 +474,7 @@
             this.fatherfnameTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.fatherfnameTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.fatherfnameTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.fatherfnameTB, -8);
             this.fatherfnameTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.fatherfnameTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.fatherfnameTB.Location = new System.Drawing.Point(3, 89);
@@ -502,6 +505,7 @@
             this.fathermnameTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.fathermnameTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.fathermnameTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.fathermnameTB, -8);
             this.fathermnameTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.fathermnameTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.fathermnameTB.Location = new System.Drawing.Point(231, 89);
@@ -531,6 +535,7 @@
             this.fatherEmailTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.fatherEmailTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.fatherEmailTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.fatherEmailTB, -8);
             this.fatherEmailTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.fatherEmailTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.fatherEmailTB.Location = new System.Drawing.Point(3, 176);
@@ -560,6 +565,7 @@
             this.motherfnameTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.motherfnameTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.motherfnameTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.motherfnameTB, -8);
             this.motherfnameTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.motherfnameTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.motherfnameTB.Location = new System.Drawing.Point(3, 398);
@@ -589,6 +595,7 @@
             this.motherlnameTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.motherlnameTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.motherlnameTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.motherlnameTB, -8);
             this.motherlnameTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.motherlnameTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.motherlnameTB.Location = new System.Drawing.Point(231, 398);
@@ -618,6 +625,7 @@
             this.mothermnameTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.mothermnameTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.mothermnameTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.mothermnameTB, -8);
             this.mothermnameTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.mothermnameTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.mothermnameTB.Location = new System.Drawing.Point(459, 398);
@@ -647,6 +655,7 @@
             this.motherPhoneTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.motherPhoneTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.motherPhoneTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.motherPhoneTB, -8);
             this.motherPhoneTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.motherPhoneTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.motherPhoneTB.Location = new System.Drawing.Point(345, 485);
@@ -676,6 +685,7 @@
             this.motherEmailTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.motherEmailTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.motherEmailTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.motherEmailTB, -8);
             this.motherEmailTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.motherEmailTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.motherEmailTB.Location = new System.Drawing.Point(3, 485);
@@ -705,6 +715,7 @@
             this.fatherPhoneNumberTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.fatherPhoneNumberTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.fatherPhoneNumberTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.fatherPhoneNumberTB, -8);
             this.fatherPhoneNumberTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.fatherPhoneNumberTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.fatherPhoneNumberTB.Location = new System.Drawing.Point(345, 176);
@@ -734,6 +745,7 @@
             this.fatherOccupationTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.fatherOccupationTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.fatherOccupationTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.fatherOccupationTB, -8);
             this.fatherOccupationTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.fatherOccupationTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.fatherOccupationTB.Location = new System.Drawing.Point(3, 263);

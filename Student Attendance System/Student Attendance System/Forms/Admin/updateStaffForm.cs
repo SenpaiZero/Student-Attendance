@@ -216,5 +216,21 @@ namespace Student_Attendance_System.Forms.Admin
             else
                 isAdminCB.Checked = false;
         }
+
+        internal databaseHelper databaseHelper
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        internal validationHelper validationHelper
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

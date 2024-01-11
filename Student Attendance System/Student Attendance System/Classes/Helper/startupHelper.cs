@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace Student_Attendance_System.Classes.Helper
 {
-    internal class startupHelper
+    internal class startupHelper : startupRunClass
     {
         // Startup registry key and value
         private static readonly string StartupKey = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run";

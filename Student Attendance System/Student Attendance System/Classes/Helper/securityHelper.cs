@@ -9,6 +9,22 @@ namespace Student_Attendance_System.Classes.Helper
 {
     internal class securityHelper
     {
+        public Startup.loginForm loginForm
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public Forms.changePasswordForm changePasswordForm
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public static string HashPassword(string password)
         {
             // SHA-256 (Secure Hash Algorithm 256-bit)

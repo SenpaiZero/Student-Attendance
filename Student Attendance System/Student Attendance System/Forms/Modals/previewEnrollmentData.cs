@@ -20,6 +20,22 @@ namespace Student_Attendance_System.Forms.Modals
             InitializeComponent();
         }
 
+        internal databaseHelper databaseHelper
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        internal LocalSaveHelper LocalSaveHelper
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         private void backBtn_Click(object sender, EventArgs e)
         {
             this.Close();

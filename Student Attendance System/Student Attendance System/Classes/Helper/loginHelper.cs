@@ -21,6 +21,14 @@ namespace Student_Attendance_System
         public static string Admin { get; set; }
         public static bool isLogin { get; set; }
 
+        internal databaseHelper databaseHelper
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public loginHelper()
         {
             stayLogin = Properties.Settings.Default.stayLogin;

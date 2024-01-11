@@ -52,6 +52,46 @@ namespace Student_Attendance_System.Classes
         public static string id { get; set; }
         public static string studentType { get; set; }
 
+        public moreDetailsForm moreDetailsForm
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public guardianDetails guardianDetails
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public personalDetails personalDetails
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public Forms.studentPictureForm studentPictureForm
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public Forms.Modals.previewEnrollmentData previewEnrollmentData
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public static void defaultData()
         {
             EnrollmentGlobalVariable.page = 0;

@@ -10,8 +10,32 @@ namespace Student_Attendance_System
 {
     internal class pageHelper
     {
-        // 0 - main   1 - admin   2 - enroll
-        public static Form[] f = new Form[3];
+        // 0 - main   1 - admin   2 - enroll 3 - dashboard
+        public static Form[] f = new Form[4];
+
+        public Forms.Startup.dashboard dashboard
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public Startup.enrollForm enrollForm
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public startupForm startupForm
+        {
+            get => default;
+            set
+            {
+            }
+        }
 
         // load the form into panel
         public static void loadForm(object Form, Guna2Panel mainPanel)
@@ -56,6 +80,21 @@ namespace Student_Attendance_System
             f[2].BringToFront();
             f[2].Dock = DockStyle.Fill;
             f[2].ResumeLayout();
+        }
+
+        public static void loadDashboardForm(object Form, Guna2Panel mainPanel)
+        {
+            if (f[3] != null)
+                f[3].Close();
+            f[3] = Form as Form;
+            f[3].SuspendLayout();
+            f[3].TopLevel = false;
+            mainPanel.Controls.Add(f[3]);
+            mainPanel.Tag = f[3];
+            f[3].Show();
+            f[3].BringToFront();
+            f[3].Dock = DockStyle.Fill;
+            f[3].ResumeLayout();
         }
     }
 }

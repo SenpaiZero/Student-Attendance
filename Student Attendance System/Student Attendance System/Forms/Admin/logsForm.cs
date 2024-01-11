@@ -32,6 +32,15 @@ namespace Student_Attendance_System.Forms.Admin
                 return handleParams;
             }
         }
+
+        internal databaseHelper databaseHelper
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         private void logsForm_Load(object sender, EventArgs e)
         {
             datePicker.Value = DateTime.Now.Date;

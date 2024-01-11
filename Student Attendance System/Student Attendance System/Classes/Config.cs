@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Student_Attendance_System
 {
-    internal class Config
+    internal class Config : startupRunClass
     {
         // Applicatin Config
         public static String appVersion = "1.0.0";
@@ -33,5 +33,13 @@ namespace Student_Attendance_System
 
         //Config for 2nd cam
         public static int colorPopupLabel { get; set; } // 1-in 2-out 3-done
+
+        public Startup.settingForm settingForm
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

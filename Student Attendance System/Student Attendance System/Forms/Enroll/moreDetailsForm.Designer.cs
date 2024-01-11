@@ -216,6 +216,7 @@
             this.sectionTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.sectionTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.sectionTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.sectionTB, -8);
             this.sectionTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.sectionTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.sectionTB.Location = new System.Drawing.Point(148, 315);
@@ -302,6 +303,7 @@
             this.idTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.idTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.idTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.idTB, -8);
             this.idTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.idTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.idTB.Location = new System.Drawing.Point(349, 315);
@@ -350,6 +352,7 @@
             this.moreDetailTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.moreDetailTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.moreDetailTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.moreDetailTB, -8);
             this.moreDetailTB.Location = new System.Drawing.Point(349, 405);
             this.moreDetailTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.moreDetailTB.Multiline = true;

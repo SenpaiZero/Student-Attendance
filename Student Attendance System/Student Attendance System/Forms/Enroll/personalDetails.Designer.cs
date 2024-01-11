@@ -97,6 +97,7 @@
             this.tableLayoutPanel1.Controls.Add(this.guna2HtmlLabel7, 0, 8);
             this.tableLayoutPanel1.Controls.Add(this.ageTB, 4, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.errorProvider1.SetIconPadding(this.tableLayoutPanel1, -8);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(10, 10);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 11;
@@ -135,6 +136,7 @@
             this.phoneNumberTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.phoneNumberTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.phoneNumberTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.phoneNumberTB, -8);
             this.phoneNumberTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.phoneNumberTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.phoneNumberTB.Location = new System.Drawing.Point(3, 413);
@@ -167,6 +169,7 @@
             this.addressTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.addressTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.addressTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.addressTB, -8);
             this.addressTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.addressTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.addressTB.Location = new System.Drawing.Point(3, 320);
@@ -189,6 +192,7 @@
             this.guna2HtmlLabel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.errorProvider1.SetIconPadding(this.guna2HtmlLabel3, -8);
             this.guna2HtmlLabel3.IsContextMenuEnabled = false;
             this.guna2HtmlLabel3.IsSelectionEnabled = false;
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(3, 189);
@@ -207,6 +211,7 @@
             this.guna2HtmlLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.errorProvider1.SetIconPadding(this.guna2HtmlLabel1, -8);
             this.guna2HtmlLabel1.IsContextMenuEnabled = false;
             this.guna2HtmlLabel1.IsSelectionEnabled = false;
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(3, 96);
@@ -235,6 +240,7 @@
             this.firstNameTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.firstNameTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.firstNameTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.firstNameTB, -8);
             this.firstNameTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.firstNameTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.firstNameTB.Location = new System.Drawing.Point(3, 41);
@@ -267,6 +273,7 @@
             this.middleNameTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.middleNameTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.middleNameTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.middleNameTB, -8);
             this.middleNameTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.middleNameTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.middleNameTB.Location = new System.Drawing.Point(459, 41);
@@ -299,6 +306,7 @@
             this.surnameTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.surnameTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.surnameTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.surnameTB, -8);
             this.surnameTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.surnameTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.surnameTB.Location = new System.Drawing.Point(231, 41);
@@ -357,6 +365,7 @@
             this.firstNameLbl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.firstNameLbl.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstNameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.errorProvider1.SetIconPadding(this.firstNameLbl, -8);
             this.firstNameLbl.IsContextMenuEnabled = false;
             this.firstNameLbl.IsSelectionEnabled = false;
             this.firstNameLbl.Location = new System.Drawing.Point(3, 3);
@@ -377,6 +386,7 @@
             this.birthdayDP.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(240)))), ((int)(((byte)(211)))));
             this.birthdayDP.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.birthdayDP.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.errorProvider1.SetIconPadding(this.birthdayDP, -8);
             this.birthdayDP.Location = new System.Drawing.Point(3, 133);
             this.birthdayDP.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.birthdayDP.MaximumSize = new System.Drawing.Size(1000, 50);
@@ -424,6 +434,7 @@
             this.emailTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.emailTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.emailTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.emailTB, -8);
             this.emailTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.emailTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.emailTB.Location = new System.Drawing.Point(3, 227);
@@ -446,6 +457,7 @@
             this.guna2HtmlLabel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.errorProvider1.SetIconPadding(this.guna2HtmlLabel4, -8);
             this.guna2HtmlLabel4.IsContextMenuEnabled = false;
             this.guna2HtmlLabel4.IsSelectionEnabled = false;
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(3, 282);
@@ -532,6 +544,7 @@
             this.genderCB.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.genderCB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.genderCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.errorProvider1.SetIconPadding(this.genderCB, -8);
             this.genderCB.ItemHeight = 30;
             this.genderCB.Items.AddRange(new object[] {
             "MALE",
@@ -552,6 +565,7 @@
             this.guna2HtmlLabel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(159)))), ((int)(((byte)(90)))));
+            this.errorProvider1.SetIconPadding(this.guna2HtmlLabel7, -8);
             this.guna2HtmlLabel7.IsContextMenuEnabled = false;
             this.guna2HtmlLabel7.IsSelectionEnabled = false;
             this.guna2HtmlLabel7.Location = new System.Drawing.Point(3, 375);
@@ -581,6 +595,7 @@
             this.ageTB.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ageTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ageTB.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.errorProvider1.SetIconPadding(this.ageTB, -8);
             this.ageTB.IconRightOffset = new System.Drawing.Point(5, 0);
             this.ageTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.ageTB.Location = new System.Drawing.Point(459, 134);

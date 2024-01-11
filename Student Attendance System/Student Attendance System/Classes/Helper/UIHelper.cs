@@ -10,6 +10,14 @@ namespace Student_Attendance_System.Classes.Helper
 {
     internal class UIHelper
     {
+        public startupForm startupForm
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public static float CalculateFontSize(string text, Font originalFont, SizeF availableSize)
         {
             // Calculate the scaling factor for both width and height

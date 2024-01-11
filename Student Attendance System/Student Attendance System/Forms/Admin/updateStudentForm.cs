@@ -483,5 +483,13 @@ namespace Student_Attendance_System.Forms.Admin
         {
 
         }
+
+        internal databaseHelper databaseHelper
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

@@ -30,6 +30,23 @@ namespace Student_Attendance_System.Forms.Startup
                 return handleParams;
             }
         }
+
+        internal Classes.Helper.LocalSaveHelper LocalSaveHelper
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        internal databaseHelper databaseHelper
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         private void searchTB_TextChanged(object sender, EventArgs e)
         {
             showData();

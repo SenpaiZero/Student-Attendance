@@ -10,6 +10,14 @@ namespace Student_Attendance_System.Classes.Helper
 {
     public class QrCodeHelper
     {
+        public Forms.Enroll.moreDetailsForm moreDetailsForm
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         // Generating qr code based on qrcode library
         public static Bitmap generateQrCode(string studentID)
         {

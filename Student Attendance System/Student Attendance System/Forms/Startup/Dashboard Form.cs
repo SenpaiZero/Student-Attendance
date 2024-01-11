@@ -44,8 +44,36 @@ namespace Student_Attendance_System.Forms.Startup
                 return handleParams;
             }
         }
+
+        internal databaseHelper databaseHelper
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         private void Dashboard_Form_Load(object sender, EventArgs e)
         {
+            int totalStud = 0;
+            if (databaseHelper.con.State != ConnectionState.Open)
+                databaseHelper.open();
+            String query = "SELECT COUNT(*) FROM studentData";
+            using (SqlCommand cmd = new SqlCommand(query, databaseHelper.con))
+            {
+                SqlDataReader dr = cmd.ExecuteReader();
+                if(dr.Read())
+                {
+                    totalStud = dr.GetInt32(0);
+                    dr.Close();
+                }
+            }
+
+            lbl100per.Text = totalStud.ToString();
+            lbl20per.Text = Math.Floor(Math.Abs(totalStud - (totalStud * 1.2))).ToString();
+            lbl40per.Text = Math.Floor(Math.Abs(totalStud - (totalStud * 1.4))).ToString();
+            lbl60per.Text = Math.Floor(Math.Abs(totalStud - (totalStud * 1.6))).ToString();
+            lbl80per.Text = Math.Floor(Math.Abs(totalStud - (totalStud * 1.8))).ToString();
 
             Task.Run(async () =>
             {
@@ -506,13 +534,13 @@ namespace Student_Attendance_System.Forms.Startup
 
         private void barContainer_SizeChanged(object sender, EventArgs e)
         {
-            lbl0per.Location = new System.Drawing.Point(lbl0per.Location.X, barContainer.Bottom + 10);
+            /*lbl0per.Location = new System.Drawing.Point(lbl0per.Location.X, barContainer.Bottom + 10);
             lbl20per.Location = new System.Drawing.Point(lbl20per.Location.X, barContainer.Bottom + 10);
             lbl40per.Location = new System.Drawing.Point(lbl40per.Location.X, barContainer.Bottom + 10);
             lbl60per.Location = new System.Drawing.Point(lbl60per.Location.X, barContainer.Bottom + 10);
             lbl80per.Location = new System.Drawing.Point(lbl80per.Location.X, barContainer.Bottom + 10);
-            lbl100per.Location = new System.Drawing.Point(lbl100per.Location.X, barContainer.Bottom + 10);
-            holder.Location = new System.Drawing.Point(lbl100per.Location.X, barContainer.Bottom + 30);
+            lbl100per.Location = new System.Drawing.Point(lbl100per.Location.X, barContainer.Bottom + 10);*/
+            holder.Location = new System.Drawing.Point(holder.Location.X, barContainer.Bottom + 10);
         }
 
         private void monthCB_SelectedIndexChanged(object sender, EventArgs e)
@@ -570,6 +598,15 @@ namespace Student_Attendance_System.Forms.Startup
                 description = "Please Wait"
             };
             load.ShowDialog();
+        }
+
+        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+
+        }
+
+        private void guna2VScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
         }
     }
 }

@@ -23,6 +23,23 @@ namespace Student_Attendance_System.Forms.Admin
                 return handleParams;
             }
         }
+
+        internal databaseHelper databaseHelper
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        internal validationHelper validationHelper
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public addStaff()
         {
             InitializeComponent();

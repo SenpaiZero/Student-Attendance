@@ -11,7 +11,7 @@ using System.Windows.Interop;
 
 namespace Student_Attendance_System.Classes.Helper
 {
-    internal class emailHelper
+    internal class emailHelper : attendanceHelper
     {
         public static void sendEmail(String studentID, String recordTime, String info)
         {
@@ -42,12 +42,12 @@ namespace Student_Attendance_System.Classes.Helper
                             DATE: {DateTime.Now.Date.ToShortDateString()}
                             TIME: {DateTime.Now.ToShortTimeString()}
                             {info}";
-            
+
             return msg;
         }
-        static String[] getParents(String studentID) 
+        static String[] getParents(String studentID)
         {
-            if(databaseHelper.con.State != System.Data.ConnectionState.Open) databaseHelper.open();
+            if (databaseHelper.con.State != System.Data.ConnectionState.Open) databaseHelper.open();
             String[] emails = new string[3];
 
             string query = $@"SELECT m.Email, f.Email FROM studentFather f INNER JOIN 
@@ -56,7 +56,7 @@ namespace Student_Attendance_System.Classes.Helper
             using (SqlCommand cmd = new SqlCommand(query, databaseHelper.con))
             {
                 SqlDataReader dr = cmd.ExecuteReader();
-                if(dr.Read())
+                if (dr.Read())
                 {
                     emails[0] = dr.GetString(0);
                     emails[1] = dr.GetString(1);
