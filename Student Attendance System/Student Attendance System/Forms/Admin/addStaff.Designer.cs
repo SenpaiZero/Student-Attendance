@@ -175,6 +175,7 @@
             this.phoneTB.Location = new System.Drawing.Point(13, 447);
             this.phoneTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.phoneTB.MaximumSize = new System.Drawing.Size(1000, 60);
+            this.phoneTB.MaxLength = 11;
             this.phoneTB.MinimumSize = new System.Drawing.Size(10, 10);
             this.phoneTB.Name = "phoneTB";
             this.phoneTB.PasswordChar = '\0';

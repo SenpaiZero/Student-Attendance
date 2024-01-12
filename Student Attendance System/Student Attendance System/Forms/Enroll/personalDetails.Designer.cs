@@ -142,6 +142,7 @@
             this.phoneNumberTB.Location = new System.Drawing.Point(3, 413);
             this.phoneNumberTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.phoneNumberTB.MaximumSize = new System.Drawing.Size(1000, 60);
+            this.phoneNumberTB.MaxLength = 11;
             this.phoneNumberTB.MinimumSize = new System.Drawing.Size(10, 10);
             this.phoneNumberTB.Name = "phoneNumberTB";
             this.phoneNumberTB.PasswordChar = '\0';

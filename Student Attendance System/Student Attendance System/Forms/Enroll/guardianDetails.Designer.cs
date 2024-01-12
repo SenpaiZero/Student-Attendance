@@ -660,6 +660,7 @@
             this.motherPhoneTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.motherPhoneTB.Location = new System.Drawing.Point(345, 485);
             this.motherPhoneTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.motherPhoneTB.MaxLength = 11;
             this.motherPhoneTB.Name = "motherPhoneTB";
             this.motherPhoneTB.PasswordChar = '\0';
             this.motherPhoneTB.PlaceholderText = "";
@@ -720,6 +721,7 @@
             this.fatherPhoneNumberTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.fatherPhoneNumberTB.Location = new System.Drawing.Point(345, 176);
             this.fatherPhoneNumberTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.fatherPhoneNumberTB.MaxLength = 11;
             this.fatherPhoneNumberTB.Name = "fatherPhoneNumberTB";
             this.fatherPhoneNumberTB.PasswordChar = '\0';
             this.fatherPhoneNumberTB.PlaceholderText = "";
