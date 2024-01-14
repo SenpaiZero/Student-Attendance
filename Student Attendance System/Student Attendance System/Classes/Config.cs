@@ -18,7 +18,7 @@ namespace Student_Attendance_System
             "Persist Security Info=False;" +
             "User ID=student_attendance;" +
             "Password=BSIT123sti;" +
-            "MultipleActiveResultSets=False;" +
+            "MultipleActiveResultSets=true;" +
             "Encrypt=True;" +
             "TrustServerCertificate=False;" +
             "Connection Timeout=30;";

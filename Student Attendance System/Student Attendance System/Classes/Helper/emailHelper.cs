@@ -18,6 +18,7 @@ namespace Student_Attendance_System.Classes.Helper
 
             SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
             smtp.UseDefaultCredentials = false;
+            smtp.DeliveryMethod= SmtpDeliveryMethod.Network;
             smtp.Credentials = new NetworkCredential("attendtrack.automated@gmail.com", "fves awcb rrnf xaec");
             smtp.EnableSsl = true;
 
@@ -55,15 +56,16 @@ namespace Student_Attendance_System.Classes.Helper
                             WHERE m.StudentID = {studentID}";
             using (SqlCommand cmd = new SqlCommand(query, databaseHelper.con))
             {
-                SqlDataReader dr = cmd.ExecuteReader();
-                if (dr.Read())
+                using (SqlDataReader dr = cmd.ExecuteReader())
                 {
-                    emails[0] = dr.GetString(0);
-                    emails[1] = dr.GetString(1);
-                    dr.Close();
+                    if (dr.Read())
+                    {
+                        emails[0] = dr.GetString(0);
+                        emails[1] = dr.GetString(1);
+                    }
                 }
-                return emails;
             }
+            return emails;
         }
 
         static String getName(string studentID)
@@ -75,11 +77,12 @@ namespace Student_Attendance_System.Classes.Helper
                             WHERE StudentID = {studentID}";
             using (SqlCommand cmd = new SqlCommand(query, databaseHelper.con))
             {
-                SqlDataReader dr = cmd.ExecuteReader();
-                if (dr.Read())
+                using (SqlDataReader dr = cmd.ExecuteReader())
                 {
-                    name = dr.GetString(0);
-                    dr.Close();
+                    if (dr.Read())
+                    {
+                        name = dr.GetString(0);
+                    }
                 }
                 return name;
             }

@@ -47,6 +47,7 @@ namespace Student_Attendance_System.Classes
         {
             if(stopwatch.ElapsedMilliseconds >= 2000)
             {
+                attendanceHelper.timer = false;
                 isProcessingScan = false;
                 stopwatch.Stop();
                 stopwatch.Reset();
@@ -116,17 +117,19 @@ namespace Student_Attendance_System.Classes
                     {
                         if (isProcessingScan) return;
                         isProcessingScan = true;
+                        stopwatch.Reset();
                         stopwatch.Start();
 
                         String qrcodeVal = result.Text;
                         attendanceHelper.attendance(qrcodeVal);
-                        MessageBox.Show(qrcodeVal);
+                        //   MessageBox.Show(qrcodeVal);
 
-                        if (splitPopup.isVisible)
+                        if (splitPopup.isVisible && attendanceHelper.timer == false)
                         {
                             studentForm.split.updateData(qrcodeVal);
                             studentForm.std.getFrame();
                         }
+                        attendanceHelper.timer = true;
                     }
                 }
             }
@@ -134,6 +137,10 @@ namespace Student_Attendance_System.Classes
             try
             {
                 frame = CropToSquare(frame);
+                /*selfPic.Invoke((MethodInvoker)delegate
+                {
+                    selfPic.Image = frame; // Display the frame on the PictureBox
+                });*/
                 selfPic.Image = frame; // Display the frame on the PictureBox
             }
             catch (Exception ex)

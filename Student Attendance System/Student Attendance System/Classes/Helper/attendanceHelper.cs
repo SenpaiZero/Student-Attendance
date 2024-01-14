@@ -14,7 +14,7 @@ namespace Student_Attendance_System.Classes.Helper
     internal class attendanceHelper : databaseHelper
     {
         private const int MinimumAttendanceSeconds = 10; // Define the minimum attendance time in seconds
-
+        public static Boolean timer = false;
         public studentForm studentForm
         {
             get => default;
@@ -25,6 +25,7 @@ namespace Student_Attendance_System.Classes.Helper
 
         public static void attendance(String id)
         {
+            if (timer) return;
             Bitmap lastCap = splitPopup.lastCapture;
             DateTime currentTime = DateTime.Now;
             string formattedTime = currentTime.ToString("HH:mm:ss"); // e.g., 15:30:00
@@ -57,6 +58,7 @@ namespace Student_Attendance_System.Classes.Helper
 
                             if (attendanceDuration.TotalSeconds < MinimumAttendanceSeconds)
                             {
+                                dr.Close();
                                 return;
                             }
                         }
@@ -74,6 +76,7 @@ namespace Student_Attendance_System.Classes.Helper
                             cmd2.ExecuteNonQuery();
                             Config.colorPopupLabel = 2;
 
+                            if (!dr.IsClosed) dr.Close();
                             Task.Run(() =>
                             {
                                 emailHelper.sendEmail(id, formattedTime, "TIME OUT");
@@ -101,6 +104,7 @@ namespace Student_Attendance_System.Classes.Helper
                         cmdNewRow.Parameters.AddWithValue("timeInPic", databaseHelper.bitmapToVarBinary(lastCap));
                         cmdNewRow.ExecuteNonQuery();
                         Config.colorPopupLabel = 1;
+                        if (!dr.IsClosed) dr.Close();
                         Task.Run(() =>
                         {
                             emailHelper.sendEmail(id, formattedTime, "TIME IN");

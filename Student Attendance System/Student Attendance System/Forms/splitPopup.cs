@@ -57,6 +57,7 @@ namespace Student_Attendance_System.Forms
 
         public void updateData(string id)
         {
+            
             if (databaseHelper.con.State != ConnectionState.Open)
                 databaseHelper.open();
             String query = $"SELECT d.StudentID, d.Name, d.Section, d.Year, i.Picture " +
@@ -76,6 +77,7 @@ namespace Student_Attendance_System.Forms
             }
             if (lastCapture == null) lastCap.Image = Properties.Resources.No_Image_Placeholder_svg;
             else lastCap.Image = lastCapture;
+
             if (Config.colorPopupLabel == 1)
                 changeColor(Color.LightSeaGreen);
             else if(Config.colorPopupLabel == 2)

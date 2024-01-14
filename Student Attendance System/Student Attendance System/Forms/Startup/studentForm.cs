@@ -57,6 +57,12 @@ namespace Student_Attendance_System.Startup
             scanningCamera.selfPic = qrScanning;
             scanningCamera.onLoad();
 
+            if (mainCamera.camListCB.Items.Count < 1)
+            {
+                mainCamera = null;
+                secondPic.Enabled = false;
+            }
+
         }
         private void videoSource_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
