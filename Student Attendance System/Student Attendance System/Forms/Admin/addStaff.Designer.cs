@@ -277,7 +277,7 @@
             this.firstNameTB.Location = new System.Drawing.Point(13, 55);
             this.firstNameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.firstNameTB.MaximumSize = new System.Drawing.Size(1000, 60);
-            this.firstNameTB.MaxLength = 49;
+            this.firstNameTB.MaxLength = 33;
             this.firstNameTB.MinimumSize = new System.Drawing.Size(10, 10);
             this.firstNameTB.Name = "firstNameTB";
             this.firstNameTB.PasswordChar = '\0';
@@ -310,7 +310,7 @@
             this.middleNameTB.Location = new System.Drawing.Point(445, 55);
             this.middleNameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.middleNameTB.MaximumSize = new System.Drawing.Size(1000, 60);
-            this.middleNameTB.MaxLength = 49;
+            this.middleNameTB.MaxLength = 33;
             this.middleNameTB.MinimumSize = new System.Drawing.Size(10, 10);
             this.middleNameTB.Name = "middleNameTB";
             this.middleNameTB.PasswordChar = '\0';
@@ -343,7 +343,7 @@
             this.surnameTB.Location = new System.Drawing.Point(229, 55);
             this.surnameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.surnameTB.MaximumSize = new System.Drawing.Size(1000, 60);
-            this.surnameTB.MaxLength = 49;
+            this.surnameTB.MaxLength = 33;
             this.surnameTB.MinimumSize = new System.Drawing.Size(10, 10);
             this.surnameTB.Name = "surnameTB";
             this.surnameTB.PasswordChar = '\0';

@@ -104,7 +104,7 @@
             this.nameTB.Location = new System.Drawing.Point(20, 58);
             this.nameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.nameTB.MaximumSize = new System.Drawing.Size(1000, 60);
-            this.nameTB.MaxLength = 49;
+            this.nameTB.MaxLength = 99;
             this.nameTB.MinimumSize = new System.Drawing.Size(10, 10);
             this.nameTB.Name = "nameTB";
             this.nameTB.PasswordChar = '\0';
@@ -214,7 +214,7 @@
             this.addressTB.Location = new System.Drawing.Point(20, 159);
             this.addressTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.addressTB.MaximumSize = new System.Drawing.Size(1000, 60);
-            this.addressTB.MaxLength = 100;
+            this.addressTB.MaxLength = 99;
             this.addressTB.MinimumSize = new System.Drawing.Size(10, 10);
             this.addressTB.Name = "addressTB";
             this.addressTB.PasswordChar = '\0';

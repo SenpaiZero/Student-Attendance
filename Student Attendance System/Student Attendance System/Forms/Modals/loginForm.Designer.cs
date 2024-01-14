@@ -136,7 +136,7 @@
             this.guna2HtmlLabel3.Size = new System.Drawing.Size(229, 25);
             this.guna2HtmlLabel3.TabIndex = 5;
             this.guna2HtmlLabel3.TabStop = false;
-            this.guna2HtmlLabel3.Text = "PASSOWORD";
+            this.guna2HtmlLabel3.Text = "PASSWORD";
             // 
             // loginBtn
             // 

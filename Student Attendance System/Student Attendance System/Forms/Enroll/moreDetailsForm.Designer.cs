@@ -221,6 +221,7 @@
             this.sectionTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.sectionTB.Location = new System.Drawing.Point(148, 315);
             this.sectionTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.sectionTB.MaxLength = 50;
             this.sectionTB.Name = "sectionTB";
             this.sectionTB.PasswordChar = '\0';
             this.sectionTB.PlaceholderText = "";
@@ -355,6 +356,7 @@
             this.errorProvider1.SetIconPadding(this.moreDetailTB, -8);
             this.moreDetailTB.Location = new System.Drawing.Point(349, 405);
             this.moreDetailTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.moreDetailTB.MaxLength = 100;
             this.moreDetailTB.Multiline = true;
             this.moreDetailTB.Name = "moreDetailTB";
             this.moreDetailTB.PasswordChar = '\0';

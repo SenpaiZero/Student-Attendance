@@ -419,6 +419,7 @@
             this.motherOccupationTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.motherOccupationTB.Location = new System.Drawing.Point(3, 572);
             this.motherOccupationTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.motherOccupationTB.MaxLength = 49;
             this.motherOccupationTB.Name = "motherOccupationTB";
             this.motherOccupationTB.PasswordChar = '\0';
             this.motherOccupationTB.PlaceholderText = "";
@@ -449,6 +450,7 @@
             this.fatherlnameTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.fatherlnameTB.Location = new System.Drawing.Point(459, 89);
             this.fatherlnameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.fatherlnameTB.MaxLength = 33;
             this.fatherlnameTB.Name = "fatherlnameTB";
             this.fatherlnameTB.PasswordChar = '\0';
             this.fatherlnameTB.PlaceholderText = "";
@@ -479,6 +481,7 @@
             this.fatherfnameTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.fatherfnameTB.Location = new System.Drawing.Point(3, 89);
             this.fatherfnameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.fatherfnameTB.MaxLength = 33;
             this.fatherfnameTB.Name = "fatherfnameTB";
             this.fatherfnameTB.PasswordChar = '\0';
             this.fatherfnameTB.PlaceholderText = "";
@@ -510,6 +513,7 @@
             this.fathermnameTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.fathermnameTB.Location = new System.Drawing.Point(231, 89);
             this.fathermnameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.fathermnameTB.MaxLength = 33;
             this.fathermnameTB.Name = "fathermnameTB";
             this.fathermnameTB.PasswordChar = '\0';
             this.fathermnameTB.PlaceholderText = "";
@@ -540,6 +544,7 @@
             this.fatherEmailTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.fatherEmailTB.Location = new System.Drawing.Point(3, 176);
             this.fatherEmailTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.fatherEmailTB.MaxLength = 49;
             this.fatherEmailTB.Name = "fatherEmailTB";
             this.fatherEmailTB.PasswordChar = '\0';
             this.fatherEmailTB.PlaceholderText = "";
@@ -570,6 +575,7 @@
             this.motherfnameTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.motherfnameTB.Location = new System.Drawing.Point(3, 398);
             this.motherfnameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.motherfnameTB.MaxLength = 33;
             this.motherfnameTB.Name = "motherfnameTB";
             this.motherfnameTB.PasswordChar = '\0';
             this.motherfnameTB.PlaceholderText = "";
@@ -600,6 +606,7 @@
             this.motherlnameTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.motherlnameTB.Location = new System.Drawing.Point(231, 398);
             this.motherlnameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.motherlnameTB.MaxLength = 33;
             this.motherlnameTB.Name = "motherlnameTB";
             this.motherlnameTB.PasswordChar = '\0';
             this.motherlnameTB.PlaceholderText = "";
@@ -630,6 +637,7 @@
             this.mothermnameTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.mothermnameTB.Location = new System.Drawing.Point(459, 398);
             this.mothermnameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.mothermnameTB.MaxLength = 33;
             this.mothermnameTB.Name = "mothermnameTB";
             this.mothermnameTB.PasswordChar = '\0';
             this.mothermnameTB.PlaceholderText = "";
@@ -691,6 +699,7 @@
             this.motherEmailTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.motherEmailTB.Location = new System.Drawing.Point(3, 485);
             this.motherEmailTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.motherEmailTB.MaxLength = 49;
             this.motherEmailTB.Name = "motherEmailTB";
             this.motherEmailTB.PasswordChar = '\0';
             this.motherEmailTB.PlaceholderText = "";
@@ -752,6 +761,7 @@
             this.fatherOccupationTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.fatherOccupationTB.Location = new System.Drawing.Point(3, 263);
             this.fatherOccupationTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.fatherOccupationTB.MaxLength = 49;
             this.fatherOccupationTB.Name = "fatherOccupationTB";
             this.fatherOccupationTB.PasswordChar = '\0';
             this.fatherOccupationTB.PlaceholderText = "";

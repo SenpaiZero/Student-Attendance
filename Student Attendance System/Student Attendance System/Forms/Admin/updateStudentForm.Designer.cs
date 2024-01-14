@@ -320,6 +320,7 @@
             this.nameTB.Location = new System.Drawing.Point(90, 50);
             this.nameTB.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.nameTB.MaximumSize = new System.Drawing.Size(1000, 60);
+            this.nameTB.MaxLength = 100;
             this.nameTB.MinimumSize = new System.Drawing.Size(10, 10);
             this.nameTB.Name = "nameTB";
             this.nameTB.PasswordChar = '\0';
@@ -383,6 +384,7 @@
             this.addressTB.Location = new System.Drawing.Point(90, 334);
             this.addressTB.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.addressTB.MaximumSize = new System.Drawing.Size(1000, 60);
+            this.addressTB.MaxLength = 100;
             this.addressTB.MinimumSize = new System.Drawing.Size(10, 10);
             this.addressTB.Name = "addressTB";
             this.addressTB.PasswordChar = '\0';
@@ -434,6 +436,7 @@
             this.emailTB.Location = new System.Drawing.Point(90, 241);
             this.emailTB.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.emailTB.MaximumSize = new System.Drawing.Size(1000, 60);
+            this.emailTB.MaxLength = 50;
             this.emailTB.MinimumSize = new System.Drawing.Size(10, 10);
             this.emailTB.Name = "emailTB";
             this.emailTB.PasswordChar = '\0';
@@ -518,6 +521,7 @@
             this.ageTB.Location = new System.Drawing.Point(546, 148);
             this.ageTB.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.ageTB.MaximumSize = new System.Drawing.Size(1000, 60);
+            this.ageTB.MaxLength = 2;
             this.ageTB.MinimumSize = new System.Drawing.Size(10, 10);
             this.ageTB.Name = "ageTB";
             this.ageTB.PasswordChar = '\0';
@@ -863,10 +867,10 @@
             this.yearCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.yearCB.ItemHeight = 30;
             this.yearCB.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4"});
+            "7",
+            "8",
+            "9",
+            "10"});
             this.yearCB.Location = new System.Drawing.Point(251, 326);
             this.yearCB.Margin = new System.Windows.Forms.Padding(2);
             this.yearCB.MaximumSize = new System.Drawing.Size(1000, 0);
@@ -1323,6 +1327,7 @@
             this.motherPhoneTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.motherPhoneTB.Location = new System.Drawing.Point(429, 278);
             this.motherPhoneTB.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.motherPhoneTB.MaxLength = 11;
             this.motherPhoneTB.Name = "motherPhoneTB";
             this.motherPhoneTB.PasswordChar = '\0';
             this.motherPhoneTB.PlaceholderText = "";
@@ -1379,6 +1384,7 @@
             this.fatherPhoneNumberTB.IconRightSize = new System.Drawing.Size(25, 25);
             this.fatherPhoneNumberTB.Location = new System.Drawing.Point(32, 278);
             this.fatherPhoneNumberTB.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.fatherPhoneNumberTB.MaxLength = 11;
             this.fatherPhoneNumberTB.Name = "fatherPhoneNumberTB";
             this.fatherPhoneNumberTB.PasswordChar = '\0';
             this.fatherPhoneNumberTB.PlaceholderText = "";

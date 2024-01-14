@@ -66,6 +66,12 @@ namespace Student_Attendance_System.Forms
                 return;
             }
 
+            if(newPassTB.Text.Length > 50)
+            {
+                msg.message = "New password are too long.";
+                msg.ShowDialog();
+                return;
+            }
             try
             {
                 databaseHelper.open();
@@ -87,6 +93,7 @@ namespace Student_Attendance_System.Forms
                         isYesNo = false
                     };
                     msgf.ShowDialog();
+                    loginHelper.Password = newPassTB.Text;
                     this.Close();
                 }
             } catch(Exception ex)

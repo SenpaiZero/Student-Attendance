@@ -20,7 +20,7 @@ namespace Student_Attendance_System
         public static string Name { get; set; }
         public static string Admin { get; set; }
         public static bool isLogin { get; set; }
-
+        public static string staffID_ { get; set; }
         internal databaseHelper databaseHelper
         {
             get => default;
@@ -48,6 +48,7 @@ namespace Student_Attendance_System
                 Properties.Settings.Default.loginAdmin = Admin;
                 Properties.Settings.Default.Save();
             }
+            staffID_ = staffID;
             return true;
         }
 

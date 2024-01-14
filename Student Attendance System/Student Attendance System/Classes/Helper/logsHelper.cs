@@ -18,6 +18,9 @@ namespace Student_Attendance_System.Classes.Helper
             name = loginHelper.Name;
             date = DateTime.Now;
 
+            if (id.Length < 3)
+                id = loginHelper.staffID_;
+
         }
         private static void insertLog(String details, String category)
         {

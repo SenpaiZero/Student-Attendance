@@ -176,6 +176,7 @@
             this.addressTB.Location = new System.Drawing.Point(3, 320);
             this.addressTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.addressTB.MaximumSize = new System.Drawing.Size(1000, 60);
+            this.addressTB.MaxLength = 100;
             this.addressTB.MinimumSize = new System.Drawing.Size(10, 10);
             this.addressTB.Name = "addressTB";
             this.addressTB.PasswordChar = '\0';
@@ -247,6 +248,7 @@
             this.firstNameTB.Location = new System.Drawing.Point(3, 41);
             this.firstNameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.firstNameTB.MaximumSize = new System.Drawing.Size(1000, 60);
+            this.firstNameTB.MaxLength = 33;
             this.firstNameTB.MinimumSize = new System.Drawing.Size(10, 10);
             this.firstNameTB.Name = "firstNameTB";
             this.firstNameTB.PasswordChar = '\0';
@@ -280,6 +282,7 @@
             this.middleNameTB.Location = new System.Drawing.Point(459, 41);
             this.middleNameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.middleNameTB.MaximumSize = new System.Drawing.Size(1000, 60);
+            this.middleNameTB.MaxLength = 33;
             this.middleNameTB.MinimumSize = new System.Drawing.Size(10, 10);
             this.middleNameTB.Name = "middleNameTB";
             this.middleNameTB.PasswordChar = '\0';
@@ -313,6 +316,7 @@
             this.surnameTB.Location = new System.Drawing.Point(231, 41);
             this.surnameTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.surnameTB.MaximumSize = new System.Drawing.Size(1000, 60);
+            this.surnameTB.MaxLength = 33;
             this.surnameTB.MinimumSize = new System.Drawing.Size(10, 10);
             this.surnameTB.Name = "surnameTB";
             this.surnameTB.PasswordChar = '\0';
@@ -441,6 +445,7 @@
             this.emailTB.Location = new System.Drawing.Point(3, 227);
             this.emailTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.emailTB.MaximumSize = new System.Drawing.Size(1000, 60);
+            this.emailTB.MaxLength = 50;
             this.emailTB.MinimumSize = new System.Drawing.Size(10, 10);
             this.emailTB.Name = "emailTB";
             this.emailTB.PasswordChar = '\0';
@@ -602,6 +607,7 @@
             this.ageTB.Location = new System.Drawing.Point(459, 134);
             this.ageTB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.ageTB.MaximumSize = new System.Drawing.Size(1000, 60);
+            this.ageTB.MaxLength = 2;
             this.ageTB.MinimumSize = new System.Drawing.Size(10, 10);
             this.ageTB.Name = "ageTB";
             this.ageTB.PasswordChar = '\0';
