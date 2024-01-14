@@ -152,7 +152,7 @@ namespace Student_Attendance_System.Classes
                     header = "Wooooops!",
                     message = ex.Message
                 };
-                msg.ShowDialog();
+                //msg.ShowDialog();
             }
         }
         // Method for starting a form with a cam

@@ -81,3 +81,7 @@ C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attend
 C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Forms.Startup.dashboard.resources
 C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student_Attendance_System.Forms.Startup.dashboardStats.resources
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\Student Attendance System.exe.manifest
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\bin\Debug\Student Attendance System.application
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student Attendance System.exe.manifest
+C:\Users\Xeb\Desktop\Student Attendance\Student Attendance System\Student Attendance System\obj\Debug\Student Attendance System.application
