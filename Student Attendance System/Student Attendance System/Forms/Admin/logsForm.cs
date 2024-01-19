@@ -147,6 +147,7 @@ namespace Student_Attendance_System.Forms.Admin
         }
         void checkDateCB()
         {
+            datePicker.Enabled = true;
             if (dateCB.Text == "DAY")
             {
                 dateQuery = $"DAY(Date) = '{date.Day}' AND MONTH(Date) = '{date.Month}'";
@@ -156,7 +157,10 @@ namespace Student_Attendance_System.Forms.Admin
             else if (dateCB.Text == "YEAR")
                 dateQuery = $"YEAR(Date) = '{date.Year}'";
             else
+            {
+                datePicker.Enabled = false;
                 dateQuery = "";
+            }
         }
         private void searchTB_TextChanged(object sender, EventArgs e)
         {

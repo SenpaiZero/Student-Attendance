@@ -160,6 +160,18 @@ namespace Student_Attendance_System
         private void adminBtn_Click(object sender, EventArgs e)
         {
 
+            if (loginHelper.Admin.ToUpper() != "ADMIN")
+            {
+                MessageForm msg = new MessageForm()
+                {
+                    messageType = "Information",
+                    header = "Ooooops!",
+                    message = "You do not have permission to access and use this page",
+                    isYesNo = false
+                };
+                msg.ShowDialog();
+                return;
+            }
             if (!checkAdmin()) return;
 
             pageHelper.loadForm(new adminForm(), mainPanel);
@@ -175,6 +187,18 @@ namespace Student_Attendance_System
         private void enrollBtn_Click(object sender, EventArgs e)
         {
 
+            if (loginHelper.Admin.ToUpper() != "ADMIN")
+            {
+                MessageForm msg = new MessageForm()
+                {
+                    messageType = "Information",
+                    header = "Ooooops!",
+                    message = "You do not have permission to access and use this page",
+                    isYesNo = false
+                };
+                msg.ShowDialog();
+                return;
+            }
             if (!checkAdmin()) return;
 
             pageHelper.loadForm(new enrollForm(), mainPanel);
